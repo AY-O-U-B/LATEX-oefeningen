@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Hafsa Belhasnioui \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 10.13\\
+
+\medskip
+
+\normalsize
+
+$\lim\limits_{x \rightarrow \tfrac{1}{4}} \dfrac{4x^3 + 13x^2 + \dfrac{5}{2}x - \dfrac{3}{2}}{3x^2 + \dfrac{13}{4}x - 1} = \dfrac{0}{0}$ \\
+
+Horner: \\
+
+
+\begin{tabular}{c|cccc}
+				& $4$			& $13$	& $\dfrac{5}{2}$		& $\dfrac{-3}{2}$\\
+$\dfrac{1}{4}$	& $\downarrow$	& $1$	& $\dfrac{7}{2}$		& $\dfrac{3}{2}$ \\ \hline
+				& $4$			& $14$ 	& $6$ 				& $0$			 \\
+\end{tabular}
+
+$\rightarrow 4x^2 + 14x + 6$ \\
+
+
+\begin{tabular}{c|ccc}
+				& $3$			& $\dfrac{13}{4}$	& $-1$	\\
+$\dfrac{1}{4}$	& $\downarrow$	& $\dfrac{3}{4}$		& $1$	\\ \hline
+				& $3$			& $4$ 				& $0$	\\
+\end{tabular}
+
+$\rightarrow 3x + 4$ \\
+
+$\Rightarrow \lim\limits_{x \rightarrow \tfrac{1}{4}} \dfrac{\left(x-\dfrac{1}{4}\right) (4x^2 + 14x + 6)}{\left(x-\dfrac{1}{4}\right)(3x + 4)} = \lim\limits_{x \rightarrow \tfrac{1}{4}} \dfrac{4x^2 + 14x + 6}{3x + 4} = \dfrac{\dfrac{39}{4}}{\dfrac{19}{4}} = \dfrac{39}{19}$ \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye        \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 2E nr. 4.8 \\
+
+\medskip
+
+\normalsize
+
+
+$\lim\limits_{x \to \infty} \left( \dfrac{ax + b}{ax + c} \right)^{dx+f} $\\
+
+$\lim\limits_{x \to \infty} \left( \dfrac{ax + c + b - c}{ax + c} \right)^{dx+f} $\\
+
+$= \lim\limits_{x \to \infty} \left(1 + \dfrac{b-c}{ax + c} \right)^{dx+f} $\\
+
+$= \lim\limits_{x \to \infty} \left( \left(1 + \dfrac{1}{\dfrac{ax+c}{b-c}} \right)^{\tfrac{ax+c}{b-c}}\right)^{\tfrac{b-c}{ax+c}\cdot (dx+f)} $\\
+
+$= e^{\lim\limits_{x \to \infty} \tfrac{d(b-c)}{a}} $\\
+
+$= e^{\tfrac{bd-cd}{a}} $\\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

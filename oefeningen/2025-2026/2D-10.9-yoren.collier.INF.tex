@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto} 
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 10.9\\
+
+\medskip
+
+\normalsize
+
+$f(x) = \dfrac{x^2 +x -2}{x^2 -4x +3}$\\
+
+$\limiet{x \pnR 1} f(x) = \dfrac{1+1-2}{1-4+3} = \dfrac{0}{0}$\\
+
+We weten dat 1 een nulpunt is voor beide $t(x)$ en $n(x)$. Met $t(x)$ de (veelterm)functie van de teller en $n(x)$ de (veelterm)functie van de noemer. Hierdoor kunnen we Horner gebruiken en de teller en noemer ontbinden zodat we verder het limiet kunnen berekenen. \\
+
+Horner voor de teller:\\
+
+\begin{tabular}{c|ccc}
+     &  $1$  &  $1$  &  $-2$  \\
+  $1$&  $|$  &  $1$  &   $2$  \\
+     &  $1$  &  $2$  &   $0$  
+\end{tabular}
+
+$\adR t(x) = (x-1)(x+2)$\\
+
+Horner voor de noemer:\\
+
+\begin{tabular}{c|ccc}
+     &  $1$  &  $-4$  &  $3$  \\
+  $1$&  $|$  &  $1$   &  $-3$  \\
+     &  $1$  &  $-3$  &  $0$  
+\end{tabular}
+
+$\adR n(x) = (x-1)(x-3)$\\
+
+$\limiet{x \pnR 1} f(x) = \limiet{x \pnR 1} \dfrac{\schrap{\Lh x-1 \Rh} \Lh x+2 \Rh }{\schrap{\Lh x-1 \Rh} \Lh x-3 \Rh } = \dfrac{1+2}{1-3} = \dfrac{-3}{2}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

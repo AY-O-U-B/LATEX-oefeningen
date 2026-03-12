@@ -1,0 +1,75 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Lucas Van Asbroeck \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 20.5\\
+
+\medskip
+
+\normalsize
+
+Bereken alle nulpunten van de veelterm in $\mathbb{C}$ en ontbind de veelterm in factoren over $\mathbb{R}[z]$: $z^4 + 4$\\
+
+Nulpunten:\\
+
+$z^4 + 4 = 0 \Leftrightarrow z^4 = -4$\\
+
+$z^4 = r^4\cdot cis(\alpha)^4 = r^4 \cdot  \operatorname{cis}(4\alpha) = -4$\\\\
+
+$\Rightarrow r^4 = \sqrt{(-4)^2 + 0^2} = 4 \Rightarrow r = \sqrt[4]{4} = \sqrt{2}$ \\
+
+$\Rightarrow \tan(4\alpha) = \dfrac{0}{-4} \Rightarrow 4\alpha = \pi + 2k\pi \Rightarrow \alpha = \dfrac{\pi}{4} + k\dfrac{\pi}{2}$\\\\
+
+
+$\Rightarrow w_0 = \sqrt{2}\cdot \operatorname{cis}\left(\dfrac{\pi}{4}\right) = \sqrt{2}\cdot  \left(\dfrac{\sqrt{2}}{2} + \dfrac{\sqrt{2}}{2}i \right) = 1 + i$ \\
+
+$\Rightarrow w_1 = \sqrt{2}\cdot \operatorname{cis}\left(\dfrac{3\pi}{4}\right) = \sqrt{2}\cdot  \left(\dfrac{-\sqrt{2}}{2} + \dfrac{\sqrt{2}}{2}i \right) = -1 + i$ \\
+
+$\Rightarrow w_2 = \sqrt{2}\cdot \operatorname{cis}\left(\dfrac{5\pi}{4}\right) = \sqrt{2}\cdot  \left(\dfrac{-\sqrt{2}}{2} - \dfrac{\sqrt{2}}{2}i \right) = -1 - i$ \\
+
+$\Rightarrow w_3 = \sqrt{2}\cdot \operatorname{cis}\left(\dfrac{7\pi}{4}\right) = \sqrt{2}\cdot  \left(\dfrac{\sqrt{2}}{2} - \dfrac{\sqrt{2}}{2}i \right) = 1 - i$ \\
+
+$$\Rightarrow \boxed{ z \in \{1+i,-1+i,-1-i,1-i\}}$$\\
+
+Ontbinden in factoren over $\mathbb{R}[z]$:\\
+
+Als we de $z^4 + 4$ over $\mathbb{C}[z]$ ontbinden krijgen we:\\
+
+$z^4 + 4 = (z - (1+i))(z - (1-i))(z - (-1+i))(z - (-1-i))$\\
+
+We nemen de twee paren factoren met complementaire nulpunten samen ($(1+i), (1-i)$ en $(-1+i), (-1-i)$).\\
+
+Zo bekomen we twee reële tweedegraads vergelijkingen die niet verder te ontbinden zijn over $\mathbb{R}[z]$.\\
+
+\newpage
+
+Stel:\\
+
+$A(z) = (z - (1+i))(z - (1-i))$ \\
+
+$= z^2 - z((1+i) + (1-i)) + (1+i)(1-i)$ \\
+
+$= z^2 - 2z + 2$\\
+
+En:\\
+
+$B(z) = (z - (-1+i))(z - (-1-i))$ \\
+
+$= z^2 - z((-1+i) + (-1-i)) + (1+i)(1-i)$ \\
+
+$= z^2 + 2z + 2$\\
+
+$$\Rightarrow \boxed{z^4 + 4 = A(z) \cdot B(z) = (z^2 - 2z + 2)(z^2 + 2z + 2)}$$
+	
+
+
+\begin{thebibliography}{999}
+	%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

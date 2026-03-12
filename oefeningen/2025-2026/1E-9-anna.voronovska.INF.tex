@@ -1,0 +1,91 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1E nr. 9\\
+
+\medskip
+
+\normalsize
+
+
+Wanneer we een veelterm $A(z)=2z^3 + z^2 + 5z + 2$ delen door een deler van de tweede graad $(z + 1)(z - 2)$, is de rest $R(z)$ maximaal van de eerste graad. Dus:\\
+
+$R(z) = az + b$\\
+
+De algemene formule voor de deling is:\\
+
+$A(z) = Q(z) \cdot (z + 1)(z - 2) + R(z)$\\
+
+Stap 1: Nulpunten van een deler bepalen:\\
+
+$(z + 1)(z - 2)=0$\\
+
+$z_1 = -1$\\
+
+$z_2 = 2$\\
+
+Stap 2: Voor $z = -1$:\\
+
+$A(-1) = a \cdot (-1) + b$\\
+
+$2(-1)^3 + (-1)^2 + 5(-1) + 2 = -a + b$\\
+
+$-2 + 1 - 5 + 2 = -a + b$\\
+
+$-4 = -a + b $\\
+
+$-a + b = -4$ (1)\\
+
+Voor $z = 2$:\\
+
+$A(2) = a(2) + b$\\
+
+$2(2)^3 + (2)^2 + 5(2) + 2 = 2a + b$\\
+
+$16 + 4 + 10 + 2 = 2a + b$\\
+
+$32 = 2a + b$\\
+
+$2a + b = 32$ (2)\\
+
+Stelsel is:\\
+
+\(
+\left\{
+\begin{array}{l}
+-a + b = -4 \\
+2a + b = 32
+\end{array}
+\right.
+\)
+
+Stap 3: Oplossen van het stelsel:\\
+
+We trekken (1) af van (2):\\
+
+$(2a + b) - (-a + b) = 32 - (-4)$\\
+
+$3a = 36$\\
+
+$a = 12$\\
+
+Nu vullen we $a = 12$ in in (1):\\
+
+$-4 = -12 + b \implies b = 8$\\
+
+Oplossing: \\
+
+$R(z) = 12z + 8$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

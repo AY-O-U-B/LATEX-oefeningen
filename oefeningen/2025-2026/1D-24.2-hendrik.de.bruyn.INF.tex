@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\cis}{\operatorname{cis}}
+
+\begin{document}
+
+\noindent \large Auteur: Hendrik De Bruyn \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 24.2\\
+
+\medskip
+
+\normalsize
+
+\textbf{Opgave: } Los de vergelijking $8z^6 + 7iz^3 + 1 = 0$ op in $\mathbb{C}$. \\
+
+\textbf{Oplossing: } \\
+
+Stel $Z = z^3$ dan is $8Z^2 + 7iZ + 1 = 0$. \\
+
+Hieruit volgt dat $Z_{1,2} = \dfrac{-7i \pm \sqrt{(7i)^2 - 4\cdot8}}{16} = \dfrac{-7i \pm 9i}{16} = \left<\begin{array}{ll}
+		+: & \dfrac{i}{8} = \dfrac{1}{8} \cis \dfrac{\pi}{2} \\
+		-: & -i = \cis \dfrac{3\pi}{2}
+	\end{array}\right.$ \\
+
+$Z_1 = z^3 = \dfrac{1}{8} \cis \dfrac{\pi}{2} \Rightarrow \left\{\begin{array}{l}
+	z_1 = \dfrac{1}{2} \cis \dfrac{\pi}{6} = \dfrac{\sqrt{3}+i}{4} \\
+	z_2 = \dfrac{1}{2} \cis \dfrac{5\pi}{6} = \dfrac{i-\sqrt{3}}{4} \\
+	z_3 = \dfrac{1}{2} \cis \dfrac{9\pi}{6} = \dfrac{1}{2} \cis \dfrac{3\pi}{2} = -\dfrac{i}{2}
+\end{array}\right.$
+
+$Z_2 = z^3 = \cis \dfrac{3\pi}{2} \Rightarrow \left\{\begin{array}{l}
+	z_1 = \cis \dfrac{3\pi}{6} = \cis \dfrac{\pi}{2} = i \\
+	z_2 = \cis \dfrac{7\pi}{6} = \dfrac{-\sqrt{3}-i}{2} \\
+	z_3 = \cis \dfrac{11\pi}{6} = \dfrac{\sqrt{3}-i}{2}
+\end{array}\right.$ \\
+
+\textbf{Oplossing: } De oplossingen voor $8z^6 + 7iz^3 + 1$ zijn $\left\{\dfrac{\sqrt{3}+i}{4}, \dfrac{i-\sqrt{3}}{4}, -\dfrac{i}{2}, i, \dfrac{-\sqrt{3}-i}{2}, \dfrac{\sqrt{3}-i}{2}\right\}$ \\
+
+
+\begin{thebibliography}{999}
+	%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\noindent \large Auteur: Milo Rampelbergh \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2A nr. 5\\
+
+\medskip
+
+\normalsize
+
+%Begin oefening
+
+$ f: \mathbb{R} \rightarrow \mathbb{R}: x \mapsto x^2 $ \\
+
+Stelling : $ f $ is continu in $ x = 0 $ \\
+
+Bewijs: \\
+
+Pak $ \varepsilon > 0 $ \\
+
+Stel $ \delta = \sqrt{\varepsilon} $ \\
+\begin{eqnarray*}
+\forall \varepsilon > 0, \exists \delta > 0, \forall x \in \mathbb{R}: |x-0| < \delta & \Rightarrow & |f(x) - f(0)| \\
+& = & |x^2| < \delta^2 =  \varepsilon
+\end{eqnarray*}
+
+%Einde oefening
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

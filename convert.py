@@ -1,75 +1,99 @@
 """
-convert.py — Zet alle .tex bestanden in de map 'oefeningen/' om naar PDF
-Gebruik: python convert.py
+convert.py — Zet .tex bestanden om naar PDF
+Gebruik:
+  python convert.py 2025-2026     → converteert alleen dat jaar
+  python convert.py               → converteert BEIDE jaren
 
-Vereisten:
-  - MiKTeX of TeX Live geïnstalleerd (pdflatex beschikbaar)
+Mappenstructuur:
+  oefeningen/2025-2026/*.tex  →  pdfs/2025-2026/*.pdf
+  oefeningen/2024-2025/*.tex  →  pdfs/2024-2025/*.pdf
 """
 
 import os
 import subprocess
 import shutil
+import sys
 
-# Mappen
-TEX_DIR = "oefeningen"
-PDF_DIR = "pdfs"
-TEMP_DIR = "temp_latex"
+JAREN = ["2025-2026", "2024-2025"]
+TEMP  = "temp_latex"
 
-def convert_all():
-    os.makedirs(PDF_DIR, exist_ok=True)
-    os.makedirs(TEMP_DIR, exist_ok=True)
+def converteer_jaar(jaar):
+    tex_dir = os.path.join("oefeningen", jaar)
+    pdf_dir = os.path.join("pdfs", jaar)
 
-    tex_files = [f for f in os.listdir(TEX_DIR) if f.endswith(".tex")]
-
-    if not tex_files:
-        print("Geen .tex bestanden gevonden in de map 'oefeningen/'.")
+    if not os.path.isdir(tex_dir):
+        print(f"  ⚠️  Map '{tex_dir}' bestaat niet — overgeslagen.")
         return
 
-    print(f"▶ {len(tex_files)} bestand(en) gevonden.\n")
+    os.makedirs(pdf_dir, exist_ok=True)
+    os.makedirs(TEMP, exist_ok=True)
 
-    success = 0
-    failed = []
+    bestanden = [f for f in os.listdir(tex_dir) if f.endswith(".tex")]
+    if not bestanden:
+        print(f"  Geen .tex bestanden gevonden in {tex_dir}.")
+        return
 
-    for tex_file in sorted(tex_files):
-        name = os.path.splitext(tex_file)[0]
-        src = os.path.abspath(os.path.join(TEX_DIR, tex_file))
-        out_pdf = os.path.join(PDF_DIR, f"{name}.pdf")
+    print(f"\n  📂 {jaar}  ({len(bestanden)} bestand(en))")
 
-        print(f"  Verwerken: {tex_file} ...", end=" ", flush=True)
+    ok, fout = 0, []
+
+    for tex in sorted(bestanden):
+        naam = os.path.splitext(tex)[0]
+        src  = os.path.abspath(os.path.join(tex_dir, tex))
+        doel = os.path.join(pdf_dir, naam + ".pdf")
+
+        print(f"    {tex} ...", end=" ", flush=True)
 
         try:
             result = subprocess.run(
-                ["pdflatex", "-interaction=nonstopmode", "-output-directory", TEMP_DIR, src],
-                capture_output=True,
-                text=True,
-                timeout=60
+                ["pdflatex", "-interaction=nonstopmode",
+                 "-output-directory", TEMP, src],
+                capture_output=True, text=True, timeout=60
             )
-
-            temp_pdf = os.path.join(TEMP_DIR, f"{name}.pdf")
-            if os.path.exists(temp_pdf):
-                shutil.copy(temp_pdf, out_pdf)
-                print(f"✅ OK → pdfs/{name}.pdf")
-                success += 1
+            tmp_pdf = os.path.join(TEMP, naam + ".pdf")
+            if os.path.exists(tmp_pdf):
+                shutil.copy(tmp_pdf, doel)
+                print(f"✅  → pdfs/{jaar}/{naam}.pdf")
+                ok += 1
             else:
-                print("❌ Mislukt (geen PDF aangemaakt)")
-                failed.append(tex_file)
+                print("❌  geen PDF aangemaakt")
+                fout.append(tex)
 
         except FileNotFoundError:
-            print("\n\n❌ FOUT: pdflatex niet gevonden!")
-            print("   Zorg dat MiKTeX of TeX Live geïnstalleerd is.")
-            print("   Download: https://miktex.org/download")
+            print("\n\n❌  FOUT: pdflatex niet gevonden!")
+            print("   Installeer MiKTeX via https://miktex.org/download")
+            shutil.rmtree(TEMP, ignore_errors=True)
             return
         except subprocess.TimeoutExpired:
-            print("❌ Timeout (bestand duurt te lang)")
-            failed.append(tex_file)
+            print("❌  timeout")
+            fout.append(tex)
 
-    # Opruimen tijdelijke bestanden
-    shutil.rmtree(TEMP_DIR, ignore_errors=True)
+    print(f"  ✅  {ok}/{len(bestanden)} gelukt", end="")
+    if fout:
+        print(f"  |  ❌ mislukt: {', '.join(fout)}", end="")
+    print()
 
-    print(f"\n✅ Klaar! {success}/{len(tex_files)} bestanden omgezet.")
-    if failed:
-        print(f"❌ Mislukt: {', '.join(failed)}")
-        print("   Controleer of deze .tex bestanden geldig zijn.")
+
+def main():
+    # Welke jaren verwerken?
+    if len(sys.argv) > 1:
+        jaar_arg = sys.argv[1]
+        if jaar_arg not in JAREN:
+            print(f"❌  Onbekend jaar '{jaar_arg}'. Kies uit: {', '.join(JAREN)}")
+            return
+        te_doen = [jaar_arg]
+    else:
+        te_doen = JAREN
+
+    print(f"▶  LaTeX → PDF converter")
+    print(f"   Jaren: {', '.join(te_doen)}\n")
+
+    for jaar in te_doen:
+        converteer_jaar(jaar)
+
+    shutil.rmtree(TEMP, ignore_errors=True)
+    print("\nKlaar!")
+
 
 if __name__ == "__main__":
-    convert_all()
+    main()

@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Yaman Haj Ahmad \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3A nr. 40.8\\
+
+\medskip
+
+\normalsize
+
+$f(x) = e^{\left(\tfrac{\sqrt[3]{\sin\left(x\right)}}{x}\right)}$\\\\
+
+$f'(x) = e^{\left(\tfrac{\sqrt[3]{\sin\left(x\right)}}{x}\right)} .\frac{d}{dx}\left(\dfrac{\sqrt[3]{\sin\left(x\right)}}{x}\right)$\\\\
+
+$= e^{\left(\tfrac{\sqrt[3]{\sin\left(x\right)}}{x}\right)} . \dfrac{\left(\left(x.\frac{d}{dx}\left(\sqrt[3]{\sin\left(x\right)}\right)\right)-\sqrt[3]{\sin\left(x\right)}\right)}{x^2}$\\\\
+
+$= e^{\left(\tfrac{\sqrt[3]{\sin\left(x\right)}}{x}\right)} . \dfrac{\dfrac{x\cos\left(x\right)}{3\sqrt[3]{\sin^2\left(x\right)}} - \sqrt[3]{\sin\left(x\right)}}{x^2}$\\\\
+
+$= e^{\left(\tfrac{\sqrt[3]{\sin\left(x\right)}}{x}\right)} . \dfrac{\dfrac{x\cos\left(x\right)-3\sin\left(x\right)}{3\sqrt[3]{\sin^2\left(x\right)}}}{x^2}$\\\\
+
+$= \dfrac{e^{\left(\tfrac{\sqrt[3]{\sin\left(x\right)}}{x}\right)}\left(x\cos\left(x\right)-3\sin\left(x\right)\right)}{3x^2\sqrt[3]{\sin^2\left(x\right)}}$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

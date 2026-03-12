@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Lucas Van Asbroeck \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 2.3\\
+
+\medskip
+
+\normalsize
+
+Bereken $a$, $b$ en $c$ zodanig dat $a(z^2+1)+b(z+i)+c(iz^2+2z) = 3i$:\\
+
+$\Rightarrow az^2 + a + bz + bi + ciz^2 + 2cz = 3i$\\
+
+$\Rightarrow z^2(a+ci) + z(b+2c) + (a + bi) = 3i$\\
+
+$\Rightarrow \left\{ \begin{array}{l}
+	a + ci = 0\\
+	b + 2c = 0\\
+	a + bi = 3i
+\end{array} \right. $\\
+
+$\Rightarrow \left\{ \begin{array}{l}
+	a = -ci \\
+	b = -2c \\
+	a = 3i - bi
+\end{array} \right. $\\
+
+$\Rightarrow \left\{ \begin{array}{l}
+	a = -ci \\
+	b = -2c \\
+	-ci = 3i - (-2c)i = 3i + 2ci
+\end{array} \right. $\\
+
+$\Rightarrow \left\{ \begin{array}{l}
+	a = -ci \\
+	b = -2c \\
+	-3ci = 3i \Rightarrow c = 3i/(-3i) = -1
+\end{array} \right. $\\
+
+$\Rightarrow \left\{ \begin{array}{l}
+	a = -ci = i \\
+	b = -2c = 2 \\
+	c = -1
+\end{array} \right. $\\
+
+$$\Rightarrow \boxed{ a=i, b=2, c=-1}$$
+
+\begin{thebibliography}{999}
+	%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

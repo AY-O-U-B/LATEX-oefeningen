@@ -1,0 +1,82 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3F nr. 2.4\\
+
+\medskip
+
+\normalsize
+
+$f(x)=\dfrac{x^3+3x^2-4x+2}{x^2-4}$\\
+
+\begin{enumerate}
+\item Euclidische deling:\\
+
+\begin{tabular}{rcccc|l}
+     & $x^3$ & $+3x^2$ & $-4x$ & $+2$ & $x^2-4$ \\ \cline{6-6}
+$\_$ & $x^3$ &         & $-4x$ &      & $x+3$ \\ \cline{2-4}
+     &       & $3x^2$  &       & $+2$ &      \\
+     & $\_$  & $3x^2$  &       & $-12$ &      \\ \cline{3-5}
+     &       &         &       & $14$ &      \\
+\end{tabular}\\
+
+$\Rightarrow f(x)=x+3+\dfrac{14}{x^2-4}$\\
+
+
+\item SA:\\
+
+$gr(A) = gr(B) + 1$\\
+
+$\Rightarrow y=x+3$\\
+
+
+\item VA:\\
+
+$x^2-4=0$\\
+
+$x=\pm 2$\\
+
+$ \left \{
+\begin{array}{l}
+\lim\limits_{x \rightarrow -2^{-}} f(x)=+\infty \\
+
+\lim\limits_{x \rightarrow -2^{+}} f(x)=-\infty
+\end{array}
+\right .$\\
+
+$ \left \{
+\begin{array}{l}
+\lim\limits_{x \rightarrow 2^{-}} f(x)=-\infty \\
+
+\lim\limits_{x \rightarrow 2^{+}} f(x)=+\infty
+\end{array}
+\right .$\\
+
+$\Rightarrow x=-2 \text{ en } x=2$\\
+
+
+\item Tekenonderzoek:\\
+
+\begin{tabular}{c|ccccc}
+$x$ &  & $-2$ &  & $2$ & \\ \hline
+
+$f(x)-(x+3)$ & $+$ & $|$ & $-$ & $|$ & $+$ \\
+
+ & \parbox{2.25cm}{\centering $x \rightarrow -\infty$\\$\Rightarrow f$ boven SA} &  &  &  & \parbox{2.25cm}{\centering $x \rightarrow +\infty$\\$\Rightarrow f$ boven SA} \\
+
+\end{tabular}\\
+
+\end{enumerate}
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

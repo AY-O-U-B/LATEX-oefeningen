@@ -1,0 +1,87 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\asa}{\Leftrightarrow}
+\newcommand{\adR}{\Rightarrow}
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(}
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[}
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{}
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.}
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1E nr. 4\\
+
+\medskip
+
+\normalsize
+
+$Z(-2i) \adR$ rest $3 + 1$\\
+
+$Z(i) \adR$ rest $2i$\\
+
+Doordat je de veelterm $Z$ deelt door een veelterm van de 1ste graad en een rest v/d 0-de graad krijgt, kun je afleiden dat de veelterm $Z$ van de 1ste graad is.\\
+
+$\adR$ Als je de veelterm $Z$ deelt door een veelterm v/d 2de graad is de rest een veelterm v/d 1ste graad.\\
+
+$Z(z) = D(z) \cdot Q(z) + R(z)$, met $Z$ de veelterm, $D$ de deler, $Q$ het quotiënt en $R$ de rest allemaal in functie van $z$.\\
+
+$Z(z) = D(z) \cdot Q(z) + R(z) \asa Z(z) - D(z) \cdot Q(z) = R(z)$\\
+
+$Z(-2i) = R(-2i)$ en $Z(i) = R(i)$\\
+
+$R(z) = az + b$\\
+
+$R(-2i) = -2ia + b = 3 + i$\\
+
+$R(i) = ia + b = 2i$\\
+
+$\left \{
+\begin{array}{l} % dit is de l van links en niet het cijfer 1 !
+-2ia + b = 3 + i \\
+ia + b = 2i
+\end{array}
+\right .
+\asa \left \{
+\begin{array}{l}
+-2ia + 2i - ia = 3+i \\
+b = 2i - ia
+\end{array}
+\right .
+\asa \left \{
+\begin{array}{l}
+-3ia = 3-i \\
+b = 2i - ia
+\end{array}
+\right . \\
+\asa \left \{
+\begin{array}{l}
+a = \dfrac{3-i}{-3i} \\
+b = 2i - ia
+\end{array}
+\right .
+\asa \left \{
+\begin{array}{l}
+a = \dfrac{3 + i}{3} = \dfrac{1}{3} + i \\
+b = 2i - i \Lh\dfrac{1}{3} + i\Rh = 2i + 1 - \dfrac{1}{3}i = 1 + \dfrac{5}{3}i
+\end{array}
+\right .$\\
+
+$\adR R(z) = \Lh\dfrac{1}{3} + i\Rh z +1 + \dfrac{5}{3}i$\\
+
+$Z(z) = (z + 2i)(z - i) \cdot Q(z) + \Lh\dfrac{1}{3} + i\Rh z +1 + \dfrac{5}{3}i$
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

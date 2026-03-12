@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}  
+
+\newcommand{\degree}{^{\circ}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Bgcos}{\operatorname{Bgcos}}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Sadia Nazary  \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3C nr. 7\\
+
+\medskip
+
+\normalsize
+
+Totale lengte prikkeldraad: $2400$ m \\
+
+Noem $x$ de lengte van de zijde evenwijdig met het kanaal. \\
+
+Voor de twee overige zijden blijft dan $2400-x$ meter draad over. \\
+
+Elke van deze zijden heeft dus lengte $\dfrac{2400-x}{2}$. \\
+
+De oppervlakte van de rechthoek is \\
+
+$A(x)=x\cdot\dfrac{2400-x}{2}$ \\
+
+$=1200x-\dfrac{x^2}{2}$ \\
+
+$A'(x)=1200-x$ \\
+
+$A'(x)=0$ \\
+
+$1200-x=0$ \\
+
+$x=1200$ \\
+
+\medskip
+
+\begin{center}
+\begin{tabular}{c|ccc}
+$x$ & $0$ & $1200$ & $2400$ \\
+\hline
+$A'(x)$ & $+$ & $0$ & $-$ \\
+$A(x)$ & $\nearrow$ & & $\searrow$
+\end{tabular}
+\end{center}
+
+$A''(x)=-1<0$ \\
+
+zijde langs het kanaal $=1200$ m \\
+
+andere twee zijden $=\dfrac{2400-1200}{2}=600$ m \\
+
+\fbox{maximale oppervlakte $=720000\ \text{m}^2$}
+
+\end{document}

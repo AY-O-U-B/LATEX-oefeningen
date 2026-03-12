@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3A nr. 37.11\\
+
+\medskip
+
+\normalsize
+
+$f(x) = \ln \sqrt{\dfrac{1 + \cos(ax)}{1 - \cos(ax)}}$\\
+
+$ = \dfrac{1}{2} \ln \left( \dfrac{1 + \cos(ax)}{1 - \cos(ax)} \right)$\\
+
+$ = \dfrac{1}{2} \left[ \ln(1 + \cos(ax)) - \ln(1 - \cos(ax)) \right]$\\
+
+$f'(x) = \dfrac{1}{2} \left[ \dfrac{-a\sin(ax)}{1 + \cos(ax)} - \dfrac{a\sin(ax)}{1 - \cos(ax)} \right]$\\
+
+$ = \dfrac{-a\sin(ax)}{2} \left[ \dfrac{1}{1 + \cos(ax)} + \dfrac{1}{1 - \cos(ax)} \right]$\\
+
+$ = \dfrac{-a\sin(ax)}{2} \left[ \dfrac{2}{1 - \cos^2(ax)} \right]$\\
+
+$= \dfrac{-a\sin(ax)}{2} \cdot \dfrac{2}{\sin^2(ax)} = -a\sin(ax) \cdot \dfrac{1}{\sin^2(ax)} = -\dfrac{a}{\sin(ax)}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

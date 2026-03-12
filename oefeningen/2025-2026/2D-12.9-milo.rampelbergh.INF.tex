@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\fx}{\sqrt{2x^2+3}-x}
+\newcommand{\llim}[1]{ \lim\limits_{x \rightarrow #1} }
+
+\begin{document}
+
+\noindent \large Auteur: Milo Rampelbergh \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 12.9\\
+
+\medskip
+
+\normalsize
+
+%Begin oefening
+
+$ f(x) = \fx $ \\
+
+$ \llim{\infty} (\fx) $ \\
+
+$ \llim{-\infty} (\fx) = +\infty $ \\
+
+$ \llim{+\infty} (\fx) = (+\infty) - (+\infty) $ \\
+
+$ = \llim{+\infty} \dfrac{2x^2+3-x^2}{ \sqrt{2x^2+3}+x } $ \\
+
+$ = \llim{+\infty} \dfrac{ x^2+3 }{ \sqrt{2x^2+3}+x } $ \\
+
+$ = \llim{+\infty} \dfrac{ x\left(x+\dfrac{3}{x}\right) }{     x\left(\sqrt{ 2+\dfrac{3}{x^2} }+1\right)   } $ \\
+
+$ = \llim{+\infty} \dfrac{+\infty}{\sqrt{2}+1} = +\infty $ \\
+
+Dus $ \llim{\infty} \fx = +\infty $ \\
+
+%Einde oefening
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

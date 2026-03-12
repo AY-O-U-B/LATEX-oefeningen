@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1C nr. 31.11\\
+
+\medskip
+\normalsize
+
+Gegeven is de macht $z = (-\sqrt{3} - i)^{20}$. \\
+
+\textbf{Basisgetal omzetten naar poolvorm:} \\
+
+Stel $w = -\sqrt{3} - i$. \\
+
+$r = \sqrt{(-\sqrt{3})^2 + (-1)^2} = \sqrt{3 + 1} = 2$ \\
+
+$\tan \alpha = \dfrac{-1}{-\sqrt{3}} = \dfrac{\sqrt{3}}{3}$ \\
+
+$\alpha = \pi + \dfrac{\pi}{6} = \dfrac{7\pi}{6}$ \\
+
+$w = 2 \operatorname{cis} \dfrac{7\pi}{6}$ \\
+ 
+\textbf{Macht verheffen met De Moivre:} \\
+
+$z = w^{20} = \left(2 \operatorname{cis} \dfrac{7\pi}{6}\right)^{20}$ \\
+
+$z = 2^{20} \operatorname{cis} \left(20 \cdot \dfrac{7\pi}{6}\right)$ \\
+
+$z = 2^{20} \operatorname{cis} \left(\dfrac{140\pi}{6}\right) = 2^{20} \operatorname{cis} \left(\dfrac{70\pi}{3}\right)$ \\
+
+\textbf{Argument vereenvoudigen en uitwerken:} \\
+
+$\dfrac{70\pi}{3} - \dfrac{66\pi}{3} = \dfrac{4\pi}{3}$ \\
+
+$z = 2^{20} \operatorname{cis} \dfrac{4\pi}{3}$ \\
+
+$z = 2^{20} \left(\cos \dfrac{4\pi}{3} + i \sin \dfrac{4\pi}{3}\right)$ \\
+
+$z = 2^{20} \left(-\dfrac{1}{2} - i\dfrac{\sqrt{3}}{2}\right)$ \\
+
+$z = -2^{19} - 2^{19}i\sqrt{3}$ \\
+
+\textbf{Antwoord:} $z = -2^{19} - 2^{19}i\sqrt{3}$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

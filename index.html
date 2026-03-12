@@ -15,7 +15,6 @@
       min-height: 100vh;
     }
 
-    /* Dot grid background */
     body::before {
       content: '';
       position: fixed;
@@ -27,19 +26,19 @@
       z-index: 0;
     }
 
-    /* ── NAV ── */
+    /* ── NAVBAR ── */
     .navbar {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(245, 243, 238, 0.92);
+      background: rgba(245, 243, 238, 0.93);
       backdrop-filter: blur(10px);
       border-bottom: 2px solid #111;
       padding: 0 32px;
       display: flex;
       align-items: center;
-      gap: 0;
       height: 56px;
+      gap: 0;
     }
 
     .nav-logo {
@@ -51,7 +50,6 @@
       white-space: nowrap;
       cursor: pointer;
     }
-
     .nav-logo em { font-style: italic; color: #555; }
 
     .nav-tabs { display: flex; gap: 4px; }
@@ -63,38 +61,30 @@
       font-weight: 600;
       cursor: pointer;
       border: 2px solid transparent;
-      transition: all 0.15s;
       background: transparent;
       color: #888;
       font-family: 'DM Sans', sans-serif;
+      transition: all 0.15s;
     }
-
     .nav-tab:hover { color: #111; background: #ebe9e4; }
-
-    .nav-tab.active {
-      background: #111;
-      color: #f5f3ee;
-      border-color: #111;
-    }
+    .nav-tab.active { background: #111; color: #f5f3ee; border-color: #111; }
 
     /* ── PAGES ── */
     .page { display: none; position: relative; z-index: 1; }
-    .page.active { display: block; }
+    .page.active { display: block; animation: fadeUp 0.3s ease both; }
 
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(14px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    .page.active { animation: fadeUp 0.3s ease both; }
-
     .container {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 56px 24px 80px;
+      padding: 52px 24px 80px;
     }
 
-    /* ── SHARED TYPOGRAPHY ── */
+    /* ── TYPOGRAPHY ── */
     .section-label {
       font-size: 0.68rem;
       font-weight: 600;
@@ -106,16 +96,38 @@
 
     .page-title {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.4rem, 7vw, 3.8rem);
+      font-size: clamp(2.2rem, 7vw, 3.6rem);
       font-weight: 900;
       letter-spacing: -2px;
       line-height: 0.95;
       margin-bottom: 10px;
     }
 
-    .page-meta { color: #999; font-size: 0.85rem; margin-bottom: 40px; }
+    .page-meta { color: #999; font-size: 0.85rem; margin-bottom: 28px; }
 
-    /* ── HOME PAGE ── */
+    /* ── YEAR TABS (binnen een pagina) ── */
+    .year-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .year-tab {
+      padding: 7px 20px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      font-family: 'DM Mono', monospace;
+      cursor: pointer;
+      border: 2px solid #ccc;
+      background: #fff;
+      color: #888;
+      transition: all 0.15s;
+    }
+    .year-tab:hover { border-color: #111; color: #111; }
+    .year-tab.active { background: #111; color: #f5f3ee; border-color: #111; }
+
+    /* ── HOME ── */
     #page-home .container {
       display: flex;
       flex-direction: column;
@@ -139,8 +151,6 @@
       padding: 4px 14px;
       margin-bottom: 28px;
     }
-
-    #page-home .page-title { margin-bottom: 14px; }
 
     .home-subtitle {
       color: #777;
@@ -167,21 +177,9 @@
       transition: transform 0.15s, box-shadow 0.15s;
       box-shadow: 4px 4px 0 #111;
     }
-
-    .home-card:hover {
-      transform: translate(-2px, -2px);
-      box-shadow: 6px 6px 0 #111;
-    }
-
-    .home-card:active {
-      transform: translate(1px, 1px);
-      box-shadow: 2px 2px 0 #111;
-    }
-
-    .home-card.dark {
-      background: #111;
-      color: #f5f3ee;
-    }
+    .home-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 #111; }
+    .home-card:active { transform: translate(1px, 1px); box-shadow: 2px 2px 0 #111; }
+    .home-card.dark { background: #111; color: #f5f3ee; }
 
     .home-card-icon { font-size: 1.8rem; margin-bottom: 14px; display: block; }
 
@@ -201,14 +199,10 @@
       font-size: 1.1rem;
       transition: transform 0.15s;
     }
-
     .home-card:hover .home-card-arrow { transform: translate(3px, -3px); }
 
-    /* ── SLEUTEL PAGE ── */
-    .search-wrap {
-      position: relative;
-      margin-bottom: 20px;
-    }
+    /* ── SLEUTEL ── */
+    .search-wrap { position: relative; margin-bottom: 16px; }
 
     .search-wrap input {
       width: 100%;
@@ -222,7 +216,6 @@
       outline: none;
       transition: border-color 0.15s;
     }
-
     .search-wrap input:focus { border-color: #111; }
     .search-wrap input::placeholder { color: #ccc; }
 
@@ -248,11 +241,7 @@
       gap: 12px;
       transition: border-color 0.15s, box-shadow 0.15s;
     }
-
-    .file-row:hover {
-      border-color: #111;
-      box-shadow: 3px 3px 0 #111;
-    }
+    .file-row:hover { border-color: #111; box-shadow: 3px 3px 0 #111; }
 
     .file-info { display: flex; align-items: center; gap: 14px; min-width: 0; }
 
@@ -274,7 +263,6 @@
     }
 
     .file-meta { font-size: 0.74rem; color: #aaa; margin-top: 2px; }
-
     .file-actions { display: flex; gap: 8px; flex-shrink: 0; }
 
     .btn {
@@ -296,7 +284,6 @@
       color: #111;
       box-shadow: 2px 2px 0 #111;
     }
-
     .btn-latex:hover {
       background: #111;
       color: #fff;
@@ -309,7 +296,6 @@
       color: #f5f3ee;
       box-shadow: 2px 2px 0 #555;
     }
-
     .btn-pdf:hover {
       background: #333;
       box-shadow: none;
@@ -332,12 +318,12 @@
       font-size: 0.82rem;
     }
 
-    /* ── LEADERBOARD PAGE ── */
+    /* ── LEADERBOARD ── */
     .podium {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 12px;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       align-items: end;
     }
 
@@ -349,7 +335,6 @@
       text-align: center;
       box-shadow: 3px 3px 0 #111;
     }
-
     .podium-card.first {
       background: #111;
       color: #f5f3ee;
@@ -383,11 +368,7 @@
       gap: 14px;
       transition: border-color 0.15s, box-shadow 0.15s;
     }
-
-    .lb-row:hover {
-      border-color: #111;
-      box-shadow: 3px 3px 0 #111;
-    }
+    .lb-row:hover { border-color: #111; box-shadow: 3px 3px 0 #111; }
 
     .lb-rank {
       font-family: 'DM Mono', monospace;
@@ -418,77 +399,66 @@
       color: #666;
     }
 
-    .lb-bar {
-      height: 4px;
-      background: #eee;
-      border-radius: 2px;
-      margin-top: 5px;
-      overflow: hidden;
-    }
-
-    .lb-bar-fill {
-      height: 100%;
-      background: #111;
-      border-radius: 2px;
-    }
+    .lb-bar { height: 4px; background: #eee; border-radius: 2px; margin-top: 5px; overflow: hidden; }
+    .lb-bar-fill { height: 100%; background: #111; border-radius: 2px; }
 
     footer {
       text-align: center;
-      margin-top: 80px;
+      margin-top: 60px;
       font-size: 0.72rem;
       color: #bbb;
       letter-spacing: 1px;
       position: relative;
       z-index: 1;
+      padding-bottom: 32px;
     }
   </style>
 </head>
 <body>
 
-<!-- NAVIGATIE -->
 <nav class="navbar">
   <div class="nav-logo" onclick="showPage('home')">LaTeX <em>Sleutel</em></div>
   <div class="nav-tabs">
-    <button class="nav-tab" onclick="showPage('home')">Home</button>
+    <button class="nav-tab active" onclick="showPage('home')">Home</button>
     <button class="nav-tab" onclick="showPage('sleutel')">Sleutel</button>
     <button class="nav-tab" onclick="showPage('leaderboard')">Leaderboard</button>
   </div>
 </nav>
 
-<!-- ══════════════════════════════════════
-     HOME
-══════════════════════════════════════ -->
+<!-- ══════════════════════ HOME ══════════════════════ -->
 <div class="page active" id="page-home">
   <div class="container">
     <span class="home-tag">UA · Calculus · 1BA</span>
     <h1 class="page-title">LaTeX<br><em style="font-style:italic;color:#555">Sleutel</em></h1>
     <p class="home-subtitle">Oefeningen bekijken, PDF's downloaden<br>en de voortgang van de groep bijhouden.</p>
-
     <div class="home-cards">
       <div class="home-card dark" onclick="showPage('sleutel')">
         <span class="home-card-icon">📄</span>
         <div class="home-card-title">Sleutel</div>
-        <div class="home-card-desc">Bekijk alle oefeningen. Download LaTeX of PDF.</div>
+        <div class="home-card-desc">Bekijk alle oefeningen per academisch jaar.</div>
         <span class="home-card-arrow">↗</span>
       </div>
       <div class="home-card" onclick="showPage('leaderboard')">
         <span class="home-card-icon">🏆</span>
         <div class="home-card-title">Leaderboard</div>
-        <div class="home-card-desc">Zie wie de meeste oefeningen heeft ingediend.</div>
+        <div class="home-card-desc">Scores per jaar en per student.</div>
         <span class="home-card-arrow">↗</span>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════
-     SLEUTEL
-══════════════════════════════════════ -->
+<!-- ══════════════════════ SLEUTEL ══════════════════════ -->
 <div class="page" id="page-sleutel">
   <div class="container">
     <div class="section-label">// Oefeningen</div>
     <h1 class="page-title">Sleutel</h1>
     <p class="page-meta" id="sleutel-meta"></p>
+
+    <div class="year-tabs">
+      <button class="year-tab active" onclick="switchSleutelYear('2025-2026')">2025–2026</button>
+      <button class="year-tab" onclick="switchSleutelYear('2024-2025')">2024–2025</button>
+    </div>
 
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
@@ -499,14 +469,17 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════════
-     LEADERBOARD
-══════════════════════════════════════ -->
+<!-- ══════════════════════ LEADERBOARD ══════════════════════ -->
 <div class="page" id="page-leaderboard">
   <div class="container">
     <div class="section-label">// Ranglijst</div>
     <h1 class="page-title">Leaderboard</h1>
     <p class="page-meta" id="lb-meta"></p>
+
+    <div class="year-tabs">
+      <button class="year-tab active" onclick="switchLbYear('2025-2026')">2025–2026</button>
+      <button class="year-tab" onclick="switchLbYear('2024-2025')">2024–2025</button>
+    </div>
 
     <div class="podium" id="podium"></div>
     <div class="lb-list" id="lb-list"></div>
@@ -518,49 +491,85 @@
 <script>
   // ================================================================
   //  ✏️  OEFENINGEN — voeg hier nieuwe bestanden toe
-  //  Kopieer een regel en pas naam, student, datum en hasPdf aan
+  //
+  //  Bestanden staan op:
+  //    oefeningen/2025-2026/bestandsnaam.tex
+  //    oefeningen/2024-2025/bestandsnaam.tex
+  //
+  //  PDF's staan op:
+  //    pdfs/2025-2026/bestandsnaam.pdf
+  //    pdfs/2024-2025/bestandsnaam.pdf
   // ================================================================
-  const FILES = [
-    { name: "oef01_alice",  student: "Alice V.",  date: "2024-03-01", hasPdf: true  },
-    { name: "oef02_bob",    student: "Bob M.",    date: "2024-03-02", hasPdf: true  },
-    { name: "oef03_chiara", student: "Chiara D.", date: "2024-03-03", hasPdf: false },
-    { name: "oef04_alice",  student: "Alice V.",  date: "2024-03-04", hasPdf: true  },
-    { name: "oef05_daan",   student: "Daan P.",   date: "2024-03-05", hasPdf: true  },
-  ];
+  const FILES = {
+    "2025-2026": [
+      { name: "oef01_alice",  student: "Alice V.",  date: "2025-09-10", hasPdf: true  },
+      { name: "oef02_bob",    student: "Bob M.",    date: "2025-09-11", hasPdf: true  },
+      { name: "oef03_chiara", student: "Chiara D.", date: "2025-09-12", hasPdf: false },
+    ],
+    "2024-2025": [
+      { name: "oef01_alice",  student: "Alice V.",  date: "2024-09-10", hasPdf: true  },
+      { name: "oef02_bob",    student: "Bob M.",    date: "2024-09-11", hasPdf: true  },
+      { name: "oef03_daan",   student: "Daan P.",   date: "2024-09-15", hasPdf: true  },
+      { name: "oef04_eva",    student: "Eva L.",    date: "2024-09-18", hasPdf: false },
+    ],
+  };
 
   // ================================================================
   //  ✏️  LEADERBOARD — pas de getallen aan als scores veranderen
   // ================================================================
-  const LEADERBOARD = [
-    { name: "Alice V.",  count: 12 },
-    { name: "Bob M.",    count: 9  },
-    { name: "Chiara D.", count: 7  },
-    { name: "Daan P.",   count: 5  },
-    { name: "Eva L.",    count: 3  },
-  ];
+  const LEADERBOARD = {
+    "2025-2026": [
+      { name: "Alice V.",  count: 5 },
+      { name: "Bob M.",    count: 4 },
+      { name: "Chiara D.", count: 2 },
+    ],
+    "2024-2025": [
+      { name: "Alice V.",  count: 12 },
+      { name: "Bob M.",    count: 9  },
+      { name: "Daan P.",   count: 7  },
+      { name: "Eva L.",    count: 3  },
+    ],
+  };
   // ================================================================
 
 
-  // ── Tab navigatie ──────────────────────────────────────────────
+  // ── State ──────────────────────────────────────────────────────
+  let currentSleutelYear = "2025-2026";
+  let currentLbYear      = "2025-2026";
+
+  // ── Navigatie ──────────────────────────────────────────────────
   function showPage(name) {
     document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
     document.querySelectorAll(".nav-tab").forEach(t => t.classList.remove("active"));
     document.getElementById("page-" + name).classList.add("active");
-
-    const tabs = document.querySelectorAll(".nav-tab");
     const order = ["home", "sleutel", "leaderboard"];
-    tabs[order.indexOf(name)]?.classList.add("active");
-
+    document.querySelectorAll(".nav-tab")[order.indexOf(name)]?.classList.add("active");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // ── Sleutel ────────────────────────────────────────────────────
+  // ── Sleutel jaar wisselen ──────────────────────────────────────
+  function switchSleutelYear(year) {
+    currentSleutelYear = year;
+    document.querySelectorAll("#page-sleutel .year-tab").forEach(t => {
+      t.classList.toggle("active", t.textContent.replace("–", "-") === year);
+    });
+    document.getElementById("search").value = "";
+    renderFiles(FILES[year]);
+  }
+
+  function filterFiles() {
+    const q = document.getElementById("search").value.toLowerCase();
+    renderFiles(FILES[currentSleutelYear].filter(f =>
+      f.name.toLowerCase().includes(q) || f.student.toLowerCase().includes(q)
+    ));
+  }
+
   function renderFiles(list) {
+    const year = currentSleutelYear;
     document.getElementById("sleutel-meta").textContent =
-      `${list.length} oefening${list.length !== 1 ? "en" : ""} beschikbaar`;
+      `${year} · ${list.length} oefening${list.length !== 1 ? "en" : ""}`;
 
     const el = document.getElementById("file-list");
-
     if (!list.length) {
       el.innerHTML = `<div class="empty">Geen oefeningen gevonden.</div>`;
       return;
@@ -568,9 +577,8 @@
 
     el.innerHTML = list.map((f, i) => {
       const pdfBtn = f.hasPdf
-        ? `<a class="btn btn-pdf" href="pdfs/${f.name}.pdf" target="_blank">PDF ↗</a>`
+        ? `<a class="btn btn-pdf" href="pdfs/${year}/${f.name}.pdf" target="_blank">PDF ↗</a>`
         : `<span class="btn btn-pdf missing">PDF –</span>`;
-
       return `
         <div class="file-row">
           <div class="file-info">
@@ -581,33 +589,34 @@
             </div>
           </div>
           <div class="file-actions">
-            <a class="btn btn-latex" href="oefeningen/${f.name}.tex" download>LaTeX ↓</a>
+            <a class="btn btn-latex" href="oefeningen/${year}/${f.name}.tex" download>LaTeX ↓</a>
             ${pdfBtn}
           </div>
         </div>`;
     }).join("");
   }
 
-  function filterFiles() {
-    const q = document.getElementById("search").value.toLowerCase();
-    renderFiles(FILES.filter(f =>
-      f.name.toLowerCase().includes(q) || f.student.toLowerCase().includes(q)
-    ));
+  // ── Leaderboard jaar wisselen ──────────────────────────────────
+  function switchLbYear(year) {
+    currentLbYear = year;
+    document.querySelectorAll("#page-leaderboard .year-tab").forEach(t => {
+      t.classList.toggle("active", t.textContent.replace("–", "-") === year);
+    });
+    renderLeaderboard(LEADERBOARD[year], year);
   }
 
-  // ── Leaderboard ────────────────────────────────────────────────
   const AVATARBG = ["#fde68a","#bbf7d0","#bfdbfe","#fecaca","#e9d5ff","#fed7aa"];
   const MEDALS   = ["🥇","🥈","🥉"];
 
-  function renderLeaderboard() {
-    const sorted = [...LEADERBOARD].sort((a, b) => b.count - a.count);
-    const max = sorted[0]?.count || 1;
+  function renderLeaderboard(data, year) {
+    const sorted = [...data].sort((a, b) => b.count - a.count);
+    const max    = sorted[0]?.count || 1;
 
     document.getElementById("lb-meta").textContent =
-      `${sorted.length} deelnemers · hoogste score: ${max}`;
+      `${year} · ${sorted.length} deelnemers`;
 
-    // Podium: volgorde 2e - 1e - 3e
-    const top3 = sorted.slice(0, 3);
+    // Podium: volgorde 2e – 1e – 3e
+    const top3        = sorted.slice(0, 3);
     const podiumOrder = [top3[1], top3[0], top3[2]].filter(Boolean);
 
     document.getElementById("podium").innerHTML = podiumOrder.map(p => {
@@ -620,9 +629,8 @@
         </div>`;
     }).join("");
 
-    // Lijst 4e en verder
-    const rest = sorted.slice(3);
-    document.getElementById("lb-list").innerHTML = rest.map((p, i) => {
+    // Lijst 4e+
+    document.getElementById("lb-list").innerHTML = sorted.slice(3).map((p, i) => {
       const rank = i + 4;
       const pct  = Math.round((p.count / max) * 100);
       const bg   = AVATARBG[i % AVATARBG.length];
@@ -641,8 +649,8 @@
   }
 
   // Init
-  renderFiles(FILES);
-  renderLeaderboard();
+  renderFiles(FILES[currentSleutelYear]);
+  renderLeaderboard(LEADERBOARD[currentLbYear], currentLbYear);
 </script>
 </body>
 </html>

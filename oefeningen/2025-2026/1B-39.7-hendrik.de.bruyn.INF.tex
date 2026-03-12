@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+
+\noindent \large Auteur: Hendrik De Bruyn \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1B nr. 39.7\\
+
+\medskip
+
+\normalsize
+
+\textbf{Opgave: } Bereken in $\mathbb{C}$ de vierdemachtswortel van $-81$. \\
+
+\textbf{Oplossing: } \\
+
+$-81 = (x+yi)^2$ \\
+
+Stel $(a+bi) = (x+yi)^2$. Dan $(a+bi)^2 = (x+yi)^4 = -81$ \\
+
+$-81 = (a+bi)^2 \Rightarrow a+bi = \pm 9i$ \\
+
+Als $\pmb{a+bi = 9i} = (x+yi)^2 = x^2 - y^2 + 2xyi $ \\
+
+$\Rightarrow \left\{\begin{array}{l}
+		x^2 - y^2 = 0 \\
+		2xy = 9
+	\end{array}\right. \Rightarrow \left\{\begin{array}{l}
+		x^2 - y^2 = 0 \\
+		x^2(-y^2) = -\dfrac{9^2}{4}
+	\end{array}\right.$ \\
+
+$\lambda^2 - \dfrac{9^2}{4} = 0 \Rightarrow \lambda_{1,2} = \dfrac{\pm \sqrt{9^2}}{2} = \left<\begin{array}{ll}
+		+: & \dfrac{9}{2} = x^2 \Rightarrow x = \pm \dfrac{3}{\sqrt{2}} = \pm \dfrac{3\sqrt{2}}{2}   \\
+		-: & -\dfrac{9}{2} = -y^2 \Rightarrow y = \pm \dfrac{3}{\sqrt{2}} = \pm \dfrac{3\sqrt{2}}{2} \\
+	\end{array}\right.$ \\
+
+Dan is $x+yi \in \left\{ \dfrac{3\sqrt{2}}{2}+\dfrac{3\sqrt{2}}{2}i, -\dfrac{3\sqrt{2}}{2}-\dfrac{3\sqrt{2}}{2}i \right\}$ \\
+
+Als $\pmb{a+bi = -9i} = (x+yi)^2 = x^2 - y^2 + 2xyi $ \\
+
+$\Rightarrow \left\{\begin{array}{l}
+		x^2 - y^2 = 0 \\
+		2xy = -9
+	\end{array}\right. \Rightarrow \left\{\begin{array}{l}
+		x^2 - y^2 = 0 \\
+		x^2(-y^2) = -\dfrac{9^2}{4}
+	\end{array}\right.$ \\
+
+$\lambda^2 - \dfrac{9^2}{4} = 0 \Rightarrow \lambda_{1,2} = \dfrac{\pm \sqrt{9^2}}{2} = \left<\begin{array}{ll}
+		+: & \dfrac{9}{2} = x^2 \Rightarrow x = \pm \dfrac{3}{\sqrt{2}} = \pm \dfrac{3\sqrt{2}}{2}   \\
+		-: & -\dfrac{9}{2} = -y^2 \Rightarrow y = \pm \dfrac{3}{\sqrt{2}} = \pm \dfrac{3\sqrt{2}}{2} \\
+	\end{array}\right.$ \\
+
+Dan is $x+yi \in \left\{ \dfrac{3\sqrt{2}}{2}-\dfrac{3\sqrt{2}}{2}i, -\dfrac{3\sqrt{2}}{2}i-\dfrac{3\sqrt{2}}{2} \right\}$ \\
+
+\textbf{Oplossing: } $x+yi \in \left\{ \dfrac{3\sqrt{2}}{2}+\dfrac{3\sqrt{2}}{2}i, -\dfrac{3\sqrt{2}}{2}-\dfrac{3\sqrt{2}}{2}i, \dfrac{3\sqrt{2}}{2}-\dfrac{3\sqrt{2}}{2}i, -\dfrac{3\sqrt{2}}{2}i-\dfrac{3\sqrt{2}}{2} \right\}$
+
+\begin{thebibliography}{999}
+	%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

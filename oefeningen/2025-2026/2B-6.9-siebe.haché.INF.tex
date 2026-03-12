@@ -1,0 +1,75 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2B nr. 6.9\\
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\medskip
+\normalsize
+
+Toon aan dat $5\Bgtan\dfrac{1}{7} + 2\Bgtan\dfrac{3}{79} = \dfrac{\pi}{4}$. \\
+
+$\alpha = \Bgtan\dfrac{1}{7}$ en $\beta = \Bgtan\dfrac{3}{79} \Rightarrow \tan \alpha = \dfrac{1}{7}$ en $\tan \beta = \dfrac{3}{79}$ \\
+
+We gebruiken: $\tan 2\theta = \dfrac{2\tan\theta}{1-\tan^2\theta}$ \\
+
+$\tan 2\alpha = \dfrac{2\cdot\dfrac{1}{7}}{1-\left(\dfrac{1}{7}\right)^2}$\\
+
+$= \dfrac{\dfrac{2}{7}}{1-\dfrac{1}{49}} = \dfrac{\dfrac{2}{7}}{\dfrac{48}{49}}$ \\
+
+$= \dfrac{7}{24}$ \\
+
+Somformule geeft: \\
+
+$\tan 3\alpha = \tan(2\alpha + \alpha)$ \\
+
+$= \dfrac{\dfrac{7}{24} + \dfrac{1}{7}}{1 - \dfrac{7}{24}\cdot\dfrac{1}{7}}$ \\
+
+$= \dfrac{\dfrac{73}{168}}{\dfrac{23}{24}} = \dfrac{73}{161}$\\
+
+$\tan 4\alpha = \tan(3\alpha + \alpha)$ \\
+
+$= \dfrac{\dfrac{73}{161} + \dfrac{1}{7}}{1 - \dfrac{73}{161}\cdot\dfrac{1}{7}}$ \\
+
+$= \dfrac{\dfrac{672}{1127}}{\dfrac{1054}{1127}} = \dfrac{336}{527}$ \\
+
+$\tan 5\alpha = \tan(4\alpha + \alpha)$ \\
+
+$= \dfrac{\dfrac{336}{527} + \dfrac{1}{7}}{1 - \dfrac{336}{527}\cdot\dfrac{1}{7}}$ \\
+
+$= \dfrac{2879}{3353}$\\
+
+Nu $\tan 2\beta$: \\
+
+$\tan 2\beta = \dfrac{2\cdot\dfrac{3}{79}}{1-\left(\dfrac{3}{79}\right)^2}$ \\
+
+$= \dfrac{\dfrac{6}{79}}{1-\dfrac{9}{6241}} = \dfrac{\dfrac{6}{79}}{\dfrac{6232}{6241}}$ \\
+
+$= \dfrac{237}{3116}$\\
+
+We bepalen $\tan(5\alpha + 2\beta)$. \\
+
+Somformule geeft: \\
+
+$\tan(5\alpha + 2\beta) = \dfrac{\dfrac{2879}{3353} + \dfrac{237}{3116}}{1 - \dfrac{2879}{3353}\cdot\dfrac{237}{3116}}$ \\
+
+$= \dfrac{\dfrac{9765625}{10447948}}{\dfrac{9765625}{10447948}}$\\
+
+$= 1$ \\
+
+Dus \\
+
+$5\alpha + 2\beta = \Bgtan(1) = \dfrac{\pi}{4}$ \\
+
+$\Rightarrow 5\Bgtan\dfrac{1}{7} + 2\Bgtan\dfrac{3}{79} = \dfrac{\pi}{4}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

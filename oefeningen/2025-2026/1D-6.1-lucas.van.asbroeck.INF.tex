@@ -1,0 +1,33 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Lucas Van Asbroeck \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 6.1\\
+
+\medskip
+
+\normalsize
+
+Maak de volgende Euclidische deling: $(2z^3-3z^2+4z-5) \div (z^2 - 6z + 7)$\\
+
+\begin{tabular}{c c c c c | c c c}
+	& $+2z^3$ & $-3z^2$ & $+4z$ & $-5$ & 		$z^2$ & $-6z$ & $+7$ \\\hline
+$-$ & $+2z^3$ & $-12z^2$& $+14z$&&				$2z$ & $+9$ \\\cline{2-4}
+	&         & $+9z^2$ & $-10z$& $-5$ &		\\
+$-$ &         & $+9z^2$ & $-54z$& $+63$&		 \\\cline{3-5} 
+	&         &         & $+44z$& $-68$&		 &
+\end{tabular}
+\bigskip
+
+$$\Rightarrow \boxed{Q(z) = 2z+9 \text{ en } R(z) = 44z - 68}$$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

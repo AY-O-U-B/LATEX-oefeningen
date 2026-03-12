@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2A nr. 8.2\\
+
+\medskip
+
+\normalsize
+
+$$f: D \subseteq \mathbb{R} \to \mathbb{R} : x \mapsto x - \lfloor x \rfloor$$\\
+
+$x - \lfloor x \rfloor$ is discontinu  $\forall x \in \mathbb{Z}$, maar wij gaan voor het punt 2 bewijzen.\\
+
+\textbf{Bewijs:}\\
+
+Stel $\varepsilon = \dfrac{1}{2}$\\
+
+Pak $\delta>0$\\
+
+Stel $x \in \left]2 - \delta, 2\right[ $ en $ x > \dfrac{3}{2} \Rightarrow x \in \left]1, 2\right[, $ dus $ \lfloor x \rfloor = 1 $ en bijgevolg $ f(x) = x - 1. $ Verder is $ f(2) = 0 $\\
+
+Dan $\left|x-2\right|<\delta$ en $\left| f(x)-f(2) \right| = |(x-1)-0|=x-1>\dfrac{1}{2}=\varepsilon $\\
+
+$ \Rightarrow f$ is discontinu in $2$. \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+
+\end{thebibliography}
+\end{document} 

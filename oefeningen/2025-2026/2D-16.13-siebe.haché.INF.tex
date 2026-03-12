@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{cancel}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 2D nr. 16.13 \\
+
+\medskip
+\normalsize
+
+Bereken de volgende limiet: \\
+
+$ \lim\limits_{x \rightarrow \pi} \dfrac{\tan 3x \left(\sin 2x - 3 \cos \dfrac{x}{2}\right)}{2 \cos^2 x + \cos x - 1} $\\
+
+$ \Rightarrow x = \pi + h,\; h \rightarrow 0 $\\
+
+$ = \lim\limits_{h \rightarrow 0} \dfrac{\tan(3\pi + 3h)\left(\sin(2\pi + 2h) - 3 \cos\left(\dfrac{\pi}{2} + \dfrac{h}{2}\right)\right)}{2 \cos^2(\pi + h) + \cos(\pi + h) - 1}$\\
+
+$ = \lim\limits_{h \rightarrow 0} \dfrac{\tan(3h)\left(\sin(2h) - 3 \left(-\sin \dfrac{h}{2}\right)\right)}{2 (-\cos h)^2 + (-\cos h) - 1} $\\
+
+$ = \lim\limits_{h \rightarrow 0} \dfrac{\tan(3h)\left(\sin(2h) + 3 \sin \dfrac{h}{2}\right)}{2 \cos^2 h - \cos h - 1} $\\
+
+$ = \lim\limits_{h \rightarrow 0} \dfrac{\dfrac{\tan(3h)}{3h}\cdot 3h \left(\dfrac{\sin(2h)}{2h}\cdot 2h + 3 \dfrac{\sin \dfrac{h}{2}}{\dfrac{h}{2}}\cdot \dfrac{h}{2}\right)}{2 \cos^2 h - \cos h - 1} $\\
+
+$ = \lim\limits_{h \rightarrow 0} \dfrac{1 \cdot 3h \left(1 \cdot 2h + 3 \cdot 1 \cdot \dfrac{h}{2}\right)}{2 (1 - h^2) - \left(1 - \dfrac{h^2}{2}\right) - 1} $\\
+
+$ = \lim\limits_{h \rightarrow 0} \dfrac{3h \left(2h + \dfrac{3h}{2}\right)}{-2h^2 + \dfrac{h^2}{2}}$\\
+
+$ = \lim\limits_{h \rightarrow 0} \dfrac{3h \cdot \dfrac{7h}{2}}{-\dfrac{3h^2}{2}}$\\
+
+$ = \lim\limits_{h \rightarrow 0} \dfrac{\dfrac{21 h^2}{2}}{-\dfrac{3 h^2}{2}} $\\
+
+$ = -7 $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

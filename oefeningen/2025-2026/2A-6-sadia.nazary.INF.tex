@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+  
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2A nr. 6\\
+
+\medskip
+
+\normalsize
+
+$f:\R\rightarrow\R:x\mapsto x^2 - 1 \quad (a=2)$ \\
+
+$\varepsilon > 0$ \\
+
+$\delta = \min\left(1,\dfrac{\varepsilon}{5}\right)$ \\
+
+$|x-2| < \delta$ \\
+
+$|f(x)-f(2)| = |x^2 - 1 - (4 - 1)|$ \\
+
+$= |x^2 - 4|$ \\
+
+$= |x-2||x+2|$ \\
+
+$|x-2| < 1 \Rightarrow 1 < x < 3$ \\
+
+$|x+2| \le 5$ \\
+
+$|f(x)-f(2)| < \delta \cdot 5$ \\
+
+$\le \dfrac{\varepsilon}{5} \cdot 5$ \\
+
+$= \varepsilon$ \\
+
+$f$ continu in $a=2$ \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

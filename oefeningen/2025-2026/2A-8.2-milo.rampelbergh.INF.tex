@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+
+\pgfplotsset{soldot/.style={color=blue,only marks,mark=*}} \pgfplotsset{holdot/.style={color=blue,fill=white,only marks,mark=*}}
+
+\newcommand{\E}{\varepsilon}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\noindent \large Auteur: Milo Rampelbergh \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2A nr. 8.2\\
+
+\medskip
+
+\normalsize
+
+%Begin oefening
+
+\begin{tikzpicture}[>=stealth]
+    \begin{axis}[
+        xmin=-2.5,xmax=2.5,
+        ymin=-0.5,ymax=1.5,
+        axis x line=middle,
+        axis y line=middle,
+        xlabel={$x$},
+        ylabel={$y$}
+        ]
+\addplot[no marks, domain=-2:-1,blue]{x+2};
+\addplot[no marks, domain=-1:0,blue]{x+1};
+\addplot[no marks, domain=0:1,blue]{x};
+\addplot[no marks, domain=1:2,blue]{x-1};
+\addplot[holdot] coordinates{(-1,1)(0,1)(1,1)(2,1)};
+\addplot[soldot] coordinates{(-2,0)(-1,0)(0,0)(1,0)};
+    \end{axis}
+\end{tikzpicture} \\
+
+*) $f$ is discontinu als $ x \in \mathbb{N} $ \\
+
+Stelling: $f$ is discontinu in $ x = 0 $ \\
+
+Bewijs: \\
+
+We bewijzen dat $ \exists \E > 0, \forall \delta > 0: |x| < \delta $ en $ |f(x)| \geq \delta $ \\
+
+Kies $ \E < \dfrac{1}{2} $ willekeurig $ (0 < \E < \dfrac{1}{2}) $ \\
+
+$ \forall \delta > 0 $ zitten in $     \left] 0-\delta, 0+\delta \right[    $ waarden van $x$ in $       \left[\dfrac{-1}{2}, 0 \right[      $ \\
+
+dan geldt $ f(x) = |x+1| = x+1 \geq \dfrac{1}{2} \geq \E $ \\
+
+%Einde oefening
+
+\begin{thebibliography}{999}
+\bibitem{a} Moriambar, https://tex.stackexchange.com/questions/362765/plot-function-with-discontinuity
+\end{thebibliography}
+\end{document} 

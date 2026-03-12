@@ -1,0 +1,110 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1B nr. 44.2\\
+
+\medskip
+
+\normalsize
+
+Opgave: Los de volgende vergelijking op in $\mathbb{C}$\\
+
+$ z^4 - 5(1 + 2i)z^2 + 24 - 10i = 0 $\\
+
+Stel $g = z^2$. Dit geeft:\\
+
+$g^2 - (5 + 10i)g + (24 - 10i) = 0$\\
+
+
+\begin{eqnarray*}
+D &=& (-(5 + 10i))^2 - 4 \cdot 1 \cdot (24 - 10i)\\
+    &=& -171 + 140i
+\end{eqnarray*}
+
+
+Resolvente vergelijking opstellen:\\
+
+
+$\left\{ \begin{array}{l} 
+
+	x^2 - y^2 = -171\\ 
+	
+	2xy = 140 \Rightarrow x^2(-y^2) = -(70)^2 = -4900 
+	
+\end{array} \right. $
+
+
+$\lambda^2 + 171\lambda - 4900 = 0 $
+
+\begin{eqnarray*}
+D_{\lambda} &=&171^2 - 4(1)(-4900) \\
+		&=& 29241 + 19600 = 48841
+\end{eqnarray*}
+
+
+$\lambda_1 = \dfrac{-171 +  \sqrt{48841}}{2}$ en $\lambda_2 = \dfrac{-171 -  \sqrt{48841}}{2}\Rightarrow \lambda_1 = 25$
+ en $\lambda_2 = -196 $ \\
+
+Dus $x^2 = 25$ en $y^2 = 196$  \\
+
+ $xy = 70 > 0$, dus:\\
+
+$g_1 = \dfrac{5 + 10i + (5 + 14i)}{2}\  en \   g_2 = \dfrac{5 + 10i - (5 + 14i)}{2}$\\
+
+$\Rightarrow g_1 = 5 + 12i$ en $g_2 = -2i$\\
+
+
+
+Voor $g_1 = 5 + 12i$\\
+
+Resolvente:\\
+
+$\left\{ \begin{array}{l} 
+	x^2 - y^2 = 5\\ 
+	2xy = 12 
+\end{array} \right. $\\
+
+
+$\lambda^2 - 5\lambda - 36 = 0$\\
+
+$D_{\lambda} = 25 + 144 = 169 \Rightarrow \sqrt{169} = 13$\\
+
+$\lambda_{1} = \dfrac{5 + 13}{2}$ en $\lambda_{2} = \dfrac{5 - 13}{2}$\\
+
+$\Rightarrow \lambda_1 = 9$ en  $\lambda_2 = -4$\\
+
+$x^2 = 9$ en $y^2 = 4$.\\
+
+Omdat $xy = 6 > 0$: ${z_1 = 3 + 2i}$ en ${z_2 = -3 - 2i}$\\
+
+
+Voor $g_2 = -2i$\\
+
+Resolvente:\\
+
+$\left\{ \begin{array}{l} 
+	x^2 - y^2 = 0\\
+	2xy = -2
+\end{array} \right. $\\
+
+$\lambda^2 - 0\lambda - 1 = 0$ \\
+
+$x^2 = 1 \Rightarrow x = \pm 1$ en $y^2 = 1 \Rightarrow y = \pm 1$\\
+
+Omdat $xy = -1 < 0$: $z_3 = 1 - i$ en $z_4 = -1 + i$\\
+
+
+oplossingen: $\{3 + 2i, -3 - 2i, 1 - i, -1 + i\}$.
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

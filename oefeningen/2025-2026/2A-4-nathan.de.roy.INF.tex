@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Nathan De Roy \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2A nr. 1.9\\
+
+\medskip
+
+\normalsize
+
+\textbf{Bewijs: $f$ is continu in $a$:}\\
+
+met: $f \colon \mathbb{R} \rightarrow \mathbb{R} \colon x \rightarrowtail mx + q$\\
+
+en: $a \in \mathbb{R}$\\
+
+\noindent
+
+Definitie continuiteit:\\
+
+$\forall \varepsilon > 0, \exists \delta > 0 \colon | x-a | < \delta \Rightarrow | f(x) - f(a) | < \varepsilon$\\
+
+Er zijn twee scenarios voor het bepalen van continuiteit in $a$ van $f$:\\
+
+\textbf{Scenario 1: } $m = 0$\\
+
+Dat maakt $f$ een constante functie en dus continu. Bewijs acht ik triviaal.\\
+
+\textbf{Scenario 2: } $m \neq 0$\\
+
+$| f(x) - f(a)  | =  | mx - ma  | =  | m  | \cdot | x- a  | < \varepsilon \Rightarrow  | x - a  | < \dfrac{\varepsilon}{ | m  |}$\\
+
+Stel: $\delta = \dfrac{\varepsilon}{ | m  |} \Rightarrow \delta > 0$\\
+
+Voorwaarden van definitie continuiteit voldaan voor $a$.\\
+
+\textbf{Conclusie: } $f$ is continu in $a$.\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+
+\end{thebibliography}
+\end{document} 

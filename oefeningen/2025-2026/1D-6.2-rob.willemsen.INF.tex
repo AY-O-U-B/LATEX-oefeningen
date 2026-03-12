@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 6.2\\
+
+\medskip
+
+\normalsize
+
+$(z^4 + 3z^2 - 1) \div (z^2 - iz)$ \\
+
+\begin{tabular}{lllll|lll}
+$z^4$ & & $+3z^2$ & & $-1$ & $z^2$ & $-iz$ & \\ \cline{6-8}
+$-z^4$ & & $+iz^3$ & & & $z^2$ & $+iz$ & $+2$ \\ \cline{1-3}
+& & $iz^3$ & $+3z^2$ & $-1$ & & & \\
+& & $-iz^3$ & $+z^2$ & & & & \\ \cline{3-4}
+& & & $2z^2$ & $-1$ & & & \\
+& & & $-2z^2$ & $+2iz$ & & & \\ \cline{4-5}
+& & & & $2iz-1$ & & & 
+\end{tabular}
+
+\textbf{Quotiënt:} $Q(z) = z^2 + iz + 2$ \\
+
+\textbf{Rest:} $R(z) = 2iz - 1$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,30 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 14.20\\
+
+\medskip
+
+\normalsize
+
+$ \lim\limits_{x\rightarrow 0} \dfrac{\cos ax-\cos bx}{\cos cx-\cos dx}$ met $(a,b,c,d \in \mathbb{R}_0)$\\
+
+$= \lim\limits_{x\rightarrow 0} \dfrac{-2\sin\dfrac{(a+b)x}{2}\sin\dfrac{(a-b)x}{2}}{-2\sin\dfrac{(c+d)x}{2}\sin\dfrac{(c-d)x}{2}}$\\
+
+$= \lim\limits_{x\rightarrow 0} \dfrac{\dfrac{(a+b)x}{2}\cdot\dfrac{(a-b)x}{2}}{\dfrac{(c+d)x}{2}\cdot\dfrac{(c-d)x}{2}}\cdot\dfrac{\dfrac{\tfrac{\sin(a+b)x}{2}}{\tfrac{(a+b)x}{2}}\dfrac{\tfrac{\sin(a-b)x}{2}}{\tfrac{(a-b)x}{2}}}{\dfrac{\tfrac{\sin(c+d)x}{2}}{\tfrac{(c+d)x}{2}}\dfrac{\tfrac{\sin(c-d)x}{2}}{\tfrac{(c-d)x}{2}}}$\\
+
+$= \dfrac{(a+b)(a-b)}{(c+d)(c-d)}$\\
+
+$= \dfrac{a^2-b^2}{c^2-d^2}$ met $c^2 \ne d^2$\\ 
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

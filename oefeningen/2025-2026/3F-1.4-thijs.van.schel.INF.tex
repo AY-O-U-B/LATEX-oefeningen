@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3F nr. 1.4\\
+
+\medskip
+
+\normalsize
+
+$f(x)=\dfrac{x^3+5x^2-7}{x^2+4x-5}$\\
+
+VA: $D=4^2-4\cdot (-5) = 36 \Rightarrow x_{1,2} = \dfrac{-4 \pm6}{2}$\\
+
+$x_1 = 1$, $x_2 = -5$\\
+
+$\lim\limits_{x\rightarrow 1+} f(x) = -\infty$, $\lim\limits_{x\rightarrow 1-} f(x) = +\infty$\\
+
+$\lim\limits_{x\rightarrow -5+} f(x) = +\infty$, $\lim\limits_{x\rightarrow -5-} f(x) = -\infty$\\
+
+HA: $\lim\limits_{x\rightarrow \infty} \dfrac{x^3}{x^2} = \infty$
+
+SA: $a = \lim\limits_{x\rightarrow \infty} \dfrac{f(x)}{x} = \lim\limits_{x\rightarrow \infty} \dfrac{x^3+5x^2-7}{x^3+4x^2-5x}= \lim\limits_{x\rightarrow \infty} \dfrac{x^3}{x^3} = 1$\\
+
+$b = \lim\limits_{x\rightarrow \infty}\left(\dfrac{x^3+5x^2-7}{x^2+4x-5}  - x\right)$\\
+
+$\lim\limits_{x\rightarrow \infty}\dfrac{x^2+5x-7}{x^2+4x-5} = \lim\limits_{x\rightarrow \infty} \dfrac{x^2}{x^2} = 1$\\
+
+$\Rightarrow ax+b = x+1$\\
+
+Ligging: $\lim\limits_{x\rightarrow \infty} \left(\dfrac{x^3+5x^2-7}{x^2+4x-5} - (x+1)\right)$\\
+
+$\lim\limits_{x\rightarrow \infty}\left(\dfrac{x-2}{x^2+4x-5}\right) = \lim\limits_{x\rightarrow \infty} \dfrac{1}{x} = 0$ 
+
+\begin{tabular}{c|ccccccccc}
+$x$ &  & $-5$ & & $1$ & & $2$ &\\ \hline
+$f(x)-A$ & $-$  & $|$ & $+$ & $|$ & $-$ & $0$ & $+$\\ 
+& &  &  &  &  & & \\
+\end{tabular}\\
+
+$x \to +\infty \Rightarrow f(x)$ boven $A$\\
+
+$x \to -\infty \Rightarrow f(x)$ onder $A$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

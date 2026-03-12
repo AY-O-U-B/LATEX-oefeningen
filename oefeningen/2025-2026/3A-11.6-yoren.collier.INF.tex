@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto} 
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3A nr. 11.6\\
+
+\medskip
+
+\normalsize
+
+$f(x) = \dfrac{-x^n+3x^{n-1}-5x^{n-2} +7x^{n-3}}{x^{n-2}} = \dfrac{-x^{\vervang{2}{n}}}{\schrap{x^{n-2}}} +3 \dfrac{x^{\schrap{n-1}}}{\schrap{x^{n-2}}} -5 \dfrac{\schrap{x^{n-2}}}{\schrap{x^{n-2}}} +7 \dfrac{x^{\vervang{1}{n-3}}}{\schrap{x^{n-2}}} = -x^2 +3x -5 +7x^{-1}$\\
+
+$\dfrac{df}{dx}(x) = -Dx^2 +3Dx -D5 +7Dx^{-1} = -2x +3 -7x^{-2} = -2x +3- \dfrac{7}{x^2}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
