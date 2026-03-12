@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaTeX Oefeningen — UA Informatica</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0f14;
+      --surface: #161922;
+      --border: #252a35;
+      --accent: #5b7cfa;
+      --accent2: #f97316;
+      --text: #e8eaf0;
+      --muted: #6b7280;
+      --green: #22c55e;
+      --gold: #f59e0b;
+      --silver: #94a3b8;
+      --bronze: #cd7c3a;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Syne', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Background grid */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(91,124,250,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(91,124,250,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo-area h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .logo-area h1 span {
+      color: var(--accent);
+    }
+
+    .logo-area p {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 6px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .stats-bar {
+      display: flex;
+      gap: 24px;
+    }
+
+    .stat {
+      text-align: right;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 2px;
+    }
+
+    /* Section titles */
+    .section-title {
+      font-size: 0.7rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    /* Leaderboard */
+    .leaderboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 56px;
+    }
+
+    .player-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .player-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .player-card.rank-1 { border-color: var(--gold); }
+    .player-card.rank-2 { border-color: var(--silver); }
+    .player-card.rank-3 { border-color: var(--bronze); }
+
+    .player-card::before {
+      content: attr(data-rank);
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      font-size: 0.7rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--muted);
+    }
+
+    .player-card.rank-1::before { color: var(--gold); }
+    .player-card.rank-2::before { color: var(--silver); }
+    .player-card.rank-3::before { color: var(--bronze); }
+
+    .player-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .player-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .player-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .player-count span {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .progress-bar {
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 0.6s ease;
+    }
+
+    /* Search */
+    .search-wrap {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .search-wrap input {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px 12px 44px;
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-wrap input:focus { border-color: var(--accent); }
+    .search-wrap input::placeholder { color: var(--muted); }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    /* File list */
+    .file-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .file-row {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      transition: border-color 0.2s, background 0.2s;
+      animation: slideIn 0.3s ease both;
+    }
+
+    .file-row:hover {
+      border-color: var(--accent);
+      background: #1a1f2e;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .file-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .file-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .file-name {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .file-meta {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 2px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .file-actions {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      padding: 7px 16px;
+      border-radius: 7px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+      transition: all 0.15s;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-latex {
+      background: transparent;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-latex:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-pdf {
+      background: var(--accent2);
+      color: white;
+    }
+
+    .btn-pdf:hover {
+      background: #ea6c0a;
+      transform: scale(1.03);
+    }
+
+    .btn-pdf.missing {
+      background: var(--border);
+      color: var(--muted);
+      cursor: not-allowed;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 48px;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <h1>LaTeX<span>Hub</span></h1>
+        <p>// UA Informatica — Oefeningen</p>
+      </div>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-value" id="total-files">0</div>
+          <div class="stat-label">oefeningen</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="total-students">0</div>
+          <div class="stat-label">studenten</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- LEADERBOARD -->
+  <section>
+    <div class="section-title">// Leaderboard</div>
+    <div class="leaderboard-grid" id="leaderboard"></div>
+  </section>
+
+  <!-- OEFENINGEN -->
+  <section>
+    <div class="section-title">// Oefeningen</div>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search" placeholder="Zoek op naam, student..." oninput="filterFiles()">
+    </div>
+    <div class="file-list" id="file-list"></div>
+  </section>
+
+  <footer>
+    Universiteit Antwerpen · Informatica · LaTeXHub
+  </footer>
+</div>
+
+<script>
+  // ============================================================
+  //  DATA — pas dit aan als je bestanden toevoegt of verwijdert
+  // ============================================================
+
+  const LEADERBOARD = [
+    { name: "Alice V.",   count: 12 },
+    { name: "Bob M.",     count: 9  },
+    { name: "Chiara D.",  count: 7  },
+    { name: "Daan P.",    count: 5  },
+    { name: "Eva L.",     count: 3  },
+  ];
+
+  // Voeg hier je bestanden toe:
+  // { name: "bestandsnaam", student: "naam student", date: "datum", hasPdf: true/false }
+  const FILES = [
+    { name: "oef01_alice",   student: "Alice V.",  date: "2024-03-01", hasPdf: true  },
+    { name: "oef02_bob",     student: "Bob M.",    date: "2024-03-02", hasPdf: true  },
+    { name: "oef03_chiara",  student: "Chiara D.", date: "2024-03-03", hasPdf: false },
+    { name: "oef04_alice",   student: "Alice V.",  date: "2024-03-04", hasPdf: true  },
+    { name: "oef05_daan",    student: "Daan P.",   date: "2024-03-05", hasPdf: true  },
+  ];
+
+  // ============================================================
+  //  LEADERBOARD RENDEREN
+  // ============================================================
+
+  const COLORS = [
+    "#5b7cfa","#f97316","#22c55e","#ec4899","#a855f7",
+    "#14b8a6","#eab308","#ef4444","#06b6d4","#84cc16"
+  ];
+
+  const RANK_LABELS = { 1: "#1 🥇", 2: "#2 🥈", 3: "#3 🥉" };
+
+  function renderLeaderboard() {
+    const sorted = [...LEADERBOARD].sort((a, b) => b.count - a.count);
+    const max = sorted[0]?.count || 1;
+    const el = document.getElementById("leaderboard");
+
+    el.innerHTML = sorted.map((p, i) => {
+      const rank = i + 1;
+      const color = COLORS[i % COLORS.length];
+      const initials = p.name.split(" ").map(w => w[0]).join("").slice(0,2);
+      const pct = Math.round((p.count / max) * 100);
+      const rankClass = rank <= 3 ? `rank-${rank}` : "";
+      const rankLabel = RANK_LABELS[rank] || `#${rank}`;
+
+      return `
+        <div class="player-card ${rankClass}" data-rank="${rankLabel}">
+          <div class="player-avatar" style="background:${color}22;color:${color}">${initials}</div>
+          <div class="player-name">${p.name}</div>
+          <div class="player-count"><span>${p.count}</span> oefeningen</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width:${pct}%;background:${color}"></div>
+          </div>
+        </div>`;
+    }).join("");
+
+    document.getElementById("total-students").textContent = LEADERBOARD.length;
+  }
+
+  // ============================================================
+  //  BESTANDENLIJST RENDEREN
+  // ============================================================
+
+  function renderFiles(list) {
+    const el = document.getElementById("file-list");
+    if (!list.length) {
+      el.innerHTML = `<div class="no-results">Geen bestanden gevonden.</div>`;
+      return;
+    }
+
+    el.innerHTML = list.map((f, i) => {
+      const pdfBtn = f.hasPdf
+        ? `<a class="btn btn-pdf" href="pdfs/${f.name}.pdf" target="_blank">PDF ↗</a>`
+        : `<span class="btn btn-pdf missing">PDF –</span>`;
+
+      return `
+        <div class="file-row" style="animation-delay:${i * 0.04}s">
+          <div class="file-info">
+            <span class="file-icon">📄</span>
+            <div>
+              <div class="file-name">${f.name}.tex</div>
+              <div class="file-meta">${f.student} · ${f.date}</div>
+            </div>
+          </div>
+          <div class="file-actions">
+            <a class="btn btn-latex" href="oefeningen/${f.name}.tex" download>LaTeX ↓</a>
+            ${pdfBtn}
+          </div>
+        </div>`;
+    }).join("");
+
+    document.getElementById("total-files").textContent = FILES.length;
+  }
+
+  function filterFiles() {
+    const q = document.getElementById("search").value.toLowerCase();
+    const filtered = FILES.filter(f =>
+      f.name.toLowerCase().includes(q) ||
+      f.student.toLowerCase().includes(q)
+    );
+    renderFiles(filtered);
+  }
+
+  // Init
+  renderLeaderboard();
+  renderFiles(FILES);
+</script>
+
+</body>
+</html>
