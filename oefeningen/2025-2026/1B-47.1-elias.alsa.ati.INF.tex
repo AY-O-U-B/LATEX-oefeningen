@@ -1,0 +1,121 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Elias Alsa Ati                         \\
+\noindent \large Studierichting: Informatica                    \\
+\noindent \large Oefeningenreeks 1B nr. 47.1                    \\
+
+\medskip
+
+\normalsize
+
+$$5z + 4 \bar{z} + 5 z^{-1} = 10$$
+
+We vereenvoudigen door $z^{-1}$ weg te werken:  \\
+
+$5z^2 + 4 \bar{z} z + 5 = 10z$                  \\
+
+Berekening van $z^2$:                           \\
+
+$\begin{array}{l}
+    z^2 = (a + bi)^2                            \\
+    z^2 = (a + bi)(a + bi)                      \\
+    z^2 = a^2 - b^2 + 2abi                      \\
+\end{array}$                                    \\
+
+Berekening van $z\bar{z}$                       \\
+
+$\begin{array}{l}
+    z\bar{z} = (a + bi)(a - bi)                 \\
+    z\bar{z} = a^2 - (bi)^2                     \\
+    z\bar{z} = a^2 + b^2 = |z|^2                \\
+\end{array}$                                    \\
+
+Verder eenvoudiging:                            \\
+
+$\begin{array}{l}
+    5\left(a^2 - b^2 + 2abi\right) + 4 \left(a^2 + b^2\right) + 5   = 10 \left(a + bi\right)    \\
+    5 a^2 - 5 b^2 + 10 abi + 4 a^2 + 4 b^2 + 5                      = 10 a + 10 bi              \\
+    9 a^2 - b^2 + 10 abi + 5                                        = 10 a + 10 bi              \\
+\end{array}$                        \\
+
+\textbf{Berekening van stelsel: }   \\
+
+$$\left\{
+    \begin{array}{l}
+        9a^2 - b^2 + 5 = 10a        \\
+        10ab = 10b
+    \end{array}
+\right .$$
+
+$\begin{array}{l}
+    \Rightarrow
+    \left\{
+        \begin{array}{l}
+            9a^2 - b^2 + 5 = 10a    \\
+            ab = b
+        \end{array}
+    \right .
+    \Rightarrow
+    \left\{
+        \begin{array}{l}
+            9a^2 - b^2 + 5 = 10a    \\
+            ab - b = 0
+        \end{array}
+    \right .
+    \Rightarrow
+    \left\{
+        \begin{array}{l}
+            9a^2 - b^2 + 5 = 10a    \\
+            b(a-1) = 0
+        \end{array}
+    \right .
+\end{array}$            \\
+
+\textbf{2 scenario's:}  \\
+
+\textbf{Stel $b = 0$:}  \\
+
+$\begin{array}{l}
+    9a^2 - b^2 + 5 = 10a    \\
+    9a^2 - 0^2 + 5 = 10a    \\
+    9a^2 + 5       = 10a    \\
+    9a^2 - 10a + 5 = 0      \\
+\end{array}$                \\
+
+We berekenen de discriminant $\alpha = 9$, $\beta = 10$, $\gamma = 5$:      \\
+
+$\begin{array}{l}
+    \Delta = \beta^2 - 4 \alpha \gamma  \\
+    \Delta = 10^2 - 4 \cdot 9 \cdot 5   \\
+    \Delta = 100 - 180                  \\
+    \Delta = -80                        \\
+\end{array}$  \\
+
+De discriminant is negatief dus zal de uitkomst in $\mathbb{C}$ zitten, maar $a \in \mathbb{R}$.    \\
+
+Dus situatie $b = 0$ klopt niet.                                                                    \\
+
+\textbf{Stel $a = 1$:}  \\
+
+$\begin{array}{l}
+    9a^2 - b^2 + 5        = 10a         \\
+    9 \cdot 1^2 - b^2 + 5 = 10 \cdot 1  \\
+    14 - b^2              = 10          \\
+    - b^2                 = - 4         \\
+    b                     = \sqrt{4}    \\
+    b                     = \pm 2       \\
+\end{array}$                            \\
+
+Dus de oplossing voor $z$ zijn:         \\
+
+\begin{eqnarray*}
+    1 + 2i, 1 - 2i
+\end{eqnarray*}
+
+\end{document} 

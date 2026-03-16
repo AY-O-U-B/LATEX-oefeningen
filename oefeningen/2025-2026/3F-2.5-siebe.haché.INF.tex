@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 3F nr. 2.5 \\
+
+\medskip
+\normalsize
+Bepaal de schuine asymptoot door een euclidische deling te maken: \\
+
+$ f(x) = \dfrac{\sqrt{2}x^2 + \sqrt{3}x - \sqrt{2}}{x + \sqrt{6}} $\\
+
+\bigskip
+
+\begin{tabular}{rccc|l}
+     & $+\sqrt{2}x^2$  & $+\sqrt{3}x$  & $-\sqrt{2}$  & $x + \sqrt{6}$ \\ \cline{5-5} 
+$\_$ & $+\sqrt{2}x^2$  & $+2\sqrt{3}x$  &              & $\sqrt{2}x - \sqrt{3}$ \\ \cline{2-3}
+     &         & $-\sqrt{3}x$   & $-\sqrt{2}$        &\\
+     & $\_$     & $-\sqrt{3}x$  & $-3\sqrt{2}$       &\\ \cline{3-4}
+     &          &       &  $+2\sqrt{2}$             & \\ 
+\end{tabular}\\
+
+Schuine asymptoot:\\
+
+$A: y = \sqrt{2}x - \sqrt{3}$ \\
+
+$ f(x) - A = \dfrac{2\sqrt{2}}{x + \sqrt{6}}$\\
+
+\begin{tabular}{c|ccc}
+$x$		   &     & $-\sqrt{6}$ &     \\ \hline
+$f(x) - A$ & $-$ & $|$         & $+$ \\
+\end{tabular}\\
+
+Dus:\\
+
+$ \lim\limits_{x \rightarrow +\infty} (f(x) - A) = 0^+ \Rightarrow x \rightarrow +\infty : f > A $ \\ 
+
+$ \lim\limits_{x \rightarrow -\infty} (f(x) - A) = 0^- \Rightarrow x \rightarrow -\infty : f < A $ \\ 
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

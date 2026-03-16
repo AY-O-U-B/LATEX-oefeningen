@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 15.4\\
+
+\medskip
+
+\normalsize
+
+$\dint x^2e^{4x}dx$\\
+
+$\left\{
+\begin{array}{l}
+u = x^2 \\
+dv = e^{4x}dx
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = 2xdx \\
+v = \dfrac{e^{4x}}{4}
+\end{array}
+\right.$\\
+
+$=\dfrac{x^2e^{4x}}{4}-\dfrac{2}{4}\dint xe^{4x}dx$\\
+
+$\left\{
+\begin{array}{l}
+u = x \\
+dv = e^{4x}dx
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = dx \\
+v = \dfrac{e^{4x}}{4}
+\end{array}
+\right.$\\
+
+$=\dfrac{x^2e^{4x}}{4}-\dfrac{1}{2}\left[\dfrac{xe^{4x}}{4}-\dfrac{1}{4}\dint e^{4x}dx\right]$\\
+
+$=\dfrac{x^2e^{4x}}{4}-\dfrac{xe^{4x}}{8}+\dfrac{1}{8}\left(\dfrac{1}{4}e^{4x}\right)+C$\\
+
+$=\dfrac{x^2e^{4x}}{4}-\dfrac{xe^{4x}}{8}+\dfrac{e^{4x}}{32}+C$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

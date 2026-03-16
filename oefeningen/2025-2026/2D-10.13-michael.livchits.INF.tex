@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 10.13\\
+
+\medskip
+
+\normalsize
+
+$ \lim\limits_{x\rightarrow \tfrac{1}{4}} \dfrac{4x^3+13x^2+\dfrac{5}{2}x-\dfrac{3}{2}}{3x^2+\dfrac{13}{4}x-1}$\\
+
+$ = \dfrac{0}{0}$\\
+
+Teller ontbinden in factoren\\
+
+\begin{tabular}{c|cccccc}
+	& $4$ 	& $13$ 	& $\dfrac{5}{2}$ 	& $\dfrac{-3}{2}$ 	 	\\
+$\dfrac{1}{4}$ 	& 		& $1$ 	& $\dfrac{14}{4}$ 	& $\dfrac{3}{2}$  			\\ \hline
+	& $4$   & $14$ 	& $\dfrac{24}{4}$ 	& \multicolumn{1}{|c}{$0$}  \\
+\end{tabular}\\
+
+Teller = $(4x-1)\left(x^2+\dfrac{14}{4}+\dfrac{3}{2}\right)$\\
+
+Noemer ontbinden in factoren\\
+
+\begin{tabular}{c|ccccc}
+	& $3$ 	& $\dfrac{13}{4}$ 	& $-1$ 	\\
+$\dfrac{1}{4}$ 	& 		& $\dfrac{3}{4}$ 	& $1$ \\ \hline
+	& $3$   & $4$ 	& \multicolumn{1}{|c}{$0$}  \\
+\end{tabular}\\
+
+Noemer = $(4x-1)\left(\dfrac{3}{4}x+1\right)$\\
+
+$ \lim\limits_{x\rightarrow \tfrac{1}{4}} \dfrac{(4x-1)\left(x^2+\dfrac{14}{4}+\dfrac{3}{2}\right)}{(4x-1)\left(\dfrac{3}{4}x+1\right)}$\\
+
+$= \dfrac{39}{19}$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

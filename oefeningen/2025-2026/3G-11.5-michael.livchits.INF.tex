@@ -1,0 +1,76 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3G nr. 11.5\\
+
+\medskip
+
+\normalsize
+
+$f(x) = x+ \dfrac{25}{x}$\\
+
+VA: $x = 0$\\
+
+$\lim\limits_{x\rightarrow 0+} f(x) = \dfrac{25}{0^+} = +\infty$\\
+
+$\lim\limits_{x\rightarrow 0-} f(x) = \dfrac{25}{0^-} = -\infty$\\
+
+SA:\\
+
+$\lim\limits_{x\rightarrow \infty} \dfrac{f(x)}{x} = \lim\limits_{x\rightarrow \infty} \dfrac{x^2+25}{x^2} = \lim\limits_{x\rightarrow \infty} 1+ \dfrac{25}{x^2} = 1$\\
+
+$\lim\limits_{x\rightarrow \infty} (f(x) - x) = \lim\limits_{x\rightarrow \infty} \left(\dfrac{x^2+25}{x} - x\right)$\\
+
+$\lim\limits_{x\rightarrow \infty} \left(\dfrac{x^2+25}{x}\right) - \lim\limits_{x\rightarrow \infty} (x) = \infty - \infty$\\
+
+$\lim\limits_{x\rightarrow \infty} \left(\dfrac{-x^2+x^2+25}{x}\right) = \lim\limits_{x\rightarrow \infty} \left(\dfrac{25}{x}\right) = 0$\\
+
+$SA = x+ 0$\\
+
+Ligging:
+\begin{tabular}{c|ccc}
+$x$       &     &   $0$   &   \\ \hline
+          &  $-$  &   $/$   & $+$ \\
+\end{tabular}
+
+$x \rightarrow +\infty \Rightarrow f(x) > SA$\\
+
+$x \rightarrow -\infty \Rightarrow f(x) < SA$\\
+
+$f'(x) = 1 - \dfrac{25}{x^2}=\dfrac{x^2-25}{x^2}$\\
+
+Nulpunten: $\pm5$\\
+
+Polen: $0$\\
+
+$f'(x) = \dfrac{50}{x^3}$\\
+
+Nulpunten: geen \\
+
+Polen: $0$\\
+
+\begin{tabular}{c|ccccccccccc}
+$x$      &            &    $-5$    &            &    $0$     &            &    $5$     &\\ \hline
+$f(x)$   &    $-$     & $-$ &   $-$      &    $|$     &   $+$      &    $+$     &    $+$     &\\ \hline
+$f'(x)$  &    $+$     &    $0$     &    $-$    &   $|$      &    $-$     &    $0$     & $+$ &\\ \hline
+$f''(x)$ &    $-$     &    $-$    &   $-$      &    $|$     &   $+$      &    $+$     &    $+$     &\\ \hline
+         & $\nearrow$ &  $M (-10)$  & $\searrow$ & $|$ & $\searrow$ & $m(10)$ & $\nearrow$ &\\
+         & $\smile$   &           &  $\frown$  &  $|$  &  $\smile$  &    &  $\smile$  &
+\end{tabular}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=9cm]{3G-11.5-michael.livchits.INF.png}
+\end{figure}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

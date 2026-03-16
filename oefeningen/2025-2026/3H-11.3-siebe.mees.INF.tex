@@ -1,0 +1,110 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}     
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3H nr. 11.3\\
+
+\medskip
+
+\normalsize
+
+$r^2=9\sin 2\theta \Leftrightarrow r = \sqrt{9\sin2\theta}$\\
+
+\begin{enumerate}
+
+\item Domein\\
+
+$p=\dfrac{2\pi}{2}=\pi$\\
+
+$\Rightarrow$ we onderzoeken op het beperkt domein $[0,\pi]$\\
+
+Binnen dit interval geldt: (Omdat in $\mathbb{R}$ de wortel van een negatief getal niet bestaat)\\
+
+$\sin 2\theta\geq 0 \iff \theta \in \left[0,\dfrac{\pi}{2}\right]$\\
+
+$\Rightarrow \operatorname{dom} r =\left[0,\dfrac{\pi}{2}\right]$\\
+
+
+\item Tekenonderzoek van $r(\theta)$\\
+
+$r^2=9\sin 2\theta$\\
+
+$\sin 2\theta=0$\\
+
+$2\theta=k\pi$\\
+
+$\theta=\dfrac{k\pi}{2}$\\
+
+$\Rightarrow r^{(-1)}(0)=\left\{0,\dfrac{\pi}{2}\right\}$\\
+
+\begin{tabular}{c|ccc}
+$\theta$ & $0$ &  & $\dfrac{\pi}{2}$ \\ \hline
+$r(\theta)$ & $0$ & $+$ & $0$
+\end{tabular}\\
+
+
+\item Tekenonderzoek van $r'(\theta)$\\
+
+$r=\sqrt{9\sin 2\theta} $\\
+
+
+$r=3\sqrt{\sin 2\theta}$\\
+
+$r(\theta)=3(\sin 2\theta)^{\tfrac{1}{2}}$\\
+
+$r'(\theta)=3\cdot\dfrac{1}{2}(\sin 2\theta)^{-\tfrac{1}{2}}\cdot 2\cos 2\theta$\\
+
+$r'(\theta)=\dfrac{3}{\sqrt{\sin 2\theta}}\cos 2\theta$\\
+
+$\cos 2\theta=0$\\
+
+$2\theta=\dfrac{\pi}{2}+k\pi$\\
+
+$\theta=\dfrac{\pi}{4}+\dfrac{k\pi}{2}$\\
+
+$\Rightarrow r'^{(-1)}(0)=\left\{\dfrac{\pi}{4}\right\}$\\
+
+\begin{tabular}{c|ccc}
+$\theta$ &  & $\dfrac{\pi}{4}$ &  \\ \hline
+$r'(\theta)$ & $+$ & $0$ & $-$ \\
+\end{tabular}\\
+
+Maximum:\\
+
+$r\left(\dfrac{\pi}{4}\right)=\sqrt{9\sin\left(2\cdot\dfrac{\pi}{4}\right)}$\\
+
+$r\left(\dfrac{\pi}{4}\right)=\sqrt{9\sin\dfrac{\pi}{2}}$\\
+
+$r\left(\dfrac{\pi}{4}\right)=\sqrt{9}$\\
+
+$\Rightarrow \max\ r\left(\dfrac{\pi}{4}\right)=3$\\
+
+\item Schets\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=5cm]{3H-11.3-siebe.mees.INF.png}
+\end{figure}
+
+$\Rightarrow $ Samenvattende tabel\\
+
+\begin{tabular}{c|ccc}
+$\theta$ & $0$ & $\dfrac{\pi}{4}$ & $\dfrac{\pi}{2}$ \\ \hline
+$r(\theta)$ & $0$ & $+$ & $0$ \\
+$r'(\theta)$ & $+$ & $0$ & $-$ \\ \hline
+$r(\theta)$ & $\nearrow$ & $M(3)$ & $\searrow$
+\end{tabular}\\
+
+\end{enumerate}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
