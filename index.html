@@ -418,7 +418,15 @@
 
 <nav class="navbar">
   <div class="nav-logo" onclick="showPage('home')">LaTeX <em>Sleutel</em></div>
+  <nav class="navbar">
+  <div class="nav-logo" onclick="showPage('home')">LaTeX <em>Sleutel</em></div>
   <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showPage('home')">Home</button>
+    <button class="nav-tab" onclick="showPage('sleutel')">Sleutel</button>
+    <button class="nav-tab" onclick="showPage('leaderboard')">Leaderboard</button>
+  </div>
+  <div id="nav-timestamp" style="margin-left:auto;font-size:0.72rem;color:#999;font-family:'DM Mono',monospace;white-space:nowrap"></div>
+</nav>
     <button class="nav-tab active" onclick="showPage('home')">Home</button>
     <button class="nav-tab" onclick="showPage('sleutel')">Sleutel</button>
     <button class="nav-tab" onclick="showPage('leaderboard')">Leaderboard</button>
@@ -15161,7 +15169,7 @@
 };
   // // EINDE AUTO-GENERATED LEADERBOARD
   // // AUTO-GENERATED: TIMESTAMP — niet handmatig aanpassen
-  const LAST_UPDATED = "17/03 16:52";
+  const LAST_UPDATED = "17/03 17:07";
   // // EINDE AUTO-GENERATED TIMESTAMP
   // ================================================================
 
@@ -15285,6 +15293,7 @@
   renderFiles(FILES[currentSleutelYear]);
   renderLeaderboard(LEADERBOARD[currentLbYear], currentLbYear);
   document.getElementById('last-updated').textContent = 'Sleutel & leaderboard bijgewerkt op: ' + LAST_UPDATED;
+document.getElementById('nav-timestamp').textContent = 'Bijgewerkt: ' + LAST_UPDATED; leaderboard bijgewerkt op: ' + LAST_UPDATED;
 </script>
 </body>
 </html>
