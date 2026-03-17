@@ -9,8 +9,8 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      background: #f5f3ee;
-      color: #111;
+      background: #f7f6f2;
+      color: #222;
       font-family: 'DM Sans', sans-serif;
       min-height: 100vh;
     }
@@ -19,9 +19,9 @@
       content: '';
       position: fixed;
       inset: 0;
-      background-image: radial-gradient(circle, #bbb 1px, transparent 1px);
+      background-image: radial-gradient(circle, #c8c5be 1px, transparent 1px);
       background-size: 28px 28px;
-      opacity: 0.3;
+      opacity: 0.18;
       pointer-events: none;
       z-index: 0;
     }
@@ -31,9 +31,9 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(245, 243, 238, 0.93);
+      background: rgba(247, 246, 242, 0.94);
       backdrop-filter: blur(10px);
-      border-bottom: 2px solid #111;
+      border-bottom: 1px solid #dedad4;
       padding: 0 32px;
       display: flex;
       align-items: center;
@@ -43,38 +43,39 @@
 
     .nav-logo {
       font-family: 'Playfair Display', serif;
-      font-size: 1.15rem;
-      font-weight: 900;
-      letter-spacing: -0.5px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
       margin-right: 32px;
       white-space: nowrap;
       cursor: pointer;
+      color: #222;
     }
-    .nav-logo em { font-style: italic; color: #555; }
+    .nav-logo em { font-style: italic; color: #888; }
 
     .nav-tabs { display: flex; gap: 4px; }
 
     .nav-tab {
-      padding: 6px 18px;
+      padding: 6px 16px;
       border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 600;
+      font-size: 0.84rem;
+      font-weight: 500;
       cursor: pointer;
-      border: 2px solid transparent;
+      border: 1.5px solid transparent;
       background: transparent;
-      color: #888;
+      color: #999;
       font-family: 'DM Sans', sans-serif;
       transition: all 0.15s;
     }
-    .nav-tab:hover { color: #111; background: #ebe9e4; }
-    .nav-tab.active { background: #111; color: #f5f3ee; border-color: #111; }
+    .nav-tab:hover { color: #333; background: #edecea; }
+    .nav-tab.active { background: #333; color: #f7f6f2; border-color: #333; }
 
     /* ── PAGES ── */
     .page { display: none; position: relative; z-index: 1; }
     .page.active { display: block; animation: fadeUp 0.3s ease both; }
 
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(14px); }
+      from { opacity: 0; transform: translateY(12px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
@@ -86,26 +87,27 @@
 
     /* ── TYPOGRAPHY ── */
     .section-label {
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 3px;
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #999;
+      color: #aaa;
       margin-bottom: 10px;
     }
 
     .page-title {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.2rem, 7vw, 3.6rem);
-      font-weight: 900;
-      letter-spacing: -2px;
-      line-height: 0.95;
+      font-size: clamp(2rem, 6.5vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1;
       margin-bottom: 10px;
+      color: #1a1a1a;
     }
 
-    .page-meta { color: #999; font-size: 0.85rem; margin-bottom: 28px; }
+    .page-meta { color: #aaa; font-size: 0.84rem; margin-bottom: 28px; }
 
-    /* ── YEAR TABS (binnen een pagina) ── */
+    /* ── YEAR TABS ── */
     .year-tabs {
       display: flex;
       gap: 8px;
@@ -113,19 +115,19 @@
     }
 
     .year-tab {
-      padding: 7px 20px;
+      padding: 6px 18px;
       border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 600;
+      font-size: 0.81rem;
+      font-weight: 500;
       font-family: 'DM Mono', monospace;
       cursor: pointer;
-      border: 2px solid #ccc;
+      border: 1.5px solid #dedad4;
       background: #fff;
-      color: #888;
+      color: #999;
       transition: all 0.15s;
     }
-    .year-tab:hover { border-color: #111; color: #111; }
-    .year-tab.active { background: #111; color: #f5f3ee; border-color: #111; }
+    .year-tab:hover { border-color: #888; color: #333; }
+    .year-tab.active { background: #333; color: #f7f6f2; border-color: #333; }
 
     /* ── HOME ── */
     #page-home .container {
@@ -141,172 +143,182 @@
 
     .home-tag {
       display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 3px;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: #888;
-      border: 1.5px solid #ccc;
+      color: #aaa;
+      border: 1px solid #dedad4;
       border-radius: 999px;
       padding: 4px 14px;
       margin-bottom: 28px;
     }
 
     .home-subtitle {
-      color: #777;
-      font-size: 0.95rem;
-      line-height: 1.7;
-      margin-bottom: 52px;
+      color: #999;
+      font-size: 0.93rem;
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 400;
     }
 
     .home-cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px;
+      gap: 14px;
       width: 100%;
-      max-width: 480px;
+      max-width: 460px;
     }
 
     .home-card {
       background: #fff;
-      border: 2px solid #111;
-      border-radius: 20px;
-      padding: 28px 22px;
+      border: 1.5px solid #dedad4;
+      border-radius: 18px;
+      padding: 26px 22px;
       text-align: left;
       cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
-      box-shadow: 4px 4px 0 #111;
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
-    .home-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 #111; }
-    .home-card:active { transform: translate(1px, 1px); box-shadow: 2px 2px 0 #111; }
-    .home-card.dark { background: #111; color: #f5f3ee; }
+    .home-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      border-color: #bbb;
+    }
+    .home-card:active { transform: translateY(0); box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .home-card.accent {
+      background: #2e2e2e;
+      color: #f7f6f2;
+      border-color: #2e2e2e;
+    }
+    .home-card.accent:hover { border-color: #444; box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
 
-    .home-card-icon { font-size: 1.8rem; margin-bottom: 14px; display: block; }
+    .home-card-icon { font-size: 1.6rem; margin-bottom: 14px; display: block; }
 
     .home-card-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 5px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      letter-spacing: -0.2px;
     }
 
-    .home-card-desc { font-size: 0.8rem; opacity: 0.55; line-height: 1.5; }
-    .home-card.dark .home-card-desc { opacity: 0.65; }
+    .home-card-desc { font-size: 0.79rem; opacity: 0.5; line-height: 1.55; }
+    .home-card.accent .home-card-desc { opacity: 0.6; }
 
     .home-card-arrow {
       display: inline-block;
-      margin-top: 18px;
-      font-size: 1.1rem;
-      transition: transform 0.15s;
+      margin-top: 16px;
+      font-size: 1rem;
+      opacity: 0.4;
+      transition: transform 0.15s, opacity 0.15s;
     }
-    .home-card:hover .home-card-arrow { transform: translate(3px, -3px); }
+    .home-card:hover .home-card-arrow { transform: translate(3px, -3px); opacity: 0.8; }
 
     /* ── SLEUTEL ── */
-    .search-wrap { position: relative; margin-bottom: 16px; }
+    .search-wrap { position: relative; margin-bottom: 14px; }
 
     .search-wrap input {
       width: 100%;
       background: #fff;
-      border: 2px solid #ddd;
-      border-radius: 12px;
-      padding: 13px 16px 13px 44px;
-      font-family: 'DM Mono', monospace;
-      font-size: 0.88rem;
-      color: #111;
+      border: 1.5px solid #dedad4;
+      border-radius: 10px;
+      padding: 12px 16px 12px 42px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.87rem;
+      color: #222;
       outline: none;
       transition: border-color 0.15s;
     }
-    .search-wrap input:focus { border-color: #111; }
+    .search-wrap input:focus { border-color: #888; }
     .search-wrap input::placeholder { color: #ccc; }
 
     .search-icon {
       position: absolute;
-      left: 15px;
+      left: 14px;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 1rem;
+      font-size: 0.95rem;
       pointer-events: none;
+      opacity: 0.5;
     }
 
-    .file-list { display: flex; flex-direction: column; gap: 10px; }
+    .file-list { display: flex; flex-direction: column; gap: 8px; }
 
     .file-row {
       background: #fff;
-      border: 2px solid #e8e8e8;
-      border-radius: 14px;
-      padding: 15px 20px;
+      border: 1.5px solid #e8e5e0;
+      border-radius: 12px;
+      padding: 14px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
       transition: border-color 0.15s, box-shadow 0.15s;
     }
-    .file-row:hover { border-color: #111; box-shadow: 3px 3px 0 #111; }
+    .file-row:hover { border-color: #bbb; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
 
     .file-info { display: flex; align-items: center; gap: 14px; min-width: 0; }
 
     .file-num {
       font-family: 'DM Mono', monospace;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       color: #ccc;
-      min-width: 24px;
+      min-width: 22px;
       text-align: right;
     }
 
     .file-name {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.88rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.87rem;
       font-weight: 500;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: #222;
     }
 
-    .file-meta { font-size: 0.74rem; color: #aaa; margin-top: 2px; }
+    .file-meta { font-size: 0.73rem; color: #bbb; margin-top: 2px; font-family: 'DM Mono', monospace; }
     .file-actions { display: flex; gap: 8px; flex-shrink: 0; }
 
     .btn {
-      padding: 7px 16px;
-      border-radius: 8px;
-      font-size: 0.76rem;
-      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 7px;
+      font-size: 0.75rem;
+      font-weight: 500;
       font-family: 'DM Mono', monospace;
       cursor: pointer;
       text-decoration: none;
-      border: 2px solid transparent;
+      border: 1.5px solid transparent;
       transition: all 0.12s;
       white-space: nowrap;
     }
 
     .btn-latex {
       background: #fff;
-      border-color: #111;
-      color: #111;
-      box-shadow: 2px 2px 0 #111;
+      border-color: #ccc;
+      color: #444;
     }
     .btn-latex:hover {
-      background: #111;
-      color: #fff;
-      box-shadow: none;
-      transform: translate(1px, 1px);
+      background: #333;
+      color: #f7f6f2;
+      border-color: #333;
     }
 
     .btn-pdf {
-      background: #111;
-      color: #f5f3ee;
-      box-shadow: 2px 2px 0 #555;
+      background: #2e2e2e;
+      color: #f7f6f2;
+      border-color: #2e2e2e;
     }
     .btn-pdf:hover {
-      background: #333;
-      box-shadow: none;
-      transform: translate(1px, 1px);
+      background: #444;
+      border-color: #444;
     }
 
     .btn-pdf.missing {
-      background: #f0f0f0;
+      background: #f2f0ec;
       color: #ccc;
-      border-color: #eee;
-      box-shadow: none;
+      border-color: #e8e5e0;
       cursor: not-allowed;
     }
 
@@ -319,95 +331,101 @@
     }
 
     /* ── LEADERBOARD ── */
-    .podium {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 12px;
-      margin-bottom: 24px;
-      align-items: end;
+    .lb-top3 {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
     }
 
-    .podium-card {
+    .lb-top3-row {
       background: #fff;
-      border: 2px solid #111;
-      border-radius: 16px;
-      padding: 20px 14px;
-      text-align: center;
-      box-shadow: 3px 3px 0 #111;
-    }
-    .podium-card.first {
-      background: #111;
-      color: #f5f3ee;
-      padding-top: 28px;
-    }
-
-    .podium-medal { font-size: 1.8rem; margin-bottom: 8px; }
-
-    .podium-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-
-    .podium-count {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.75rem;
-      opacity: 0.55;
-    }
-
-    .lb-list { display: flex; flex-direction: column; gap: 10px; }
-
-    .lb-row {
-      background: #fff;
-      border: 2px solid #e8e8e8;
+      border: 1.5px solid #e8e5e0;
       border-radius: 12px;
       padding: 14px 20px;
       display: flex;
       align-items: center;
       gap: 14px;
-      transition: border-color 0.15s, box-shadow 0.15s;
     }
-    .lb-row:hover { border-color: #111; box-shadow: 3px 3px 0 #111; }
+
+    .lb-top3-medal {
+      font-size: 1.15rem;
+      flex-shrink: 0;
+      width: 26px;
+      text-align: center;
+    }
+
+    .lb-top3-rank {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: #bbb;
+      min-width: 22px;
+    }
+
+    .lb-top3-name {
+      flex: 1;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #222;
+    }
+
+    .lb-top3-count {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .lb-top3-bar { height: 3px; background: #eee; border-radius: 2px; margin-top: 4px; overflow: hidden; }
+    .lb-top3-bar-fill { height: 100%; background: #bbb; border-radius: 2px; }
+
+    .lb-divider {
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ccc;
+      margin: 16px 0 12px;
+    }
+
+    .lb-list { display: flex; flex-direction: column; gap: 8px; }
+
+    .lb-row {
+      background: #fff;
+      border: 1.5px solid #e8e5e0;
+      border-radius: 12px;
+      padding: 13px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: border-color 0.15s;
+    }
+    .lb-row:hover { border-color: #bbb; }
 
     .lb-rank {
       font-family: 'DM Mono', monospace;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: #ccc;
       min-width: 26px;
       text-align: right;
     }
 
-    .lb-avatar {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.78rem;
-      flex-shrink: 0;
-      border: 2px solid #111;
-    }
-
-    .lb-name { font-weight: 600; font-size: 0.93rem; flex: 1; }
+    .lb-name { font-weight: 400; font-size: 0.92rem; flex: 1; color: #333; }
 
     .lb-count {
       font-family: 'DM Mono', monospace;
-      font-size: 0.8rem;
-      color: #666;
+      font-size: 0.78rem;
+      color: #888;
     }
 
-    .lb-bar { height: 4px; background: #eee; border-radius: 2px; margin-top: 5px; overflow: hidden; }
-    .lb-bar-fill { height: 100%; background: #111; border-radius: 2px; }
+    .lb-bar { height: 3px; background: #eee; border-radius: 2px; margin-top: 4px; overflow: hidden; }
+    .lb-bar-fill { height: 100%; background: #ccc; border-radius: 2px; }
 
     footer {
       text-align: center;
       margin-top: 60px;
-      font-size: 0.72rem;
-      color: #bbb;
-      letter-spacing: 1px;
+      font-size: 0.71rem;
+      color: #ccc;
+      letter-spacing: 0.8px;
       position: relative;
       z-index: 1;
       padding-bottom: 32px;
@@ -418,19 +436,12 @@
 
 <nav class="navbar">
   <div class="nav-logo" onclick="showPage('home')">LaTeX <em>Sleutel</em></div>
-  <nav class="navbar">
-  <div class="nav-logo" onclick="showPage('home')">LaTeX <em>Sleutel</em></div>
   <div class="nav-tabs">
     <button class="nav-tab active" onclick="showPage('home')">Home</button>
     <button class="nav-tab" onclick="showPage('sleutel')">Sleutel</button>
     <button class="nav-tab" onclick="showPage('leaderboard')">Leaderboard</button>
   </div>
   <div id="nav-timestamp" style="margin-left:auto;font-size:0.72rem;color:#999;font-family:'DM Mono',monospace;white-space:nowrap"></div>
-</nav>
-    <button class="nav-tab active" onclick="showPage('home')">Home</button>
-    <button class="nav-tab" onclick="showPage('sleutel')">Sleutel</button>
-    <button class="nav-tab" onclick="showPage('leaderboard')">Leaderboard</button>
-  </div>
 </nav>
 
 <!-- ══════════════════════ HOME ══════════════════════ -->
@@ -440,7 +451,7 @@
     <h1 class="page-title">LaTeX<br><em style="font-style:italic;color:#555">Sleutel</em></h1>
     <p class="home-subtitle">Oefeningen bekijken, PDF's downloaden<br>en de voortgang van de groep bijhouden.</p>
     <div class="home-cards">
-      <div class="home-card dark" onclick="showPage('sleutel')">
+      <div class="home-card accent" onclick="showPage('sleutel')">
         <span class="home-card-icon">📄</span>
         <div class="home-card-title">Sleutel</div>
         <div class="home-card-desc">Bekijk alle oefeningen per academisch jaar.</div>
@@ -489,7 +500,7 @@
       <button class="year-tab" onclick="switchLbYear('2024-2025')">2024–2025</button>
     </div>
 
-    <div class="podium" id="podium"></div>
+    <div class="lb-top3" id="lb-top3"></div>
     <div class="lb-list" id="lb-list"></div>
   </div>
 </div>
@@ -15169,7 +15180,7 @@
 };
   // // EINDE AUTO-GENERATED LEADERBOARD
   // // AUTO-GENERATED: TIMESTAMP — niet handmatig aanpassen
-  const LAST_UPDATED = "17/03 17:15";
+  const LAST_UPDATED = "17/03 17:30";
   // // EINDE AUTO-GENERATED TIMESTAMP
   // ================================================================
 
@@ -15246,7 +15257,6 @@
     renderLeaderboard(LEADERBOARD[year], year);
   }
 
-  const AVATARBG = ["#fde68a","#bbf7d0","#bfdbfe","#fecaca","#e9d5ff","#fed7aa"];
   const MEDALS   = ["🥇","🥈","🥉"];
 
   function renderLeaderboard(data, year) {
@@ -15256,17 +15266,18 @@
     document.getElementById("lb-meta").textContent =
       `${year} · ${sorted.length} deelnemers`;
 
-    // Podium: volgorde 2e – 1e – 3e
-    const top3        = sorted.slice(0, 3);
-    const podiumOrder = [top3[1], top3[0], top3[2]].filter(Boolean);
-
-    document.getElementById("podium").innerHTML = podiumOrder.map(p => {
-      const rank = sorted.indexOf(p) + 1;
+    // Top 3 — subtiele rijen met medaille emoji
+    const top3 = sorted.slice(0, 3);
+    document.getElementById("lb-top3").innerHTML = top3.map((p, i) => {
+      const pct = Math.round((p.count / max) * 100);
       return `
-        <div class="podium-card ${rank === 1 ? "first" : ""}">
-          <div class="podium-medal">${MEDALS[rank - 1]}</div>
-          <div class="podium-name">${p.name}</div>
-          <div class="podium-count">${p.count} oef.</div>
+        <div class="lb-top3-row">
+          <span class="lb-top3-medal">${MEDALS[i]}</span>
+          <div style="flex:1;min-width:0">
+            <div class="lb-top3-name">${p.name}</div>
+            <div class="lb-top3-bar"><div class="lb-top3-bar-fill" style="width:${pct}%"></div></div>
+          </div>
+          <span class="lb-top3-count">${p.count} oef.</span>
         </div>`;
     }).join("");
 
@@ -15274,12 +15285,9 @@
     document.getElementById("lb-list").innerHTML = sorted.slice(3).map((p, i) => {
       const rank = i + 4;
       const pct  = Math.round((p.count / max) * 100);
-      const bg   = AVATARBG[i % AVATARBG.length];
-      const init = p.name.split(/[\s\-]+/).map(w => w[0] || '').join('').slice(0, 2).toUpperCase();
       return `
         <div class="lb-row">
           <span class="lb-rank">#${rank}</span>
-          <div class="lb-avatar" style="background:${bg}">${init}</div>
           <div style="flex:1;min-width:0">
             <div class="lb-name">${p.name}</div>
             <div class="lb-bar"><div class="lb-bar-fill" style="width:${pct}%"></div></div>
