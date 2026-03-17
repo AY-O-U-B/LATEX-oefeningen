@@ -18,7 +18,7 @@ Wat het doet:
 import os
 import re
 import json
-from datetime import date
+from datetime import date, datetime
 
 JAREN  = ["2025-2026", "2024-2025"]
 INDEX  = "index.html"
@@ -27,6 +27,8 @@ MARKER_FILES_START = "// // AUTO-GENERATED: FILES — niet handmatig aanpassen"
 MARKER_FILES_END   = "// // EINDE AUTO-GENERATED FILES"
 MARKER_LB_START    = "// // AUTO-GENERATED: LEADERBOARD — niet handmatig aanpassen"
 MARKER_LB_END      = "// // EINDE AUTO-GENERATED LEADERBOARD"
+MARKER_TS_START    = "// // AUTO-GENERATED: TIMESTAMP — niet handmatig aanpassen"
+MARKER_TS_END      = "// // EINDE AUTO-GENERATED TIMESTAMP"
 
 
 def extract_name(bestandsnaam: str) -> str | None:
@@ -141,6 +143,7 @@ def main():
 
     files_blok = f"  const FILES = {files_json};"
     lb_blok    = f"  const LEADERBOARD = {lb_json};"
+    ts_blok    = f'  const LAST_UPDATED = "{datetime.now().strftime("%d/%m %H:%M")}";'
 
     # 4. Lees index.html
     with open(INDEX, "r", encoding="utf-8") as f:
@@ -149,6 +152,7 @@ def main():
     # 5. Vervang blokken
     inhoud = vervang_blok(inhoud, MARKER_FILES_START, MARKER_FILES_END, files_blok)
     inhoud = vervang_blok(inhoud, MARKER_LB_START,    MARKER_LB_END,    lb_blok)
+    inhoud = vervang_blok(inhoud, MARKER_TS_START,    MARKER_TS_END,    ts_blok)
 
     # 6. Schrijf terug
     with open(INDEX, "w", encoding="utf-8") as f:

@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 9.11\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int\dfrac{dx}{1+\cos x}$\\
+
+Maak gebruik van halvering van de hoek formule (tabel 7 in de formularium):\\
+
+$\cos^2\alpha = \dfrac{1+\cos2\alpha}{2}$\\
+
+$2\cos^2\alpha - 1 = \cos2\alpha$ met $2\alpha = x$\\
+
+$2\cos^2\dfrac{x}{2} - 1 = \cos x$\\
+
+$= \displaystyle\int\dfrac{dx}{1+2\cos^2\dfrac{x}{2} - 1} = \dfrac{1}{2}\displaystyle\int\dfrac{dx}{\cos^2\dfrac{x}{2}}$\\
+
+$\left\{
+\begin{array}{l}
+	u = \dfrac{x}{2}\\
+	2du =  dx
+\end{array}
+\right .$\\
+
+$= \displaystyle\int\dfrac{du}{\cos^2u}$\\
+
+Via de stamintegraal weten wij dan:\\
+
+$= \tan u + C = \tan\dfrac{x}{2} + C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

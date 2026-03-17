@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Ilyas Sefiani \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 15.1\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int x^2e^xdx$\\
+
+$\left \{
+\begin{array}{l}
+u=x^2 \\
+dv=e^xdx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du=2xdx \\
+v=e^x
+\end{array}
+\right .$\\
+
+$=x^2e^x - 2\displaystyle\int xe^xdx$\\
+
+$\left \{
+\begin{array}{l}
+u=x \\
+dv=e^xdx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du=dx \\
+v=e^x
+\end{array}
+\right .$\\
+
+$=x^2e^x - 2\left(xe^x-\displaystyle\int e^xdx\right)$\\
+
+$=x^2e^x - 2xe^x+2e^x+C$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

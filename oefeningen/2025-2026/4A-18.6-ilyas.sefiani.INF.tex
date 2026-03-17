@@ -1,0 +1,75 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Ilyas Sefiani \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 18.6\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int (x^3-x^2)\cos(x)dx$\\
+
+$\left \{
+\begin{array}{l}
+u = x^3-x^2 \\
+dv = \cos(x)dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = 3x^2-2xdx \\
+v = \sin(x)
+\end{array}
+\right .$\\
+
+$=(x^3-x^2)\sin(x) - \displaystyle\int (3x^2-2x)\sin(x)dx$\\
+
+$\left \{
+\begin{array}{l}
+u = 3x^2-2x  \\
+dv = \sin(x)dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = (6x-2)dx \\
+v = -\cos(x)
+\end{array}
+\right .$\\
+
+$=(x^3-x^2)\sin(x)+ (3x^2-2x)\cos(x)- \displaystyle\int (6x-2)\cos(x)dx$\\
+
+$\left \{
+\begin{array}{l}
+u = 6x-2 \\
+dv = \cos(x)dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = 6dx \\
+v = \sin(x)
+\end{array}
+\right .$\\
+
+$=(x^3-x^2)\sin(x)+ (3x^2-2x)\cos(x)-(6x-2)\sin(x)-6\cos(x)+C$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 
