@@ -1,0 +1,71 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 34.4\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int e^{\sin (x)} \cos^3 (x)dx$ \\
+
+$= -\displaystyle \int e^{\sin (x)} \cos (x) (\sin^2 (x) -1)dx$ \\
+
+$\left \{
+\begin{array}{l}
+     u = \sin (x) \\
+     du = \cos (x)dx
+\end{array}
+\right .$ \\
+
+$= -\displaystyle \int e^u(u^2 - 1)du$ \\
+
+$\left \{
+\begin{array}{l}
+     v = u^2 - 1\\
+     dw = e^udu
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+     dv = 2udu \\
+     w = e^u
+\end{array}
+\right .$ \\
+
+$= -\left ( e^u(u^2 - 1) - 2\displaystyle \int ue^u du \right)$ \\
+
+$= -e^u(u^2 - 1) + 2\left( ue^u - \displaystyle \int e^u du\right)$ \\
+
+$\left \{
+\begin{array}{l}
+     t = u \\
+     dw = e^udu
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+     dt = du \\
+     w = e^u
+\end{array}
+\right .$ \\
+
+$= -e^u(u^2 - 1) + 2ue^u -2e^u + c$ \\
+
+$= -e^uu^2 \cancel{+ e^u} + 2ue^u - \bcancel{2} e^u + c$ \\
+
+$= -\sin^2 (x)e^{\sin(x)} + 2\sin (x)e^{\sin (x)} - e^{\sin (x)} + c$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

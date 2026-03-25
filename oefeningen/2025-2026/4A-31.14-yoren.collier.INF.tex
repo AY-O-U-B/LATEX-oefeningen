@@ -1,0 +1,73 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto}
+\newcommand{\intgrl}{\displaystyle\int} %integraal teken (bij het berekenen van primitieven)
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 31.14\\
+
+\medskip
+
+\normalsize
+
+$ I =  \intgrl \dfrac{x^2 \sqrt{x}}{1+\sqrt{x}} dx$\\
+
+Stel: $t = \sqrt{x} \asa x = t^2$\\
+
+$\adR dt = \dfrac{1}{2\sqrt{x}}dx \asa dx = 2 \sqrt{x}dt = 2tdt $\\
+
+$= \intgrl \dfrac{t^4 \cdot t^1 \cdot 2t}{t+1} dt = 2 \intgrl \dfrac{t^6}{t+1}$\\
+
+\begin{tabular}{ccccccc|llllll}
+$t^6$  &          &          &          &          &        &        &  $t$    &  $+1$    &          &          &        &  \\  \cline{8-13}
+$-t^6$  &  $-t^5$   &          &          &          &        &        &  $t^5$  &  $-t^4$  &  $+t^3$  &  $-t^2$  &  $+t$  &  $-1$  \\ \cline{1-2}
+$0$    &  $-t^5$  &          &          &          &        &        &         &          &          &          &        &  \\ 
+       &  $+t^5$  &  $+t^4$  &          &          &        &        &         &          &          &          &        &  \\ \cline{2-3}
+       &  $0$     &  $t^4$   &          &          &        &        &         &          &          &          &        &  \\ 
+       &          &  $-t^4$   &  $-t^3$   &          &        &        &         &          &          &          &        &  \\ \cline{3-4}
+       &          &  $0$     &  $-t^3$  &          &        &        &         &          &          &          &        &  \\
+       &          &          &  $+t^3$  &  $+t^2$  &        &        &         &          &          &          &        &  \\ \cline{4-5}
+       &          &          &  $0$     &  $t^2$   &        &        &         &          &          &          &        &  \\
+       &          &          &          &  $-t^2$   &  $-t$   &        &         &          &          &          &        &  \\ \cline{5-6}
+       &          &          &          &  $0$     &  $-t$  &        &         &          &          &          &        &  \\
+       &          &          &          &          &  $+t$  &  $+1$  &         &          &          &          &        &  \\ \cline{6-7}
+       &          &          &          &          &  $0$   &  $+1$  &         &          &          &          &        & \\ 
+\end{tabular}
+
+$= 2 \Lv \intgrl t^5 -t^4 +t^3 -t^2 +t -1 dt + \intgrl \dfrac{1}{t+1} dt \Rv$\\
+
+Stel: $y = t+1 \adR dy = dt$\\
+
+$= 2 \Lv \dfrac{t^6}{6} +c - \dfrac{t^5}{5} +c + \dfrac{t^4}{4} +c - \dfrac{t^3}{3} +c + \dfrac{t^2}{2} +c - t +c + \intgrl \dfrac{1}{y} dy \Rv$\\
+
+$= 2 \Lv \dfrac{t^6}{6} - \dfrac{t^5}{5} + \dfrac{t^4}{4} - \dfrac{t^3}{3} + \dfrac{t^2}{2} - t + \ln |t+1| +c \Rv$\\
+
+$= \dfrac{x^3}{3} - \dfrac{2x \sqrt{x}}{5} + \dfrac{x^2}{2} - \dfrac{2x \sqrt{x}}{3} +x -2 \sqrt{x} + \ln |\sqrt{x} +1| +c$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

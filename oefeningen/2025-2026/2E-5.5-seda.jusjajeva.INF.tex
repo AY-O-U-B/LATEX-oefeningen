@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2E nr. 5.5 \\
+
+\medskip
+
+\normalsize
+
+
+$\lim\limits_{x \rightarrow 0} \left(\dfrac{ax+b}{cx+b}\right)^{\tfrac{1}{x}}$ \\
+
+Stel $t = \dfrac{1}{x}$ \\
+
+$= \lim\limits_{t \rightarrow \infty} \left(\dfrac{at^{-1}+b}{ct^{-1}+b}\right)^{t}$ \\
+
+$= \lim\limits_{t \rightarrow \infty} \left(\dfrac{bt+a}{bt+c}\right)^{t}$ \\
+
+Stel $s = bt + c$ \\
+
+$= \lim\limits_{s \rightarrow \infty} \left(\dfrac{s - c + a}{s}\right)^{\tfrac{s - c}{b}}$ \\
+
+$= \lim\limits_{s \rightarrow \infty} \left(1 + \dfrac{a - c}{s}\right)^{\tfrac{s}{b}} \cdot \lim\limits_{z \rightarrow \infty} \left(1 + \dfrac{a-c}{s}\right)^{\tfrac{-c}{b}}$ \\
+
+$= \left(\lim\limits_{s \rightarrow \infty} \left(\dfrac{s-c+a}{s}\right)^{\tfrac{s}{a-c}}\right)^{\tfrac{a-c}{b}}$ \\
+
+$= e^{\tfrac{a-c}{b}}$ \\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

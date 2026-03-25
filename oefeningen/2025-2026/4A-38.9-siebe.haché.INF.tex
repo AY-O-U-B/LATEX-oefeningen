@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 38.9\\
+
+\medskip
+\normalsize
+
+$\displaystyle\int \dfrac{x^2 + 6x + 12}{x^2 + 4x + 5} dx$\\
+
+$= \displaystyle\int \dfrac{(x^2 + 4x + 5) + 2x + 7}{x^2 + 4x + 5} dx$\\
+
+$= \displaystyle\int \left( 1 + \dfrac{2x + 7}{x^2 + 4x + 5} \right) dx$\\
+
+$= \displaystyle\int dx + \displaystyle\int \dfrac{(2x + 4) + 3}{x^2 + 4x + 5} dx$\\
+
+$= \displaystyle\int dx + \displaystyle\int \dfrac{2x + 4}{x^2 + 4x + 5} dx + 3 \displaystyle\int \dfrac{dx}{x^2 + 4x + 5}$\\
+
+$u =x^2 + 4x + 5 \Rightarrow du = (2x + 4) dx$\\
+
+$v = x + 2 \Rightarrow dv = dx$\\
+
+$= \displaystyle\int dx + \displaystyle\int \dfrac{du}{u} + 3 \displaystyle\int \dfrac{dv}{v^2 + 1}$\\
+
+$= x + \ln |u| + 3 \Bgtan v + C$\\
+
+$= x + \ln |x^2 + 4x + 5| + 3 \Bgtan (x + 2) + C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

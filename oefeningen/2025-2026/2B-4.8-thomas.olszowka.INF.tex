@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgcos}{\operatorname{Bgcos}}
+\newcommand{\Bgcot}{\operatorname{Bgcot}}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 2B nr. 4.8 \\
+
+\medskip
+
+\normalsize
+
+$f(x) = \tan(2 \Bgcot x)$ \\
+
+neem $y = \Bgcot x$ dan is $ \cot y = x$ met $y \in \left]0, \pi\right[ $\\
+
+
+$\cot y = \dfrac{\cos y}{\sin y} = x$ dan is $\tan y = \dfrac{\sin y}{\cos y} = \dfrac{1}{\cot y} = \dfrac{1}{x}$ \\ 
+
+we gebruiken de identiteit $\tan 2y = \dfrac{2\tan y}{1 - \tan^2 y}$ \\
+
+$\tan 2y$ is enkel gedefinieerd als $2y \neq \dfrac{\pi}{2} + k\pi$ met $k \in \mathbb{Z}$ \\
+
+$\Rightarrow 2y \neq \dfrac{\pi}{2}$ en $2y \neq \dfrac{3\pi}{2}$ want $2y \in \left]0, 2\pi \right[$ \\
+
+$\Rightarrow y \neq \dfrac{\pi}{4}$ en $y \neq \dfrac{3\pi}{4}$ want $y \in \left]0, \pi \right[$ \\
+
+$\Rightarrow x \neq \cot \dfrac{\pi}{4}$ en $ x \neq \cot \dfrac{3\pi}{4}$ oftewel $x \neq \pm 1$ \\
+
+$\tan 2y = \dfrac{2\tan y}{1 - \tan^2 y}$\\
+
+$=  \dfrac{2 \cdot \dfrac{1}{x}}{1 - \left(\dfrac{1}{x}\right)^2}$ \\
+
+$= \dfrac{\dfrac{2}{x}}{1- \dfrac{1}{x^2}}$ \\
+
+$= \dfrac{\dfrac{2}{x}}{\dfrac{x^2-1}{x^2}}$ \\
+
+$= \dfrac{2}{x} \cdot \dfrac{x^2}{x^2-1}$ \\
+
+$= \dfrac{2x^2}{x(x^2 -1)}$ \\
+
+$= \dfrac{2x}{x^2 - 1}$\\
+
+dus is $\tan(2 \Bgcot x)= \dfrac{2x}{x^2 - 1}$ met $x \neq \pm 1$ \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

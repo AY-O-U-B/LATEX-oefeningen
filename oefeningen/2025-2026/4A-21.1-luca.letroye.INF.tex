@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 21.1
+
+\medskip
+\normalsize
+
+$\displaystyle\int \cos x \cosh x dx$\\
+
+$\left\{
+\begin{array}{l}
+	u=\cos x \\ 
+	dv=\cosh xdx
+\end{array}
+\right.
+\Rightarrow 
+\left\{
+\begin{array}{l}
+	du= 	-\sin xdx\\
+ 	v= \sinh x
+\end{array}
+\right.$\\
+
+$\Rightarrow \cos x \sinh x - \displaystyle\int \sin x \sinh xdx$\\
+
+$\left\{
+\begin{array}{l}
+	u=\sin x \\ 
+	dv=\sinh xdx
+\end{array}
+\right.
+\Rightarrow 
+\left\{
+\begin{array}{l}
+	du= 	\cos xdx\\
+ 	v= \cosh x
+\end{array}
+\right.$\\
+
+$\Rightarrow \cos x\sinh x + \sin x \cosh x - \displaystyle\int \cos x\cosh x dx$\\
+
+$2I  = \cos x\sinh x + \sin x \cosh x +C $\\
+
+$\Rightarrow I  = \dfrac{1}{2}(\cos x\sinh x + \sin x \cosh x )+C$\\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

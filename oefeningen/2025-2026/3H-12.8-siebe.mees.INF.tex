@@ -1,0 +1,121 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}     
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3H nr. 12.8\\
+
+\medskip
+
+\normalsize
+
+$r=2+\sin^2 4\theta$\\
+
+\begin{enumerate}
+
+\item Domein\\
+
+$\operatorname{dom} r=\mathbb{R}$\\
+
+$p=4\theta \Rightarrow \theta=\dfrac{\pi}{4}$\\
+
+$\Rightarrow$ we onderzoeken op het beperkt domein $\left[0,\dfrac{\pi}{4}\right]$\\
+
+\item Tekenonderzoek van $r(\theta)$\\
+
+$2+\sin^2 4\theta=0$\\
+
+$\sin^2 4\theta=0$\\
+
+$\sin 4\theta=0$\\
+
+$4\theta=k\pi$\\
+
+$\theta=\dfrac{k\pi}{4}$\\
+
+Maar omdat $\sin^2 4\theta\geq 0$ geldt:\\
+
+$r(\theta)=2+\sin^2 4\theta\geq 2$\\
+
+$\Rightarrow r^{(-1)}(0)=\varnothing$\\
+
+\begin{tabular}{c|ccc}
+$\theta$ & $0$ &  & $\dfrac{\pi}{4}$ \\ \hline
+$r(\theta)$ & $2$ & $+$ & $2$
+\end{tabular}\\
+
+\item Tekenonderzoek van $r'(\theta)$\\
+
+$r(\theta)=2+\sin^2 4\theta$\\
+
+$r'(\theta)=2\sin 4\theta \cdot \cos 4\theta \cdot 4$\\
+
+$r'(\theta)=8\sin 4\theta \cos 4\theta$\\
+
+$8\sin 4\theta \cos 4\theta=0$\\
+
+$\sin 4\theta=0 \ \text{ of } \ \cos 4\theta=0$\\
+
+$\sin 4\theta=0 \Rightarrow 4\theta=k\pi \Rightarrow \theta=\dfrac{k\pi}{4}$\\
+
+$\cos 4\theta=0 \Rightarrow 4\theta=\dfrac{\pi}{2}+k\pi \Rightarrow \theta=\dfrac{\pi}{8}+\dfrac{k\pi}{4}$\\
+
+$\Rightarrow r'^{(-1)}(0)=\left\{0,\dfrac{\pi}{8},\dfrac{\pi}{4}\right\}$\\
+
+\begin{tabular}{c|ccccc}
+$\theta$ & $0$ &  & $\dfrac{\pi}{8}$ &  & $\dfrac{\pi}{4}$ \\ \hline
+$r'(\theta)$ & $0$ & $+$ & $0$ & $-$ & $0$
+\end{tabular}\\
+
+Maximum:\\
+
+$r\left(\dfrac{\pi}{8}\right)=2+\sin^2\left(4\cdot\dfrac{\pi}{8}\right)$\\
+
+$r\left(\dfrac{\pi}{8}\right)=2+\sin^2\left(\dfrac{\pi}{2}\right)$\\
+
+$r\left(\dfrac{\pi}{8}\right)=2+1$\\
+
+$\Rightarrow \max\ r\left(\dfrac{\pi}{8}\right)=3$\\
+
+Minimum (randpunten):\\
+
+$r(0)=2+\sin^2(0)$\\
+
+$r(0)=2$\\
+
+$r\left(\dfrac{\pi}{4}\right)=2+\sin^2\left(4\cdot\dfrac{\pi}{4}\right)$\\
+
+$r\left(\dfrac{\pi}{4}\right)=2+\sin^2(\pi)$\\
+
+$r\left(\dfrac{\pi}{4}\right)=2$\\
+
+$\Rightarrow \min\ r(0)=\min\ r\left(\dfrac{\pi}{4}\right)=2$\\
+
+\item Schets\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=5cm]{3H-12.8-siebe.mees.INF.png}
+\end{figure}
+
+$\Rightarrow$ Samenvattende tabel\\
+
+\begin{tabular}{c|ccccc}
+$\theta$ & $0$ &  & $\dfrac{\pi}{8}$ &  & $\dfrac{\pi}{4}$ \\ \hline
+$r(\theta)$ & $+$ &  & $+$  &  & $+$ \\
+$r'(\theta)$ & $0$ & $+$ & $0$ & $-$ & $0$ \\ \hline
+$r(\theta)$ & $m(2)$ & $\nearrow$ & $M(3)$ & $\searrow$ & $m(2)$
+\end{tabular}\\
+
+\end{enumerate}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

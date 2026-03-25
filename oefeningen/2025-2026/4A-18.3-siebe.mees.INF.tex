@@ -1,0 +1,80 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 18.3\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int x^3 \sin x dx $\\
+
+$ \left \{
+\begin{array}{l}
+u = x^3 \\
+dv = \sin x dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = 3x^2 dx \\
+v = -\cos x
+\end{array}
+\right . $\\
+
+$ \displaystyle\int x^3 \sin x dx = -x^3 \cos x + \displaystyle\int 3x^2 \cos x dx $\\
+
+$ = -x^3 \cos x + 3 \displaystyle\int x^2 \cos x dx $\\
+
+$ \left \{
+\begin{array}{l}
+u = x^2 \\
+dv = \cos x dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = 2x dx \\
+v = \sin x
+\end{array}
+\right . $\\
+
+$ 3 \displaystyle\int x^2 \cos x dx = 3 \left( x^2 \sin x - \displaystyle\int 2x \sin x dx \right) $\\
+
+$ = 3x^2 \sin x - 6 \displaystyle\int x \sin x dx $\\
+
+$ \left \{
+\begin{array}{l}
+u = x \\
+dv = \sin x dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = dx \\
+v = -\cos x
+\end{array}
+\right . $\\
+
+$ \displaystyle\int x \sin x dx = -x \cos x + \displaystyle\int \cos x dx $\\
+
+$ = -x \cos x + \sin x $\\
+
+$ \displaystyle\int x^3 \sin x dx = -x^3 \cos x + 3x^2 \sin x - 6 \left( -x \cos x + \sin x \right) $\\
+
+$ = -x^3 \cos x + 3x^2 \sin x + 6x \cos x - 6 \sin x + C $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

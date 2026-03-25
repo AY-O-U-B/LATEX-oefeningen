@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto}
+\newcommand{\intgrl}{\displaystyle\int} %integraal teken (bij het berekenen van primitieven)
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 19.3\\
+
+\medskip
+
+\normalsize
+
+$ I =  \intgrl e^x \sin \Lh 5x \Rh dx $
+
+$\La
+\begin{array}{l}
+u = \sin \Lh 5x \Rh  \\
+dv = e^x dx  
+\end{array}
+\Ras
+\adR
+\La
+\begin{array}{l}
+du = 5 \cos \Lh 5x \Rh dx \\
+v = e^x   
+\end{array}
+\Ras$\\
+
+$I = e^x \sin \Lh 5x \Rh - \intgrl e^x 5\cos \Lh 5x \Rh dx = e^x \sin \Lh 5x \Rh - 5\intgrl e^x \cos \Lh 5x \Rh dx $\\
+
+$\La
+\begin{array}{l}
+u = \cos \Lh 5x \Rh  \\
+dv = e^x dx  
+\end{array}
+\Ras
+\adR
+\La
+\begin{array}{l}
+du = -5 \sin \Lh 5x \Rh dx  \\
+v = e^x   
+\end{array}
+\Ras$
+
+$I = e^x \sin \Lh 5x \Rh -5 \Lv e^x \cos \Lh 5x \Rh - \intgrl e^x \cdot \Lh -5 \Rh \sin \Lh 5x \Rh dx \Rv$\\
+
+$= e^x \sin \Lh 5x \Rh -5 \Lv e^x \cos \Lh 5x \Rh +5\intgrl e^x \sin \Lh 5x \Rh dx \Rv = e^x \sin \Lh 5x \Rh -5e^x \cos \Lh 5x \Rh - 25\intgrl e^x \sin \Lh 5x \Rh dx$\\
+
+Aangezien: $\intgrl e^x \sin \Lh 5x \Rh dx$ terug onze originele integraal is kunnen we het volgende doen:\\
+
+$26I = e^x \sin \Lh 5x \Rh -5e^x \cos \Lh 5x \Rh +c \asa I = \dfrac{e^x \sin \Lh 5x \Rh -5e^x \cos \Lh 5x \Rh}{26} + c$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

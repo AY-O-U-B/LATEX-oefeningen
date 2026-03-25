@@ -1,0 +1,89 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Noran Ben Said\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3G nr. 15.2 \\
+
+\medskip
+\normalsize
+
+$f(x)= 2 \sin x - \sin^2 x$\\
+
+Periode: $2\pi \Rightarrow$ onderzoek $\left[-\pi, \pi \right]$\\
+
+Domein: $\mathbb{R}$\\
+
+Asymptoten: geen\\
+
+Nulpunten $f(x)$:\\
+
+$2\sin x - \sin^2 x = 0$\\
+
+$\sin x (2-\sin x)=0$\\
+
+$\sin x = 0 \Rightarrow x=-\pi,0,\pi$\\
+
+\medskip
+
+$f'(x)=2\cos x - 2\sin x \cos x$\\
+
+$=2\cos x - \sin 2x$\\
+
+Nulpunten $f'(x)$:\\
+
+$2\cos x - 2\sin x \cos x=0$\\
+
+$2\cos x(1-\sin x)=0$\\
+
+$\cos x=0 \Rightarrow x=-\dfrac{\pi}{2},\dfrac{\pi}{2}$\\
+
+$\sin x=1 \Rightarrow x=\dfrac{\pi}{2}$\\
+
+$\Rightarrow x=-\dfrac{\pi}{2},\dfrac{\pi}{2}$\\
+
+\medskip
+
+$f''(x)=-2\sin x - 2\cos 2x$\\
+
+Nulpunten $f''(x)$:\\
+
+$-2\sin x - 2\cos 2x=0$\\
+
+$\sin x + \cos 2x=0$\\
+
+$\sin x + 1 - 2\sin^2 x=0$\\
+
+$2\sin^2 x - \sin x -1=0$\\
+
+$(2\sin x +1)(\sin x -1)=0$\\
+
+$\sin x=-\dfrac{1}{2} \Rightarrow x=-\dfrac{5\pi}{6},-\dfrac{\pi}{6}$\\
+
+$\sin x=1 \Rightarrow x=\dfrac{\pi}{2}$\\
+
+\medskip
+
+\begin{tabular}{c|ccccccccccccc} 
+    & $-\pi$ &  & $-\dfrac{5\pi}{6}$ &  & $-\dfrac{\pi}{2}$ &  & $-\dfrac{\pi}{6}$ &  & $0$ &  & $\dfrac{\pi}{2}$ &  & $\pi$ \\ \hline
+    $f(x)$   & $0$ & $-$ &  & $-$ &  & $-$ &  & $-$ & $0$ & $+$ &  & $+$ & $0$\\ 
+    $f'(x)$  &     & $-$ &  & $-$ & $0$ & $+$ &  & $+$ &  & $+$ & $0$ & $-$ & \\ 
+    $f''(x)$ &     & $-$ & $0$ & $+$ &  & $+$ & $0$ & $-$ &  & $-$ & $0$ & $-$ & \\ \hline
+    $f(x)$   &     & $\searrow$ &  & $\searrow$ & $m(-3)$ & $\nearrow$ & & $\nearrow$ &  & $\nearrow$ & $M(1)$ & $\searrow$ & \\ 
+    $f(x)$   & & $\frown$ & $B\left(-\dfrac{5}{4}\right)$ & $\smile$ &  & $\smile$ & $B\left(-\dfrac{5}{4}\right)$ & $\frown$ &  & $\frown$ & $B(1)$ & $\frown$ &
+\end{tabular}\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{3G-15.2-noran.ben.said.ouald.abdelkarim.INF.png}
+\end{figure}
+\begin{thebibliography}{999}
+\bibitem{a} Grafiek door desmos
+\end{thebibliography}
+\end{document} 

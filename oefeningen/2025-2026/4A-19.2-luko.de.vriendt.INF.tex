@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 19.2\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle \int e^x \cos (x)dx$ \\
+
+$\left \{
+\begin{array}{l}
+     u = \cos (x) \\
+     dv = e^xdx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+     du = -\sin (x)dx \\
+     v = e^x
+\end{array}
+\right .$ \\
+
+$I = e^x \cos (x) + \displaystyle \int e^x \sin(x)dx$ \\
+
+$\left \{
+\begin{array}{l}
+     t = \sin (x) \\
+     dw = e^xdx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+     dt = \cos (x)dx \\
+     w = e^x
+\end{array}
+\right .$ \\
+
+$I = e^x \cos (x) + e^x \sin (x) - \displaystyle \int e^x \cos(x)dx$ \\
+
+$2I =  e^x \cos (x) + e^x \sin (x) + c$ \\
+
+$I =  \dfrac{e^x \left( \cos (x) + \sin (x) \right)}{2} + c$ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

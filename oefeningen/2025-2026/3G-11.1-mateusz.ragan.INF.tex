@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Mateusz Ragan \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3G nr. 11.1\\
+
+\medskip
+
+\normalsize
+
+$f(x) = \dfrac{2x}{x^2+1}$\\
+
+domein $f$: $\mathbb{R}$\\
+
+nulpunten $f(x) = 0 \Leftrightarrow x = 0$\\
+
+$\begin{array}{r|c c c}
+x 		 & 		&   0 	&  \\ \hline
+f(x) 		& -  &   0   & + \\
+\end{array}$\\
+
+Geen VA\\
+
+
+$\lim\limits_{x\rightarrow\infty} \dfrac{2x}{x^2} = \lim\limits_{\infty} \dfrac{2}{x} = 0$\\
+
+$\begin{array}{r|c c c}
+x 				 & 		&   0 	&  \\ \hline
+f(x) - $A$   & -  &   |   & + \\
+\end{array}$\\
+
+Er is een HA, dus er is geen SA.\\
+
+$f'(x) = \dfrac{(x^2+1)\cdot 2 - 2x \cdot 2x }{(x^2+1)^2} = \dfrac{-2x^2 +2}{(x^2+1)^2}$\\
+
+
+$\begin{array}{r|c c c c c}
+x 			 		&			   &	-1	 		&						&	1				&						\\ \hline
+f'(x) 			&-			 	 &	 0	 		&	+					&	0				& - 	 		 \\
+f(x) 				&\searrow &	$min$(-1)	&	\nearrow	&	$max$(1)	&\searrow 
+\end{array}$\\
+
+$f''(x) = \dfrac{(x^2+1)^2\cdot -4x -((-2x^2 +2)(4x^3+4x))}{(x^2+1)^4} = \dfrac{4x^5-8x^3-12x}{(x^2+1)^4}$\\
+
+$=\dfrac{4x(x^4-2x^2-3)}{(x^2+1)^4} = \dfrac{4x(x^2+1)(x^2-3)}{(x^2+1)^4} = \dfrac{4x(x^2-3)}{(x^2+1)^3}$\\
+
+$\begin{array}{r|c c c c c c c}
+x 			 		&			   &	-\sqrt{3}	 		&					&	0		  &					&	\sqrt{3}&						\\ \hline
+f''(x) 			&		- 	 &	 0	 					&	   +  	&	0				& - 	 	&	0				& +	 \\	
+f(x) 				&\frown &	$bgpt$\left(\dfrac{-\sqrt{3}}{2}\right)	&	\smile &	$bgpt$(0)	&\frown	&	$bgpt$\left(\dfrac{\sqrt{3}}{2}\right)	&\smile 
+\end{array}$\\
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{3G-11.1-mateusz.ragan.INF.png}
+\end{figure}
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

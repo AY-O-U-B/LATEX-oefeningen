@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 22.2\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int \Bgsin^2 x dx $\\
+
+$ \left \{
+\begin{array}{l}
+u = \Bgsin^2 x \\
+dv = dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = 2\Bgsin x \cdot \dfrac{1}{\sqrt{1-x^2}} dx \\
+v = x
+\end{array}
+\right . $\\
+
+$ = x\Bgsin^2 x - \displaystyle\int x \cdot \dfrac{2\Bgsin x}{\sqrt{1-x^2}} dx $\\
+
+$ = x\Bgsin^2 x - 2\displaystyle\int \dfrac{x\Bgsin x}{\sqrt{1-x^2}} dx $\\
+
+$ t = \Bgsin x \left( \Rightarrow x = \sin t, dx = \cos t dt, \sqrt{1-x^2} = \sqrt{1-\sin^2 t} = \sqrt{\cos^2 t} = \cos t \right)$\\
+
+$ = x\Bgsin^2 x - 2\displaystyle\int \dfrac{\sin t \cdot t}{\cos t}\cos t dt $\\
+
+$ = x\Bgsin^2 x - 2\displaystyle\int t\sin t dt $\\
+
+$ \left \{
+\begin{array}{l}
+u = t \\
+dv = \sin t dt
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = dt \\
+v = -\cos t
+\end{array}
+\right . $\\
+
+$ = x\Bgsin^2 x - 2\left(-t\cos t + \displaystyle\int \cos t dt\right) $\\
+
+$ = x\Bgsin^2 x - 2\left(-t\cos t + \sin t\right) $\\
+
+$ = x\Bgsin^2 x + 2t\cos t - 2\sin t $\\
+
+$ \Bgsin x = t $\\
+
+$ = x\Bgsin^2 x + 2\Bgsin x\sqrt{1-x^2} - 2x + C $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
