@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3D nr. 7.2 \\
+
+\medskip
+
+\normalsize
+
+
+$f(x) = e^x\sin x$ \\
+
+$f'(x) = e^x\sin x + e^x\cos x = e^x\left(\sin x + \cos x\right)$ \\
+
+$f'(x) = 0 \Leftrightarrow e^{x} = 0\vee\sin x + \cos x = 0$ \\
+
+$e^x$: \\
+
+$e^{x} = 0$ kan niet, $e^x$ raakt nooit y = 0. \\
+
+$\sin x + \cos x$: \\
+
+$\sin x + \cos x = 0$ \\
+
+$\Leftrightarrow \sin x = -\cos x$ \\
+
+$\Leftrightarrow \dfrac{\sin x}{\cos x} = -1$ \\
+
+$\Leftrightarrow \tan x = -1$ \\
+
+$\Leftrightarrow x = -\dfrac{\pi}{4} + k\pi$ \\
+
+We checken waar de minima en maxima zitten: \\
+
+$-\dfrac{\pi}{4}$: \\
+
+$-\dfrac{\pi}{2} < -\dfrac{\pi}{4} \Rightarrow f'\left(-\dfrac{\pi}{2}\right) = -e^{-\tfrac{\pi}{2}} < 0$ \\
+
+$0 > -\dfrac{\pi}{4} \Rightarrow f'(0) = 1 > 0$ \\
+
+$\begin{array}{r|ccccccccc}
+x     & -\infty &          & -\dfrac{\pi}{2} &          & -\dfrac{\pi}{4} &          & 0        &          & +\infty \\ 
+\hline
+f'(x) &         & -        & -               & -        & 0               & +        & +        & +        &\\ 
+f(x)  &         & \searrow & \searrow        & \searrow & m               & \nearrow & \nearrow & \nearrow &\\
+\end{array}$ \\
+
+$x = -\dfrac{\pi}{4} + k2\pi$ zijn lokale minima \\
+
+$\dfrac{3\pi}{4}$: \\
+
+$0 < \dfrac{3\pi}{4} \Rightarrow f'(0) = 1 > 0$ \\
+
+$\pi > \dfrac{3\pi}{4} \Rightarrow f'(\pi) = -e^{\pi} < 0$ \\
+
+$\begin{array}{r|ccccccccc}
+x     & -\infty &          & 0        &          & \dfrac{3\pi}{4} &          & \pi      &          & +\infty \\ 
+\hline
+f'(x) &         & +        & +        & +        & 0               & -        & -        & -        &\\ 
+f(x)  &         & \nearrow & \nearrow & \nearrow & M               & \searrow & \searrow & \searrow &\\
+\end{array}$ \\
+
+$x = \dfrac{3\pi}{4} + k2\pi$ zijn lokale maxima \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 10.3 \\
+
+\medskip
+
+\normalsize
+
+
+$\integral\dfrac{\sin x + x\cos x}{x\sin x}dx$ \\
+
+$= \integral\dfrac{\sin x}{x\sin x}dx + \integral\dfrac{x\cos x}{x\sin x}dx$ \\
+
+$= \integral\dfrac{1}{x}dx + \integral\dfrac{\cos x}{\sin x}dx$ \\
+
+$= \ln |x| + \displaystyle\int\dfrac{\cos x}{\sin x}dx$ \\
+
+Substitutie: $t = \sin x \Rightarrow dt = \cos xdx$ \\
+
+$= \ln |x| + \integral\dfrac{1}{t}dt$ \\
+
+$= \ln |x| + \ln |t| + c$ \\
+
+$= \ln |x| + \ln |\sin x| + c$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

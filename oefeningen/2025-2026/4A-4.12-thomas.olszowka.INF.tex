@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\fourtroot}{\sqrt[4]}
+\newcommand{\sixthroot}{\sqrt[6]}
+\newcommand{\twelfthroot}{\sqrt[12]}
+\newcommand{\twentyfourthroot}{\sqrt[24]}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 4.12  \\
+
+
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{\fourtroot{x} \sixthroot{x^7}}{\sqrt{x^3 \twelfthroot{x^{11}}}} dx$ \\
+
+$= \dint \dfrac{x^{\tfrac{1}{4}} x^{\tfrac{6}{7}}}{\sqrt{x^3 x^{\tfrac{11}{12}}}} dx$ \\
+
+$= \dint \dfrac{x^{\tfrac{3}{12}} x^{\tfrac{14}{12}}}{\left( x^{\tfrac{36}{12}} x^{\tfrac{11}{12}}\right)^{\tfrac{1}{2}}} dx$ \\
+
+$= \dint \dfrac{x^{\tfrac{17}{12}}}{\left( x^{\tfrac{47}{12}} \right)^{\tfrac{1}{2}}} dx$ \\
+
+$= \dint \dfrac{x^{\tfrac{34}{24}}}{x^{\tfrac{47}{24}}} dx$ \\
+
+$= \dint x^{\tfrac{34}{24}} x^{\tfrac{-47}{24}} dx$ \\
+
+$= \dint x^{\tfrac{-13}{24}}dx$ \\
+
+$= \dfrac{x^{\tfrac{11}{24}}}{\dfrac{11}{24}} + c$ \\
+
+$= \dfrac{24 \twentyfourthroot{x^{11}}}{11} + c$ \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 7.3\\
+
+\medskip
+
+\normalsize
+
+
+$\integral_{0}^{\tfrac{\pi}{4}} \tan xdx$ \\
+
+$\integral \tan xdx$ \\
+
+$= \integral \dfrac{\sin x}{\cos x} dx$ \\
+
+Substitutie: $t = \cos x \Rightarrow dt = -\sin xdx$ \\
+
+$= -\integral \dfrac{1}{t}dt$ \\
+
+$= -\ln \left|\cos x\right| + c$ \\
+
+$\Rightarrow\integral_{0}^{\tfrac{\pi}{4}} \tan xdx = -\ln \left|\cos \dfrac{\pi}{4}\right| + \ln \left|\cos 0\right| = -\ln \dfrac{\sqrt{2}}{2} + \ln 1 = -\ln \dfrac{\sqrt{2}}{2}$ \\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

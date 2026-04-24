@@ -1,0 +1,77 @@
+\documentclass[a4paper]{article} 
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+\noindent \large Auteur: Nathan De Roy \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3H nr. 12.1\\
+
+\medskip
+\normalsize
+
+
+\noindent \textbf{Schets de functie:} $r = 3(1 - \sin(\theta))$\\
+
+$\left .
+\begin{array}{l}
+    \operatorname{dom} r    = \mathbb{R}\\
+    P                       = 2\pi
+\end{array}
+\right \}
+\text{Bep. Dom.} = [0, 2\pi]$\\
+
+\noindent \textbf{Nulpunten:}\\
+
+$r = 0 \Leftrightarrow \sin(\theta) = 0 \Leftrightarrow \theta = \dfrac{\pi}{2}+ k2\pi$ met $k \in \mathbb{N} \longrightarrow \theta \in \left\{\dfrac{\pi}{2}\right\}$\\
+
+$r' = 0 \Leftrightarrow -3\cos(\theta) = 0 \Leftrightarrow \cos(\theta) = 0 \Leftrightarrow \theta = \dfrac{\pi}{2} + k\pi$ met $k \in \mathbb{N}$\\
+
+$\longrightarrow \theta \in \left\{ \dfrac{\pi}{4}, \dfrac{3\pi}{4}\right\}$\\
+
+\noindent \textbf{Schema:}\\
+
+\begin{tabular}{c|ccccccccc}
+$\theta$    & $0$          & $$           & $\dfrac{\pi}{2}$ & $$         & $\pi$        & $$         & $\dfrac{3\pi}{2}$  & $$            & $2\pi$    \\ \hline
+$r$         & $3$          & $+$          & $0$              & $+$        & $3$          & $+$        & $6$                & $+$           & $3$        \\
+$r'$        & $-3$         & $-$          & $0$              & $+$        & $3$          & $+$        & $0$                & $-$           & $-3$        \\
+$$          & $\searrow$ & $\searrow$ & min              & $\nearrow$ & $\nearrow$   & $\nearrow$ & Max                & $\searrow$  & $\searrow$ \\
+\end{tabular}
+
+
+\bigskip
+\noindent \textbf{Grafiek in poolcoördinaten:}\\
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+
+% polar grid
+\draw[thin,gray!40] (0,0) circle (1);
+\draw[thin,gray!40] (0,0) circle (2);
+\draw[thin,gray!40] (0,0) circle (4);
+\draw[thin,gray!40] (0,0) circle (6);
+
+\foreach \a in {0,30,...,330}
+    \draw[gray!40] (0,0) -- (\a:4.5);
+
+% r = 3(1 - sin(θ))
+\draw[domain=0:360,samples=400,smooth,variable=\t,blue,thick]
+plot ({3*(1 - sin(\t))*cos(\t)}, {3*(1 - sin(\t))*sin(\t)});
+
+% axes
+\draw[->] (-6.5,0) -- (6.5,0);
+\draw[->] (0,-6.5) -- (0,6.5);
+
+\end{tikzpicture}
+\end{center}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\bibitem{a} 
+\end{thebibliography}
+\end{document} 

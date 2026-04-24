@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 8.2\\
+
+\medskip
+
+\normalsize
+
+$\dint\limits_{-\tfrac{1}{2}}^{1} \sqrt{1-x^2}dx$\\
+
+$x = \sin t \Rightarrow t = \Bgsin x \Rightarrow dx = \cos t dt$\\
+
+O.I.:\\
+
+$\dint \cos t \sqrt{1-\sin^2t}dt$\\
+
+$= \dint \cos t \sqrt{\cos^2t}dt$\\
+
+$= \dint \cos^2t dt$\\
+
+$= \dfrac{1}{2}\dint 1 + \cos(2t)dt$\\
+
+$= \dfrac{1}{2}\dint t^0 dt + \dfrac{1}{2}\dint \cos(2t)dt$\\
+
+$= \dfrac{t}{2}+\dfrac{1}{4}\sin(2t)+C$\\
+
+B.I.:\\
+
+$x=1 \Rightarrow t = \Bgsin 1 = \dfrac{\pi}{2}$\\
+
+$x=-\dfrac{1}{2}\Rightarrow t = -\dfrac{\pi}{6}$
+
+$\left[\dfrac{t}{2}+\dfrac{1}{4}\sin(2t)\right]^{\tfrac{\pi}{2}}_{-\tfrac{\pi}{6}}$\\
+
+$=\dfrac{\pi}{4}-\left(-\dfrac{\pi}{12}-\dfrac{\sqrt{3}}{8}\right) = \dfrac{3\pi}{12}+\dfrac{\pi}{12}+\dfrac{\sqrt{3}}{8} = \dfrac{\pi}{3}+ \dfrac{\sqrt{3}}{8}$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 24.9 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{1}{x} \ln(\ln x) dx$ \\
+
+$t = \ln x \Rightarrow dt = \dfrac{1}{x} dx$ \\
+
+$\dint \ln t dt$ \\
+
+$ \left\{
+\begin{array}{l}
+u = \ln t \\
+dv = 1dt
+\end{array} \right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = \dfrac{1}{t} dt \\
+v = t
+\end{array} 
+\right.$ \\
+
+$= t \ln t - \dint t \cdot \dfrac{1}{t} dt$ \\
+
+$= t \ln t - \dint 1 dt$ \\
+
+$= t \ln t - t + C$ \\
+
+$= \ln x \cdot \ln(\ln x) - \ln x + C$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

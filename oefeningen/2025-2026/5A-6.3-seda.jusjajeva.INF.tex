@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 6.3\\
+
+\medskip
+
+\normalsize
+
+
+$\integral_0^2 \dfrac{2x}{x^2 + 1}dx$ \\
+
+$= \integral \dfrac{2x}{x^2 + 1}dx$ \\
+
+$= 2\integral \dfrac{x}{x^2 + 1}dx$ \\
+
+Substitutie: $t = x^2 + 1 \Rightarrow dt = 2xdx$ \\
+
+$= \integral \dfrac{1}{t}dt$ \\
+
+$= \ln\left|x^2 + 1\right| + c$ \\
+
+$\Rightarrow \integral_0^2 \dfrac{2x}{x^2 + 1}dx = \left[\ln\left|x^2 + 1\right|\right]_0^2 = \ln \left|2^2 + 1\right| - \ln \left|0^2 + 1\right| = \ln 5 - \ln 1 = \ln 5$ \\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

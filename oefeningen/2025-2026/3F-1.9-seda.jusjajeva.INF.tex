@@ -1,0 +1,62 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3F nr. 1.9 \\
+
+\medskip
+
+\normalsize
+
+
+$f(x) = \dfrac{5x^2 - x - 1}{x - 4}$ \\
+
+VA: \\
+
+$\limit_{x\to4}\dfrac{5x^2 - x - 1}{x - 4} = \dfrac{75}{0} =\infty\Rightarrow$ VA: $x = 4$ \\
+
+$\limit_{x\to4+}\dfrac{5x^2 - x - 1}{x - 4} = \dfrac{75}{0^+} = +\infty$ \\
+
+$\limit_{x\to4-}\dfrac{5x^2 - x - 1}{x - 4} = \dfrac{75}{0^-} = -\infty$ \\
+
+HA: \\
+
+$\limit_{x\to\infty}\dfrac{5x^2 - x - 1}{x - 4} = \limit_{x\to\infty}\dfrac{5x^2}{x} = \infty\Rightarrow$ geen HA \\
+
+SA: \\
+
+$\limit_{x\to\infty}\dfrac{f(x)}{x} = \limit_{x\to\infty}\dfrac{5x^2 - x - 1}{x(x - 4)} = \limit_{x\to\infty}\dfrac{5x^2}{x^2} = 5$ \\
+
+$\limit_{x\to\infty}\left(f(x) - 5x\right) = \limit_{x\to\infty}\left(\dfrac{5x^2 - x - 1}{x - 4} - 5x\right)$ \\
+
+$= \limit_{x\to\infty}\dfrac{5x^2 - x - 1 - 5x^2 + 20x}{x - 4}$ \\
+
+$= \limit_{x\to\infty}\dfrac{19x}{x} = 19\Rightarrow$ SA: $y = 5x + 19$\\
+
+$\dfrac{5x^2 - x - 1}{x - 4} - (5x + 19) = \dfrac{75}{x - 4}$ \\
+
+$\begin{array}{r|ccc}
+    x                 &   & 4     &   \\
+    \hline  
+    \dfrac{75}{x - 4} & - & \vert & + \\
+\end{array}$ \\
+
+$\Rightarrow$ Als $x\rightarrow+\infty\Rightarrow f(x) > A$ \\
+
+$\Rightarrow$ Als $x\rightarrow-\infty\Rightarrow f(x) < A$ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

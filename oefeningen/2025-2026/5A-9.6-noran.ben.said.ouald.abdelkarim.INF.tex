@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Noran Ben Said \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 9.6 \\
+\medskip
+
+\normalsize
+
+$ I = \displaystyle\int_1^5 \dfrac{x^7}{(6-x)^7 + x^7}\,dx$\\
+
+Stel $ x = 6 - t \Rightarrow dx = -dt$\\
+
+Grenzen:\\
+
+$x=1 \Rightarrow t=5$\\
+
+$x=5 \Rightarrow t=1$\\
+
+$ I = \displaystyle\int_5^1 \dfrac{(6-t)^7}{t^7 + (6-t)^7}(-dt)$\\
+
+$ = \displaystyle\int_1^5 \dfrac{(6-x)^7}{x^7 + (6-x)^7}\,dx$\\
+
+$ I + I = \displaystyle\int_1^5 \dfrac{x^7 + (6-x)^7}{x^7 + (6-x)^7}\,dx$\\
+
+$ 2I = \displaystyle\int_1^5 1\,dx$\\
+
+$ = \left[x\right]_1^5  = 5 - 1 = 4$\\
+
+$ I = 2$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

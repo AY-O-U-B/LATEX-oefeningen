@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 3C nr. 9 \\
+
+\medskip
+
+\normalsize
+
+Gegeven: $f'(x) = \gamma_0 + \gamma_1 x + \gamma_2 x^2 + $ ... $+ \gamma_n x^n$ \\
+
+$f(x) = \gamma_0 x + \dfrac{\gamma_1}{2} x^2 + \dfrac{\gamma_2}{3} x^3 + $ ... $+ \dfrac{\gamma_n}{n+1} x^{n+1}$ \\
+
+$f(0) = \gamma_0(0) + \dfrac{\gamma_1}{2}(0)^2 + \dfrac{\gamma_2}{3}(0)^3 + $ ... $+ \dfrac{\gamma_n}{n+1}(0)^{n+1} $ \\
+
+$= 0$ \\
+
+$f(1) = \gamma_0(1) + \dfrac{\gamma_1}{2}(1)^2 + \dfrac{\gamma_2}{3}(1)^3 + $ ... $+ \dfrac{\gamma_n}{n+1}(1)^{n+1} $ \\
+
+$= \gamma_0 + \dfrac{\gamma_1}{2} + \dfrac{\gamma_2}{3} + $ ... $+ \dfrac{\gamma_n}{n+1} $ \\
+
+$= \displaystyle\sum\limits_{i=0}^{n} \dfrac{\gamma_i}{i+1} \rightarrow$ gegeven $f(1) = 0$ dus $f(0) = f(1) = 0$ \\
+
+$\Rightarrow$ Stelling van Rolle: $f'(c) = 0$ dit geldt. \\
+
+dus: $\gamma_0 + \gamma_1 c + \gamma_2 c^2 + $ ... $+ \gamma_n c^n = 0$ \\
+
+$\blacksquare$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 2.1\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int_{-\infty}^{+\infty} \dfrac{dx}{1 + x^2}$ \\
+
+$=\lim\limits_{a \rightarrow -\infty} \left( \displaystyle \int_a^0 \dfrac{dx}{1 + x^2}\right) + \lim\limits_{b \rightarrow +\infty} \left (\displaystyle \int_0^b \dfrac{dx}{1 + x^2} \right )$ \\
+
+$=\lim\limits_{a \rightarrow -\infty} \left( \left [\operatorname{Bgtan} (x) \right ]_a^0 \right) + \lim\limits_{b \rightarrow +\infty} \left ( \left [ \operatorname{Bgtan} (x) \right]_0^b \right )$ \\
+
+$=\lim\limits_{a \rightarrow -\infty} \left ( \bcancel{\operatorname{Bgtan} (0)} - \operatorname{Bgtan} (a) \right ) + \lim\limits_{b \rightarrow +\infty} \left (\operatorname{Bgtan} (b) - \bcancel{\operatorname{Bgtan} (0)} \right )$ \\ 
+
+$= -\left ( \dfrac{-\pi}{2} \right ) + \dfrac{\pi}{2}$ \\
+
+$= \pi$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

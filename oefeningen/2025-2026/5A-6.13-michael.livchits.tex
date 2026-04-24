@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 6.13\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle\dint_{0}^{\sqrt[4]{3}} \dfrac{2x}{1+x^2}dx$\\
+
+Eerst vinden we de onbepaalde integraal\\
+
+Stel $u = x^2$\\
+
+$du = 2xdx$\\
+
+$\displaystyle\int \dfrac{du}{1+u^2}$\\
+
+$= \Bgtan u + C$\\
+
+Pas grenzen aan en vul in\\
+
+$I = \left[\Bgtan u\right]_{0}^{\sqrt{3}}$\\
+
+$I = \Bgtan\sqrt{3} - \Bgtan0 = \dfrac{\pi}{3}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

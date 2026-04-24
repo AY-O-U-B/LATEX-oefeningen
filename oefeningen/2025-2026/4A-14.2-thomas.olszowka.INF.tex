@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 14.2  \\
+
+
+
+\medskip
+
+\normalsize
+
+$I = \dint x \ln x dx$ \\
+
+$\left\{\begin{array}{cc}
+    u =& \ln x \\ 
+    dv =& xdx  \\
+\end{array}\right. \Rightarrow\left\{\begin{array}{cc}
+    du =& \dfrac{1}{x} dx \\
+    v =& \dfrac{x^2}{2}  \\
+\end{array}\right.$ \\
+
+$I = \ln x \cdot \dfrac{x^2}{2} - \dint \dfrac{x^2}{2} \cdot \dfrac{1}{x} dx$ \\
+
+$= \dfrac{1}{2}x^2 \ln x - \dint \dfrac{x^2}{2x} dx$ \\
+
+$= \dfrac{1}{2}x^2 \ln x - \dfrac{1}{2} \dint x dx$ \\
+
+$= \dfrac{1}{2}x^2 \ln x - \dfrac{x^2}{4} + c$ \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

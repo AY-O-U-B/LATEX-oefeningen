@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Jonas Saelens \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 31.10\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int \dfrac{dx}{\left(3x+7\right)\sqrt{x+2}}$ \\
+
+$$t = x+2$$ $$dt = dx$$ $$\left( x = t-2 \right)$$ \\
+
+$= \displaystyle \int \dfrac{dt}{\left(3x+7\right)\sqrt{t}}$ \\
+
+$= \displaystyle \int \dfrac{dt}{\left(3\left(t-2\right)+7\right)t^{\tfrac{1}{2}}}$ \\
+
+$= \displaystyle \int \dfrac{dt}{\left(3t-6+7\right)t^{\tfrac{1}{2}}}$ \\
+
+$= \displaystyle \int \dfrac{dt}{\left(3t+1\right)t^{\tfrac{1}{2}}}$ \\
+
+$= \displaystyle \int \dfrac{dt}{\left(3t+1\right)t^{\tfrac{1}{2}}}$ \\
+
+$$u = t^{\tfrac{1}{2}}$$ $$u^2 = t$$ $$2udu = dt$$ \\
+
+$= \displaystyle \int 2u\left( \dfrac{du}{u\left(3t+1\right)}\right)$ \\
+
+$= \displaystyle \int 2\left( \dfrac{du}{3u^2+1}\right)$ \\
+
+$= \displaystyle \int \dfrac{2du}{3u^2+1}$ \\
+
+$= \displaystyle 2 \int \dfrac{du}{3u^2+1}$ \\
+
+$$v = \sqrt{3}u$$ $$dv = \sqrt{3}du$$ $$\dfrac{dv}{\sqrt{3}} = du$$ \\
+
+$= \dfrac{2}{\sqrt{3}} \displaystyle \int \dfrac{dv}{v^2+1}$ \\
+
+$= \dfrac{2}{\sqrt{3}} \operatorname{Bgtan}(v)+c$ \\
+
+$= \dfrac{2}{\sqrt{3}} \operatorname{Bgtan}(\sqrt{3}u)+c$ \\
+
+$= \dfrac{2}{\sqrt{3}} \operatorname{Bgtan}(\sqrt{3t})+c$ \\
+
+$= \dfrac{2}{\sqrt{3}} \operatorname{Bgtan}(\sqrt{3(x+2)})+c$ \\
+
+$= \dfrac{2}{\sqrt{3}} \operatorname{Bgtan}(\sqrt{3x+6})+c$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

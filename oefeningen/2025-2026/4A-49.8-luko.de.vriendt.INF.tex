@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 49.8\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int \dfrac{\sin (2x)}{1 + \sin^2 (x)}dx$ \\
+
+$=\displaystyle \int \dfrac{\sin (2x)}{1 + \dfrac{1 - \cos (2x)}{2}}dx$ \\
+
+$=2\displaystyle \int \dfrac{\sin (2x)}{3 - \cos (2x)}dx$ \\
+
+$u = 3 - \cos (2x)\Rightarrow du = 2\sin (2x)dx$ \\
+
+$= \displaystyle \int \dfrac{du}{u}$ \\
+
+$= \ln |3-\cos (2x)|+c$ \\
+
+OF \\
+
+$\displaystyle \int \dfrac{\sin (2x)}{1 + \sin^2 (x)}dx$ \\
+
+$=\displaystyle \int \dfrac{2\sin (x) \cos (x)}{1 + \sin^2 (x)}dx$ \\
+
+$u = \sin (x) \Rightarrow du = \cos (x)dx$ \\
+
+$=2\displaystyle \int \dfrac{udu}{1 + u^2}$ \\
+
+$v = 1 + u^2 \Rightarrow dv = 2udu$ \\
+
+$=\displaystyle \int \dfrac{dv}{v}$ \\
+
+$=\ln |1 + \sin^2 (x)| + c$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

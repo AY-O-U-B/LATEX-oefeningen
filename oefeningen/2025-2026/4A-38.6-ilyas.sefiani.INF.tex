@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Ilyas Sefiani \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 38.6\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int \dfrac{5x-7}{x^2+3x+3}dx$\\
+
+$= \dfrac{5}{2}\displaystyle\int \dfrac{2x+3}{x^2+3x+3}dx-\dfrac{29}{2}\displaystyle\int \dfrac{dx}{x^2+3x+3}$\\
+
+Deel 1:\\
+
+$\dfrac{5}{2}\displaystyle\int \dfrac{2x+3}{x^2+3x+3}dx$\\
+
+$$t=x^2+3x+3$$ $$dt=(2x+3)dx$$\\
+
+$=\dfrac{5}{2}\displaystyle\int \dfrac{dt}{t}$\\
+
+$=\dfrac{5}{2}\displaystyle\int \dfrac{dt}{t}$\\
+
+$=\dfrac{5}{2} \ln(t)+C$\\
+
+$=\dfrac{5}{2} \ln(x^2+3x+3)+C$\\
+
+Deel 2:\\
+
+$$\left(x+\dfrac{3}{2}\right)^2+\dfrac{3}{4}=x^2+3x+3$$\\
+
+$-\dfrac{29}{2}\displaystyle\int \dfrac{dx}{x^2+3x+3}$\\
+
+$= -\dfrac{29}{2}\displaystyle\int \dfrac{dx}{\left(x+\dfrac{3}{2}\right)^2+\dfrac{3}{4}}$\\
+
+$$u=x+\dfrac{3}{2}$$ $$du=dx$$\\
+
+$= -\dfrac{29}{2}\displaystyle\int \dfrac{du}{u^2+\dfrac{3}{4}}$\\
+
+$= -\dfrac{29}{\sqrt{3}}\operatorname{Bgtan}\left(\dfrac{2u}{\sqrt{3}}\right)+C$\\
+
+$= -\dfrac{29}{\sqrt{3}}\operatorname{Bgtan}\left(\dfrac{2x+3}{\sqrt{3}}\right)+C$\\
+
+Deel 1 + Deel 2:\\
+
+$=\dfrac{5}{2} \ln(x^2+3x+3)-\dfrac{29}{\sqrt{3}}\operatorname{Bgtan}\left(\dfrac{2x+3}{\sqrt{3}}\right)+C$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

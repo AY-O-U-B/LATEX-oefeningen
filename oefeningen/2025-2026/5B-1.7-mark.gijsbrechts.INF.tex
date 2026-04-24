@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 1.7\\
+
+\medskip
+
+\normalsize
+
+
+
+
+
+$ \dint\limits_{0}^{+\infty} xe^{-x^2} dx $ \\
+
+$= \lim\limits_{b \to +\infty} \dint\limits_{0}^{b} xe^{-x^2} dx  $ \\
+
+$ u = -x^2 \Rightarrow du = -2x dx \Rightarrow dx = -\dfrac{du}{2}  $ \\
+
+$= \lim\limits_{b \to +\infty} -\dfrac{1}{2} \dint\limits_{0}^{b} e^u du  $ \\
+
+$= \lim\limits_{b \to +\infty} -\dfrac{1}{2}\left[ e^u \right]_{0}^{b}  $ \\
+
+$= \lim\limits_{b \to +\infty} -\dfrac{1}{2}\left[ e^{-x^2} \right]_{0}^{b}  $ \\
+
+$= \lim\limits_{b \to +\infty} -\dfrac{1}{2}\left[ e^{-b^2} - 1 \right]  $ \\
+
+$= -\dfrac{1}{2}\left[ 0 - 1 \right]  $ \\
+
+$= \dfrac{1}{2}  $ \\
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

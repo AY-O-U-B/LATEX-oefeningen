@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto}
+\newcommand{\intgrl}{\displaystyle\int} %integraal teken (bij het berekenen van primitieven)
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 5.2\\
+
+\medskip
+
+\normalsize
+
+$ BI \intgrl_{-2}^2 \Lh 4x^2 -5x +2 \Rh dx \adR OBI = \intgrl \Lh 4x^2 -5x +2 \Rh dx$\\
+
+$= 4\intgrl x^2 dx -5 \intgrl x dx +2 \intgrl dx = \dfrac{4 x^3}{3} +c -\dfrac{5x^2}{2} +c +2x +c = \dfrac{4}{3} x^3 - \dfrac{5}{2} x^2 +2x +c $\\
+
+$BI = \Lv \dfrac{4}{3} x^3 - \dfrac{5}{2} x^2 +2x +c \Rv_{-2}^2 = \dfrac{4}{3} \Lh 2 \Rh^3 - \dfrac{5}{2} \Lh 2 \Rh^2 + 2 \cdot 2 \schrap{+c} - \dfrac{4}{3} \Lh -2 \Rh^3 + \dfrac{5}{2} \Lh -2 \Rh^2 -2 \cdot \Lh -2 \Rh \schrap{-c} = \dfrac{32}{3} - \schrap{\dfrac{20}{2}} +4 + \dfrac{32}{3} + \schrap{\dfrac{20}{2}} +4 = \dfrac{64}{3} +8 = \dfrac{88}{3}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

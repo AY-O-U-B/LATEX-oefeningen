@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 60.10\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int \dfrac{x^{\tfrac{3}{4}} + 1}{x^{\tfrac{1}{2}} + 1} dx $\\
+
+$ t = x^{\tfrac{1}{4}} \left( dt = \dfrac{1}{4}x^{-\tfrac{1}{4}}dx = \dfrac{1}{4x^{\tfrac{3}{4}}}dx,\; dx = 4x^{\tfrac{3}{4}}dt = 4t^3 dt \right) $\\
+
+$ \displaystyle\int \dfrac{t^3 + 1}{t^2 + 1} \cdot 4t^3 dt $\\
+
+$ = 4 \displaystyle\int \dfrac{t^6 + t^3}{t^2 + 1} dt $\\
+
+$ = 4 \left( \displaystyle\int \dfrac{t^6}{t^2 + 1} dt + \displaystyle\int \dfrac{t^3}{t^2 + 1} dt \right) $\\
+
+$ \left \{
+\begin{array}{l}
+\dfrac{t^6}{t^2 + 1} = t^4 - t^2 + 1 - \dfrac{1}{t^2 + 1} \\
+
+\dfrac{t^3}{t^2 + 1} = t - \dfrac{t}{t^2 + 1}
+\end{array}
+\right . $\\
+
+$ = 4 \displaystyle\int \left( t^4 - t^2 + 1 + t - \dfrac{1}{t^2 + 1} - \dfrac{t}{t^2 + 1} \right) dt $\\
+
+$ = 4 \left( \displaystyle\int t^4 dt - \displaystyle\int t^2 dt + \displaystyle\int 1 dt + \displaystyle\int t dt - \displaystyle\int \dfrac{1}{t^2 + 1} dt - \displaystyle\int \dfrac{t}{t^2 + 1} dt \right) $\\
+
+$ = 4 \left( \dfrac{t^5}{5} - \dfrac{t^3}{3} + t + \dfrac{t^2}{2} - \Bgtan(t) - \dfrac{1}{2}\ln(t^2 + 1) \right) + C $\\
+
+$ = \dfrac{4t^5}{5} - \dfrac{4t^3}{3} + 4t + 2t^2 - 4\Bgtan(t) - 2\ln(t^2 + 1) + C $\\
+
+$ t = x^{\tfrac{1}{4}} $\\
+
+$ = \dfrac{4}{5}x^{\tfrac{5}{4}} - \dfrac{4}{3}x^{\tfrac{3}{4}} + 4x^{\tfrac{1}{4}} + 2x^{\tfrac{1}{2}} - 4\Bgtan(x^{\tfrac{1}{4}}) - 2\ln(x^{\tfrac{1}{2}} + 1) + C $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

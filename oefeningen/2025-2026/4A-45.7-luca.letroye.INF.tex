@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 45.7
+
+\medskip
+\normalsize
+
+$\dint\dfrac{x^2-x}{(x^2+1)(x+1)^2}dx = \dfrac{Ax+B}{x^2+1} + \dfrac{C}{(x+1)^2} + \dfrac{D}{x+1}$\\
+
+$C = \left. \dfrac{x^2-x}{(x^2+1)}\right|_{x=-1} = 1$\\
+
+$Ax+B = \dfrac{-1-i}{(i+1)^2} = \dfrac{-1}{2} +\dfrac{i}{2}$\\
+
+$\Rightarrow B = \dfrac{-1}{2}$ en $A = \dfrac{1}{2}$\\
+
+$\dfrac{x^2-x}{(x^2+1)(x+1)^2} - \dfrac{1}{(x+1)^2} = \dfrac{-1}{(x^2+1)(x+1)}$\\
+
+$\Rightarrow D = \left. \dfrac{-1}{(x^2+1)}\right|_{x=-1} = \dfrac{-1}{2}$\\
+
+$\Rightarrow \dint\dfrac{\dfrac{1}{2}x-\dfrac{1}{2}}{x^2+1}dx+\dint\dfrac{dx}{(x+1)^2}dx - \dfrac{1}{2}\dint\dfrac{1}{x+1}dx$\\
+
+$= \dint\dfrac{\dfrac{1}{2}x}{x^2+1}dx - \dfrac{1}{2}\bgtan x + \dint (x+1)^{-2}dx - \dfrac{1}{2}\ln|x+1|$
+
+$= \dfrac{1}{4}\ln|x^2+1| - \dfrac{1}{2}\bgtan x -\dfrac{1}{x+1} - \dfrac{1}{2}\ln|x+1|+C$
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

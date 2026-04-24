@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 7.6\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int_0^{\tfrac{\pi}{6}} \dfrac{dx}{\cos x} $\\
+
+$ t = \sin x \left(dt = \cos x dx,\ dx = \dfrac{dt}{\cos x}\right) $\\
+
+$ \left \{
+\begin{array}{l}
+x = 0 \rightarrow t = \sin 0 = 0 \\
+
+x = \dfrac{\pi}{6} \rightarrow t = \sin \left( \dfrac{\pi}{6} \right) = \dfrac{1}{2}
+\end{array}
+\right . $\\
+
+$ = \displaystyle\int_0^{\tfrac{1}{2}} \dfrac{dt}{1-t^2} = \dfrac{A}{1-t} + \dfrac{B}{1+t} $\\
+
+$ A = \dfrac{1}{1+t} \Big|_{t=1} = \dfrac{1}{2} $\\
+
+$ B = \dfrac{1}{1-t} \Big|_{t=-1} = \dfrac{1}{2} $\\
+
+$ \Rightarrow \displaystyle\int_0^{\tfrac{1}{2}} \dfrac{\dfrac{1}{2}}{1-t} dt + \displaystyle\int_0^{\tfrac{1}{2}} \dfrac{\dfrac{1}{2}}{1+t} dt $\\
+
+$ = -\dfrac{1}{2} \ln |1-t| + \dfrac{1}{2} \ln |1+t| + C $\\
+
+$ = \dfrac{1}{2} \left( -\ln |1-t| + \ln |1+t| \right) + C = \dfrac{1}{2} \ln \left| \dfrac{1+t}{1-t} \right| $\\
+
+$ = \left[ \dfrac{1}{2} \ln \left( \dfrac{1+t}{1-t} \right) \right]_0^{\tfrac{1}{2}} $\\
+
+$ = \dfrac{1}{2} \ln \left( \dfrac{1+\dfrac{1}{2}}{1-\dfrac{1}{2}} \right) - \dfrac{1}{2} \ln \left( \dfrac{1+0}{1-0} \right) $\\
+
+$ = \dfrac{1}{2} \ln \left( \dfrac{\dfrac{3}{2}}{\dfrac{1}{2}} \right) - 0 $\\
+
+$ = \dfrac{1}{2} \ln 3 $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

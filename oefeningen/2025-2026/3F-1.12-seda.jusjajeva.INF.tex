@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3F nr. 1.12 \\
+
+\medskip
+
+\normalsize
+
+
+$f(x) = \dfrac{x^3 + 4x^2 + x + 1}{x - 3}$ \\
+
+VA: \\
+
+$\limit_{x\rightarrow3+}\dfrac{x^3 + 4x^2 + x + 1}{x - 3} = +\infty$ \\
+
+$\limit_{x\rightarrow3-}\dfrac{x^3 + 4x^2 + x + 1}{x - 3} = -\infty$ \\
+
+VA: $x = 3$\\
+
+$\begin{array}{r|cccc}
+    x    &   & 3 &   & \\
+    \hline
+    f(x) & + & | & - & \\
+\end{array}$ \\
+
+HA: \\
+
+$\limit_{x\rightarrow\infty}\dfrac{x^3 + 4x^2 + x + 1}{x - 3} = \limit_{x\rightarrow\infty}\dfrac{x^3}{x} = \limit_{x\rightarrow\infty} x^2 = +\infty \Rightarrow$ geen HA \\
+
+SA: \\
+
+$\limit_{x\rightarrow\infty}\dfrac{\dfrac{x^3 + 4x^2 + x + 1}{x - 3}}{x} = \limit_{x\rightarrow\infty}\dfrac{x^3 + 4x^2 + x + 1}{x(x - 3)}$ \\
+
+$= \limit_{x\rightarrow\infty}\dfrac{x^3 + 4x^2 + x + 1}{x^2 - 3x} = \limit_{x\rightarrow\infty}\dfrac{x^3}{x^2} = \limit_{x\rightarrow\infty} x = \infty\Rightarrow$ geen SA \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 5.7\\
+
+\medskip
+
+\normalsize
+
+
+$\integral_{-1}^{1} \dfrac{dx}{x^2}$ \\
+
+$\integral \dfrac{1}{x^2}dx = -\dfrac{1}{x} + c$ \\
+
+$\Rightarrow\integral_{-1}^{1} \dfrac{dx}{x^2} = \integral_{-1}^{0} \dfrac{dx}{x^2} + \integral_{0}^{1} \dfrac{dx}{x^2}$ \\
+
+$= \limit_{a\to 0-} \integral_{-1}^{a} \dfrac{dx}{x^2} + \limit_{a\rightarrow 0+} \integral_{a}^{1} \dfrac{dx}{x^2}$ \\
+
+$= \limit_{a\to 0-} \left[-\dfrac{1}{x}\right]_{-1}^{a} + \limit_{a\to 0+} \left[-\dfrac{1}{x}\right]_{a}^{1}$ \\
+
+$= \limit_{a\to 0-} \left(-\dfrac{1}{a} + \dfrac{1}{-1}\right) + \limit_{a\to 0+} \left(-\dfrac{1}{1} + \dfrac{1}{a}\right)$ \\
+
+$= \limit_{a\to 0-} \left(-\dfrac{1}{a} - 1\right) + \limit_{a\to 0+} \left(-1 + \dfrac{1}{a}\right)$ \\
+
+$= \left(- (-\infty) - 1\right) + \left(-1 + (+\infty)\right)$ \\
+
+$= +\infty + (+\infty)$ \\
+
+$= +\infty$ (divergent, integraal bestaat niet) \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

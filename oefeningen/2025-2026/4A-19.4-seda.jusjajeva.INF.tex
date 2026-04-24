@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 19.4 \\
+
+\medskip
+
+\normalsize
+
+
+$\integral e^{-3x}\cos xdx$ \\
+
+Partiële integratie: $\left\{\begin{array}{l}
+    u = \cos x \\
+    dv = e^{-3x}dx \\
+\end{array}\right.\Rightarrow\left\{\begin{array}{l}
+    du = -\sin xdx \\
+    v = -\dfrac{1}{3}e^{-3x} \\
+\end{array}\right.$ \\
+
+$= -\dfrac{e^{-3x} \cos x}{3} - \dfrac{1}{3}\integral e^{-3x}\sin xdx$ \\
+
+Partiële integratie: $\left\{\begin{array}{l}
+    u =  \sin x \\
+    dv = e^{-3x}dx \\
+\end{array}\right. \Rightarrow\left\{\begin{array}{l}
+    du = \cos xdx \\
+    v = -\dfrac{1}{3}e^{-3x} \\
+\end{array}\right.$ \\
+
+$= -\dfrac{e^{-3x} \cos x}{3} - \dfrac{1}{3}\left(-\dfrac{e^{-3x} \sin x}{3} + \dfrac{1}{3}\integral e^{-3x}\cos xdx\right)$ \\
+
+$= -\dfrac{e^{-3x} \cos x}{3} + \dfrac{e^{-3x} \sin x}{9} - \dfrac{1}{9}\integral e^{-3x}\cos xdx$ \\
+
+$I = \integral e^{-3x}\cos xdx$ \\
+
+$\Rightarrow I = -\dfrac{e^{-3x} \cos x}{3} + \dfrac{e^{-3x} \sin x}{9} - \dfrac{1}{9}I$ \\
+
+$\Leftrightarrow I + \dfrac{1}{9}I = -\dfrac{e^{-3x} \cos x}{3} + \dfrac{e^{-3x} \sin x}{9} + c$ \\
+
+$\Leftrightarrow \dfrac{10}{9}I = -\dfrac{e^{-3x} \cos x}{3} + \dfrac{e^{-3x} \sin x}{9} + c$ \\
+
+$\Leftrightarrow I = -\dfrac{9e^{-3x} \cos x}{3\cdot10} + \dfrac{9e^{-3x} \sin x}{9\cdot10} + c$ \\
+
+$\Leftrightarrow I = -\dfrac{3e^{-3x} \cos x}{10} + \dfrac{e^{-3x} \sin x}{10} + c$ \\
+
+$\Rightarrow I = \dfrac{-3e^{-3x}\cos x + e^{-3x}\sin x}{10} + c$
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 47.5\\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{2x^5+6x^3-2x}{x^6-3x^2-2}dx = \dint \dfrac{2x(x^4+3x^2-1)}{x^6-3x^2-2}dx$\\
+
+$t=x^2 \Rightarrow dt = 2xdx$\\
+
+$\dint \dfrac{t^2+3t-1}{t^3-3t-2}dt = \dint \dfrac{t^2+3t-1}{(t+1)(t^2-t-2)}dt$\\
+
+$= \dint \dfrac{t^2+3t-1}{(t+1)^2(t-2)}dt \Rightarrow \dfrac{A}{(t+1)^2} + \dfrac{B}{(t+1)}+ \dfrac{C}{(t-2)}$\\
+
+$A = \left . \dfrac{t^2+3t-1}{t-2} \right |_{x=-1}=1$\\
+
+$C = \left . \dfrac{t^2+3t-1}{(t+1)^2} \right |_{x=2}=1$\\
+
+$\dfrac{t^2+3t-1}{(t+1)^2(t-2)}-\dfrac{1}{(t+1)^2}= \dfrac{t^2+3t-1-(t-2)}{(t+1)^2(t-2)}$\\
+
+$= \dfrac{t^2+2t+1}{(t+1)^2(t-2)}=\dfrac{(t+1)^2}{(t+1)^2(t-2)}=\dfrac{1}{(t-2)}$\\
+
+$B = \dfrac{\dfrac{1}{t-2}}{t+1}=\left .\dfrac{t+1}{t-2}\right |_{x=-1}=0$\\
+
+$\dint \dfrac{1}{(t+1)^2}dt + \dint \dfrac{1}{t-2}dt= -\dfrac{1}{t+1}+\ln|t-2|+C$\\
+
+$=-\dfrac{1}{x^2+1}+\ln|x^2-2|+C$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

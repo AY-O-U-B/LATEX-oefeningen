@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 1.13\\
+
+\medskip
+
+\normalsize
+
+
+
+
+
+$ \dint\limits_{0}^{+\infty} e^{-ax} dx  \left( a \in \mathbb{R}_0^{+}  \right) $\\
+
+$= \lim\limits_{b \to +\infty} \dint\limits_{0}^{b} e^{-ax} dx  $ \\
+
+$ u = -ax \Rightarrow du = -a dx \Rightarrow dx = -\dfrac{du}{a}  $ \\
+
+$= \lim\limits_{b \to +\infty} -\dfrac{1}{a} \dint\limits_{0}^{b} e^{u} du  $ \\
+
+$= \lim\limits_{b \to +\infty}  -\dfrac{1}{a} \left[ e^u \right]_{0}^{b}  $ \\
+
+$= \lim\limits_{b \to +\infty}  -\dfrac{1}{a} \left[ e^{-ax} \right]_{0}^{b}  $ \\
+
+$= \lim\limits_{b \to +\infty}  -\dfrac{1}{a} \left[ e^{-ab} - 1 \right]  $ \\
+
+$= -\dfrac{1}{a} \left[ 0 - 1 \right]  $ \\
+
+$= \dfrac{1}{a} $ \\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

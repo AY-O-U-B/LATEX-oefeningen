@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\begin{document}
+\noindent \large Auteur: Michaël Francken \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 15.5\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int (x^2-x-4)e^xdx$ \\
+
+$\left \{
+\begin{array}{l}
+u = x^2-x-4 \\
+dv = e^xdx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = (2x-1)dx \\
+v = e^x
+\end{array}
+\right .$ \\
+
+$= (x^2-x-4)e^x - \displaystyle \int (2x-1)e^xdx$ \\
+
+$\left \{
+\begin{array}{l}
+t = 2x-1 \\
+dw = e^xdx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+dt = 2dx \\
+w = e^x
+\end{array}
+\right .$ \\
+
+$= (x^2-x-4)e^x - \left( (2x-1)e^x - \displaystyle \int 2e^xdx \right)$ \\
+
+$= (x^2-x-4)e^x - (2x-1)e^x + \displaystyle \int 2e^xdx$ \\
+
+$= (x^2-x-4)e^x - (2x-1)e^x + 2e^x + c$ \\
+
+$= e^x(x^2 - x - 4 - 2x + 1 + 2) + c$ \\
+
+$= e^x(x^2 - 3x - 1) + c$ \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 22.6 \\
+
+\medskip
+
+\normalsize
+
+$\integral\dfrac{x\Bgsin^3 x}{\sqrt{1-x^2}}dx$ \\
+
+Substitutie: $t = \Bgsin x \Rightarrow dt = \dfrac{1}{\sqrt{1 - x^2}}dx$ \\
+
+$\Rightarrow x = \sin t$ \\
+
+$= \integral\sin t \cdot t^3dt$ \\
+
+Partiële integratie: $\left\{\begin{array}{l}
+    u = t^3 \\
+    dv = \sin tdt \\
+\end{array}\right.\Rightarrow\left\{\begin{array}{l}
+    du = 3t^2dt \\
+    v = -\cos t \\
+\end{array}\right.$ \\
+
+$= -t^3\cos t + 3\integral t^2\cos tdt$ \\ 
+
+Partiële integratie: $\left\{\begin{array}{l}
+    u = t^2 \\
+    dv = \cos tdt \\
+\end{array}\right. \Rightarrow\left\{\begin{array}{l}
+    du = 2tdt \\
+    v = \sin t \\
+\end{array}\right.$ \\
+
+$= -t^3\cos t + 3\left(t^2\sin t - 2\integral t\sin tdt\right)$ \\ 
+
+$= -t^3\cos t + 3t^2\sin t - 6\integral t\sin tdt$ \\
+
+Partiële integratie: $\left\{\begin{array}{l}
+    u = t \\
+    dv = \sin tdt \\
+\end{array}\right.\Rightarrow\left\{\begin{array}{l}
+    du = dt \\
+    v = -\cos t \\
+\end{array}\right.$ \\
+
+$= -t^3\cos t + 3t^2\sin t - 6\left(-t\cos t + \integral \cos tdt\right)$ \\
+
+$= -t^3\cos t + 3t^2\sin t + 6t\cos t - 6\integral \cos tdt$ \\
+
+$= -t^3\cos t + 3t^2\sin t + 6t\cos t - 6\sin t + c$ \\
+
+$= (-t^2 + 6)t\cos t + (3t^2 - 6)\sin t + c$ \\
+
+$= (-\Bgsin^2x + 6)\Bgsin x\cdot\cos(\Bgsin x) + (3\Bgsin^2x - 6)x + c$ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

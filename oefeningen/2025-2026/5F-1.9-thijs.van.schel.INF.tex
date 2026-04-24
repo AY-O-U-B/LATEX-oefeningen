@@ -1,0 +1,50 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\ldint}{\dint\limits_0^{2\pi}}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5F nr. 1.9\\
+
+\medskip
+
+\normalsize
+
+$r=4+3\cos\theta \Rightarrow S = \dfrac{1}{2}\ldint(4+3\cos\theta)^2$\\
+
+$= \dfrac{1}{2}\ldint16d\theta + \dfrac{1}{2}\ldint24\cos\theta d\theta + \dfrac{1}{2}\ldint9\cos^2\theta d\theta$\\
+
+$=16\pi + 12\left[\sin\theta\right]_0^{2\pi} + \dfrac{9}{2}\ldint \dfrac{1+\cos(2\theta)}{2}d\theta$\\
+
+$=16\pi + 0 + \dfrac{9}{4}\ldint d\theta + \dfrac{9}{4}\ldint\cos(2\theta) d\theta$\\
+
+$=16\pi + \dfrac{18\pi}{4}+\dfrac{9}{4}\left[\sin(2\theta)\right]_0^{2\pi}$\\
+
+$=16\pi+\dfrac{18\pi}{4} = \dfrac{64+18}{4}\pi = \dfrac{41}{2}\pi$\\
+
+Tekening:\\
+
+$\theta = 0 \Rightarrow r = 7$\\
+
+$\theta = \dfrac{\pi}{2} \Rightarrow r = 4$\\
+
+$\theta = \pi \Rightarrow r = 1$\\
+
+$\theta = \dfrac{3\pi}{2} \Rightarrow r = 4$\\
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\linewidth]{5F-1.9-thijs.van.schel.INF.png}
+\end{figure} 
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 11.20\\
+\medskip
+\normalsize
+
+$\lim\limits_{x\rightarrow 729} \left(\dfrac{\sqrt[3]{x}-9}{\sqrt{x}-27}\right)$ \\
+
+Neem $t=\sqrt[6]{x}$, dan geldt $x=t^6$. \\
+
+Dus $\sqrt[3]{x}=t^2$ en $\sqrt{x}=t^3$. \\
+
+Omdat $x\rightarrow 729$, geldt $t\rightarrow 3$. \\
+
+$= \lim\limits_{t\rightarrow 3} \left(\dfrac{t^2-9}{t^3-27}\right)$ \\
+
+$= \lim\limits_{t\rightarrow 3} \left(\dfrac{\left(t-3\right)\left(t+3\right)}{\left(t-3\right)\left(t^2+3t+9\right)}\right)$ \\
+
+$= \lim\limits_{t\rightarrow 3} \left(\dfrac{t+3}{t^2+3t+9}\right)$ \\
+
+$= \dfrac{3+3}{3^2+3\cdot 3+9}$ \\
+
+$= \dfrac{6}{9+9+9}$ \\
+
+$= \dfrac{6}{27}$ \\
+
+$= \dfrac{2}{9}$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

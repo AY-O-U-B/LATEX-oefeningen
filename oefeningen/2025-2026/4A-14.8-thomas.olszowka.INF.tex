@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 14.8  \\
+
+
+
+\medskip
+
+\normalsize
+
+$I = \dint x^2 \ln^2 x dx$ \\
+
+$\left\{\begin{array}{cc}
+    u =& \ln^2 x \\ 
+    dv =& x^2 dx \\ 
+\end{array}\right. \Rightarrow\left\{\begin{array}{cc}
+    du =& \dfrac{2 \ln x}{x} dx \\
+    v =& \dfrac{x^3}{3} 
+\end{array}\right.$ \\
+
+$I = \ln^2 x \cdot \dfrac{x^3}{3} - \dint \dfrac{x^3}{3} \cdot \dfrac{2 \ln x}{x} dx$ \\
+
+$= \dfrac{1}{3}x^3 \ln^2 x - \dfrac{2}{3} \dint x^2 \ln x dx$ \\
+
+$\left\{\begin{array}{cc}
+    u =& \ln x \\ 
+    dv =& x^2 dx \\ 
+\end{array}\right. \Rightarrow\left\{\begin{array}{cc}
+    du =& \dfrac{1}{x} dx \\
+    v =& \dfrac{x^3}{3} \\
+\end{array}\right.$ \\
+
+$I = \dfrac{1}{3}x^3 \ln^2 x - \dfrac{2}{3} \left(\dfrac{1}{3}x^3 \ln x - \dint \dfrac{x^3}{3} \cdot \dfrac{1}{x} dx \right) $ \\
+
+$= \dfrac{1}{3}x^3 \ln^2 x - \dfrac{2}{3} \left(\dfrac{1}{3}x^3 \ln x - \dfrac{1}{3} \dint x^2 dx \right) $ \\
+
+$= \dfrac{1}{3}x^3 \ln^2 x - \dfrac{2}{3} \left(\dfrac{1}{3}x^3 \ln x - \dfrac{1}{3} \cdot \dfrac{x^3}{3} \right)$ \\
+
+$= \dfrac{1}{3}x^3 \ln^2 x - \dfrac{2}{9}x^3 \ln x + \dfrac{2}{27}x^3 + c $ \\
+
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

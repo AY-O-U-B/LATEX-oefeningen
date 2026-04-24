@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\intt}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Mathijs Pittoors \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 27.17\\
+
+\medskip
+
+\normalsize
+
+$\intt \dfrac{x^4 + x^3 + 3x^2 + x + 1}{x^3+1}dx$\\
+
+Euclidische deling:\\
+
+
+\begin{tabular}{lllll|ll}
+$x^4$ & $+x^3$ & $+3x^2$ & $+x$ & $+1$ & $x^3$ & $+1$\\ \cline{6-7}
+$-x^4$& & & $-x$ && $x$ & $+1$\\ \cline{1-5}
+& $x^3$ & $3x^2$ & & $ +1$\\
+& $-x^3$ & & & $ -1$\\ \cline{1-5}
+& & $3x^2$ & &\\
+\end{tabular}\\
+
+$\Rightarrow \intt x + 1 dx + \int \dfrac{3x^2dx}{x^3 + 1} = \dfrac{x^2}{2} + x + \int \dfrac{3x^2dx}{x^3 + 1}$\\
+
+Neem $t = x^3 + 1$ dan $dt = 3x^2 dx$ dus $dx = \dfrac{dt}{3x^2}$\\
+
+dan $\dfrac{x^2}{2} + x + \intt \dfrac{dt}{t} = \dfrac{x^2}{2} + x + \ln |x^3 + 1| + c$ met $c \in \mathbb{R}$
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 14.10 \\
+
+\medskip
+
+\normalsize
+
+
+$\integral \ln(x^x) dx$ \\
+
+$= \integral x\ln x dx$ \\
+
+Partiële integratie: $\left\{\begin{array}{l}
+    u = \ln x \\ 
+    dv = xdx 
+\end{array}\right. \Rightarrow\left\{\begin{array}{l}
+    du = \dfrac{dx}{x} \\
+    v = \dfrac{x^2}{2} 
+\end{array}\right.$ \\
+
+$= \dfrac{x^2 \ln x}{2} - \integral \dfrac{x^2}{2x}dx$ \\
+
+$= \dfrac{x^2 \ln x}{2} - \dfrac{1}{2}\integral xdx$ \\
+
+$= \dfrac{x^2 \ln x}{2} - \dfrac{x^2}{4} + c$ \\
+
+$= \dfrac{x^2 (2\ln x - 1)}{4} + c$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

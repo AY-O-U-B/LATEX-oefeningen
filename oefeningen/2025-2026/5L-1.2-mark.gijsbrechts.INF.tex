@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5L nr. 1.2\\
+
+\medskip
+
+\normalsize
+
+
+
+
+
+$ f(x) = \dfrac{1}{3}x^3 $ op het interval $ \left[0, 1 \right] $ \\
+
+$ f'(x) = x^2 $ \\
+
+$ (f'(x))^2 = x^4 $ \\
+
+$ S = 2\pi \dint_{0}^{1} \dfrac{1}{3}x^3 \sqrt{1 + x^4} dx $ \\
+
+$= \dfrac{2\pi}{3} \dint_{0}^{1} x^3 \sqrt{1 + x^4} dx $ \\
+
+$ u = 1 + x^4 \Rightarrow du = 4x^3 dx \Rightarrow dx = \dfrac{du}{4x^3} $ \\
+
+$= \dfrac{2\pi}{12} \dint_{1}^{2} u^{\tfrac{1}{2}} du $ \\
+
+$= \dfrac{\pi}{6} \left[ \dfrac{2}{3} u^{\tfrac{3}{2}} \right]_{1}^{2} $ \\
+
+$= \dfrac{2\pi}{18} \left[ u^{\tfrac{3}{2}} \right]_{1}^{2} $ \\
+
+$= \dfrac{2\pi}{18} \left[ \sqrt{8} - 1 \right] $ \\
+
+$= \dfrac{\pi}{9} \left( 2\sqrt{2} - 1 \right) $ \\
+
+
+\begin{figure}[h]
+\centering
+    \includegraphics[width=\linewidth]{5L-1.2-mark.gijsbrechts.INF.png}\\
+\end{figure}
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,50 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 34.8\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int e^{\sqrt{x}}dx$\\
+
+stel $t = \sqrt{x}$\\
+
+$t^2 = x$\\
+
+$2tdt = dx$\\
+
+$= 2\displaystyle\int te^tdt$\\
+
+$\left\{
+    \begin{array}{l}
+        u =  t \\
+        dv = e^tdt
+    \end{array}
+\right .
+\Rightarrow
+\left\{
+    \begin{array}{l}
+        du = dt \\
+        v = e^t
+    \end{array}
+\right .$\\
+
+$= 2te^t-2\displaystyle\int e^tdt$\\
+
+$= 2te^t-2e^t + C$\\
+
+$= 2\sqrt{x}e^{\sqrt{x}}-2e^{\sqrt{x}} + C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

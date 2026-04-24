@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 53.8\\
+
+\medskip
+
+\normalsize
+
+$\dint \sin^{-2}x\cos^{-4}xdx$\\
+
+$= \dint \dfrac{1}{\sin^2x\cos^2x}\cdot \dfrac{1}{\cos^2x}dx$\\
+
+$t = \tan x \Rightarrow dt = \dfrac{1}{\cos^2x}dx$\\
+
+$\Rightarrow \dfrac{1}{\cos^2x}= 1 + \tan^2x=1+t^2$ en $\dfrac{1}{\sin^2x}=1+\cot^2x=1+\dfrac{1}{t^2}$\\
+
+$=\dint \dfrac{1}{(1+t^2)\left(\dfrac{t^2+1}{t^2}\right)}dt = \dint \dfrac{t^2}{t^4+2t^2+1}dt$\\
+
+$=\dint (t^2+2+t^{-2})dt = \dfrac{1}{3}t^3+2t-\dfrac{1}{t}+C$\\
+
+$= \dfrac{1}{3}\tan^3x+2\tan x - \dfrac{1}{\tan x}+ C$
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

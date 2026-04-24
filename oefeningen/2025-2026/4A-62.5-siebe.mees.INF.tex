@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 62.5\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int \dfrac{1 - x}{\sqrt{1 - x^2}} dx $\\
+
+$ t = \Bgsin x \left(x = \sin t, dx = \cos t dt, \sqrt{1 - x^2} = \sqrt{1 - \sin^2 t} = \cos t \right) $\\
+
+$ = \displaystyle\int \dfrac{1 - \sin t}{\cos t} \cdot \cos t dt $\\
+
+$ = \displaystyle\int (1 - \sin t) dt $\\
+
+$ = \displaystyle\int 1 dt - \displaystyle\int \sin t dt $\\
+
+$ = t + \cos t + C $\\
+
+$ \Bgsin x = t $\\
+
+$ = \Bgsin x + \cos (\Bgsin x) + C $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

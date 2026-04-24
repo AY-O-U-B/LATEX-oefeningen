@@ -1,0 +1,75 @@
+\documentclass[a4paper]{article} 
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+\noindent \large Auteur: Nathan De Roy \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3H nr. 8.1\\
+
+\medskip
+\normalsize
+
+
+\noindent \textbf{Schets de functie:} $r = 1 + \cos(\theta)$\\
+
+$\left .
+\begin{array}{l}
+    \operatorname{dom} r    = \mathbb{R}\\
+    P                       = \pi
+\end{array}
+\right \}
+\text{Bep. Dom.} = [0, \pi]$\\
+
+\noindent \textbf{Nulpunten:}\\
+
+$r = 0 \Leftrightarrow \sin(2\theta) = 0 \Leftrightarrow 2\theta = k\pi$ met $k \in \mathbb{N} \longrightarrow \theta \in \left\{0, \dfrac{\pi}{2}, \pi\right\}$\\
+
+$r' = 0 \Leftrightarrow 6\sin(2\theta) = 0 \Leftrightarrow \cos(2\theta) = 0 \Leftrightarrow 2\theta = \dfrac{\pi}{2} + k\pi$ met $k \in \mathbb{N}$\\
+
+$\longrightarrow \theta \in \left\{ \dfrac{\pi}{4}, \dfrac{3\pi}{4}\right\}$\\
+
+\noindent \textbf{Schema:}\\
+
+\begin{tabular}{c|ccccccccc}
+$\theta$    & $0$        & $$         & $\dfrac{\pi}{4}$ & $$           & $\dfrac{\pi}{2}$ & $$           & $\dfrac{3\pi}{4}$ & $$  & $\pi$   \\ \hline
+$r$         & $0$        & $+$        & $3$              & $+$          & $0$              & $-$          & $-3$              & $-$ & $0$      \\
+$r'$        & $6$        & $+$        & $0$              & $-$          & $-6$             & $-$          & $0$               & $+$ & $6$       \\
+$$          & $\nearrow$ & $\nearrow$ & Max              & $\searrow$ & $\searrow$     & $\searrow$ & min & $\nearrow$  & $\nearrow$       \\
+\end{tabular}
+
+
+\bigskip
+\noindent \textbf{Grafiek in poolcoördinaten:}\\
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+
+% polar grid
+\draw[thin,gray!40] (0,0) circle (1);
+\draw[thin,gray!40] (0,0) circle (2);
+\draw[thin,gray!40] (0,0) circle (3);
+
+\foreach \a in {0,30,...,330}
+    \draw[gray!40] (0,0) -- (\a:3.3);
+
+% r = 3 sin(2θ)
+\draw[domain=0:360,samples=400,smooth,variable=\t,red,thick]
+plot ({3*sin(2*\t)*cos(\t)}, {3*sin(2*\t)*sin(\t)});
+
+% axes
+\draw[->] (-3.5,0) -- (3.5,0);
+\draw[->] (0,-3.5) -- (0,3.5);
+
+\end{tikzpicture}
+\end{center}
+
+\begin{thebibliography}{999}
+%\bibitem{a}
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 43.6\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int \dfrac{9}{4x^3-3x+1}dx $\\
+
+Probeer $\dfrac{1}{1,2,4}$ , nulpunt bij $x = \dfrac{1}{2} $\\
+
+$ \displaystyle\int \dfrac{9}{(2x-1)(2x^2+x-1)}dx $\\
+
+$ \Delta =1^2-4\cdot 2\cdot (-1)=9 \qquad x_{1,2}=\dfrac{-1\pm \sqrt{9}}{2\cdot 2} \sim x_1=\dfrac{1}{2}, \ x_2=-1 $\\
+
+$ \displaystyle\int \dfrac{9}{(2x-1)^2(x+1)}dx=\dfrac{A}{2x-1}+\dfrac{B}{(2x-1)^2}+\dfrac{C}{x+1} $\\
+
+Dan is \\
+
+$ B=\dfrac{9}{x+1}\bigg|_{x=\tfrac{1}{2}}=6 $\\
+
+$ C=\dfrac{9}{(2x-1)^2}\bigg|_{x=-1}=1 $\\
+
+$ \left \{
+\begin{array}{l}
+\dfrac{9}{(2x-1)^2(x+1)} - \dfrac{B}{(2x-1)^2} = \dfrac{9}{(2x-1)^2(x+1)} - \dfrac{6}{(2x-1)^2} \\
+
+= \dfrac{9 - 6(x+1)}{(2x-1)^2(x+1)} = \dfrac{-6x + 3}{(2x-1)^2(x+1)} \\
+
+= \dfrac{-3(2x-1)}{(2x-1)^2(x+1)} = \dfrac{-3}{(2x-1)(x+1)} \\
+
+\end{array}
+\right . $\\
+
+$ A = \dfrac{-3}{x+1} \bigg|_{x = \tfrac{1}{2}} = -2 $\\
+
+$ \Rightarrow \displaystyle\int \left( \dfrac{-2}{2x-1}+\dfrac{6}{(2x-1)^2}+\dfrac{1}{x+1} \right)dx $\\
+
+$ =\displaystyle\int \dfrac{-2}{2x-1}dx+\displaystyle\int \dfrac{6}{(2x-1)^2}dx+\displaystyle\int \dfrac{1}{x+1}dx $\\
+
+$ t = 2x-1 \left(dt = 2dx, dx = \dfrac{dt}{2} \right)$\\
+
+$ =\displaystyle\int \dfrac{-2}{2x-1}dx+6\displaystyle\int t^{-2}\dfrac{dt}{2}+\displaystyle\int \dfrac{1}{x+1}dx $\\
+
+$ =\displaystyle\int \dfrac{-2}{2x-1}dx+3\displaystyle\int t^{-2}dt+\displaystyle\int \dfrac{1}{x+1}dx $\\
+
+$ =-\ln|2x-1|-\dfrac{3}{2x-1}+\ln|x+1|+C $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 44.14
+
+\medskip
+\normalsize
+
+$\dint \dfrac{2x(x+5}{x^4-1}dx = \dint\dfrac{2x^2+10x}{(x-1)(x+1)(x^2+1)}dx = \dfrac{A}{x-1} + \dfrac{B}{x+1} + \dfrac{Cx+D}{x^2+1} $\\
+
+$A  = \left. \dfrac{2x^2+10x}{(x+1)(x^2+1)}\right|_{x=1} = 3$\\
+
+$B  = \left. \dfrac{2x^2+10x}{(x-1)(x^2+1)}\right|_{x=-1} = 2$\\
+
+$Cx+D \Rightarrow \dfrac{2i^2+10i}{(i-1)(i+1)} = 1-5i \Rightarrow C = -5 $ en $ D = 1$\\
+
+$\Rightarrow 3\dint \dfrac{1}{x-1}dx +2 \dint\dfrac{1}{x+1}dx + \dint \dfrac{-5x+1}{x^2+1}dx$\\
+
+$ = 3\ln|x-1| +2\ln|x+1| - 5\dint\dfrac{x}{x^2+1}dx +\dint\dfrac{1}{x^2+1}dx$\\
+
+$ = 3\ln|x-1| +2\ln|x+1| - \dfrac{5}{2}\ln|x^2+1|+\bgtan(x)+C$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

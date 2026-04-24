@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 5.5\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int_0^1 x^2 \ln x dx $\\
+
+$ = \lim\limits_{a \rightarrow 0^+} \displaystyle\int_a^1 x^2 \ln x dx $\\
+
+$ \left \{
+\begin{array}{l}
+u = \ln x \\
+dv = x^2 dx
+\end{array}
+\right . 
+\Rightarrow 
+\left \{
+\begin{array}{l}
+du = \dfrac{1}{x} dx \\
+v = \dfrac{x^3}{3}
+\end{array}
+\right . $\\
+
+$ = \lim\limits_{a \rightarrow 0^+} \ln x \dfrac{x^3}{3} - \displaystyle\int \dfrac{x^3}{3} \cdot \dfrac{1}{x} dx $\\
+
+$ = \lim\limits_{a \rightarrow 0^+} \ln x \dfrac{x^3}{3} - \dfrac{1}{3} \displaystyle\int x^2 dx $\\
+
+$ = \lim\limits_{a \rightarrow 0^+} \ln x \dfrac{x^3}{3} - \dfrac{1}{3} \cdot \dfrac{x^3}{3} + C $\\
+
+$ = \lim\limits_{a \rightarrow 0^+} \left[ \ln x \dfrac{x^3}{3} - \dfrac{x^3}{9} \right]_a^1 $\\
+
+$ = \lim\limits_{a \rightarrow 0^+} \left( \ln(1)\dfrac{1^3}{3} - \dfrac{1^3}{9} \right) - \left( \ln(a)\dfrac{a^3}{3} - \dfrac{a^3}{9} \right) $\\
+
+$ = \lim\limits_{a \rightarrow 0^+} \left( -\dfrac{1}{9} - \left( \ln(a)\dfrac{a^3}{3} - \dfrac{a^3}{9} \right) \right) $\\
+
+$ \left \{
+\begin{array}{l}
+\lim\limits_{a \rightarrow 0^+} a^3 = 0 \rightarrow \dfrac{a^3}{9} = 0 \\
+
+\lim\limits_{a \rightarrow 0^+} a^3 \ln(a) = 0\cdot (-\infty) \text{ onbepaald} \\ 
+\Rightarrow \dfrac{\ln(a)}{\dfrac{1}{a^3}} = \dfrac{-\infty}{+\infty} \overset{\text{L'Hôpital}}{=} \lim\limits_{a \rightarrow 0^+} \dfrac{\dfrac{1}{a}}{-\dfrac{3}{a^4}} = \lim\limits_{a \rightarrow 0^+} \dfrac{1}{a} \cdot \dfrac{a^4}{-3} = \lim\limits_{a \rightarrow 0^+} \dfrac{-a^3}{3} = 0
+\end{array}
+\right . $\\
+
+$ = -\dfrac{1}{9} - \left(0\cdot0\right) = -\dfrac{1}{9} $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

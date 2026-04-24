@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 42.18\\
+
+\medskip
+
+\normalsize
+
+$\integral\dfrac{2x^2 - 5x + 7}{x^3 - 7x + 6}dx$ \\
+
+$x^3 - 7x + 6 = 0 \Leftrightarrow (x - 1)(x - 2)(x + 3) = 0$ \\
+
+$\Rightarrow\dfrac{2x^2 - 5x + 7}{(x - 1)(x - 2)(x + 3)} = \dfrac{A}{(x - 1)} + \dfrac{B}{(x - 2)} + \dfrac{C}{(x + 3)}$ \\
+
+$A = \left.\left(\dfrac{2x^2 - 5x + 7}{(x - 2)(x + 3)}\right)\right|_{x = 1} = -1 $ \\
+
+$B = \left.\left(\dfrac{2x^2 - 5x + 7}{(x - 1)(x + 3)}\right)\right|_{x = 2} = 1 $ \\
+
+$C = \left.\left(\dfrac{2x^2 - 5x + 7}{(x - 1)(x - 2)}\right)\right|_{x = -3} = 2 $ \\
+
+$\Rightarrow \integral\dfrac{2x^2 - 5x + 7}{x^3 - 7x + 6}dx = -\integral\dfrac{1}{x - 1}dx + \integral\dfrac{1}{x - 2}dx + 2\integral\dfrac{1}{x + 3}dx$ \\
+
+$= -\ln|x-1| + \ln|x-2| + 2\ln|x+3| + c$
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

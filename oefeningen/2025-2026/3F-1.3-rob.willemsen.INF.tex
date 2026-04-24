@@ -1,0 +1,68 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 3F nr. 1.3 \\
+
+\medskip
+
+\normalsize
+
+$f(x) = \dfrac{x^3 + 2x^2 + 2x - 2}{x^2+1}$ \\
+
+Geen VA, want noemer kan niet 0 worden voor $x \in \mathbb{R}$. \\
+
+Geen HA, want hoogste macht van teller is groter dan hoogste macht van noemer. \\
+
+SA: \\
+
+$y = ax + b$ \\
+
+$a = \limit_{x \rightarrow \infty} \dfrac{f(x)}{x}$ \\
+
+$= \limit_{x \rightarrow \infty} \dfrac{x^3 + 2x^2 + 2x - 2}{x(x^2 + 1)} = \limit_{x \rightarrow \infty} \dfrac{x^3 + 2x^2 + 2x - 2}{x^3 + x}$ \\
+
+$= \limit_{x \rightarrow \infty} \dfrac{x^3}{x^3} = 1$ \\
+
+$b = \limit_{x \rightarrow \infty} (f(x) - ax)$ \\
+
+$= \limit_{x \rightarrow \infty} \left( \dfrac{x^3 + 2x^2 + 2x - 2}{x^2+1} - 1x \right)$ \\
+
+$= \limit_{x \rightarrow \infty} \dfrac{x^3 + 2x^2 + 2x - 2 - x(x^2 + 1)}{x^2+1} = \limit_{x \rightarrow \infty} \dfrac{2x^2 + x - 2}{x^2+1}$ \\
+
+$= \limit_{x \rightarrow \infty}  \dfrac{2x^2}{x^2} = 2$ \\
+
+$\Rightarrow$ SA is $y = x + 2$. \\
+
+
+ligging: \\
+
+verschil $= f(x)-$asymptoot\\
+
+$= \dfrac{x^3 + 2x^2 + 2x - 2}{x^2+1} - (x + 2) = \dfrac{x^3 + 2x^2 + 2x - 2 - (x+2)(x^2+1)}{x^2+1}$ \\
+
+$= \dfrac{x^3 + 2x^2 + 2x - 2 - (x^3 + 2x^2 + x + 2)}{x^2+1} = \dfrac{x^3 + 2x^2 + 2x - 2 - x^3 - 2x^2 - x - 2}{x^2+1}$ \\
+
+$= \dfrac{x - 4}{x^2+1}$ \\
+
+$x = 4$  \\
+
+\begin{tabular}{c|ccc}
+$x$ & $-\infty$ & 4 & $+\infty$\\ \hline
+$f(x)$ & $-$ & $0$ & $+$  \\
+\end{tabular} \\
+
+$\Rightarrow$ $f$ ligt onder de SA voor $x < 4$ en boven de SA voor $x > 4$. \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig)
+\newcommand{\Ls}{\left|} %Links (absolutewaarde)streep
+\newcommand{\Rs}{\right|}
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto}
+\newcommand{\intgrl}{\displaystyle\int} %integraal teken (bij het berekenen van primitieven)
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 6.7\\
+
+\medskip
+
+\normalsize
+
+$ BI \intgrl_{-2}^2 2^{3x}$\\
+
+Stel: $t = 3x \adR dt = 3dx \asa dx = \dfrac{dt}{3}$\\
+
+Dan worden de grenzen als volgt: ondergrens: $3 \cdot \Lh -2 \Rh = -6$; bovengrens: $3 \cdot2 = 6$\\
+
+$ \adR \intgrl_{-6}^6 2^t \dfrac{dt}{3} = \Lv \dfrac{2^t}{3\ln \Lh 2 \Rh} \Rv_{-6}^6 $\\
+
+$= \dfrac{2^6}{3 \ln \Lh 2 \Rh} - \dfrac{2^{-6}}{3 \ln \Lh 2 \Rh} = \dfrac{64}{3 \ln \Lh 2 \Rh} - \dfrac{1}{64 \cdot 3 \ln \Lh 2 \Rh} = \dfrac{64^2}{192 \ln \Lh 2 \Rh} - \dfrac{1}{192 \ln \Lh 2 \Rh} = \dfrac{4095}{192 \ln \Lh 2 \Rh} = \dfrac{1365}{64 \ln \Lh 2 \Rh}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

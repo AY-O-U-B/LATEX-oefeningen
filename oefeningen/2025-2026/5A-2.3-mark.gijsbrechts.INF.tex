@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 2.3\\
+
+\medskip
+
+\normalsize
+
+
+
+
+
+$ \dint\limits_{-1}^{2}\left(x \cdot \lfloor x \rfloor \right)dx $ \\
+
+$= \dint\limits_{-1}^{0}\left(x \cdot \lfloor x \rfloor \right)dx + \dint\limits_{0}^{1}\left(x \cdot \lfloor x \rfloor\right)dx + \dint\limits_{1}^{2}\left(x \cdot \lfloor x \rfloor \right)dx  $ \\
+
+$= \dint\limits_{-1}^{0}\left(x \cdot \left(-1\right) \right)dx + \dint\limits_{0}^{1}\left(x \cdot 0 \right)dx + \dint\limits_{1}^{2}\left(x \cdot 1 \right)dx  $ \\
+
+$= -\dint\limits_{-1}^{0}x dx + \dint\limits_{1}^{2}x dx $ \\
+
+$= -\left[\dfrac{x^2}{2}\right]_{-1}^{0} + \left[\dfrac{x^2}{2}\right]_{1}^{2} $ \\
+
+$= -\left[ 0 - \dfrac{1}{2} \right] + \left[ 2 - \dfrac{1}{2} \right] $ \\
+
+$= \dfrac{1}{2} + \dfrac{3}{2} $ \\
+
+$= 2 $ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

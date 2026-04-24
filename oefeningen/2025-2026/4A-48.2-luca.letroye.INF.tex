@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 48.2
+
+\medskip
+\normalsize
+
+$\dint \ln|x^2+2|dx$\\
+
+$ u = \ln|x^2+2| \Rightarrow Du = \dfrac{2x}{x^2+2}$\\
+
+$ Dv = dx \Rightarrow v = xdx$\\
+
+$\Rightarrow x\ln|x^2+2| - \dint\dfrac{2x^2}{x^2+2}dx$\\
+
+$= x\ln|x^2+2| - \dint\dfrac{2(x^2+2)-4}{x^2+2}dx$\\
+
+$= x\ln|x^2+2| - 2x+2\sqrt{2}\bgtan\left(\dfrac{x}{\sqrt{2}}\right)+C$\\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

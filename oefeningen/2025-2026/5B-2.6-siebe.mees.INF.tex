@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 2.6\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int_{-\infty}^{+\infty} \dfrac{x}{x^2+4} dx $\\
+
+$ = \lim\limits_{a \rightarrow -\infty} \displaystyle\int_a^0 \dfrac{x}{x^2+4} dx + \lim\limits_{b \rightarrow +\infty} \displaystyle\int_0^b \dfrac{x}{x^2+4} dx $\\
+
+$ t = x^2+4 \left( dt = 2x dx,dx = \dfrac{dt}{2x},x = \dfrac{1}{2}dt \right) $\\
+
+$ = \lim\limits_{a \rightarrow -\infty} \displaystyle\int_a^0 \dfrac{1}{2} \dfrac{dt}{t} + \lim\limits_{b \rightarrow +\infty} \displaystyle\int_0^b \dfrac{1}{2} \dfrac{dt}{t} $\\
+
+$ = \lim\limits_{a \rightarrow -\infty} \dfrac{1}{2} \left[ \ln |t| \right]_a^0 + \lim\limits_{b \rightarrow +\infty} \dfrac{1}{2} \left[ \ln |t| \right]_0^b $\\
+
+$ x^2+4 = t $\\
+
+$ = \lim\limits_{a \rightarrow -\infty} \dfrac{1}{2} \left[ \ln |x^2+4| \right]_a^0 + \lim\limits_{b \rightarrow +\infty} \dfrac{1}{2} \left[ \ln |x^2+4| \right]_0^b $\\
+
+$ = \lim\limits_{a \rightarrow -\infty} \dfrac{1}{2} \left( \ln 4 - \ln (a^2+4) \right) + \lim\limits_{b \rightarrow +\infty} \dfrac{1}{2} \left( \ln (b^2+4) - \ln 4 \right) $\\
+
+$ = -\infty + +\infty$, bestaat niet (onbepaalde vorm)\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
