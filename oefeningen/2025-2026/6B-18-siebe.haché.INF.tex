@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6B nr. 18 \\
+
+\medskip
+\normalsize
+
+Bepaal de algemene term $x_n$ van een rekenkundige rij van hogere orde als men weet dat de $n$-de partieelsom gelijk is aan $s_n = n^3 - 2n^2 + 3n$. \\
+
+$x_n = s_n - s_{n-1}$ \\
+
+$s_{n-1}$: \\
+
+$s_{n-1} = (n-1)^3 - 2(n-1)^2 + 3(n-1)$ \\
+
+$s_{n-1} = (n^3 - 3n^2 + 3n - 1) - 2(n^2 - 2n + 1) + 3n - 3$ \\
+
+$s_{n-1} = n^3 - 3n^2 + 3n - 1 - 2n^2 + 4n - 2 + 3n - 3$ \\
+
+$s_{n-1} = n^3 - 5n^2 + 10n - 6$ \\
+
+$x_n$: \\
+
+$x_n = (n^3 - 2n^2 + 3n) - (n^3 - 5n^2 + 10n - 6)$ \\
+
+$x_n = n^3 - 2n^2 + 3n - n^3 + 5n^2 - 10n + 6$ \\
+
+$x_n = 3n^2 - 7n + 6$ \\
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+$n$ & 1 & 2 & 3 & 4 & 5 \\
+\hline 
+$s_n$ & 2 & 6 & 18 & 44 & 90 \\
+\hline 
+$x_n$ & 2 & 4 & 12 & 26 & 46 \\
+\hline 
+\end{tabular} \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

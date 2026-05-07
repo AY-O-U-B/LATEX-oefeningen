@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6C nr. 4.6\\
+
+\medskip
+
+\normalsize
+
+$x_n = \sqrt{n^2+3n}-n$\\
+
+$\lim\limits_{n\rightarrow +\infty} x_n = \lim\limits_{n \rightarrow +\infty}\sqrt{n^2+3n}-n $\\
+
+$= \lim\limits_{n\rightarrow +\infty}\left(\sqrt{n^2+3n}-n\right)\cdot\dfrac{\sqrt{n^2+3n}+n}{\sqrt{n^2+3n}+n}$\\
+
+$= \lim\limits_{n\rightarrow +\infty}\dfrac{n^2+3n-n^2+n\sqrt{n^2+3n}-n\sqrt{n^2+3n}-n^2}{\sqrt{n^2+3n}+n}$\\
+
+$= \lim\limits_{n\rightarrow +\infty}\dfrac{3n}{\sqrt{n^2+3n}+n}$\\
+
+$= \lim\limits_{n\rightarrow +\infty}\dfrac{3n}{n\sqrt{1+\dfrac{3}{n}}+n}$\\
+
+$= \dfrac{3}{1+1} = \dfrac{3}{2}$\\
+
+$\operatorname*{adh}\limits_{n\rightarrow +\infty} x_n = \left\{\dfrac{3}{2}\right\}$\\
+
+$\liminf\limits_{n\rightarrow +\infty} x_n = \dfrac{3}{2}$\\
+
+$\limsup\limits_{n\rightarrow +\infty} x_n = \dfrac{3}{2}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

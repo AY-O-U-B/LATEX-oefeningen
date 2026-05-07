@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Ilyas Sefiani \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6B nr. 17.4\\
+
+\medskip
+
+\normalsize
+
+$$1 \cdot 3 \cdot 5 \cdot + 2 \cdot 4 \cdot 6 + 3 \cdot 5 \cdot 7 + ... + n(n+2)(n+4)$$\\ 
+
+$s_{n}=\displaystyle\sum\limits_{i=1}^{n} i(i+2)(i+4)= \displaystyle\sum\limits_{i=1}^{n} (i^2+2i)(i+4)$\\
+
+$=\displaystyle\sum\limits_{i=1}^{n} (i^3 +6i^2 +8i) = \displaystyle\sum\limits_{i=1}^{n} i^3 + 6\displaystyle\sum\limits_{i=1}^{n}i^2 +8\displaystyle\sum\limits_{i=1}^{n}i$\\
+
+Omzetten:\\
+
+$= \dfrac{n^2(n+1)^2}{4} + \dfrac{6n(n+1)(2n+1)}{6} + \dfrac{8n(n+1)}{2}$\\
+
+$= \dfrac{n^2(n+1)^2 + 4n(n+1)(2n+1) + 16n(n+1)}{4}$\\
+
+$= n(n+1)\left(\dfrac{n(n+1) + 4(2n+1) + 16}{4}\right)$\\
+
+$= n(n+1)\left(\dfrac{n^2+n + 8n+4 + 16}{4}\right)$\\
+
+$= n(n+1)\left(\dfrac{n^2 + 9n +20}{4}\right)$\\
+
+Teller ontbinden in factoren:\\
+
+$= \dfrac{n(n+1)(n+4)(n+5)}{4}$\\
+
+Bewijzen dat de algemene term van $s_{n}$ altijd een element van $\mathbb{N}$ is:\\
+
+Zowel $n(n+1)$ als $(n+4)(n+5)$ zijn twee opeenvolgende cijfers:\\
+
+$\Rightarrow$ deelbaar door 2 $\Rightarrow$ allemaal samen deelbaar door 4!\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

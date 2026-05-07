@@ -1,0 +1,67 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 18.4  \\
+
+
+
+\medskip
+
+\normalsize
+
+$I = \dint x^3 \cos x dx$ \\
+
+$\left\{\begin{array}{cc}
+    u =& x^3 \\ 
+    dv =& \cos x dx \\ 
+\end{array}\right. \Rightarrow\left\{\begin{array}{cc}
+    du =& 3x^2 dx \\
+    v =& \sin x \\
+\end{array}\right.$ \\
+
+$I = x^3 \sin x - \dint 3x^2 \sin x dx $ \\
+
+$= x^3 \sin x - 3 \dint x^2 \sin x dx$ \\
+
+$\left\{\begin{array}{cc}
+    u =& x^2 \\ 
+    dv =& \sin x dx \\ 
+\end{array}\right. \Rightarrow\left\{\begin{array}{cc}
+    du =& 2x dx \\
+    v =& -\cos x \\
+\end{array}\right.$ \\
+
+$I = x^3 \sin x - 3 \left( -x^2 \cos x - \dint -2x \cos x dx\right)$ \\
+
+$= x^3 \sin x + 3x^2 \cos x - 6\dint x \cos x dx$ \\
+
+$\left\{\begin{array}{cc}
+    u =& x \\ 
+    dv =& \cos x dx \\ 
+\end{array}\right. \Rightarrow\left\{\begin{array}{cc}
+    du =& dx \\
+    v =& \sin x \\
+\end{array}\right.$ \\
+
+$I = x^3 \sin x + 3x^2 \cos x - 6 \left ( x \sin x - \dint  \sin x dx\right )$ \\
+
+$= x^3 \sin x + 3x^2 \cos x - 6x \sin x + 6 \dint \sin x dx$ \\
+
+$= x^3 \sin x + 3x^2 \cos x - 6x \sin x - 6 \cos x + c $ \\
+
+$= \left(x^3 -6x\right)\sin x + \left(3x^2 - 6\right) \cos x + c$
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6B nr. 17.6\\
+
+\medskip
+
+\normalsize
+
+$1^2 \cdot 4 + 2^2 \cdot 5 + 3^2 \cdot 6 + \ldots$\\
+
+$s_n = \displaystyle\sum_{i=1}^{n} i^2(i+3)$\\
+
+$= \displaystyle\sum_{i=1}^{n} i^3 + 3 \displaystyle\sum_{i=1}^{n} i^2$\\
+
+$= \left(\dfrac{n(n+1)}{2}\right)^2 + 3 \cdot \dfrac{n(n+1)(2n+1)}{6}$\\
+
+$= \dfrac{n^2(n+1)^2}{4} + \dfrac{n(n+1)(2n+1)}{2}$\\
+
+$= \dfrac{n(n+1)}{2} \left(\dfrac{n(n+1)}{2} + (2n+1)\right)$\\
+
+$= \dfrac{n(n+1)}{2} \left(\dfrac{n(n+1) + 2(2n+1)}{2}\right)$\\
+
+$= \dfrac{n(n+1)}{2} \left(\dfrac{n^2 + n + 4n + 2}{2}\right)$\\
+
+$= \dfrac{n(n+1)}{2} \left(\dfrac{n^2 + 5n + 2}{2}\right)$\\
+
+$= \dfrac{n(n+1)(n^2 + 5n + 2)}{4}$\\
+
+
+$n(n+1)$ is deelbaar door $2$: Triviaal\\
+
+$(n^2 + 5n + 2)$ is deelbaar door $2$: \\
+
+$\left \{
+\begin{array}{l}
+n \text{ even: } n^2 \text{ en } 5n \text{ even} \Rightarrow n^2 + 5n + 2 \text{ even} \\
+
+n \text{ oneven: } n^2 + 5n \text{ oneven} + \text{ oneven} = \text{ even}
+\end{array}
+\right .$\\
+
+$\Rightarrow $ deelbaar door 2\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

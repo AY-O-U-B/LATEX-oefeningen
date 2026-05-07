@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6A nr. 10.5 \\
+
+\medskip
+\normalsize
+
+Bepaal een meetkudnige rij voor 5 termen $a, b, c, d$ en $e$, waarvoor $a - e = 60$ en $b - d = -24$.\\
+
+$\left\{ \begin{array}{l} 
+    a - ar^4 = 60 \Rightarrow a(1 - r^4) = 60\\
+
+    ar - ar^3 = -24 \Rightarrow ar(1 - r^2) = -24\\
+\end{array} \right. $ \\
+
+eerste vergelijking delen door de tweede geeft: \\
+
+$\dfrac{a(1 - r^4)}{ar(1 - r^2)} = \dfrac{60}{-24}$ \\
+
+$\Rightarrow\dfrac{a(1 - r^2)(1 + r^2)}{ar(1 - r^2)} = -\dfrac{5}{2}$\\
+
+$\Rightarrow\dfrac{1 + r^2}{r} = -\dfrac{5}{2}$ \\
+
+$\Rightarrow 2(1 + r^2) = -5r$ \\
+
+$\Rightarrow 2r^2 + 5r + 2 = 0$ \\
+
+$D = 5^2 - 4 \cdot 2 \cdot 2 = 25 - 16 = 9$ \\
+
+$r_{1} = \dfrac{-5 + 3}{4} = -\dfrac{2}{4} = -\dfrac{1}{2}$ \\
+
+$r_{2} = \dfrac{-5 - 3}{4} = -\dfrac{8}{4} = -2$ \\
+
+Geval 1: $r = -2$ \\
+
+$a(-2)(1 - (-2)^2) = -24$ \\
+
+$a(-2)(1 - 4) = -24$ \\
+
+$a(-2)(-3) = -24$ \\
+
+$6a = -24 \implies a = -4$ \\
+
+Geval 2: $r = -\dfrac{1}{2}$ \\
+
+$a(-\dfrac{1}{2})(1 - (-\dfrac{1}{2})^2) = -24$ \\
+
+$a(-\dfrac{1}{2})(\dfrac{3}{4}) = -24$ \\
+
+$-\dfrac{3}{8}a = -24 \implies a = \dfrac{-24 \cdot 8}{-3} = 64$ \\
+
+\begin{tabular}{|c|c|c|c|c|c|c|} 
+\hline 
+Oplossing & $a$  & $b$   & $c$   & $d$  & $e$ \\
+\hline 
+1         & $-4$ & $8$   & $-16$ & $32$ & $-64$ \\
+\hline 
+2         & $64$ & $-32$ & $16$  & $-8$ & $4$ \\
+\hline
+\end{tabular} \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document}

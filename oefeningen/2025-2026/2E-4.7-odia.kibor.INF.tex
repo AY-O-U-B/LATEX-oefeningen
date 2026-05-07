@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Odia Kibor \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2E nr. 4.7\\
+
+\medskip
+
+\normalsize
+
+
+$\lim\limits_{x \rightarrow \infty} \left(\dfrac{ax+b}{ax+c}\right)^x$\\
+
+$= \lim\limits_{x \rightarrow \infty} \left(\dfrac{(ax+c)+(b-c)}{ax+c}\right)^x$\\
+
+$= \lim\limits_{x \rightarrow \infty} \left(1+\dfrac{b-c}{ax+c}\right)^x$\\
+
+Stel $\dfrac{1}{u} = \dfrac{b - c}{ax + c} \Rightarrow u = \dfrac{ax + c}{b - c} \Rightarrow x = \dfrac{u(b-c) - c}{a}$\\
+
+$= \lim\limits_{u \rightarrow \infty} \left(1+\dfrac{1}{u}\right)^{\tfrac{u(b-c)-c}{a}}$\\
+
+$= \lim\limits_{u \rightarrow \infty} \left(1+\dfrac{1}{u}\right)^{\tfrac{u(b-c)}{a}-\tfrac{c}{a}}$\\
+
+$= \lim\limits_{u \rightarrow \infty} \left(1+\dfrac{1}{u}\right)^{\tfrac{u(b-c)}{a}}\cdot \left(1+\dfrac{1}{u}\right)^{-\tfrac{c}{a}}$\\
+
+$= \lim\limits_{u \rightarrow \infty} \left
+(\left(1+\dfrac{1}{u}\right)^u\right)^{\tfrac{b-c}{a}}\cdot \lim\limits_{u \rightarrow \infty}\left(1+\dfrac{1}{u}\right)^{-\tfrac{c}{a}}$\\
+
+$= e^{\tfrac{b-c}{a}}\cdot 1$\\
+
+$= e^{\tfrac{b-c}{a}}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto}
+\newcommand{\intgrl}{\displaystyle\int} %integraal teken (bij het berekenen van primitieven)
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6B nr. 5.7\\
+
+\medskip
+
+\normalsize
+
+$n$ als $x_3 = -36, x_n = -324$ en $q = -3$\\
+
+$x_n = x_1 \cdot q^{n-1}$\\
+
+$x_n = x_3 \cdot q^{n-3} \asa -324 = -36 \cdot \Lh -3 \Rh^{-3} \cdot q^n \asa -324 = \dfrac{-36}{\Lh -3 \Rh^3} \cdot q^n$\\
+
+$\asa -324 = \dfrac{\schrap{-}36}{\schrap{-}27} \cdot q^n \asa -324 = \dfrac{4}{3} \cdot q^n \asa \Lh -3 \Rh^n = -324 \cdot \dfrac{3}{4}$\\
+
+In geval dat je niet vanbuiten weet dat: $3^5 = 243$\\
+
+$\asa \Lh -3 \Rh^n = -243 \asa \Lh -3 \Rh^n = -3 \cdot 81 \asa \Lh -3 \Rh^n = -3 \cdot \Lh -3 \Rh \cdot \Lh -27 \Rh \asa \Lh -3 \Rh^n = \Lh -3 \Rh^5 \asa n = 5$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

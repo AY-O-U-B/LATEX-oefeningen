@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6D nr. 31.18 \\
+
+\medskip
+\normalsize
+
+Onderzoek de convergentie van de reeks $\displaystyle\sum_{n=0}^{\infty}\dfrac{n^2}{2^n}$ \\
+
+d'Alembert\\
+
+Stel $a_n = \dfrac{n^2}{2^n}$\\
+
+Stel $a_{n+1} = \dfrac{(n+1)^2}{2^{n+1}}$\\
+
+$L = \lim\limits_{n \to \infty} \left| \dfrac{a_{n+1}}{a_n} \right|$\\
+
+$= \lim\limits_{n \to \infty} \left( \dfrac{(n+1)^2}{2^{n+1}} \cdot \dfrac{2^n}{n^2} \right)$ \\
+
+$= \lim\limits_{n \to \infty} \left( \dfrac{(n+1)^2}{n^2} \cdot \dfrac{2^n}{2 \cdot 2^n} \right) $\\
+
+$= \lim\limits_{n \to \infty} \left( \dfrac{n+1}{n} \right)^2 \cdot \dfrac{1}{2}$ \\
+
+$= 1^2 \cdot \dfrac{1}{2} = \dfrac{1}{2}$\\
+
+Aangezien $L = \dfrac{1}{2} < 1$, is de reeks convergent.\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}
