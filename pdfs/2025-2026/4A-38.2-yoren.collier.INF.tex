@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto}
+\newcommand{\intgrl}{\displaystyle\int} %integraal teken (bij het berekenen van primitieven)
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 38.2\\
+
+\medskip
+
+\normalsize
+
+$ I =  \intgrl \dfrac{2x+11}{x^2 +6x +10} dx = 2\intgrl \dfrac{x}{x^2 +6x +10} dx + 11\intgrl \dfrac{1}{\Lh x+3 \Rh^2 +1} dx$\\
+
+$= 2 \intgrl \Lh \dfrac{2x +6}{2 \Lh x^2 +6x +10 \Rh} - \dfrac{3}{x^2 +6x+ 10} \Rh dx + 11 \intgrl \dfrac{1}{\Lh x+3 \Rh^2 +1} dx$\\
+
+Stel: $t = x^2 +6x +10 \adR dt = 2x +6 dx$ en stel: $y = x +3 \adR dy = dx$\\
+
+$= 2 \Lv \intgrl \dfrac{1}{2 \Lh x^2 +6x +10 \Rh} \cdot \Lh 2x +6 dx \Rh - \intgrl \dfrac{3}{\Lh x+3 \Rh^2 +1 } dx\Rv +11 \intgrl \dfrac{1}{\Lh x+3 \Rh^2 +1 } dx$\\
+
+$= 2 \Lv \intgrl \dfrac{1}{2t} dt - \intgrl \dfrac{3}{y^2 +1} dy\Rv +11 \intgrl \dfrac{1}{y^2 +1} dy$\\
+
+$= 2 \Lv \dfrac{1}{2} \ln |t| +c -3\operatorname{Bgtan} \Lh y \Rh +c \Rv +11 \operatorname{Bgtan} \Lh y \Rh +c$\\
+
+$= \ln |x^2 +6x +10| -6 \operatorname{Bgtan} \Lh x+3 \Rh +11 \operatorname{Bgtan} \Lh x+3 \Rh +c$\\
+
+$= \ln |x^2 +6x +10| +5 \operatorname{Bgtan} \Lh x+3 \Rh +c$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

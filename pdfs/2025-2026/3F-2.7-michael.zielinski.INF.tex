@@ -1,0 +1,73 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3F nr. 2.7\\
+
+\medskip
+
+\normalsize
+
+Bepaal de schuine asymptoot van de functie: \\
+
+$ f(x) = \dfrac{x^3 - 4x^2 - 2x + 14}{2x^2 - 4} $ \\
+
+\bigskip
+
+We voeren een veeltermdeling uit: \\
+
+$ x^3 - 4x^2 - 2x + 14 = \left(2x^2 - 4\right)\left(\dfrac{x}{2} - 2\right) + 6 $ \\
+
+Dus: \\
+
+$ f(x) = \dfrac{\left(2x^2 - 4\right)\left(\dfrac{x}{2} - 2\right) + 6}{2x^2 - 4} $ \\
+
+$ f(x) = \dfrac{x}{2} - 2 + \dfrac{6}{2x^2 - 4} $ \\
+
+Omdat: \\
+
+$ \lim\limits_{x \to \pm\infty} \dfrac{6}{2x^2 - 4} = 0 $ \\
+
+is de schuine asymptoot: \\
+
+$ y = \dfrac{x}{2} - 2 $ \\
+
+\bigskip
+
+Nu onderzoeken we de ligging ten opzichte van de asymptoot: \\
+
+$ f(x) - A(x) = \dfrac{6}{2x^2 - 4} $ \\
+
+$ 2x^2 - 4 = 0 $ \\
+
+$ x^2 = 2 $ \\
+
+$ x = \pm\sqrt{2} $ \\
+
+\bigskip
+
+\begin{tabular}{c|ccccc}
+$x$ &  & $-\sqrt{2}$ &  & $\sqrt{2}$ &  \\ \hline
+$f(x) - A(x)$ & $+$ & $|$ & $-$ & $|$ & $+$ \\
+\end{tabular}
+
+\bigskip
+
+Voor $x \to +\infty$ geldt: \\
+
+$ f(x) > A(x) $ \\
+
+Voor $x \to -\infty$ geldt: \\
+
+$ f(x) > A(x) $ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

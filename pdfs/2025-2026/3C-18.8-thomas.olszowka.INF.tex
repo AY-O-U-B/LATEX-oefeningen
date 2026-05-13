@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\llim}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3C nr. 18.8\\
+
+\medskip
+
+\normalsize
+
+$\llim_{x\rightarrow 0} \dfrac{x \cos x - \sin x}{e^x - e^{-x} -2x} = \dfrac{0}{0}$\\
+
+$\overset{H}{=}\llim_{x \rightarrow 0} \dfrac{\cos x + x(-\sin x) - \cos x}{e^x + e^{-x} -2}$\\
+
+$= \llim_{x \rightarrow 0} \dfrac{-x\sin x}{e^x + e^{-x} -2} = \dfrac{0}{0}$\\  
+
+$\overset{H}{=}\llim_{x \rightarrow 0} \dfrac{-\sin x -x\cos x}{e^x - e^{-x}}$\\
+
+$= \llim_{x \rightarrow 0} \dfrac{-(\sin x + x\cos x)}{e^x - e^{-x}} = \dfrac{0}{0}$\\
+
+$\overset{H}{=}\llim_{x \rightarrow 0} \dfrac{-(\cos x + \cos x + x(-\sin x))}{e^x + e^{-x}}$\\
+
+$= \llim_{x \rightarrow 0} \dfrac{-(2\cos x - x\sin x)}{e^x + e^{-x}}$\\
+
+$= \dfrac{-(2 \cdot 1 -0 \cdot 0)}{1 + 1} =\dfrac{-2}{2} = -1$
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

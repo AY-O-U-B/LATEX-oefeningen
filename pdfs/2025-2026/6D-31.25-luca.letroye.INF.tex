@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6D nr. 31.25
+
+\medskip
+\normalsize
+
+$ \displaystyle\sum_{n=0}^{\infty} n^2e^{-n^3}$\\
+
+$\Rightarrow $ D'Alembert\\
+
+$\lim\limits_{n\rightarrow +\infty} \dfrac{(n+1)^2e^{-(n+1)^3}}{n^2e^{-n^3}}$\\
+
+$ = \lim\limits_{n\rightarrow +\infty} \dfrac{(n+1)^2e^{(-n^3-3n^2-3n-1))}}{n^2e^{-n^3}}$\\
+
+$ = \lim\limits_{n\rightarrow +\infty} \left(\left(1+\dfrac{1}{n}\right)^2\cdot e^{-3n^2-3n-1} \right) = 0 \Rightarrow $ convergent\\
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

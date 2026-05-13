@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 20.13\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int\coth^2x \cosh x dx$\\
+
+$ = \displaystyle\int\dfrac{\cosh^2x}{\sinh^2x} \cosh x dx$\\
+
+$ = \displaystyle\int\dfrac{1+\sinh^2x}{\sinh^2x} \cosh x dx$\\
+
+$ = \displaystyle\int\dfrac{\cosh x}{\sinh^2x}dx + \displaystyle\int\cosh x dx$\\
+
+$ = \displaystyle\int\dfrac{\cosh x}{\sinh^2x}dx + \sinh x + C$\\
+
+$u = \sinh x$\\
+
+$du = \cosh xdx$\\
+
+$ = \displaystyle\int\dfrac{\cosh x}{u^2\cosh x}du + \sinh x + C$\\
+
+$ = \displaystyle\int\dfrac{du}{u^2} + \sinh x + C$\\
+
+$ = -\dfrac{1}{u} + \sinh x + C$\\
+
+$ = -\dfrac{1}{\sinh x} + \sinh x + C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,99 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3G nr. 9.4 \\
+
+\medskip
+
+\normalsize
+
+
+$f(x) = \dfrac{3x - 8}{4 - 6x}$ \\
+
+$\operatorname{dom}f = \mathbb{R} \setminus \left\{\dfrac{2}{3}\right\}$ \\
+
+Nulpunten: $3x - 8 = 0 \Leftrightarrow x = \dfrac{8}{3}$ \\
+
+Polen: $4 - 6x = 0 \Leftrightarrow x = \dfrac{2}{3}$ \\
+
+VA: \\
+
+$\limit_{x\to\tfrac{2}{3}+} \dfrac{3x - 8}{4 - 6x} = \dfrac{-6}{0^-} = +\infty$ \\
+
+$\limit_{x\to\tfrac{2}{3}-} \dfrac{3x - 8}{4 - 6x} = \dfrac{-6}{0^+} = -\infty$ \\
+
+$\Rightarrow x = \dfrac{2}{3}$
+
+HA: \\
+
+$\limit_{x\to\pm\infty} \dfrac{3x - 8}{4 - 6x} = \dfrac{\pm\infty}{\mp\infty}$ \\
+
+$\overset{H}{=} \limit_{x\to\pm\infty} \dfrac{3}{-6} = -\dfrac{1}{2}$ \\
+
+$\Rightarrow y = -\dfrac{1}{2}$ \\
+
+$\begin{array}{c|ccccccc}
+    x    & -\infty &   & \dfrac{2}{3} &   &\dfrac{8}{3}&   & +\infty \\ 
+    \hline
+    f(x) &         & - & |            & + & 0          & - &\\ 
+\end{array}$ \\
+
+De functie ligt naar $-\infty$ onder de HA en naar $+\infty$ boven de HA. \\
+
+SA: \\
+
+geen SA. \\
+
+Tekenonderzoek: \\
+
+$f'(x) = \dfrac{d}{dx}\left(\dfrac{3x - 8}{4 - 6x}\right)$ \\
+
+$= \dfrac{\dfrac{d}{dx}(3x - 8)(4 - 6x) - (3x - 8)\dfrac{d}{dx}(4 - 6x)}{(4 - 6x)^2}$ \\
+
+$= \dfrac{12 - 18x + 18x - 48}{(4 - 6x)^2}$ \\
+
+$= -\dfrac{36}{(4 - 6x)^2}$ \\
+
+$f''(x) = \dfrac{d}{dx}\left(-\dfrac{36}{(4 - 6x)^2}\right)$ \\
+
+$= -36 \cdot \dfrac{d}{dx}\left((4 - 6x)^{-2}\right)$ \\
+
+$= -36 \cdot (-2)(4 - 6x)^{-3} \cdot \dfrac{d}{dx}(4 - 6x)$ \\
+
+$= \dfrac{72}{(4 - 6x)^3} \cdot (-6)$ \\
+
+$= -\dfrac{432}{(4 - 6x)^3}$ \\
+
+$\begin{array}{r|cccccccc}
+    x      & -\infty &          & \dfrac{2}{3} &          & \dfrac{8}{3} &          & +\infty \\ 
+    \hline
+    f(x)   &         & +        & |            & -        & 0            & +        &\\
+    f'(x)  &         & -        & |^{(2)}      & -        & -            & -        &\\
+    f''(x) &         & -        & |^{(3)}      & +        & +            & +        &\\ 
+    \hline
+    f(x)   &         & \searrow &              & \searrow & \searrow     & \searrow &\\
+           &         & \frown   &              & \smile   & \smile       & \smile   &\\
+\end{array}$ \\
+
+Grafiek: zie volgende pagina. \\
+
+\begin{figure}[h]
+\includegraphics[width=\linewidth]{3G-9.4-seda.jusjajeva.INF.png} \\
+\end{figure} 
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

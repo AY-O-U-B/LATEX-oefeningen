@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2B nr. 1.2\\
+
+\medskip
+
+\normalsize
+
+
+
+Druk $\sin(\Bgtan x)$ uit in x:\\
+
+$\alpha = \Bgtan x$ met $\alpha \in \left] -\dfrac{\pi}{2}, \dfrac{\pi}{2} \right[$ \\
+
+$\Leftrightarrow x = \tan \alpha$  \\
+
+$x^2 = \tan^2 \alpha$ \\
+
+$x^2 = \dfrac{\sin^2 \alpha}{\cos^2 \alpha}$ \\
+
+$x^2 + 1 = \dfrac{\sin^2 \alpha}{\cos^2 \alpha} + \dfrac{\cos^2 \alpha}{\cos^2 \alpha}$ \\
+
+$x^2 + 1 = \dfrac{\sin^2 \alpha + \cos^2 \alpha}{\cos^2 \alpha}$ \\
+
+$x^2 + 1 = \dfrac{1}{\cos^2 \alpha}$ \\
+
+$x^2 + 1 = \dfrac{1}{1 - \sin^2 \alpha}$ \\
+
+$\dfrac{1}{x^2 + 1} = 1 - \sin^2 \alpha$ \\
+
+$ \sin^2 \alpha = 1 - \dfrac{1}{x^2 + 1}$ \\
+
+$ \sin^2 \alpha = \dfrac{(x^2 + 1) - 1}{x^2 + 1}$ \\
+
+$ \sin^2 \alpha = \dfrac{x^2}{x^2 + 1}$ \\
+
+$ \sin \alpha = \dfrac{x}{\sqrt{x^2 + 1}}$ \\
+
+$ \sin(\Bgtan x) = \dfrac{x}{\sqrt{x^2 + 1}}$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

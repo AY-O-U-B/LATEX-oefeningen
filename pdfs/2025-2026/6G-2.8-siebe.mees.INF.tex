@@ -1,0 +1,94 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6G nr. 2.8\\
+
+\medskip
+
+\normalsize
+
+$f(x)=e^{|x|}$\\
+
+$f(-x)=e^{|-x|}=e^{|x|}=f(x)$\\
+
+$\Rightarrow f $ is even $ \Rightarrow b_n=0$\\
+
+$f(x)\sim \dfrac{a_0}{2}+\displaystyle\sum_{n=1}^{\infty}(a_n\cos(nx))$\\
+
+$a_0=\dfrac{1}{\pi}\displaystyle\int_{-\pi}^{\pi}f(x)dx=\dfrac{1}{\pi}\displaystyle\int_{-\pi}^{\pi}e^{|x|}dx$\\
+
+Omdat $f$ even is:\\
+
+$ = 2\cdot\dfrac{1}{\pi}\displaystyle\int_{0}^{\pi}e^xdx$\\
+
+$=\dfrac{2}{\pi}\left[e^x\right]_{0}^{\pi}$\\
+
+$ \Rightarrow a_0 =\dfrac{2}{\pi}(e^{\pi}-1)$\\
+
+$a_n=\dfrac{1}{\pi}\displaystyle\int_{-\pi}^{\pi}f(x)\cos(nx)dx=\dfrac{1}{\pi}\displaystyle\int_{-\pi}^{\pi}e^{|x|}\cos(nx)dx$\\
+
+Omdat $f$ even is:\\
+
+$=\dfrac{2}{\pi}\displaystyle\int_{0}^{\pi}e^x\cos(nx)dx$\\
+
+$ \left \{
+\begin{array}{l}
+u=\cos(nx) \\
+dv=e^xdx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du=-n\sin(nx)dx \\
+v=e^x
+\end{array}
+\right . $\\
+
+$I=e^x\cos(nx)-n\displaystyle\int_{0}^{\pi} e^x\sin(nx)dx$\\
+
+$ \left \{
+\begin{array}{l}
+u=\sin(nx) \\
+dv=e^xdx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du=n\cos(nx)dx \\
+v=e^x
+\end{array}
+\right . $\\
+
+$J=e^x\sin(nx)-n\displaystyle\int_{0}^{\pi} e^x\cos(nx)dx$\\
+
+$\Rightarrow I=e^x\cos(nx)-n(e^x\sin(nx)-nI)$\\
+
+$=e^x\cos(nx)-ne^x\sin(nx)+n^2I$\\
+
+$I(1+n^2)=e^x\cos(nx)-ne^x\sin(nx)$\\
+
+$=e^x(\cos(nx)+n\sin(nx))$\\
+
+$ = \dfrac{2}{\pi}\left[\dfrac{e^x(\cos(nx)+n\sin(nx))}{1+n^2}\right]_{0}^{\pi}$\\
+
+$=\dfrac{2}{\pi}\left(\dfrac{e^{\pi}(-1)^n}{1+n^2}-\dfrac{1}{1+n^2}\right)$\\
+
+$\Rightarrow a_n =\dfrac{2(e^{\pi}(-1)^n-1)}{\pi(1+n^2)}$\\
+
+$f(x)\sim \dfrac{e^{\pi}-1}{\pi}+\displaystyle\sum_{n=1}^{\infty}\dfrac{2(e^{\pi}(-1)^n-1)}{\pi(1+n^2)}\cos(nx)$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

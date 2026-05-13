@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 52.1
+
+\medskip
+\normalsize
+
+$\dint \sin^2x\cos^2xdx  = \dint\left(\dfrac{1-\cos2x}{2}\right)\left(\dfrac{1+\cos2x}{2}\right)dx$\\
+
+$= \dint \dfrac{1+\cos2x -\cos2x-\cos^22x}{4}dx$\\
+
+$=\dint \dfrac{1-\cos^22x}{4}dx = \dint\dfrac{\sin^22x}{4}dx = \dfrac{1}{4}\dint\sin^22x$\\
+
+$= \dfrac{1}{4}\dint\dfrac{1-\cos4x}{2}dx = \dfrac{1}{8}\dint dx - \dfrac{1}{8}\dint \cos4xdx$\\
+
+$t = 4x \Rightarrow dx = \dfrac{dt}{4}$\\
+
+$\Rightarrow \dfrac{1}{8}x - \dfrac{1}{32}\sin 4x +C$\\
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

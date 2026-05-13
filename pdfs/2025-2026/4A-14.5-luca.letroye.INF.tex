@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 14.5\\
+
+\medskip
+\normalsize
+
+$\displaystyle\int \dfrac{\ln x}{\sqrt{x}}dx$\\
+
+$\left\{
+\begin{array}{l}
+	u=\ln x \\ 
+	dv=\dfrac{1}{\sqrt{x}}dx
+\end{array}\right.
+\Rightarrow 
+\left\{
+\begin{array}{l}
+	du= 	\dfrac{1}{x}\\
+ 	v=2\sqrt{x}
+\end{array}
+\right.$\\
+
+$= 2\sqrt{x}\ln x - \displaystyle\int \dfrac{2\sqrt{x}}{x}dx$\\
+
+$= 2\sqrt{x}\ln x - 2\displaystyle\int x^{-\tfrac{1}{2}}dx$\\
+
+$= 2\sqrt{x}\ln x - \dfrac{2x^{\tfrac{1}{2}}}{\dfrac{1}{2}}+C$\\
+
+$= 2\sqrt{x}\ln x - 4\sqrt{x}+C$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

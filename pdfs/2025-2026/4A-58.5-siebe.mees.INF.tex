@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 58.5\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int \dfrac{dx}{3 + \cos x} $\\
+
+$ t = \tan \dfrac{x}{2} $\\
+
+$ \left \{
+\begin{array}{l}
+
+dt = \dfrac{1}{2}\sec^2 \dfrac{x}{2} dx \\
+
+dx = 2\cos^2 \dfrac{x}{2} dt = \dfrac{2}{1 + \tan^2 \dfrac{x}{2}} dt = \dfrac{2}{1 + t^2} dt \\
+
+\cos x = \dfrac{1 - \tan^2 \dfrac{x}{2}}{1 + \tan^2 \dfrac{x}{2}} = \dfrac{1 - t^2}{1 + t^2}
+\end{array}
+\right . $\\
+
+$ \displaystyle\int \dfrac{dx}{3 + \cos x} = \displaystyle\int \dfrac{\dfrac{2}{1 + t^2} dt}{3 + \dfrac{1 - t^2}{1 + t^2}} $\\
+
+$ = \displaystyle\int \dfrac{\dfrac{2}{1 + t^2}}{\dfrac{3\left( 1 + t^2 \right) + 1 - t^2}{1 + t^2}} dt $\\
+
+$ = \displaystyle\int \dfrac{2}{3\left( 1 + t^2 \right) + 1 - t^2} dt $\\
+
+$ = \displaystyle\int \dfrac{2}{4 + 2t^2} dt $\\
+
+$ = \displaystyle\int \dfrac{1}{2 + t^2} dt $\\
+
+$ = \dfrac{1}{\sqrt{2}} \Bgtan \dfrac{t}{\sqrt{2}} + C $\\
+
+$ \tan \dfrac{x}{2} = t $\\
+
+$ \displaystyle\int \dfrac{dx}{3 + \cos x} = \dfrac{1}{\sqrt{2}} \Bgtan \left( \dfrac{\tan \dfrac{x}{2}}{\sqrt{2}} \right) + C $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

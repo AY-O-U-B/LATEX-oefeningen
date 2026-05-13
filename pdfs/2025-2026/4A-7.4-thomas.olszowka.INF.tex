@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\fourthroot}{\sqrt[4]}
+\newcommand{\fifthroot}{\sqrt[5]}
+\newcommand{\sixthroot}{\sqrt[6]}
+\newcommand{\twelfthroot}{\sqrt[12]}
+\newcommand{\twentiethroot}{\sqrt[20]}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 7.4  \\
+
+
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{\fifthroot{x^3} + \sixthroot{x^5}}{\fourthroot{x}} dx$ \\
+
+$= \dint \dfrac{\fifthroot{x^3}}{\fourthroot{x}} dx + \dint \dfrac{\sixthroot{x^5}}{\fourthroot{x}} dx$ \\
+
+$= \dint x^{\tfrac{3}{5}} x^{\tfrac{-1}{4}} dx +\dint x^{\tfrac{5}{6}} x^{\tfrac{-1}{4}} dx$ \\
+
+$= \dint x^{\tfrac{12}{20}} x^{\tfrac{-5}{20}} dx +\dint x^{\tfrac{10}{12}} x^{\tfrac{-3}{12}} dx$ \\
+
+$= \dint x^{\tfrac{7}{20}} dx + \dint x^{\tfrac{7}{12}} dx$ \\
+
+$= \dfrac{x^{\tfrac{27}{20}}}{\dfrac{27}{20}} + \dfrac{x^{\tfrac{19}{12}}}{\dfrac{19}{12}} + c$ \\
+
+$= \dfrac{20 \twentiethroot{x^{27}}}{27} + \dfrac{12 \twelfthroot{x^{19}}}{19} +c$ \\
+
+$= \dfrac{20x \twentiethroot{x^{7}}}{27} + \dfrac{12x \twelfthroot{x^{7}}}{19} +c$ \\
+
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

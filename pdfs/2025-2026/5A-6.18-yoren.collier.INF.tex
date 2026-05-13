@@ -1,0 +1,111 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig)
+\newcommand{\Ls}{\left|} %Links (absolutewaarde)streep
+\newcommand{\Rs}{\right|}
+\newcommand{\Lsp}{\left.} %Links splits (of streep kan ook) partiëelbreuk (omdat om partiëelbreuken te noteren heb je een punt nodig)
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto}
+\newcommand{\intgrl}{\displaystyle\int} %integraal teken (bij het berekenen van primitieven)
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 6.18\\
+
+\medskip
+
+\normalsize
+
+$ BI \intgrl_0^1 \dfrac{x^2 + \alpha x + \alpha}{x^3 +1} dx \adR OBI = \intgrl \dfrac{x^2 + \alpha x + \alpha}{x^3 +1} dx$\\
+
+$= \intgrl \dfrac{x^2 + \alpha \Lh x+1 \Rh}{\Lh x+1 \Rh \Lh x^2 -x +1 \Rh}$\\
+
+We nemen $b(x)$ gelijk aan de breuk na de integraal.\\
+
+$b(x) = \dfrac{A}{\Lh x+1 \Rh} + \dfrac{Bx + C}{\Lh x^2 -x +1 \Rh}$\\
+
+$A = \Lsp \dfrac{x^2 + \alpha \Lh x+1 \Rh}{\Lh x^2 -x +1 \Rh} \Rs_{x= -1} = \dfrac{\Lh -1 \Rh^2 \schrap{+ \alpha \Lh -1 +1 \Rh}}{\Lh -1 \Rh^2 - \Lh -1 \Rh +1} = \dfrac{1}{3}$\\
+
+$x^2 -x +1 = 0$\\
+
+$\Delta = \Lh -1 \Rh^2 - 4 \cdot 1 \cdot 1 = -3$\\
+
+$x^+ = \dfrac{1 + \sqrt{-3}}{2} = \dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i$\\
+
+$x^- = \dfrac{1 - \sqrt{-3}}{2} = \dfrac{1}{2} - \dfrac{\sqrt{3}}{2}i$\\
+
+$B \Lh \dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i \Rh + C = \Lsp \dfrac{x^2 + \alpha \Lh x+1 \Rh}{\Lh x +1 \Rh} \Rs_{x = \tfrac{1}{2} + \tfrac{\sqrt{3}}{2}i}$\\
+
+$= \dfrac{\Lh \dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i \Rh^2 + \alpha \Lh \Lh \dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i \Rh +1 \Rh}{\Lh \Lh \dfrac{1}{2} + \dfrac{\sqrt{3}}{2}i \Rh +1 \Rh} = \dfrac{ \dfrac{-1}{2} + \dfrac{\sqrt{3}}{2}i + \alpha \Lh \dfrac{3}{2} + \dfrac{\sqrt{3}}{2}i \Rh}{\dfrac{3}{2} + \dfrac{\sqrt{3}}{2}i}$\\
+
+$= \dfrac{\schrap{\dfrac{1}{2}} \Lh -1 + \sqrt{3}i \Rh + \alpha \cdot \schrap{\dfrac{1}{2}} \Lh 3 + \sqrt{3}i \Rh }{\schrap{\dfrac{1}{2}} \Lh 3 + \sqrt{3}i \Rh} = \dfrac{ \Lv \Lh -1 + \sqrt{3}i \Rh + \alpha \Lh 3 + \sqrt{3}i \Rh \Rv \Lh 3 - \sqrt{3}i \Rh}{\Lh 3 + \sqrt{3}i \Rh \Lh 3 - \sqrt{3}i \Rh} = \dfrac{4\sqrt{3}i + \alpha \cdot \Lh 12 \Rh}{12} = \dfrac{\sqrt{3}i + 3\alpha}{3} = \alpha + \dfrac{\sqrt{3}}{3}i$\\
+
+$\dfrac{1}{2}B + \dfrac{\sqrt{3}}{2}iB +C = \alpha + \dfrac{\sqrt{3}}{3}i$\\
+
+$\La
+\begin{array}{l}
+\dfrac{1}{2}B +C = \alpha\\
+\dfrac{\sqrt{3}}{3}iB = \dfrac{\sqrt{3}}{3}i
+\end{array}
+\Ras
+\asa \La
+\begin{array}{l}
+\dfrac{1}{2} + C = \alpha\\
+B = 1
+\end{array}
+\Ras
+\asa \La
+\begin{array}{l}
+C = \alpha - \dfrac{1}{2}\\
+B = 1 
+\end{array}
+\Ras$
+
+$I = \dfrac{1}{3} \intgrl \dfrac{1}{x+1} dx + \intgrl \dfrac{x + \alpha - \dfrac{1}{2}}{x^2 -x +1} dx$\\
+
+$D\Lh x^2 -x +1 \Rh = 2x -1$\\
+
+$= \dfrac{1}{3} \ln \Ls x +1 \Rs +c + \dfrac{1}{2} \intgrl \dfrac{2x + 2\alpha -1}{x^2 -x +1}dx = \dfrac{1}{3} \ln \Ls x +1 \Rs +c + \dfrac{1}{2} \Lv \intgrl \dfrac{1}{x^2 -x +1} \Lh 2x-1 \Rh dx + \intgrl \dfrac{2\alpha}{x^2 -x +1}dx \Rv$\\
+
+Stel: $t = x^2 -x +1 \adR dt = \Lh 2x -1\Rh dx$\\
+
+$\dfrac{1}{3} \ln \Ls x +1 \Rs +c + \dfrac{1}{2} \Lv \intgrl \dfrac{1}{t} dt + 2\alpha\intgrl \dfrac{1}{x^2 -x + \dfrac{1}{4} + \dfrac{3}{4}}dx \Rv$\\
+
+$= \dfrac{1}{3} \ln \Ls x +1 \Rs +c + \dfrac{1}{2} \Lv \ln \Ls x^2 -x +1 \Rs +c + 2\alpha\intgrl \dfrac{1}{\Lh x - \dfrac{1}{2} \Rh^2  + \dfrac{3}{4}}dx \Rv$\\
+
+Stel: $y = x - \dfrac{1}{2} \adR dy = dx$\\
+
+$= \dfrac{1}{3} \ln \Ls x +1 \Rs +c + \dfrac{1}{2} \Lv \ln \Ls x^2 -x +1 \Rs +c + 2\alpha\intgrl \dfrac{1}{y^2  + \dfrac{3}{4}}dx \Rv$\\
+
+$= \dfrac{1}{3} \ln \Ls x +1 \Rs +c + \dfrac{1}{2} \Lv \ln \Ls x^2 -x +1 \Rs +c + 2\alpha \cdot \dfrac{1}{\dfrac{\sqrt{3}}{2}}\operatorname{Bgtan} \Lh \dfrac{y}{\dfrac{\sqrt{3}}{2}} \Rh +c \Rv = \dfrac{1}{3} \ln \Ls x +1 \Rs +c + \dfrac{1}{2} \ln \Ls x^2 -x +1 \Rs +c + \schrap{2}\alpha \cdot \dfrac{1}{\schrap{2}} \cdot \dfrac{2}{\sqrt{3}}\operatorname{Bgtan} \Lh \dfrac{2\Lh x - \dfrac{1}{2} \Rh}{\sqrt{3}} \Rh +c = \dfrac{1}{3} \ln \Ls x +1 \Rs + \dfrac{1}{2} \ln \Ls x^2 -x +1 \Rs + \dfrac{2\alpha}{\sqrt{3}} \operatorname{Bgtan} \Lh \dfrac{2x - 1}{\sqrt{3}} \Rh +c$\\
+
+$BI = \Lv \dfrac{1}{3} \ln \Ls x +1 \Rs + \dfrac{1}{2} \ln \Ls x^2 -x +1 \Rs + \dfrac{2\alpha}{\sqrt{3}} \operatorname{Bgtan} \Lh \dfrac{2x - 1}{\sqrt{3}} \Rh \Rv_0^1$\\
+
+$= \dfrac{1}{3} \ln \Ls 2 \Rs + \dfrac{1}{2} \ln \Ls 1 \Rs + \dfrac{2\alpha}{\sqrt{3}} \operatorname{Bgtan} \Lh \dfrac{1}{\sqrt{3}} \Rh - \Lh \dfrac{1}{3} \ln \Ls 1 \Rs + \dfrac{1}{2} \ln \Ls 1 \Rs + \dfrac{2\alpha}{\sqrt{3}} \operatorname{Bgtan} \Lh \dfrac{-1}{\sqrt{3}} \Rh \Rh$\\
+
+$= \dfrac{1}{3} \ln \Ls 2 \Rs +0 + \dfrac{2\alpha}{\sqrt{3}} \cdot\dfrac{\pi}{6} - \dfrac{1}{3} \cdot 0 - \dfrac{1}{2} \cdot 0 - \dfrac{2\alpha}{\sqrt{3}} \cdot \dfrac{-\pi}{6} = \dfrac{1}{3} \ln |2| + \dfrac{2\alpha\pi}{6\sqrt{3}} - \dfrac{-2\alpha\pi}{6\sqrt{3}} = \dfrac{1}{3} \ln |2| + \dfrac{\vervang{2}{4}\alpha\pi}{\vervang{3}{6}\sqrt{3}} = \dfrac{1}{3} \ln |2| + \dfrac{2\alpha\pi}{3\sqrt{3}}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

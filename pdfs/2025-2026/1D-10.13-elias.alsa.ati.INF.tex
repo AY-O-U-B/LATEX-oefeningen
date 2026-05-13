@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Elias Alsa Ati                         \\
+\noindent \large Studierichting: Informatica                    \\
+\noindent \large Oefeningenreeks 1D nr. 10.13    \\
+
+\medskip
+
+\normalsize
+
+$$\left(iz^2 + 2z + 5\right) \div \left(z- 1 + i\right)$$
+
+stel $z - 1 + i = 0$, dan is $z = 1 - i$\\
+
+\textbf{Horner:}\\
+
+$$\begin{array}{r|cc|c}
+      & i & 2     & 5       \\  
+1 - i & | & 1 + i & 4 - 2i  \\  \cline{1-4}
+      & i & 3 + i & 9 - 2i
+\end{array}$$
+
+\textbf{Resultaat:}\\
+
+\begin{align*}
+    A(z) &= B(z) \cdot Q(z) + R(z)                                                      \\
+    A(z) &= \left(z- 1 + i\right) \cdot \left(iz + 3 + i\right) + \left(9 - 2i\right)   \\
+\end{align*}
+
+
+\begin{thebibliography}{999}
+\bibitem{a} 
+\end{thebibliography}
+\end{document} 

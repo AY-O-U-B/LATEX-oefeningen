@@ -1,0 +1,59 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\renewcommand{\arraystretch}{2.5}
+
+\begin{document}
+
+\noindent \large Auteur: Elias Alsa Ati                         \\
+\noindent \large Studierichting: Informatica                    \\
+\noindent \large Oefeningenreeks 1D nr. 6.9 \small\cite{a}      \\
+
+\medskip
+
+\normalsize
+
+$$\left( \left(2 + i\right)z^3 - iz^2 + 3\right) \div \left(\left(1 - i\right)z^2 - z + 1\right)$$
+
+$\begin{array}{rccccc|c}
+&   &\left(2 + i\right)z^3  &    - iz^2                     &   + 0z                                    &       + 3             &   \left(1 - i\right)z^2 - z + 1                       \\  \cline{1-7}
+& - &\left(2 + i\right)z^3  &    - \dfrac{1 + 3i}{2} z^2    &   + \dfrac{1 + 3i}{2} z                   &        |              &    \dfrac{1+3i}{2}z + \dfrac{1}{2}i \rightarrow Q     \\  \cline{3-5}
+&   &          0            &    +  \dfrac{1+i}{2}z^2       &   - \dfrac{1 + 3i}{2}z                    &       + 3             &                                                       \\
+& - &                       &       \dfrac{1+i}{2}z^2       &   - \dfrac{1}{2}iz                        &       +\dfrac{1}{2}i  &                                                       \\  \cline{4-6} 
+&   &                       &          R \leftarrow         &    \left(-\dfrac{1}{2} -i\right)z         &   + 3 - \dfrac{1}{2}i &
+\end{array}$ \\
+
+\textbf{Resultaat:}\\
+
+\begin{align*}
+    A(z) &= B(z) \cdot Q(z) + R(z) \\
+    A(z) &= \left(\left(1 - i\right)z^2 - z + 1\right) \cdot \left(\dfrac{1+3i}{2}z + \dfrac{1}{2}i\right) + \left(\left(-\dfrac{1}{2}-i\right)z + 3 -\dfrac{1}{2}i\right)
+\end{align*}
+
+\textbf{KladBlok:}  \\
+
+Berekening van het eerste quotiëntterm:\\
+
+\begin{align*}
+    \dfrac{\left(2 + i\right)z^3}{\left(1 - i\right)z^2}    &= \dfrac{\left(2 + i\right)}{\left(1 - i\right)} z                 \\
+                                                            &= \left(2 + i\right) \cdot \dfrac{\left(1 + i\right)}{1^2 + 1^2}z  \\
+                                                            &= \dfrac{2 + 2i + i + i^2}{2}z                                     \\
+                                                            &= \dfrac{1 + 3i}{2}z
+\end{align*}
+
+Berekening van het 2de quotiëntterm:\\
+
+\begin{align*}
+    \dfrac{\dfrac{1+i}{2}z^2}{\left(1 - i\right)z^2}        &= \dfrac{1 + i}{2\left(1 - i\right)}                                       \\
+                                                            &= \dfrac{\left(1 + i\right)\left(1 + i\right)}{2\left(1^2 + 1^2\right)}    \\
+                                                            &= \dfrac{1 + 2i + i^2}{4}                                                  \\
+                                                            &= \dfrac{2}{4}i = \dfrac{1}{2}i
+\end{align*}
+
+\begin{thebibliography}{999}
+\bibitem{a} 
+\end{thebibliography}
+\end{document} 

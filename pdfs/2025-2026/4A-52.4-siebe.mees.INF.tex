@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 52.4\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int \sin^4 x \cos^2 x dx$\\
+
+$= \displaystyle\int \left( \dfrac{1-\cos 2x}{2} \right)^2 \left( \dfrac{1+\cos 2x}{2} \right) dx$\\
+
+$= \dfrac{1}{8}\displaystyle\int \left( 1-2\cos 2x+\cos^2 2x \right)\left( 1+\cos 2x \right) dx$\\
+
+$= \dfrac{1}{8}\displaystyle\int \left( 1-\cos 2x-\cos^2 2x+\cos^3 2x \right) dx$\\
+
+$= \dfrac{1}{8}\displaystyle\int \left( 1-\cos 2x-\dfrac{1+\cos 4x}{2}+\cos 2x \dfrac{1+\cos 4x}{2} \right) dx$\\
+
+$= \dfrac{1}{8}\displaystyle\int \left( 1-\cos 2x-\dfrac{1}{2}-\dfrac{1}{2}\cos 4x+\dfrac{1}{2}\cos 2x+\dfrac{1}{2}\cos 2x \cos 4x \right) dx$\\
+
+$= \dfrac{1}{8}\displaystyle\int \left( \dfrac{1}{2}-\dfrac{1}{2}\cos 2x-\dfrac{1}{2}\cos 4x+\dfrac{1}{2}\cos 2x \cos 4x \right) dx$\\
+
+$= \dfrac{1}{8}\displaystyle\int \left( \dfrac{1}{2}-\dfrac{1}{2}\cos 2x-\dfrac{1}{2}\cos 4x+\dfrac{1}{4}\left( \cos 6x+\cos 2x \right) \right) dx$\\
+
+$= \dfrac{1}{8}\displaystyle\int \left( \dfrac{1}{2}-\dfrac{1}{4}\cos 2x-\dfrac{1}{2}\cos 4x+\dfrac{1}{4}\cos 6x \right) dx$\\
+
+$= \displaystyle\int \left( \dfrac{1}{16}-\dfrac{1}{32}\cos 2x-\dfrac{1}{16}\cos 4x+\dfrac{1}{32}\cos 6x \right) dx$\\
+
+$= \dfrac{x}{16}-\dfrac{1}{32}\dfrac{\sin 2x}{2}-\dfrac{1}{16}\dfrac{\sin 4x}{4}+\dfrac{1}{32}\dfrac{\sin 6x}{6}+C$\\
+
+$= \dfrac{x}{16}-\dfrac{\sin 2x}{64}-\dfrac{\sin 4x}{64}+\dfrac{\sin 6x}{192}+C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

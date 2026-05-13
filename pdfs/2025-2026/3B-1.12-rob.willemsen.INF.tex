@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 3B nr. 1.12 \\
+
+\medskip
+
+\normalsize
+
+$f(x) = \operatorname{Bgtan}(\dfrac{1}{x})$ \\
+
+$f'(x) = \dfrac{1}{1+\left(\dfrac{1}{x}\right)^2} \cdot \dfrac{0 \cdot 1 - 1 \cdot 1}{x^2}$ \\
+
+$= \dfrac{1}{1+\dfrac{1}{x^2}} \cdot \left(-\dfrac{1}{x^2}\right)$ \\
+
+$= \dfrac{1}{\dfrac{x^2}{x^2} \cdot {\dfrac{1}{x^2}}} \cdot \left(-\dfrac{1}{x^2}\right)$ \\
+
+$= \dfrac{1}{\dfrac{x^2+1}{x^2}} \cdot \left(-\dfrac{1}{x^2}\right)$ \\
+
+$= \dfrac{x^2}{x^2+1} \cdot \left(-\dfrac{1}{x^2}\right)$ \\
+
+$= -\dfrac{x^2 \cdot 1}{(x^2+1) \cdot x^2}$ \\
+
+$= -\dfrac{1}{x^2+1}$ \\
+
+$f''(x) = -\dfrac{0 \cdot (x^2+1) - (1 \cdot 2x)}{(x^2+1)^2}$ \\
+
+$= \dfrac{2x}{(x^2+1)^2}$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

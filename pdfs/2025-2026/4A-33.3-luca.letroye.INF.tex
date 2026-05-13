@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 33.3
+
+\medskip
+\normalsize
+
+$\displaystyle\int (e^x+1)^2dx $\\
+
+$t = e^x +1 \Rightarrow e^x = t-1$\\
+
+$\dfrac{dt}{e^x}$\\
+
+$\Rightarrow \displaystyle\int \dfrac{t^2}{t-1}dt $\\
+
+$= \displaystyle\int \left(\dfrac{t^2-1+1}{t-1}\right)dt $\\
+
+$= \displaystyle\int \left(\dfrac{(t-1)(t+1)+1}{t-1}\right)dt $\\
+
+$= \displaystyle\int  \left((t+1)+ \dfrac{1}{t-1}\right)dt $\\
+
+$\dfrac{1}{2}t^2+t+\ln|t-1|+C$\\
+
+$\dfrac{1}{2}(e^x+1)^2+(e^x+1)+\ln|e^x|+C$\\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

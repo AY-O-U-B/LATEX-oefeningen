@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\noindent \large Auteur: Xander De Blauwer \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6F nr. 4\\
+
+\medskip
+
+\normalsize
+
+$f_n : [0,1] \to \mathbb{R}: x \to x^n(1-x^n)$ \\
+
+$ \forall x \in [0,1]: \lim\limits_{n \to \infty} (1-x^n)x^n $ :\\
+
+Als $ 0 \leq x < 1: \lim\limits_{n \to \infty} -x^{2n}\left(1-\dfrac{1}{x^n}\right) = 0 $ \\
+
+Als $x = 1: \lim\limits_{n \to \infty} -x^{2n}\left(1 - \dfrac{1}{x^n}\right) = 0 $ \\
+
+$ \Rightarrow$ puntgewijs convergent \\
+
+$\sup\limits_{x \in [0,1]}\left|x^n(1-x^n) - 0\right| = \sup\limits_{x \in [0,1]}\left|x^n(1-x^n)\right|$ \\
+
+Supremum: \\
+
+Stel $t = x^n \Rightarrow f(t) = -t^2 + t = t(1-t) $ en $f'(t) = -2t + 1 $ \\
+
+
+$\begin{array}{c|cccccc}
+t      & -\infty & 0 & \dfrac{1}{2} & 1 & +\infty \\ \hline
+f(t)   & -       & 0 & \dfrac{1}{4} & 0 & -       \\
+f'(t)  & +       & + &  0 & - & -       \\ \hline
+f(t)
+       & \nearrow & \nearrow & \max & \searrow & \searrow
+\end{array}$ \\
+
+
+$\dfrac{1}{4}\neq 0 \Rightarrow $ niet uniform convergent \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

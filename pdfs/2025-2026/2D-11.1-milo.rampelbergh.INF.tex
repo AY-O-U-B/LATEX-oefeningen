@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\setlength{\parindent}{0pt}
+
+\newcommand{\fx}{\dfrac{\sqrt{x+7}-3}{x-2}}
+\newcommand{\llim}[1]{ \lim\limits_{x \rightarrow #1} }
+
+\begin{document}
+
+\noindent \large Auteur: Milo Rampelbergh \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 11.1\\
+
+\medskip
+
+\normalsize
+
+%Begin oefening
+
+$ f(x) = \fx $ \\
+
+$ \llim{2} \fx = \dfrac{\sqrt{9}-3}{0} = \dfrac{0}{0} = \infty $ \\
+
+$ = \llim{2} \dfrac{(\sqrt{x+7}-3)(\sqrt{x+7}+3)}{(x-2)(\sqrt{x+7}+3)} $ \\
+
+$ = \llim{2} \dfrac{x+7-9}{(x-2)(\sqrt{x+7}+3)} $ \\
+
+$ = \llim{2} \dfrac{1}{\sqrt{x+7}+3} = \dfrac{1}{6} $ \\
+
+%Einde oefening
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

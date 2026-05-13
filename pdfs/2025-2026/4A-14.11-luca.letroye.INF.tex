@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 14.11\\
+
+\medskip
+\normalsize
+
+$\displaystyle\int \dfrac{\ln (\sin x)}{\cos^2 x}dx$\\
+
+$\left\{
+\begin{array}{l}
+	u=\ln(\sin x) \\ 
+	dv=\dfrac{1}{\cos^2 x}dx
+\end{array}\right.
+\Rightarrow 
+\left\{
+\begin{array}{l}
+	du= 	\cot x\\
+ 	v= \tan x
+\end{array}
+\right.$\\
+
+$= \tan x \ln(\sin x) - \displaystyle\int \tan x \cdot \cot x dx$\\
+
+$= \tan x \ln(\sin x) - \displaystyle\int 1 dx$\\
+
+$= \tan x \ln(\sin x) - x + C$\\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

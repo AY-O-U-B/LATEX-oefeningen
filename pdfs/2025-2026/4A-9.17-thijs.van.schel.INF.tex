@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 9.17\\
+
+\medskip
+
+\normalsize
+
+$\dint\tan^2(4x)dx$\\
+
+$t=4x \Rightarrow dt = 4dx$\\
+
+$= \dfrac{1}{4}\dint\tan^2(t)dt = \dfrac{1}{4}\left(\dint\sec^2(t)dt - \dint dt \right)$\\
+
+$= \dfrac{1}{4}\tan t - \dfrac{1}{4}t + C$\\
+
+$= \dfrac{\tan(4x)}{4} - \dfrac{4}{4}x + C = \dfrac{\tan(4x)}{4} - x + C$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

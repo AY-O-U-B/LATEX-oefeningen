@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Noran Ben Said\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 16.7 \\
+
+\medskip
+\normalsize
+
+$ \lim\limits_{x \to \tfrac{\pi}{2}} \cos 5x \cot 4x$\\
+
+Stel $ u = x - \dfrac{\pi}{2}$\\
+
+$ \cos 5x = \cos 5 \left(\dfrac{\pi}{2} + u \right)
+= \cos \left(\dfrac{5\pi}{2} + 5u \right)
+= -\sin 5u$\\
+
+$ \cot 4x = \cot 4 \left(\dfrac{\pi}{2} + u \right)
+= \cot \left(2\pi + 4u \right)
+= \cot 4u
+= \dfrac{\cos 4u}{\sin 4u}$\\
+
+$ = \lim\limits_{u \to 0} \left( -\sin 5u \cdot \dfrac{\cos 4u}{\sin 4u} \right)$\\
+
+$ = \lim\limits_{u \to 0} \left(-\dfrac{\sin 5u}{5u} 
+\cdot \dfrac{4u}{\sin 4u} \cdot \cos 4u \cdot \dfrac{5u}{4u} \right)$\\
+
+$ = -1 \cdot 1 \cdot 1 \cdot \dfrac{5}{4}$\\
+
+$ = -\dfrac{5}{4}$\\
+
+$ \Rightarrow \lim\limits_{x \to \tfrac{\pi}{2}}
+\cos 5x \cot 4x = -\dfrac{5}{4}$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+

@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Hendrik De Bruyn \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 22.5\\
+
+\medskip
+
+\normalsize
+
+\textbf{Opgave: } Bepaal alle nulpunten van $z^4 -3iz^3 -3z^2 +3iz +2$ in $\mathbb{C}$ en ontbind in factoren over $\mathbb{C}[z]$. Weet je vooraf of niet-reele nulpunten twee aan twee complex toegevoegden zijn? $\Rightarrow$ Nee, de veelterm heeft complexe coefficienten. \\
+
+\textbf{Oplossing: } \\
+
+$z^4 -3iz^3 -3z^2 +3iz +2 = 0$\\
+
+Via de methode van horner kunnen we nulpunten $1$ en $-1$ afsplitsen:
+
+\begin{tabular}{c|ccccc}
+	     & $1$ & $-3i$  & $-3$    & $3i$    & $2$ \\
+	$1$  & $ $ & $1$    & $1-3i$  & $-2-3i$ & $-2$\\ \hline
+	     & $1$ & $1-3i$ & $-2-3i$ & $-2$    & $0$ \\
+	$-1$ &     & $-1$   & $3i$    & $2$ \\ \cline{1-5}
+	     & $1$ & $-3i$  & $-2$    & $0$ \\
+\end{tabular}
+
+We krijgen dan de vergelijking $(z-1)(z+1)(z^2 -3iz -2) = 0$ en lossen $(z^2 -3iz -2) = 0$ apart op.\\
+
+$(z^2 -3iz -2) = 0 \Rightarrow z_{1,2} = \dfrac{3i \pm \sqrt{(-3i)^2 + 4\cdot-2}}{2} = \dfrac{3i \pm i}{2} = \left<\begin{array}{ll}
+	+: & 2i \\
+	-: & i
+\end{array}\right.$ \\
+
+Hieruit volgt dus dat $(z^2 -3iz -2) = (z-i)(z-2i)$. \\
+
+\textbf{Oplossing: } $z^4 -3iz^3 -3z^2 +3iz +2 = (z-1)(z+1)(z-i)(z-2i)$.
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 21.14\\
+
+\bigskip
+
+\normalsize
+
+$z^4 - 5z^3 + 13z^2 - 19z + 10 = 0$\\
+
+We proberen 1 uit:\\
+
+$1 - 5 + 13 - 19 + 10 = 0 $\\
+
+$\Rightarrow 1 $ is een nulpunt. Door Horner toe te passen, krijgen we: \\
+
+$\Rightarrow (z^3 - 4z^2 + 9z - 10)(z-1)$\\
+
+We proberen 2 uit:\\
+
+$8 - 16 + 18 - 10 = 0$\\
+
+$\Rightarrow 2$ is een nulpunt van $z^3 - 4z^2 + 9z - 10$. Door Horner weer toe te passen, krijgen we: \\
+
+$(z^2 - 2z + 5)(z-1)(z-2)$\\
+
+We zoeken nu nog de nulpunten van $z^2 - 2z + 5$:\\
+
+$D = 4 - 20 = -16$\\
+
+$z = \dfrac{2\pm{4i}}{2} = 1 \pm{2i}$\\
+
+Antwoord: $1,2,1-2i,1+2i$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

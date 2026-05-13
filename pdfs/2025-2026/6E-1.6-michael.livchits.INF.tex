@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 1.6\\
+
+\medskip
+
+\normalsize
+
+$T_4\left(f,\dfrac{\pi}{2}\right)(x)$voor$f(x) = \sin x$\\
+
+Eerste 4 afgeleiden:\\
+
+$f(x) = \sin x$\\
+
+$f'(x) = \cos x$\\
+
+$f''(x) = -\sin x$\\
+
+$f'''(x) = -\cos x$\\
+
+$f^{iv}(x) = \sin x$\\
+
+$T_4\left(f,\dfrac{\pi}{2}\right)(x) = \sin \dfrac{\pi}{2} + \cos \dfrac{\pi}{2} \left(x-\dfrac{\pi}{2}\right) - \dfrac{\sin\dfrac{\pi}{2}}{2!}\left(x-\dfrac{\pi}{2}\right)^2 - \dfrac{\cos\dfrac{\pi}{2}}{3!}\left(x-\dfrac{\pi}{2}\right)^3 + \dfrac{\sin\dfrac{\pi}{2}}{4!}\left(x-\dfrac{\pi}{2}\right)^4$\\
+
+$= 1 + 0 - \dfrac{1}{2}\left(x-\dfrac{\pi}{2}\right)^2 - 0 + \dfrac{1}{24}\left(x-\dfrac{\pi}{2}\right)^4$\\
+
+$= 1 - \dfrac{1}{2}\left(x^2-\pi x +\dfrac{\pi^2}{4}\right) + \dfrac{1}{24}\left(x^2-\pi x +\dfrac{\pi^2}{4}\right)^2$\\
+
+$= 1 - \dfrac{1}{2}\left(x^2-\pi x +\dfrac{\pi^2}{4}\right) + \dfrac{1}{24}\left(x^4-2\pi x^3+\dfrac{6\pi^2x^2}{4}-\dfrac{2\pi^3x}{4}+\dfrac{\pi^4}{16}\right)$\\
+
+$= 1 -\dfrac{x^2}{2} + \dfrac{\pi x}{2} - \dfrac{\pi^2}{8} + \dfrac{x^4}{24} - \dfrac{\pi x^3}{12} +\dfrac{\pi^2x^2}{16} - \dfrac{\pi^3x}{48} + \dfrac{\pi^4}{384}$\\
+
+$= 1 - \dfrac{\pi^2}{8} + \dfrac{\pi^4}{384} + \left(\dfrac{\pi}{2} - \dfrac{\pi^3}{48}\right)x + \left(\dfrac{\pi^2}{16} - \dfrac{1}{2}\right)x^2 - \dfrac{\pi x^3}{12} + \dfrac{x^4}{24}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 48.10
+
+\medskip
+\normalsize
+
+$\dint\dfrac{dx}{e^{\tfrac{x}{2}}+e^{\tfrac{x}{3}}}$\\
+
+$t = e^{\tfrac{x}{6}} \Rightarrow dx=\dfrac{6}{t}dt$\\
+
+$\Rightarrow \dint\dfrac{dt}{t^3+t^2}\cdot\dfrac{6}{t} = \dint\dfrac{6dt}{t^3(t+1)}$\\
+
+$ = \dfrac{A}{t^3}+\dfrac{B}{t^2} + \dfrac{C}{t} + \dfrac{D}{t+1}$\\
+
+$A = \left. \dfrac{6}{t+1}\right|_{t=0} = 6$\\
+
+$D = \left. \dfrac{6}{t^3}\right|_{t=-1} = -6$\\
+
+$\dfrac{6}{t^3(t+1)} -\dfrac{6}{t^3} = \dfrac{-6}{t^2(t+1)}$\\
+
+$\Rightarrow B = \left. \dfrac{-6}{t+1}\right|_{t=0} = -6$\\
+
+$\dfrac{-6}{t^2(t+1)} +\dfrac{6}{t^2} = \dfrac{6}{t(t+1)}$\\
+
+$\Rightarrow C = \left. \dfrac{-6}{t+1}\right|_{t=0} = -6$\\
+
+$\Rightarrow 6\dint\dfrac{1}{t^3}dt - 6\dint\dfrac{1}{t^2}dt +6\dint\dfrac{1}{t}dt -6\dint\dfrac{1}{t+1}dt$\\
+
+$ = \dfrac{6t^{-2}}{-2} - \dfrac{6t^{-1}}{-1} +\ln|t| - 6\ln|t+1| +C$
+
+$ = x-3e^{\tfrac{-x}{3}}+6e^{\tfrac{-x}{6}}-6\ln|e^{\tfrac{-x}{6}}+1|+C$\\
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

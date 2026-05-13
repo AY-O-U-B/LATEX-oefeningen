@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto}
+\newcommand{\intgrl}{\displaystyle\int} %integraal teken (bij het berekenen van primitieven)
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 30.4\\
+
+\medskip
+
+\normalsize
+
+$ I =  \intgrl x^9 \sqrt{x^5 +1} dx$\\
+
+Stel: $t = x^5 +1 \adR dt = 5x^4dx \asa dx = \dfrac{dt}{5x^4} $\\
+
+$x^4$ in de integraal $\Lh x^9 = x^4 \cdot x^5 \Rh$ valt weg samen met de $x^4$ bij de vervanging van $dx$.\\
+
+$= \intgrl \Lh t-1 \Rh \sqrt{t} \dfrac{dt}{5} = \intgrl \Lh t-1 \Rh \sqrt{t} \dfrac{dt}{5} = \dfrac{1}{5} \intgrl t^{\tfrac{3}{2}} - \sqrt{t} dt$\\
+
+$= \dfrac{1}{5} \Lh \intgrl t^{\tfrac{3}{2}} dt - \intgrl \sqrt{t} dt \Rh = \dfrac{1}{5} \Lh \dfrac{1}{\dfrac{5}{2}} t^{\tfrac{5}{2}} +c - \dfrac{1}{\dfrac{3}{2}} t^{\tfrac{3}{2}} +c \Rh$\\
+
+$= \dfrac{2}{25} t^{\tfrac{5}{2}} - \dfrac{2}{15} t^{\tfrac{3}{2}} +c = \dfrac{2 \Lh x^5 +1 \Rh ^{\tfrac{5}{2}}}{25} - \dfrac{2 \Lh x^5 +1 \Rh ^{\tfrac{3}{2}}}{15} +c$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

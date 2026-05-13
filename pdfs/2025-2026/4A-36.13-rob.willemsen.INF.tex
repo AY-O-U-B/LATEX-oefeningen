@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 36.13 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{5dx}{x^2+5}$ \\
+
+$= 5 \dint \dfrac{dx}{x^2+5}$ \\
+
+$= 5 \dint \dfrac{dx}{5\left(\dfrac{x}{5}^2+1\right)}$ \\
+
+$= 5 \cdot \dfrac{1}{5} \dint \dfrac{dx}{\dfrac{x^2}{5}+1}$ \\
+
+$= \dint \dfrac{dx}{\left(\dfrac{x}{\sqrt{5}}\right)^2+1}$ \\
+
+$t = \dfrac{x}{\sqrt{5}} \Rightarrow dt = \dfrac{1}{\sqrt{5}} dx \Rightarrow \sqrt{5}dt = dx$ \\
+
+$= \sqrt{5} \dint \dfrac{dt}{t^2+1}$ \\
+
+$= \sqrt{5} \Bgtan(t) + C$ \\
+
+$= \sqrt{5} \Bgtan\left(\dfrac{x}{\sqrt{5}}\right) + C$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

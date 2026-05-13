@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 18.14 \\
+
+\medskip
+
+\normalsize
+
+
+$\integral x\sin x\cos xdx$ \\
+
+$= \integral\left(x\cdot\dfrac{1}{2}\left(\sin 0 + \sin 2x\right)\right)dx$ \\
+
+$= \dfrac{1}{2}\integral x\sin 2xdx$ \\
+
+Partiële integratie: $\left\{\begin{array}{l}
+    u = x \\ 
+    dv = \sin 2xdx \\
+\end{array}\right. \Rightarrow\left\{\begin{array}{l}
+    du = dx \\
+    v = -\dfrac{1}{2}\cos 2x \\
+\end{array}\right.$ \\
+
+$= \dfrac{1}{2}\left(-\dfrac{x\cos 2x}{2} + \dfrac{1}{2}\integral\cos 2xdx\right)$ \\
+
+Substitutie: $t = 2x \Rightarrow dt = 2dx$ \\
+
+$= -\dfrac{x\cos 2x}{4} + \dfrac{1}{8}\integral\cos tdt$ \\
+
+$= -\dfrac{x\cos 2x}{4} + \dfrac{1}{8}\sin t + c$ \\
+
+$= \dfrac{-2x\cos 2x + \sin 2x}{8} + c$ \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

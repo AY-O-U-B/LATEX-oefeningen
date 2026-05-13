@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+
+\begin{document}
+
+\noindent \large Auteur: Xander De Blauwer \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 23.1\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int \operatorname{Bgtan}(x)dx$\\
+
+$\left \{
+\begin{array}{l}
+u = \operatorname{Bgtan}(x)  \\
+dv = dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du = \dfrac{1}{1+x^2}dx \\
+v = x
+\end{array}
+\right .$\\
+
+$ = x\operatorname{Bgtan}(x) - \displaystyle\int \dfrac{x}{1+x^2}dx$ \\
+
+Stel $t = 1 + x^2 \Rightarrow dt = 2xdx $ \\
+
+$ = x\operatorname{Bgtan}(x) - \dfrac{1}{2}\displaystyle\int \dfrac{dt}{t}$ \\
+
+$ = x\operatorname{Bgtan}(x) - \dfrac{1}{2}\ln|1+x^2| + c $
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

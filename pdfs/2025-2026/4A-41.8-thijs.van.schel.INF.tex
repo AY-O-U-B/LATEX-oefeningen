@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 41.8\\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{dx}{\sqrt{x^2+x+6}}$ \\
+
+$= \dint \dfrac{dx}{\sqrt{(x^2+x+\dfrac{1}{4}) - \dfrac{1}{4} + 6}}$ \\
+
+$= \dint \dfrac{dx}{\sqrt{(x+\dfrac{1}{2})^2 + \dfrac{23}{4}}}$ \\
+
+$t = x+\dfrac{1}{2} \Rightarrow dt = dx$ \\
+
+$= \dint \dfrac{dt}{\sqrt{t^2 + \dfrac{23}{4}}}$ \\
+
+$= \ln \left| t + \sqrt{t^2 + \dfrac{23}{4}} \right| + C$ \\
+
+$= \ln \left| x + \dfrac{1}{2} + \sqrt{(x+\dfrac{1}{2})^2 + \dfrac{23}{4}} \right| + C$ \\
+
+$= \ln \left| x + \dfrac{1}{2} + \sqrt{x^2+x+6} \right| + C$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

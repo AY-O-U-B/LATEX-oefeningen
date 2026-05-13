@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\setlength{\parindent}{0pt}
+
+\newcommand{\fx}{\dfrac{\sqrt{x+3}-2}{2-\sqrt{3x+1}}}
+\newcommand{\llim}[1]{ \lim\limits_{x \rightarrow #1} }
+
+\begin{document}
+
+\noindent \large Auteur: Milo Rampelbergh \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 11.3\\
+
+\medskip
+
+\normalsize
+
+%Begin oefening
+
+$ f(x) = \fx $ \\
+
+$ \llim{1} \fx = \dfrac{0}{0} = \infty$ \\
+
+$ = \llim{1} \dfrac{ x+3-4 }{ (2-\sqrt{3x+1})(\sqrt{x+3}+2) } $ \\
+
+$ = \llim{1} \dfrac{ (x-1)(2+\sqrt{3x+1}) }{ (4-3x-1)(\sqrt{x+3}+2) } $ \\
+
+$ = \llim{1} \dfrac{ (x-1)(2+\sqrt{3x+1}) }{ -3(x-1)(\sqrt{x+3}+2) } $ \\
+
+$ = \llim{1} \dfrac{ 2+\sqrt{3x+1} }{ -3(\sqrt{x+3}+2) } = \dfrac{4}{-12} = -\dfrac{1}{3} $ \\
+
+%Einde oefening
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

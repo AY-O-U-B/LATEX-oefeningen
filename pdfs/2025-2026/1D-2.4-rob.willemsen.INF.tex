@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 2.4\\
+
+\medskip
+
+\normalsize
+
+$a(z^2 + i) + b(z - 1 - 2i) + c(iz^2 - iz + 3) = (3+2i)z - 4 - i$ \\
+
+$az^2 + ai + bz - b - 2bi + ciz^2 - ciz + 3c = (3+2i)z - 4 - i$ \\
+
+$(a+ci)z^2 + (b-ci)z + (ai - b - 2bi + 3c) = (3+2i)z - 4 - i$ \\
+
+$\left \{
+    \begin{array}{l}
+        a + ci = 0 \Rightarrow a = -ci \\
+        b - ci = 3 + 2i \Rightarrow b = 3 + 2i + ci \\
+        ai - b - 2bi + 3c = -4 - i
+    \end{array}
+\right .$ \\
+
+$(-ci)i - (3 + 2i + ci) - 2(3 + 2i + ci)i + 3c = -4 - i$ \\
+
+$-ci^2 - 3 - 2i - ci - 6i - 4i^2 - 2ci^2 + 3c = -4 - i$ \\
+
+$c - 3 - 8i - ci + 4 + 2c + 3c = -4 - i$ \\
+
+$6c - ci + 1 - 8i = -4 - i$ \\
+
+$c(6 - i) = -5 + 7i$ \\
+
+$c = \dfrac{-5 + 7i}{6 - i} = \dfrac{(-5 + 7i)(6 + i)}{(6 - i)(6 + i)}$ \\
+
+$c = \dfrac{-30 - 5i + 42i + 7i^2}{36 - i^2} = \dfrac{-37 + 37i}{37} = -1 + i$ \\
+
+$a = -(-1 + i)i = i - i^2 = 1 + i$ \\
+
+$b = 3 + 2i + (-1 + i)i = 3 + 2i - i + i^2 = 2 + i$ \\
+
+\textbf{Antwoord:} $a = 1+i$, $b = 2+i$, $c = -1+i$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

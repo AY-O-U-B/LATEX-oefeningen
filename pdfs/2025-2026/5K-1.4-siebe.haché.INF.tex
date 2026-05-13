@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 5K nr. 1.4 \\
+
+\medskip
+\normalsize
+
+Bereken de booglengte $L$ van de kromme $r = \sin^2\left(\dfrac{\theta}{2}\right)$ op het interval $[0, 2\pi]$. \\
+
+afgeleide: \\
+
+$r' = 2 \sin\left(\dfrac{\theta}{2}\right) \cdot \cos\left(\dfrac{\theta}{2}\right) \cdot \dfrac{1}{2} = \sin\left(\dfrac{\theta}{2}\right) \cos\left(\dfrac{\theta}{2}\right)$ \\
+
+$r^2 + \left( r' \right)^2 = \left( \sin^2\left(\dfrac{\theta}{2}\right) \right)^2 + \left( \sin\left(\dfrac{\theta}{2}\right) \cos\left(\dfrac{\theta}{2}\right) \right)^2$ \\
+
+$= \sin^4\left(\dfrac{\theta}{2}\right) + \sin^2\left(\dfrac{\theta}{2}\right) \cos^2\left(\dfrac{\theta}{2}\right)$ \\
+
+$= \sin^2\left(\dfrac{\theta}{2}\right) \left( \sin^2\left(\dfrac{\theta}{2}\right) + \cos^2\left(\dfrac{\theta}{2}\right) \right)$ \\
+
+$= \sin^2\left(\dfrac{\theta}{2}\right) \cdot 1 = \sin^2\left(\dfrac{\theta}{2}\right)$ \\
+
+Integraal: \\
+
+$L = \displaystyle\int_{0}^{2\pi} \sin\left(\dfrac{\theta}{2}\right)d\theta$ \\
+
+$= \left[ -2 \cos\left(\dfrac{\theta}{2}\right) \right]_{0}^{2\pi}$ \\
+
+$= \left( -2 \cos\left(\dfrac{2\pi}{2}\right) \right) - \left( -2 \cos\left(\dfrac{0}{2}\right) \right)$ \\
+
+$= \left( -2 \cos \pi \right) - \left( -2 \cos 0 \right)$\\
+
+$= \left( -2 \cdot\left( -1 \right) \right) - \left( -2 \cdot 1 \right) = 2 + 2 = 4$ \\
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{5K-1.4-siebe.hache.INF.png}
+\end{figure}
+
+\begin{thebibliography}{999}
+\bibitem{a} Grafiek gemaakt met geogebra
+\end{thebibliography}
+
+\end{document}

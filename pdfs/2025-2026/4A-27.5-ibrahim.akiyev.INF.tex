@@ -1,0 +1,33 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\noindent \large Auteur: Ibrahim Akiyev \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 27.5\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int\dfrac{x}{x^2 + 2}dx$\\
+
+$u = x^2 + 2 \Rightarrow \dfrac{du}{dx} = 2x \Rightarrow du = 2xdu \Rightarrow xdx = \dfrac{1}{2}du$\\
+
+$\Rightarrow \displaystyle \int \dfrac{x}{x+2}dx = \int \dfrac{1}{u} \cdot \dfrac{1}{2} du \Rightarrow \dfrac {1}{2} \int \dfrac{1}{u}du $\\
+
+$\Rightarrow \displaystyle \int \dfrac{1}{u}du = \ln\left|u\right| \Rightarrow \dfrac{1}{2}\ln\left|u\right| + C$\\
+
+$\Rightarrow u = x^2 +2 \Rightarrow \dfrac{1}{2}\ln(x^2+2)+C$\\
+
+$\Rightarrow \displaystyle \int \dfrac{x}{x^2+2}dx = \dfrac{1}{2}\ln(x^2+2)+C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

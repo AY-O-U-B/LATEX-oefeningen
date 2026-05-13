@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\intt}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Mathijs Pittoors \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 60.1\\
+
+\medskip
+
+\normalsize
+
+$\intt \sqrt{1-\sqrt{x}}dx$\\
+
+Neem $t = \sqrt{x}$ dan $dx = 2t dt$\\
+
+$\Rightarrow \intt \sqrt{1-t}2tdt = 2 \intt t \sqrt{1-t}dt$\\
+
+Neem $s = \sqrt{1-t}$ dan $dt = -2s^2ds$\\
+
+$\Rightarrow 2 \intt (1-s^2)(-2)s^2 ds$ \\
+
+$= -4 \intt (s^2 - 4^2)ds$\\
+
+$=-4\left(\dfrac{s^3}{3}-\dfrac{s^5}{5}\right) + k$\\
+
+$=-4\left(\dfrac{\sqrt{(1-\sqrt{x})^3}}{3}-\dfrac{\sqrt{(1-\sqrt{x})^5}}{5}\right) + k$\\
+
+$=-\dfrac{4}{3}\sqrt{(1-\sqrt{x})^3} + \dfrac{4}{5} \sqrt{(1-\sqrt{x})^5} + k$\\
+
+Waar $k$ steeds een element van $\mathbb{R}$
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

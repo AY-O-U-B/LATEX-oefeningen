@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 43.7
+
+\medskip
+\normalsize
+
+$\dint\dfrac{1-x^4}{3x^5+x^4}dx = \dint\dfrac{1-x^4}{x^4(3x+1)}dx = \dint\dfrac{1}{x^4(3x+1)}dx - \dint\dfrac{1}{3x+1}dx $\\
+
+$\Rightarrow  \dint\dfrac{1}{x^4(3x+1)}dx = \dfrac{A}{x^4}+\dfrac{B}{x^3} + \dfrac{C}{x^2} + \dfrac{D}{x} + \dfrac{E}{3x+1}$\\
+
+$A = \left. \dfrac{1}{3x+1}\right|_{x=0} = 1$\\
+
+$E = \left. \dfrac{1}{x^4}\right|_{x=\tfrac{-1}{3}} = 81$\\
+
+$\dfrac{1}{x^4(3x+1)} - \dfrac{1}{x^4} = \dfrac{-3}{x^3(3x+1)}$\\
+
+$\Rightarrow B = \left. \dfrac{-3}{3x+1}\right|_{x=0} = -3$\\
+
+$\dfrac{-3}{x^3(3x+1)} + \dfrac{3}{x^3} = \dfrac{9}{x^2(3x+1)}$\\
+
+$\Rightarrow C = \left. \dfrac{9}{3x+1}\right|_{x=0} = 9$\\
+
+$\dfrac{9}{x^2(3x+1)} - \dfrac{9}{x^2} = \dfrac{-27}{x(3x+1)}$\\
+
+$\Rightarrow D = \left. \dfrac{-27}{3x+1}\right|_{x=0} = -27$\\
+
+$\Rightarrow \dint x^{-4}dx-3\dint x^{-3}dx +9\dint x^{-2}dx-27\dint x^{-1}dx + \dfrac{80}{3}\ln|3x+1|$\\
+
+$ = \dfrac{1}{-3x^3}+\dfrac{3}{2x^2}-\dfrac{9}{x} - 27\ln|x| +\dfrac{80}{3}\ln|3x+1|+C$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

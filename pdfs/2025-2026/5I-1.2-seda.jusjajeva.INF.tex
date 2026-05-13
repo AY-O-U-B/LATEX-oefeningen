@@ -1,0 +1,75 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5I nr. 1.2\\
+
+\medskip
+
+\normalsize
+
+
+
+$f(x) = 2\sqrt{x}$ \\
+
+\begin{figure}[h]
+\centering
+	\includegraphics[width=8cm]{5I-1.2-seda.jusjajeva.INF.png}
+\end{figure}
+
+$L = \integral_{0}^{1}\sqrt{1 + \left(\left(2\sqrt{x}\right)'\right)^2}dx$ \\
+
+$\integral\sqrt{1 + \left(\left(2\sqrt{x}\right)'\right)^2}dx$ \\
+
+$= \integral\sqrt{1 + \left(\dfrac{1}{\sqrt{x}}\right)^2}dx$ \\
+
+$= \integral\sqrt{1 + \dfrac{1}{x}}dx$ \\
+
+$= \integral\dfrac{\sqrt{x + 1}}{\sqrt{x}}dx$ \\
+
+Substitutie: $x = t^2 \Rightarrow dx = 2tdt \Leftrightarrow t = \sqrt{x}$ \\
+
+$= \integral\dfrac{\sqrt{t^2 + 1}}{t}2tdt$ \\
+
+$= 2\integral\sqrt{t^2 + 1}dt$ \\
+
+(Hyperbolic) substitutie: $t = \sinh u \Rightarrow dt = \cosh udu$ \\
+
+$= 2\integral\sqrt{\sinh^2u + 1}\cosh udu$ \\
+
+$= 2\integral\cosh^2udu$ \\
+
+$= 2\integral\dfrac{\cosh2u + 1}{2}du$ \\
+
+$= \integral\left(\cosh2u + 1\right)du$ \\
+
+$= \dfrac{\sinh2u}{2} + u + c$ \\
+
+$= \sinh u\cosh u + u + c$ \\
+
+$\overset{\cosh u = \sqrt{t^2 + 1}, u = \operatorname{Bgsinh} t}{=} t\sqrt{t^2 + 1} + \ln |t + \sqrt{t^2 + 1}| + c$ \\
+
+$= \sqrt{x}\sqrt{x + 1} + \ln |\sqrt{x} + \sqrt{x + 1}| + c$ \\
+
+$\Rightarrow L = \left[\sqrt{x}\sqrt{x + 1} + \ln |\sqrt{x} + \sqrt{x + 1}|\right]_0^1$ \\
+
+$= \sqrt{2} + \ln |1 + \sqrt{2}| - \ln 1$ \\
+
+$= \sqrt{2} + \ln \left(1 + \sqrt{2}\right)$ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

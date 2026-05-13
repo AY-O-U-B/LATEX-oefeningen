@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Noran Ben Said\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 55.3 \\
+
+\medskip
+\normalsize
+
+$ \displaystyle\int \tan^5 x dx $ \\
+
+$ = \dfrac{1}{4} \tan^4 x - \displaystyle\int \tan^3xdx$
+
+$ = \dfrac{1}{4} \tan^4 x - \left(\dfrac{1}{2} \tan^2x -\displaystyle\int \tan xdx \right) $ \\
+
+$ = \dfrac{1}{4} \tan^4 x - \left(\dfrac{1}{2} \tan^2x -\displaystyle\int \dfrac{\sin x}{\cos x} dx \right) $ \\
+
+Stel $\cos x = t \Rightarrow{dt = - \sin x dx} \Rightarrow{dx = \dfrac{dt}{-\sin x}}$\\
+
+
+$ \Rightarrow{}\dfrac{1}{4} \tan^4 x - \dfrac{1}{2} \tan^2x + \displaystyle\int \dfrac{dt}{- t} =\dfrac{1}{4} \tan^4 x - \dfrac{1}{2} \tan^2x - \displaystyle\int \dfrac{dt}{t} $ \\
+
+$ =\dfrac{1}{4} \tan^4 x - \dfrac{1}{2} \tan^2x - \ln|t| + c$ \\
+
+$ =\dfrac{1}{4} \tan^4 x - \dfrac{1}{2} \tan^2x - \ln|\cos x| + c$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

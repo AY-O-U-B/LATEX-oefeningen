@@ -1,0 +1,28 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 6.15 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{x\sqrt{x^2 + 1} - 5}{\sqrt{x^2 + 1}}$ \\
+
+$= \dint \dfrac{x\sqrt{x^2 + 1}}{\sqrt{x^2 + 1}} dx - \dint \dfrac{5}{\sqrt{x^2 + 1}} dx = \dint x dx - 5 \dint \dfrac{1}{\sqrt{x^2+1}} dx$ \\
+
+$= \dfrac{1}{2}x^2 - 5 \ln|x + \sqrt{x^2 + 1}| + C$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

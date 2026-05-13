@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Ilyas Sefiani \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 24.10\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int \dfrac{\tan(x)}{\ln(\cos(x))}dx$\\
+
+Stel $t = \ln(\cos(x)) \Rightarrow dt = -\dfrac{\sin(x)}{\cos(x)}dx $\\
+
+$=-\displaystyle\int \dfrac{\sin(x)\cos(x)}{t\cos(x)\sin(x)}dt$\\
+
+$=-\displaystyle\int \dfrac{dt}{t}$\\
+
+$=-\ln\lvert t \rvert+C$\\
+
+$=-\ln\lvert\ln(\cos(x))\rvert+C$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

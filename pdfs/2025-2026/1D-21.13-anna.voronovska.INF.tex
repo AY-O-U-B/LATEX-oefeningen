@@ -1,0 +1,89 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 21.13\\
+
+\medskip
+
+\normalsize
+
+$z^4 + 14z^2 + 44z + 25 = 4z^3$\\
+
+$z^4 - 4z^3 + 14z^2 + 44z + 25 = 0$\\
+
+Stap 1: Test $z = -1$:\\
+
+$(-1)^4 - 4(-1)^3 + 14(-1)^2 + 44(-1) + 25 = 1 + 4 + 14 - 44 + 25 = 0$\\
+
+Dus, $z = -1$ is een wortel.\\
+
+Stap 2: Horner:\\
+
+We delen de veelterm $z^4 - 4z^3 + 14z^2 + 44z + 25 = 0$ door $(z + 1)$ :
+
+\begin{center}
+\begin{tabular}{c|rrrr|r}
+   & 1 & $-4$ & 14 & 44 & 25 \\
+$-1$ &   & $-1$ & 5  & $-19$ & $-25$ \\ \hline
+   & 1 & $-5$ & 19 & 25 & 0
+\end{tabular}
+\end{center}
+
+De vergelijking wordt: $(z + 1)(z^3 - 5z^2 + 19z + 25) = 0$.\\
+
+Stap 3: Herhalen voor de derdegraadsveelterm $z^3 - 5z^2 + 19z + 25 = 0$:\\
+
+We zoeken een wortel voor $z^3 - 5z^2 + 19z + 25 = 0$:\\
+
+Test $z = -1$ opnieuw:\\
+
+$(-1)^3 - 5(-1)^2 + 19(-1) + 25 = -1 - 5 - 19 + 25 = 0$\\
+
+Dus, $z = -1$ is een dubbele wortel. We passen Horner nogmaals toe:\\
+
+\begin{center}
+\begin{tabular}{c|rrr|r}
+   & 1 & $-5$ & 19 & 25 \\
+$-1$ &   & $-1$ & 6  & $-25$ \\ \hline
+   & 1 & $-6$ & 25 & 0
+\end{tabular}
+\end{center}
+
+De vergelijking is nu: $(z + 1)^2(z^2 - 6z + 25) = 0$.\\
+
+Stap 4: Wortels zoeken:\\
+
+Voor $z^2 - 6z + 25 = 0$ :\\
+
+$$D = (-6)^2 - 4(1)(25) = 36 - 100 = -64$$\\
+
+Omdat $D < 0$:\\
+
+$\sqrt{D}=8i$\\
+
+$z_1 = \dfrac{6 - 8i}{2} = 3 - 4i$\\
+
+$z_2 = \dfrac{6 + 8i}{2} = 3 + 4i$\\
+
+Voor $z+1=0$\\
+
+$z=-1$\\
+
+Oplossingen:\\
+
+
+$ \{ -1^{(2)}, 3 + 4i, 3 - 4i \}$\\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

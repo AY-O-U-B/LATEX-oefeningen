@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 25.14\\
+
+\medskip
+
+\normalsize
+
+
+
+
+
+$\dint \dfrac{5x+2}{x-3} dx $ \\
+
+$5\dint \dfrac{x+\tfrac{2}{5}}{x-3} dx $ \\
+
+$5\dint \dfrac{x-3}{x-3} dx + \dint \dfrac{\tfrac{17}{5}}{x-3} dx $ \\
+
+$5\dint dx + \dfrac{17}{5}\dint \dfrac{dx}{x-3} $ \\
+
+Stel $ t = x - 3 \Rightarrow dt = dx $ \\
+
+$= 5\dint dx + \dfrac{17}{5} \dint \dfrac{dt}{t} $ \\
+
+$= 5x + \dfrac{17}{5}\ln|t| + c $ \\
+
+$= 5x + \dfrac{17}{5}\ln|x-3| + c $ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

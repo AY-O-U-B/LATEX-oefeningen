@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Ilyas Sefiani \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 5.7\\
+
+\medskip
+
+\normalsize
+
+$\dint_{-1}^{1} \dfrac{dx}{x^2}$\\
+
+Integraal opsplitsen in delen:\\
+
+$\dint_{-1}^{0} \dfrac{dx}{x^2} + \dint_{0}^{1} \dfrac{dx}{x^2}$\\
+
+Linkerintegraal:\\
+
+$\lim\limits_{a \rightarrow 0-} \dint_{-1}^{a} \dfrac{dx}{x^2}$\\
+
+$= \lim\limits_{a \rightarrow 0-} \left(-\dfrac{1}{a}-1 \right) = -\dfrac{1}{0-}-1 = +\infty$\\
+
+Rechterintegraal:\\
+
+$\lim\limits_{b \rightarrow 0+} \dint_{b}^{1} \dfrac{dx}{x^2}$\\
+
+$= \lim\limits_{b \rightarrow 0+} \left(-1+\dfrac{1}{b} \right) = -1+\dfrac{1}{0+} = +\infty$\\
+
+Integraal is divergent!\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

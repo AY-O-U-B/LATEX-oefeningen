@@ -1,0 +1,67 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6G nr. 2.8 \\
+
+\medskip
+\normalsize
+
+$f(x) = e^{|x|} \quad \text{op } [-\pi, \pi]$ \\
+
+$f(-x) = e^{|-x|} = e^{|x|} = f(x) \implies$ even \\
+
+$a_n = \dfrac{2}{\pi} \displaystyle\int_{0}^{\pi} e^x \cos(nx) \cdot dx$ \\
+
+$a_0 = \dfrac{2}{\pi} \displaystyle\int_{0}^{\pi} e^x \cdot dx = \dfrac{2}{\pi} \left[ e^x \right]_0^{\pi} = \dfrac{2\left( e^{\pi} - 1 \right)}{\pi}$ \\
+
+$I = \displaystyle\int e^x \cos(nx) \cdot dx$ \\
+
+$\left\{ \begin{array}{l} 
+    u = \cos(nx) \\
+    dv = e^x \cdot dx 
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l} 
+    du = -n \sin(nx) \cdot dx \\
+    v = e^x
+\end{array} \right.$ \\
+
+$I = e^x \cos(nx) + n \displaystyle\int e^x \sin(nx) \cdot dx$ \\
+
+$\left\{ \begin{array}{l} 
+    u = \sin(nx) \\
+    dv = e^x \cdot dx 
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l} 
+    du = n \cos(nx) \cdot dx \\
+    v = e^x
+\end{array} \right.$ \\
+
+$I = e^x \cos(nx) + n \left( e^x \sin(nx) - n \displaystyle\int e^x \cos(nx) \cdot dx \right)$ \\
+
+$I = e^x \cos(nx) + n e^x \sin(nx) - n^2 I$ \\
+
+$\left( 1 + n^2 \right) I = e^x \left( \cos(nx) + n \sin(nx) \right)$ \\
+
+$I = \dfrac{e^x}{1 + n^2} \left( \cos(nx) + n \sin(nx) \right)$ \\
+
+$a_n = \dfrac{2}{\pi} \left[ \dfrac{e^x}{1 + n^2} \left( \cos(nx) + n \sin(nx) \right) \right]_0^{\pi}$ \\
+
+$a_n = \dfrac{2}{\pi \left( 1 + n^2 \right)} \left( e^{\pi} \left( \cos(n\pi) + n \sin(n\pi) \right) - e^0 \left( \cos(0) + n \sin(0) \right) \right)$ \\
+
+$a_n = \dfrac{2}{\pi \left( 1 + n^2 \right)} \left( (-1)^n e^{\pi} - 1 \right)$ \\
+
+$f(x) = \dfrac{e^{\pi} - 1}{\pi} + \displaystyle\sum_{n=1}^{\infty} \dfrac{2 \left( (-1)^n e^{\pi} - 1 \right)}{\pi \left( n^2 + 1 \right)} \cos(nx)$ \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,93 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgcos}{\operatorname{Bgcos}}
+\newcommand{\Bgcot}{\operatorname{Bgcot}}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 2B nr. 11 \\
+
+
+
+\medskip
+
+\normalsize
+
+$f(x) = \tan\left(\Bgsin\left(\cos\left(\Bgtan\left(\cos\left(\Bgtan\sqrt{3}\right)\right)\right)\right)\right)$ \\
+
+$\Bgtan \sqrt{3} = \dfrac{\pi}{3}$ want $\tan \dfrac{\pi}{3} = \sqrt{3}$ \\
+
+neem $ y = \Bgtan \sqrt{3}$ dan is $\cos y = \cos \dfrac{\pi}{3} = \dfrac{1}{2}$ \\
+
+neem $z = \cos y$ dan is $\Bgtan z = \Bgtan \dfrac{1}{2}$ \\
+
+neem $u = \Bgtan \dfrac{1}{2}$ dan is $\tan u = \dfrac{1}{2}$ \\
+
+we zoeken nu wat $\cos u$ aan gelijk is. \\ 
+
+We kunnen hiervoor de identiteit $\cos^2u = \dfrac{1}{1 + \tan^2 u}$ gebruiken: \\
+
+$\cos^2u = \dfrac{1}{1 + \tan^2 u}$ \\
+
+$\cos u = \sqrt{\dfrac{1}{1 + \tan^2 u}}$ \\
+
+$= \sqrt{\dfrac{1}{1 + \left( \dfrac{1}{2}\right)^2}}$ \\
+
+$= \sqrt{\dfrac{1}{\dfrac{5}{4}}}$ \\
+
+$= \sqrt{\dfrac{4}{5}}$ \\
+
+$= \dfrac{\sqrt{4}}{\sqrt{5}}$ \\
+
+$= \dfrac{2}{\sqrt{5}}$ aangezien $u \in \left]\dfrac{-\pi}{2}, \dfrac{\pi}{2} \right[$ is de cosinus positief. \\
+
+Neem $v = \Bgsin \dfrac{2}{\sqrt{5}}$ dan is $\sin v = \dfrac{2}{\sqrt{5}}$ \\
+
+we zoeken nu wat $\tan v$ aan gelijk is: \\
+
+$\tan v = \dfrac{\sin v}{\cos v}$ \\
+
+hiervoor moeten we nog de cosinus kennen. \\ 
+
+We kunnen de identiteit $\sin^2 v + \cos^2 v = 1$ gebruiken: \\
+
+$\sin^2 v + \cos^2 v = 1$ \\
+
+$\cos^2 v = 1 - \sin^2 v$ \\
+
+$\cos^2 v = 1 - \left(\dfrac{2}{\sqrt{5}}\right)^2$ \\
+
+$= 1 - \dfrac{4}{5}$ \\
+
+$= \dfrac{1}{5}$ \\
+
+$\cos v = \sqrt{\dfrac{1}{5}}$ \\
+
+$= \dfrac{1}{\sqrt{5}}$ aangezien $v \in \left[\dfrac{-\pi}{2}, \dfrac{\pi}{2}\right]$ is de cosinus positief.\\
+
+Nu we de sinus en cosinus hebben gevonden kunnen we de tangens berekenen: \\
+
+$\tan v = \dfrac{\dfrac{2}{\sqrt{5}}}{\dfrac{1}{\sqrt{5}}}$ \\
+
+$= \dfrac{2}{\sqrt{5}} \cdot \dfrac{\sqrt{5}}{1}$ \\
+
+$= \dfrac{2\sqrt{5}}{1\sqrt{5}}$ \\
+
+$= \dfrac{2}{1}$ \\
+
+$= 2$ \\
+
+dus is $\tan\left(\Bgsin\left(\cos\left(\Bgtan\left(\cos\left(\Bgtan\sqrt{3}\right)\right)\right)\right)\right) = 2$ 
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

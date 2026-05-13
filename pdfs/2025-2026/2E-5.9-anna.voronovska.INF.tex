@@ -1,0 +1,28 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2E nr. 5.9\\
+
+\medskip
+
+\normalsize
+
+$\lim\limits_{x \to 0} \left(\dfrac{1+3x}{1-x}\right)^{\tfrac{3}{x}} = \lim\limits_{x \to 0} \left(\dfrac{1+4x-x}{1-x}\right)^{\tfrac{3}{x}}$ \\
+
+$= \lim\limits_{x \to 0} \left(\dfrac{1-x}{1-x} + \dfrac{4x}{1-x}\right)^{\tfrac{3}{x}} = \lim\limits_{x \to 0} \left(1 + \dfrac{4x}{1-x}\right)^{\tfrac{3}{x} \cdot \tfrac{1-x}{4x} \cdot \tfrac{4x}{1-x}} $ \\
+
+$= \lim\limits_{x \to 0} \left(\left(1 + \dfrac{4x}{1-x}\right)^{\tfrac{1-x}{4x}}\right)^{\tfrac{12x}{x(1-x)}} = \lim\limits_{x \to 0} e^{\tfrac{12x}{x-x^2}} $ \\
+
+$= \lim\limits_{x \to 0} e^{\tfrac{12}{1-x}} = e^{\tfrac{12}{1-0}} = e^{12}$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

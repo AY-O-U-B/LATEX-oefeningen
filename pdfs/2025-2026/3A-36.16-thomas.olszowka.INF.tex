@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3A nr. 36.16\\
+
+\medskip
+
+\normalsize
+
+\begin{eqnarray*}
+f(x)    & = &  \ln (x^3 + \sqrt{x^6 + 1}) \\
+f(x)    & = &  \ln (g(x)) \text{ met } g(x) = x^3 + \sqrt{x^6 + 1}\\
+f'(x)   & = & \dfrac{g(x)'}{g(x)}  \\
+        & = & \dfrac{g(x)'}{x^3 + \sqrt{x^6 + 1}} \\
+        & = & \dfrac{3x^2 + (\sqrt{x^6 + 1})'}{x^3 + \sqrt{x^6 + 1}} \\
+        & = & \dfrac{3x^2 + \dfrac{1}{2 \sqrt{x^6 + 1}} 6x^5}{x^3 + \sqrt{x^6 + 1}} \\
+        & = & \dfrac{3x^2 + \dfrac{6x^5}{2 \sqrt{x^6 + 1}} }{x^3 + \sqrt{x^6 + 1}} \\
+        & = & \dfrac{3x^2 + \dfrac{3x^5}{ \sqrt{x^6 + 1}} }{x^3 + \sqrt{x^6 + 1}} \\
+        & = & \dfrac{3x^2 \left(1 + \dfrac{x^3}{ \sqrt{x^6 + 1}}\right)}{x^3 + \sqrt{x^6 + 1}} \\
+        & = & \dfrac{3x^2 \left(\dfrac{\sqrt{x^6 + 1}}{\sqrt{x^6 + 1}} + \dfrac{x^3}{ \sqrt{x^6 + 1}}\right)}{x^3 + \sqrt{x^6 + 1}} \\
+        & = & \dfrac{3x^2 \left(\dfrac{x^3 + \sqrt{x^6 + 1}}{\sqrt{x^6 + 1}}\right)}{x^3 + \sqrt{x^6 + 1}} \\
+        & = & 3x^2 \left(\dfrac{x^3 + \sqrt{x^6 + 1}}{\sqrt{x^6 + 1}}\right) \dfrac{1}{x^3 + \sqrt{x^6 + 1}} \\
+        & = & \dfrac{3x^2}{\sqrt{x^6 + 1}}
+\end{eqnarray*}
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 37.11 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{dx}{4x^2+12x+18}$ \\
+
+$= \dint \dfrac{dx}{(2x+3)^2+9}$ \\
+
+$= \dfrac{1}{9} \dint \dfrac{1}{\dfrac{(2x+3)^2}{9}+1}dx$ \\
+
+$= \dfrac{1}{9} \dint \dfrac{dx}{\left(\dfrac{2x+3}{3}\right)^2+1}$ \\
+
+$t = \dfrac{2x+3}{3} \Rightarrow dt = \dfrac{2}{3} dx \Rightarrow \dfrac{3}{2} dt = dx$ \\
+
+$= \dfrac{1}{9} \cdot \dfrac{3}{2} \dint \dfrac{dt}{t^2+1}$ \\
+
+$= \dfrac{1}{6} \Bgtan(t) + C$ \\
+
+$= \dfrac{1}{6} \Bgtan\left(\dfrac{2x+3}{3}\right) + C$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

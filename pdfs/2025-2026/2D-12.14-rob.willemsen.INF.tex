@@ -1,0 +1,68 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 12.14\\
+
+\medskip
+
+\normalsize
+
+$\lim\limits_{x \rightarrow \infty} \left(\sqrt{x^2 + ax} - \sqrt{x^2 + bx}\right)$ \\
+
+$= \lim\limits_{x \rightarrow \infty} \left(\dfrac{(\sqrt{x^2 + ax} - \sqrt{x^2 + bx})(\sqrt{x^2 + ax} + \sqrt{x^2 + bx})}{\sqrt{x^2 + ax} + \sqrt{x^2 + bx}}\right)$ \\
+
+$= \lim\limits_{x \rightarrow \infty} \left(\dfrac{(\sqrt{x^2 + ax})^2 - (\sqrt{x^2 + bx})^2}{\sqrt{x^2 + ax} + \sqrt{x^2 + bx}}\right)$ \\
+
+$= \lim\limits_{x \rightarrow \infty} \left(\dfrac{(x^2 + ax) - (x^2 + bx)}{\sqrt{x^2 + ax} + \sqrt{x^2 + bx}}\right)$ \\
+
+$= \lim\limits_{x \rightarrow \infty} \left(\dfrac{ax - bx}{\sqrt{x^2 + ax} + \sqrt{x^2 + bx}}\right)$ \\
+
+Limiet voor $x \rightarrow +\infty$ \\
+
+$= \lim\limits_{x \rightarrow +\infty} \left(\dfrac{x(a - b)}{\vert x \vert \sqrt{1 + \dfrac{a}{x}} + \vert x \vert \sqrt{1 + \dfrac{b}{x}}}\right)$ \\
+
+% Omdat $x \rightarrow \infty,$ neemt $x$ een zeer grote positieve waarde aan. 
+
+% Daarom is $\vert x \vert = x$, en dus: \\
+
+$= \lim\limits_{x \rightarrow +\infty} \left(\dfrac{x(a - b)}{x\sqrt{1 + \dfrac{a}{x}} + x\sqrt{1 + \dfrac{b}{x}}}\right)$ \\
+
+$= \lim\limits_{x \rightarrow +\infty} \left(\dfrac{a - b}{\sqrt{1 + \dfrac{a}{x}} + \sqrt{1 + \dfrac{b}{x}}}\right)$ \\
+
+$= \dfrac{a - b}{\sqrt{1 + \dfrac{a}{\infty}} + \sqrt{1 + \dfrac{b}{\infty}}}$ \\
+
+$= \dfrac{a - b}{\sqrt{1 + 0} + \sqrt{1 + 0}}$ \\
+
+$= \dfrac{a - b}{2\sqrt{1}}$ \\
+
+$= \dfrac{a - b}{2}$ \\
+
+Limiet voor $x \rightarrow -\infty$ \\
+
+$= \lim\limits_{x \rightarrow -\infty} \left(\dfrac{x(a - b)}{\vert x \vert \sqrt{1 + \dfrac{a}{x}} + \vert x \vert \sqrt{1 + \dfrac{b}{x}}}\right)$ \\
+
+$= \lim\limits_{x \rightarrow -\infty} \left(\dfrac{x(a - b)}{-x\sqrt{1 + \dfrac{a}{x}} - x\sqrt{1 + \dfrac{b}{x}}}\right)$ \\
+
+$= \lim\limits_{x \rightarrow -\infty} \left(\dfrac{a - b}{- \left(\sqrt{1 + \dfrac{a}{x}} + \sqrt{1 + \dfrac{b}{x}}\right)}\right)$ \\
+
+$= \dfrac{a - b}{- \left(\sqrt{1 + \dfrac{a}{\infty}} + \sqrt{1 + \dfrac{b}{\infty}}\right)}$ \\
+
+$= \dfrac{a - b}{- \left(\sqrt{1 + 0} + \sqrt{1 + 0}\right)}$ \\
+
+$= \dfrac{a - b}{-2\sqrt{1}}$ \\
+
+$= \dfrac{a - b}{-2}$ \\
+
+$= \dfrac{b - a}{2}$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

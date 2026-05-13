@@ -1,0 +1,85 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+
+\begin{document}
+
+\noindent \large Auteur: Xander De Blauwer \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 15.7\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int x^3e^{5x}dx$\\
+
+$\left \{
+\begin{array}{l}
+u_1 = x^3 \\
+dv_1 = e^{5x}dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du_1 = 3x^2dx \\
+v_1 = \dfrac{e^{5x}}{5}
+\end{array}
+\right .$\\
+
+$=\dfrac{x^3 \cdot e^{5x}}{5} - \displaystyle\int \dfrac{3}{5}x^2e^{5x}dx$\\
+
+
+
+
+$\left \{
+\begin{array}{l}
+u_2 = \dfrac{3}{5}x^2 \\
+dv_2 = e^{5x}dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du_2 = \dfrac{6}{5}xdx \\
+v_2 = \dfrac{e^{5x}}{5}
+\end{array}
+\right .$\\
+
+$=\dfrac{x^3 \cdot e^{5x}}{5} -\dfrac{3x^2e^5x}{25} + \displaystyle\int \dfrac{6}{25}xe^{5x}dx$\\
+
+
+$\left \{
+\begin{array}{l}
+u_3 = \dfrac{6}{25}x \\
+dv_3 = e^{5x}dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+du_3 = \dfrac{6}{25}dx \\
+v_3 = \dfrac{e^{5x}}{5}
+\end{array}
+\right .$\\
+
+$=\dfrac{x^3e^{5x}}{5} -\dfrac{3x^2e^5x}{25} + \dfrac{6xe^{5x}}{125} - \dfrac{6}{625}e^{5x} + c $\\
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+
+
+

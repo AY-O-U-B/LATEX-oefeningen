@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 11.3\\
+
+\medskip
+
+\normalsize
+
+$f(x) = x^8+8x^7+12x^6-40x^5-74x^4+120x^3+108x^2-216x+81$\\
+
+$f'(x) = 8x^7+56x^6+72x^5-200x^4-296x^3+360x^2+216x-216$\\
+
+Vind de nulpunten:\\
+
+\begin{tabular}{c|cccccccc}
+    & $8$ 	& $56$   & $72$  & $-200$ & $-296$ & $360$ & $216$ & $-216$	 	\\
+$1$ & 		& $8$ 	 & $64$  & $136$  & $-64$  & $-360$& $0$   & $216$  		\\ \hline
+	& $8$   & $64$   & $136$ & $-64$  & $-360$  & $0$  &$216$ &\multicolumn{1}{|c}{$0$}  \\
+$-1$ & 		& $-8$ 	 & $-56$  & $-80$ & $144$   & $216$& $-216$  		\\ \hline
+	& $8$   & $56$   & $80$ & $-144$  & $-216$  & $216$  &\multicolumn{1}{|c}{$0$}  \\
+$1$ & 		& $8$ 	 & $64$  & $144$  & $0$     & $-216$&  		\\ \hline
+	& $8$   & $64$   & $144$ & $0$  & $-216$  &\multicolumn{1}{|c}{$0$}  \\
+$1$ & 		& $8$ 	 & $72$  & $216$  & $216$     &  		\\ \hline
+	& $8$   & $72$   & $216$ & $216$  &\multicolumn{1}{|c}{$0$}  \\
+$-3$ & 		& $-24$  & $-144$  & $-216$  &  		\\ \hline
+	& $8$   & $48$   & $72$ &\multicolumn{1}{|c}{$0$}  \\
+$-3$ & 		& $-24$  & $-72$  &  		\\ \hline
+	& $8$   & $24$   &\multicolumn{1}{|c}{$0$}  \\
+\end{tabular}\\
+
+$8x + 24 = 0$\\
+
+$x = -3$\\
+
+$\Rightarrow f'(x) = 8(x-1)^3(x+3)^3(x+1)$\\
+
+$f''(x) = 56x^6+336x^5+360x^4-800x^3-888x^2+720x+216$\\
+
+$f''(1) = 0$, $f''(-3) = 0$, $f''(-1) = 56-336+360+800-888-720+216 = -512$\\
+
+$f''(-1) < 0 \Rightarrow$ lokale max.\\
+
+$f'''(x) = 336x^5+1680x^4+1440x^3-2400x^2-1776x+720$\\
+
+$f'''(1) = 0$, $f'''(-3) = 0$\\
+
+$f^{iv}(x) = 1680x^4+6720x^3+4320x^2-4800x-1776$\\
+
+$f^{iv}(1) = 1680+6720+4320-4800-1776 = 6144$\\
+
+$f^{iv}(1) > 0 \Rightarrow$ lokale min.\\
+
+$f^{iv}(-3) = 136080-181440+38880+14400-1776 = 6144$\\
+
+$f^{iv}(-3) > 0 \Rightarrow$ lokale min.\\
+
+Dus de punten zijn: $f(-1)=256$, $f(1)=0$, $f(-3)=0$\\
+
+$\Rightarrow$ lokaal maximum: $(-1,256)$\\
+
+$\Rightarrow$ lokale minima: $(1,0)$ en $(-3,0)$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

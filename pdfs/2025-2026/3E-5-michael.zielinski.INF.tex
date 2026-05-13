@@ -1,0 +1,68 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}    
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3E nr. 5\\
+
+\medskip
+
+\normalsize
+
+Uit de driehoek volgt: \\
+
+$ \tan x = \dfrac{y}{20} $ \\
+
+$ y = 20\tan x $ \\
+
+We leiden af naar de tijd: \\
+
+$ y' = 20 \cdot \dfrac{1}{\cos^2 x} \cdot x' $ \\
+
+Omdat $x' = 1.28$, krijgen we: \\
+
+$ y' = 20 \cdot \dfrac{1}{\cos^2 x} \cdot 1.28 $ \\
+
+Op het gevraagde moment geldt: \\
+
+$ \tan x = \dfrac{15}{20} = \dfrac{3}{4} $ \\
+
+$ x = \Bgtan\dfrac{3}{4} $ \\
+
+Dus: \\
+
+$ y' = 20 \cdot \dfrac{1}{\cos^2\left(\Bgtan\dfrac{3}{4}\right)} \cdot 1.28 $ \\
+
+Aangezien: \\
+
+$ \dfrac{1}{\cos^2 x} = 1+\tan^2 x $ \\
+
+krijgen we: \\
+
+$ y' = 20 \cdot \left(1+\left(\dfrac{3}{4}\right)^2\right) \cdot 1.28 $ \\
+
+$ = 20 \cdot \left(1+\dfrac{9}{16}\right) \cdot 1.28 $ \\
+
+$ = 20 \cdot \dfrac{25}{16} \cdot 1.28 $ \\
+
+$ = 40 \text{ m/s} $ \\
+
+Omzetten naar km/h: \\
+
+$ 40 \cdot 3.6 = 144 \text{ km/h} $ \\
+
+$ 144 > 120+10 $ \\
+
+Dus dit is een zware overtreding. \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

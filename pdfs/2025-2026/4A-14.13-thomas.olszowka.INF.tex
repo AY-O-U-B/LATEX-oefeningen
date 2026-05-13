@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{cancel}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 14.13  \\
+
+
+
+\medskip
+
+\normalsize
+
+$I = \dint \dfrac{x \ln x \cos x - \sin x}{x(\ln x)^2} dx$ \\
+
+$= \dint \dfrac{x \ln x \cos x }{x \ln x \ln x} dx - \dint \dfrac{\sin x }{x \ln x \ln x} dx$ \\
+
+$= \dint \cos x \dfrac{1}{\ln x} dx - \dint \dfrac{\sin x}{x \ln x \ln x} dx$ \\
+
+$= \dint \cos x \dfrac{1}{\ln x} dx - \dint \sin x \dfrac{1}{x \ln x \ln x} dx$ \\
+
+Partiële integratie van de 1ste integraal:
+$\left\{\begin{array}{cc}
+    u =& \dfrac{1}{\ln x} \\ 
+    dv =& \cos x dx \\ 
+\end{array}\right. \Rightarrow\left\{\begin{array}{cc}
+    du =& \dfrac{-1}{x \ln x \ln x} dx \\
+    v =& \sin x \\
+\end{array}\right.$ \\
+
+$I = \dfrac{\sin x}{\ln x} - \dint \sin x \dfrac{-1}{x \ln x \ln x} dx - \dint \sin x \dfrac{1}{x \ln x \ln x} dx $ \\
+
+$= \dfrac{\sin x}{\ln x} + \cancel{\dint \sin x \dfrac{1}{x \ln x \ln x} dx} - \cancel{\dint \sin x \dfrac{1}{x \ln x \ln x} dx} $ \\
+
+$= \dfrac{\sin x}{\ln x} + c$ \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

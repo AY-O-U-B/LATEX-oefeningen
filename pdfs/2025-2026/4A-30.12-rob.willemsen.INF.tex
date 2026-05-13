@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 30.12 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{xdx}{\sqrt{1-x^4}}$ \\
+
+$= \dint \dfrac{xdx}{\sqrt{1-(x^2)^2}}$ \\
+
+$t = x^2 \Rightarrow dt = 2x dx \Rightarrow \dfrac{1}{2}dt = x dx$ \\
+
+$= \dfrac{1}{2} \dint \dfrac{dt}{\sqrt{1-t^2}}$ \\
+
+$= \dfrac{1}{2} \Bgsin t + C$ \\
+
+$= \dfrac{1}{2} \Bgsin x^2 + C$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

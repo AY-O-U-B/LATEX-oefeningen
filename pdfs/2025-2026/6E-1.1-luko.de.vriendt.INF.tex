@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 1.1\\
+
+\medskip
+
+\normalsize
+
+$T_4 (f,0)(x)$ voor $ f(x) = \dfrac{1}{1+x}$ \\
+
+$f(x) = (1+x)^{-1} \hspace{2cm}  f(0) = 1$ \\
+
+$f'(x) = -1(1+x)^{-2} \hspace{2cm}  f'(0) = -1$ \\
+
+$f''(x) = 2(1+x)^{-3} \hspace{2cm}  f''(0) = 2$ \\
+
+$f'''(x) = -6(1+x)^{-4} \hspace{2cm}  f'''(0) = -6$ \\
+
+$f^{iv}(x) = 24(1+x)^{-5} \hspace{2cm}  f^{iv}(0) = 24$ \\
+
+$\Rightarrow T_4\left (\dfrac{1}{1+x}, 0\right)(x) = \displaystyle \sum_{k=0}^{\infty} \dfrac{f^{(k)}(0)}{k!}x^k$ \\
+
+$= \dfrac{1}{0!}x^0 + \dfrac{-1}{1!}x^1 + \dfrac{2}{2!}x^2 + \dfrac{-6}{3!}x^3 + \dfrac{24}{4!}x^4$ \\
+
+$= 1 - x + x^2 - x^3 + x^4$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

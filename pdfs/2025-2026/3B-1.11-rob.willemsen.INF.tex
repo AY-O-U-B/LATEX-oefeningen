@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 3B nr. 1.11 \\
+
+\medskip
+
+\normalsize
+
+$f(x) = x\operatorname{Bgsin}(x)$ \\
+
+$f'(x) = \operatorname{Bgsin}(x) + \dfrac{x}{\sqrt{1-x^2}}$ \\
+
+$f''(x) = \dfrac{1}{\sqrt{1-x^2}} + \dfrac{\sqrt{1-x^2} - x \cdot \left(\dfrac{1}{2\sqrt{1-x^2}} \cdot (-2x)\right)}{\left(\sqrt{1-x^2}\right)^2}$ \\
+
+$= \dfrac{1}{\sqrt{1-x^2}} + \dfrac{\sqrt{1-x^2} - \left(\dfrac{-2x^2}{2\sqrt{1-x^2}}\right)}{1-x^2}$ \\
+
+$= \dfrac{1}{\sqrt{1-x^2}} + \dfrac{\sqrt{1-x^2} + \dfrac{x^2}{\sqrt{1-x^2}}}{1-x^2}$ \\
+
+$= \dfrac{1}{\sqrt{1-x^2}} + \dfrac{\left(\sqrt{1-x^2}\right)^2 + \dfrac{x^2\sqrt{1-x^2}}{\sqrt{1-x^2}}}{(1-x^2) \cdot \sqrt{1-x^2}}$ \\
+
+$= \dfrac{1}{\sqrt{1-x^2}} + \dfrac{1-x^2 + x^2}{(1-x^2) \cdot \sqrt{1-x^2}}$ \\
+
+$= \dfrac{1}{\sqrt{1-x^2}} + \dfrac{1}{(1-x^2) \cdot \sqrt{1-x^2}}$ \\
+
+$= \dfrac{(1-x^2)}{(1-x^2) \cdot \sqrt{1-x^2}} + \dfrac{1}{(1-x^2) \cdot \sqrt{1-x^2}}$ \\
+
+$= \dfrac{2-x^2}{(1-x^2) \cdot \sqrt{1-x^2}}$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

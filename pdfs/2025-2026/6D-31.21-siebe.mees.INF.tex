@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6D nr. 31.21\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\sum_{n=0}^{\infty} \dfrac{2n+2}{\sqrt{n^3+5}} $\\
+
+6+ Verhoudigncriterium \\
+
+$ \lim\limits_{n \rightarrow \infty} \dfrac{\dfrac{2n+2}{\sqrt{n^3+5}}}{\dfrac{1}{\sqrt{n}}} = \lim\limits_{n \rightarrow \infty} \dfrac{2n\sqrt{n}+2\sqrt{n}}{\sqrt{n^3+5}} = \lim\limits_{n \rightarrow \infty} \dfrac{(2n+2)\sqrt{n}}{\sqrt{n^3+5}} \left(\sqrt{n^3+5} \sim n\sqrt{n} \right)$\\
+
+$ = \lim\limits_{n \rightarrow \infty} \dfrac{2n\sqrt{n}}{n\sqrt{n}} = 2 \Rightarrow 0 < 2 < \infty $\\
+
+$\Rightarrow \displaystyle\sum_{n=0}^{\infty} \dfrac{2n+2}{\sqrt{n^3+5}} \sim \displaystyle\sum_{n=1}^{\infty} \dfrac{1}{\sqrt{n}} $\\
+
+$ \displaystyle\sum_{n=1}^{\infty} \dfrac{1}{\sqrt{n}} = \displaystyle\sum_{n=1}^{\infty} \dfrac{1}{n^{\tfrac{1}{2}}} $ is een $ p $-reeks met $ p=\dfrac{1}{2}<1 \Rightarrow $ divergent, dus $\displaystyle\sum_{n=0}^{\infty} \dfrac{2n+2}{\sqrt{n^3+5}} $ ook\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
