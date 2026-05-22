@@ -1,0 +1,78 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 3G nr. 15.8 \\
+
+\medskip
+\normalsize
+
+$f(x) = \sin 3x + \sin x$\\
+
+Domein: $\mathbb{R}$\\
+ 
+Periode: $T = 2\pi$ Dus we onderzoeken $[0, 2\pi]$.\\
+
+Er zijn geen asymptoten\\
+
+Tekenonderzoek:\\
+
+Simpson gebruiken geeft: \\
+
+$f(x) = 2\sin(2x)\cos(x) = 2(2\sin x \cos x)\cos x = 4\sin x \cos^2 x$\\
+
+$f(x) = 0 \Leftrightarrow \sin x = 0$ of $\cos x = 0$\\
+
+Nulpunten: $x \in \left\{0, \dfrac{\pi}{2}, \pi, \dfrac{3\pi}{2}, 2\pi\right\}$\\
+
+
+tekenonderzoek van de afgeleide:\\
+
+$f'(x) = 3\cos 3x + \cos x$\\
+
+$f'(x) = 3(4\cos^3 x - 3\cos x) + \cos x = 12\cos^3 x - 8\cos x = 4\cos x(3\cos^2 x - 2)$\\
+
+$f'(x) = 0 \Leftrightarrow \cos x = 0 \text{ of } \cos^2 x = \dfrac{2}{3}$\\
+
+$x \in \left\{\dfrac{\pi}{2}, \dfrac{3\pi}{2}\right\}$ of $x = \pm \operatorname{Bgcos}\left(\sqrt{\dfrac{2}{3}}\right) + k\pi$\\
+
+Tekenonderzoek van de tweede afgeleide\\
+
+$f''(x) = -9\sin 3x - \sin x = -28\sin x + 36\sin^3 x = 4\sin x(2 - 9\cos^2 x)$\\
+
+$f''(x) = 0 \Leftrightarrow \sin x = 0 \text{ of } \cos^2 x = \dfrac{2}{9}$\\
+
+$x \in \{0, \pi, 2\pi\}$ of $x = \pm \operatorname{Bgcos}\left(\dfrac{\sqrt{2}}{3}\right) + k\pi$\\
+
+Buigpunten: $B\left(\operatorname{Bgcos}\dfrac{\sqrt{2}}{3}, \dfrac{8\sqrt{7}}{27}\right)$ en $B\left(\pi - \operatorname{Bgcos}\dfrac{\sqrt{2}}{3}, \dfrac{8\sqrt{7}}{27}\right)$\\
+
+\setlength{\tabcolsep}{3pt}\begin{tabular}{c|ccccccccccccc}
+$x$      & $0$ &            & $\operatorname{Bgcos}\sqrt{\dfrac{2}{3}}$ & & $\operatorname{Bgcos}\dfrac{\sqrt{2}}{3}$ & & $\dfrac{\pi}{2}$ & & $\pi - \operatorname{Bgcos}\dfrac{\sqrt{2}}{3}$ & & $\pi - \operatorname{Bgcos}\sqrt{\dfrac{2}{3}}$ & & $\pi$ \\ \hline
+$f(x)$   & $0$ & $+$        & $\dfrac{8\sqrt{3}}{9}$ & $+$        & $\dfrac{8\sqrt{7}}{27}$ & $+$        & $0$      & $+$        & $\dfrac{8\sqrt{7}}{27}$ & $+$        & $\dfrac{8\sqrt{3}}{9}$ & $+$        & $0$ \\
+$f'(x)$  & $4$ & $+$        & $0$                   & $-$        & $-$                    & $-$        & $0$      & $+$        & $+$                    & $+$        & $0$                   & $-$        & $-4$\\
+$f''(x)$ & $0$ & $-$        & $-$                   & $-$        & $0$                    & $+$        & $+$      & $+$        & $0$                    & $-$        & $-$                   & $-$        & $0$ \\ \hline
+$f(x)$   & $0$ & $\nearrow$ & M                     & $\searrow$ & $\searrow$             & $\searrow$ & m(0)     & $\nearrow$ & $\nearrow$             & $\nearrow$ & M                     & $\searrow$ & $0$ \\
+         & $B(0)$ & $\frown$ & $\frown$             & $\frown$   & $B\left(\dfrac{8\sqrt{7}}{27}\right)$ & $\smile$ & $\smile$ & $\smile$ & $B\left(\dfrac{8\sqrt{7}}{27}\right)$ & $\frown$ & $\frown$ & $\frown$ & $B(0)$
+\end{tabular}\\
+
+omdat de functie oneven is geldt: $f(-x) = -f(x)$, de tabel voor $[\pi, 2\pi]$ is het spiegelbeeld.\\
+
+Grafiek: \\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{3G-15.8-siebe.hache.INF.png}
+\end{figure}
+
+\begin{thebibliography}{999}
+\bibitem{a} grafiek gemaakt op www.geogebra.org/calculator\\
+\end{thebibliography}
+
+\end{document}

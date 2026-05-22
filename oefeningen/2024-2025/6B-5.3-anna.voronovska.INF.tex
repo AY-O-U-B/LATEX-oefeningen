@@ -1,0 +1,69 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6B nr. 5.3\\
+
+\medskip
+
+\normalsize
+
+Gegeven: $x_4 = -54, s_4 = -40$\\
+
+Eerst $s_3$ zoeken:\\
+
+$s_4 = s_3 + x_4$\\
+
+$s_3 = s_4 - x_4 = -40 - (-54) = 14$\\
+
+Als $x_4 = -54$ en $s_3 = 14$ dan:\\
+
+(1) $\dfrac{s_3}{x_4} = \dfrac{14}{-54} = -\dfrac{7}{27} $\\
+
+Formules:\\
+ 
+$s_3 = x_1 \cdot \dfrac{q^3 - 1}{q - 1}$\\
+
+$x_4 = x_1 \cdot q^3$\\
+
+(2) $\dfrac{s_3}{x_4}
+  = \dfrac{x_1 \cdot \dfrac{q^3-1}{q-1}}{x_1 \cdot q^3}
+  = \dfrac{q^3 - 1}{q^3(q-1)}
+  = \dfrac{(q-1)(q^2+q+1)}{q^3(q-1)}
+  = \dfrac{q^2+q+1}{q^3}$\\
+
+Nu (1) en (2) samen, krijgen wij:\\
+
+$\dfrac{q^2+q+1}{q^3} = -\dfrac{7}{27}$\\
+
+$27(q^2+q+1) = -7q^3$\\
+
+$7q^3 + 27q^2 + 27q + 27 = 0$\\
+
+Als $q = -3$:\\
+
+$7(-3)^3 + 27(-3)^2 + 27(-3) + 27 = -189 + 243 - 81 + 27 = 0$\\
+
+$q = -3$\\
+
+Controle:\\
+
+$x_1 = \dfrac{x_4}{q^3} = \dfrac{-54}{(-3)^3} = \dfrac{-54}{-27} = 2$\\
+
+De rij: $2, -6, 18, -54, ...$\\
+
+$s_4 = 2 + (-6) + 18 + (-54) = -40 $\\
+
+Correct, dus $q=-3$
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

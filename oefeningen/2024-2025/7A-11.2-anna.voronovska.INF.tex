@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 11.2\\
+
+\medskip
+
+\normalsize
+
+$\mathbf{f} : \Omega \subseteq \mathbb{R} \longrightarrow \mathbb{R}^4 : x \mapsto (2^{\sec x},\ \coth x,\ \log_5\sqrt{\cos x},\ x^x)$\\
+
+$D\mathbf{f}(x) = \left(\begin{array}{c} \dfrac{\partial f_1}{\partial x} \\ \dfrac{\partial f_2}{\partial x} \\ \dfrac{\partial f_3}{\partial x} \\ \dfrac{\partial f_4}{\partial x} \end{array}\right)$\\
+
+\begin{itemize}
+
+\item $\dfrac{\partial f_1}{\partial x} = 2^{\sec x} \ln 2 \cdot \sec x \tan x$\\
+
+\item $\dfrac{\partial f_2}{\partial x} = -\dfrac{1}{\sinh^2 x}$\\
+
+\item $f_3 = \log_5\sqrt{\cos x} = \dfrac{\ln(\cos x)}{2\ln 5}$\\
+
+$\dfrac{\partial f_3}{\partial x} = \dfrac{1}{2\ln 5} \cdot \dfrac{-\sin x}{\cos x} = -\dfrac{\tan x}{2\ln 5}$\\
+
+\item $f_4 = x^x = e^{x\ln x}$\\
+
+$\dfrac{\partial f_4}{\partial x} = x^x(\ln x + 1)$\\
+
+\end{itemize}
+
+$\Rightarrow D\mathbf{f}(x) = \left(\begin{array}{c} 2^{\sec x} \ln 2 \cdot \sec x \tan x \\ -\dfrac{1}{\sinh^2 x} \\
+-\dfrac{\tan x}{2\ln 5} \\ x^x(\ln x + 1) \end{array}\right)$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\normalsize
+
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 7A nr. 6.1 \\
+
+\medskip
+
+\normalsize
+
+Onderzoek de limiet: \\
+
+$ \lim\limits_{(x,y,z)\to(0,0,0)} \dfrac{x+y+z}{x^2+y^2+z^2} $ \\
+
+We bekijken de functie langs het pad: \\
+
+$ x=y=z $ \\
+
+Dan wordt: \\
+
+$ \dfrac{x+y+z}{x^2+y^2+z^2}
+= \dfrac{x+x+x}{x^2+x^2+x^2} $ \\
+
+$ = \dfrac{3x}{3x^2} $ \\
+
+$ = \dfrac{1}{x} $ \\
+
+Dus langs dit pad krijgen we: \\
+
+$ \lim\limits_{x\to 0}\dfrac{1}{x} $ \\
+
+Deze limiet bestaat niet, want: \\
+
+$ \lim\limits_{x\to 0+}\dfrac{1}{x}=+\infty $ \\
+
+en \\
+
+$ \lim\limits_{x\to 0-}\dfrac{1}{x}=-\infty $ \\
+
+Dus de oorspronkelijke limiet bestaat niet. \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

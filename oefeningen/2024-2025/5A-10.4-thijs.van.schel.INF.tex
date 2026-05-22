@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 10.4\\
+
+\medskip
+
+\normalsize
+
+$\dint\limits_0^{\tfrac{1}{2}}\dfrac{\Bgsin x}{\sqrt{1-x^2}}dx$\\
+
+$t=\Bgsin x \Rightarrow dt = \dfrac{1}{\sqrt{1-x^2}}dx$\\
+
+$x=0 \Rightarrow t=0$\\
+
+$x=\dfrac{1}{2} \Rightarrow t=\dfrac{\pi}{6}$\\
+
+$\dint\limits_0^{\tfrac{\pi}{6}}tdt = \left[\dfrac{t^2}{2}\right]_0^{\tfrac{\pi}{6}}$\\
+
+$=\dfrac{\pi^2}{72}-0 = \dfrac{\pi^2}{72}$
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

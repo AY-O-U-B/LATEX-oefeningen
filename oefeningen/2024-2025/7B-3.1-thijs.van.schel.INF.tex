@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\dlim}{\lim\limits}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 3.1\\
+
+\medskip
+
+\normalsize
+
+$r = e^{u+v+w}$ met $u = yz$, $v = xz$ en $w = xy$\\
+
+Partiële afgeleiden:\\
+
+$\left\{ 
+\begin{array}{l} 
+\dfrac{\partial r}{\partial u} = \dfrac{\partial r}{\partial v} = \dfrac{\partial r}{\partial w} = e^{u+v+w} \\ 
+\dfrac{\partial u}{\partial x} = 0, \dfrac{\partial u}{\partial y} = z, \dfrac{\partial u}{\partial z} = y \\ 
+\dfrac{\partial v}{\partial x} = z, \dfrac{\partial v}{\partial y} = 0, \dfrac{\partial v}{\partial z} = x \\
+\dfrac{\partial w}{\partial x} = y, \dfrac{\partial w}{\partial y} = x, \dfrac{\partial w}{\partial z} = 0
+\end{array} 
+\right.$\\
+
+$\Rightarrow$ uitwerken\\
+
+$\left\{ 
+\begin{array}{l} 
+\dfrac{\partial r}{\partial x} = e^{u+v+w}(0) + e^{u+v+w}(z) + e^{u+v+w}(y) = e^{yz+xz+xy}(y+z) \\ 
+\dfrac{\partial r}{\partial y} = e^{u+v+w}(z) + e^{u+v+w}(0) + e^{u+v+w}(x) = e^{yz+xz+xy}(x+z) \\
+\dfrac{\partial r}{\partial z} = e^{u+v+w}(y) + e^{u+v+w}(x) + e^{u+v+w}(0) = e^{yz+xz+xy}(x+y)
+\end{array} 
+\right.$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 1.4\\
+
+\medskip
+
+\normalsize
+
+$w = \ln(u+v+z)$ met $u = \cos^2t$, $v = \sin^2t$ en $z = t^2$\\
+
+$\dfrac{\partial w}{\partial u} = \dfrac{1}{u+v+z}$\\
+
+$\dfrac{\partial w}{\partial v} = \dfrac{1}{u+v+z}$\\
+
+$\dfrac{\partial w}{\partial z} = \dfrac{1}{u+v+z}$\\
+
+$\dfrac{\partial u}{\partial t} = -2\cos t\sin t$\\
+
+$\dfrac{\partial v}{\partial t} = 2\sin t\cos t$\\
+
+$\dfrac{\partial z}{\partial t} = 2t$\\
+
+$Dw(u,v,w)=\left(\begin{array}{ccc}
+\dfrac{1}{u+v+z} & \dfrac{1}{u+v+z} & \dfrac{1}{u+v+z}
+\end{array}\right)$\\
+
+$D(u,v,z)(t)=\left(\begin{array}{c}
+-2\cos t\sin t \\
+2\sin t\cos t \\
+2t
+\end{array}\right)$\\
+
+$Dw(u,v,z)\cdot D(u,v,z)(t) = \dfrac{2t}{u+v+z} = \dfrac{2t}{1+t^2}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

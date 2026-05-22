@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2E nr. 26.4\\
+
+\medskip
+
+\normalsize
+
+$\dfrac{1}{\log_{x-1} (5x-7)} + \dfrac{1}{\log_{x+1} (5x-7)} = \dfrac{1}{\log_{x} x}$ \\
+
+$\Leftrightarrow \log_{(5x-7)} (x-1) + \log_{5x-7} (x+1) = \log_x x$ \\
+
+$\Leftrightarrow \log_{5x-7} ((x-1)(x+1)) = 1$  (omdat $\log_x x = 1$)\\
+
+
+$\Leftrightarrow \log_{5x-7} (x^2 - 1) = 1$ \\
+
+$\Leftrightarrow 5x - 7 = x^2 - 1$ \\
+
+$\Leftrightarrow -x^2 + 5x - 7 + 1 = 0$ \\
+
+$\Leftrightarrow -x^2 + 5x - 6 = 0$ \\
+
+$D = 5^2 - 4 \cdot (-1) \cdot (-6) = 25 - 24 = 1$ \\
+
+$\Leftrightarrow x_1 = \dfrac{-5+1}{2 \cdot (-1)} = \dfrac{-4}{-2} = 2$ \\
+
+$\Leftrightarrow x_2 = \dfrac{-5-1}{-2} = \dfrac{-6}{-2} = 3$\\
+
+Controle:\\
+
+Voor $x = 3$: Het grondtal $(x-1) = 2$. Dit is toegestaan. \\
+
+Voor $x = 2$: Het grondtal $(x-1) = 1$. Dit is niet toegestaan bij een logaritme. \\
+
+De enige geldige oplossing is $x = 3$. \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

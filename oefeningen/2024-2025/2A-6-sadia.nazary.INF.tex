@@ -5,6 +5,7 @@
 \usepackage{graphicx}     
 
 \newcommand{\R}{\mathbb{R}}
+
 \begin{document}
   
 \noindent \large Auteur: Sadia Nazary \\
@@ -15,31 +16,33 @@
 
 \normalsize
 
-$f:\R\rightarrow\R:x\mapsto x^2 - 1 \quad (a = 2)$
+$f:\R\rightarrow\R:x\mapsto x^2 - 1 \quad (a=2)$ \\
 
-\medskip
+$\varepsilon > 0$ \\
 
-Pak: $\varepsilon > 0$\\
+$\delta = \min\left(1,\dfrac{\varepsilon}{5}\right)$ \\
 
-Stel: $\delta = \min\left(1, \dfrac{\varepsilon}{5}\right)$\\
+$|x-2| < \delta$ \\
 
-Als $|x - 2| < \delta$, dan is:\\
+$|f(x)-f(2)| = |x^2 - 1 - (4 - 1)|$ \\
 
-\[
-|f(x) - f(2)| = |x^2 - 1 - (2^2 - 1)| = |x^2 - 4| = |x - 2||x + 2|
-\]
+$= |x^2 - 4|$ \\
 
-Aangezien $|x - 2| < 1$, ligt $x$ tussen $1$ en $3$, dus $|x + 2| \leq 5$
+$= |x-2||x+2|$ \\
 
-\[
-\Rightarrow |f(x) - f(2)| = |x - 2||x + 2| < \delta \cdot 5 \leq \dfrac{\varepsilon}{5} \cdot 5 = \varepsilon
-\]
+$|x-2| < 1 \Rightarrow 1 < x < 3$ \\
 
-Dus voor deze $\delta$ geldt: als $|x - 2| < \delta$, dan is $|f(x) - f(2)| < \varepsilon$\\
+$|x+2| \le 5$ \\
 
-\textbf{Conclusie:} $f$ is continu in $a = 2$.
+$|f(x)-f(2)| < \delta \cdot 5$ \\
+
+$\le \dfrac{\varepsilon}{5} \cdot 5$ \\
+
+$= \varepsilon$ \\
+
+$f$ continu in $a=2$ \\
 
 \begin{thebibliography}{999}
-%\bibitem{a} Referentie
 \end{thebibliography}
+
 \end{document}

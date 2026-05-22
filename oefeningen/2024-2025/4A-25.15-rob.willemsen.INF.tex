@@ -1,0 +1,50 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 25.15 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{2x^2-x+1}{2x+1} dx$ \\
+
+$t = 2x + 1 \Rightarrow dt = 2 dx \Rightarrow \dfrac{1}{2}dt = dx$ \\
+
+$x = \dfrac{t-1}{2}$ \\
+
+$= \dint \dfrac{2\left(\dfrac{t-1}{2}\right)^2 - \dfrac{t-1}{2} + 1}{t} \cdot \dfrac{1}{2} dt$ \\
+
+$= \dint \dfrac{\dfrac{(t-1)^2}{2} - \dfrac{t-1}{2} + 1}{t} \cdot \dfrac{1}{2} dt$ \\
+
+$= \dint \dfrac{\dfrac{(t-1)^2-(t-1)+2}{2}}{t} \cdot \dfrac{1}{2} dt$ \\
+
+$= \dint \dfrac{\dfrac{t^2-3t+4}{2}}{t} \cdot \dfrac{1}{2} dt$ \\
+
+$= \dint \dfrac{(t^2-3t+4) \cdot \dfrac{1}{2}}{t} \cdot \dfrac{1}{2} dt$ \\
+
+$= \dfrac{1}{4} \dint \dfrac{t^2-3t+4}{t} dt$ \\
+
+$= \dfrac{1}{4} \dint t - 3 + \dfrac{4}{t} dt$ \\
+
+$= \dfrac{1}{4} \left( \dint t dt - 3 \dint 1 dt + 4 \dint \dfrac{1}{t} dt \right)$ \\
+
+$= \dfrac{1}{4} \left( \dfrac{1}{2}t^2 - 3t + 4 \ln |t| \right) + C$ \\
+
+$= \dfrac{1}{8}t^2 - \dfrac{3}{4}t + \ln |t| + C$ \\
+
+$= \dfrac{1}{8}(2x+1)^2 - \dfrac{3}{4}(2x+1) + \ln |2x+1| + C$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

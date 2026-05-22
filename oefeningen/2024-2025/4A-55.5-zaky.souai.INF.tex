@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 55.5\\
+
+\bigskip
+
+\normalsize
+
+$\displaystyle \int \tan^{-3} x dx$\\
+
+$= \displaystyle \int \cot^3 x dx$\\
+
+$= \displaystyle \int \cot x \cdot \cot^2 x dx$\\
+
+$= \displaystyle \int \cot x \left( \dfrac{1}{\sin^2 x} - 1 \right) dx$\\
+
+$= \displaystyle \int \cot x \dfrac{1}{\sin^2 x} dx - \displaystyle \int \cot x dx$\\
+
+$u = \cot x\Rightarrow du = -\dfrac{1}{\sin^2 x}dx$\\
+
+$= - \displaystyle \int u du - \ln |\sin x|$\\
+
+$= - \dfrac{u^2}{2} - \ln |\sin x| + C$\\
+
+$= - \dfrac{\cot^2 x}{2} - \ln |\sin x| + C$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

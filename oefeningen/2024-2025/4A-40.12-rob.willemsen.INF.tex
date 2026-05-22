@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 40.12 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{dx}{\sqrt{2+3x-x^2}}$ \\
+
+$=\dint \dfrac{dx}{\sqrt{-(x^2-3x-2)}}$ \\
+
+$=\dint \dfrac{dx}{\sqrt{-((x-\frac{3}{2})^2-\frac{17}{4})}}$ \\
+
+$=\dint \dfrac{dx}{\sqrt{\dfrac{17}{4}- \left(x-\dfrac{3}{2}\right)^2}}$ \\
+
+$=\Bgsin\left(\dfrac{x-\dfrac{3}{2}}{\dfrac{\sqrt{17}}{2}}\right) + C$ \\
+
+$=\Bgsin\left(\dfrac{2x-3}{\sqrt{17}}\right) + C$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

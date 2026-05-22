@@ -1,0 +1,30 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Mohamed Shafik \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks: 4A nr 30.7\\
+
+\medskip
+
+\normalsize
+
+Bereken $\displaystyle\int \dfrac{x^4 dx}{\sqrt{x^5-6}}$\\
+
+Substitutie: $t = x^5 - 6$, $dt = 5x^4 dx$, $x^4 dx = \dfrac{dt}{5}$\\
+
+\begin{eqnarray*}
+\displaystyle\int \dfrac{x^4 dx}{\sqrt{x^5-6}} &=& \dfrac{1}{5} \displaystyle\int \dfrac{dt}{\sqrt{t}}\\
+&=& \dfrac{1}{5} \displaystyle\int t^{-1/2} dt\\
+&=& \dfrac{1}{5} \cdot 2t^{1/2} + c\\
+&=& \dfrac{2\sqrt{x^5-6}}{5} + c\\
+\end{eqnarray*}
+
+\begin{thebibliography}{9}
+\end{thebibliography}
+\end{document}

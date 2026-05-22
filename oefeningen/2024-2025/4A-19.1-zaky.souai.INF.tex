@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 19.1\\
+
+\bigskip
+
+\normalsize
+
+$I= \displaystyle \int e^x \sin (x) dx$\\
+
+$\left\{\begin{array}{l}
+u = \sin (x)\\
+dv=e^x dx
+\end{array}
+\Rightarrow
+\left\{\begin{array}{l}
+du = \cos(x) dx\\
+v=e^x
+\end{array}\right.\right.$\\
+
+$I= e^x\sin (x)- \displaystyle \int e^x\cos(x)dx$\\
+
+$J= \displaystyle \int e^x\cos(x)dx$\\
+
+$\left\{\begin{array}{l}
+u = \cos (x)\\
+dv=e^x dx
+\end{array}
+\Rightarrow
+\left\{\begin{array}{l}
+du = -\sin(x) dx\\
+v=e^x
+\end{array}\right.\right.$\\
+
+$J= e^x\cos (x)- \displaystyle \int e^x(-\sin(x))dx$\\
+
+$J= e^x\cos (x)+ \displaystyle \int e^x\sin(x)dx$\\
+
+$J= e^x\cos (x)+I$\\
+
+$I= e^x\sin (x)-J$\\
+
+$I= e^x\sin (x)-\left(e^x\cos (x)+I\right)$\\
+
+$I= e^x\sin (x)-e^x\cos (x)-I$\\
+
+$2I= e^x\sin (x)-e^x\cos (x) + C$\\
+
+$I= \dfrac{e^x}{2}\left(\sin (x)-\cos (x)\right)+C$
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

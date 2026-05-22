@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 11.5\\
+
+\medskip
+
+\normalsize
+
+$ f : \Omega \subset \mathbb{R}^4 \rightarrow \mathbb{R}^2 :(w,x,y,z) \mapsto \left(\cot\left(\dfrac{w \ln |z|}{xy^2}\right),\ln\left|\dfrac{x\cos y}{(z-1)^2}\right|\right) $\\
+
+$ Df(w,x,y,z)=\left(\begin{array}{cccc}\dfrac{\partial f_1}{\partial w}&\dfrac{\partial f_1}{\partial x}&\dfrac{\partial f_1}{\partial y}&\dfrac{\partial f_1}{\partial z}\\ \dfrac{\partial f_2}{\partial w}&\dfrac{\partial f_2}{\partial x}&\dfrac{\partial f_2}{\partial y}&\dfrac{\partial f_2}{\partial z}\end{array}\right) $\\
+
+$ u=\dfrac{w \ln |z|}{xy^2} $\\
+
+\begin{itemize}
+
+\item $ \dfrac{\partial f_1}{\partial w}=-\dfrac{1}{\sin^2(u)}\cdot\dfrac{\partial}{\partial w}\left(\dfrac{w \ln |z|}{xy^2}\right)=-\dfrac{\ln |z|}{\sin^2(u)xy^2} $\\
+
+\item $ \dfrac{\partial f_1}{\partial x}=-\dfrac{1}{\sin^2(u)}\cdot\dfrac{\partial}{\partial x}\left(\dfrac{w \ln |z|}{xy^2}\right)=\dfrac{w \ln |z|}{\sin^2(u)x^2y^2} $\\
+
+\item $ \dfrac{\partial f_1}{\partial y}=-\dfrac{1}{\sin^2(u)}\cdot\dfrac{\partial}{\partial y}\left(\dfrac{w \ln |z|}{xy^2}\right)=\dfrac{2w \ln |z|}{\sin^2(u)xy^3} $\\
+
+\item $ \dfrac{\partial f_1}{\partial z}=-\dfrac{1}{\sin^2(u)}\cdot\dfrac{\partial}{\partial z}\left(\dfrac{w \ln |z|}{xy^2}\right)=-\dfrac{w}{\sin^2(u)xy^2z} $\\
+
+\end{itemize}
+
+$ f_2=\ln |x|+\ln |\cos y|-2\ln |z-1| $\\
+
+\begin{itemize}
+
+\item $ \dfrac{\partial f_2}{\partial w}=0 $\\
+
+\item $ \dfrac{\partial f_2}{\partial x}=\dfrac{1}{x} $\\
+
+\item $ \dfrac{\partial f_2}{\partial y}=\dfrac{-\sin y}{\cos y}=-\tan y $\\
+
+\item $ \dfrac{\partial f_2}{\partial z}=-2\dfrac{1}{z-1}=-\dfrac{2}{z-1} $\\
+
+\end{itemize}
+
+$ \Rightarrow Df(w,x,y,z)=\left(\begin{array}{cccc}-\dfrac{\ln |z|}{\sin^2(u)xy^2}&\dfrac{w \ln |z|}{\sin^2(u)x^2y^2}&\dfrac{2w \ln |z|}{\sin^2(u)xy^3}&-\dfrac{w}{\sin^2(u)xy^2z}\\ 0&\dfrac{1}{x}&-\tan y&-\dfrac{2}{z-1}\end{array}\right) $\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

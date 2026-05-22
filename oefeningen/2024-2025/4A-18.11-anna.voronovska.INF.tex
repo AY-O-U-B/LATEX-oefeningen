@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 18.11\\
+
+\medskip
+
+\normalsize
+$\displaystyle\int \dfrac{x}{\sin^2 x}dx$\\
+
+$\left\{ \begin{array}{l} 
+    u = x \\ 
+    dv = \dfrac{1}{\sin^2 x} \, dx 
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l} 
+    du = dx \\ 
+    v = -\cot x 
+\end{array} \right.$\\
+
+$\displaystyle\int \dfrac{x}{\sin^2 x}dx = -x \cot x - \displaystyle\int (-\cot x)dx = -x \cot x + \displaystyle\int \dfrac{\cos x}{\sin x}dx $\\
+
+$= -x \cot x + \ln|\sin x| + c$\\
+
+Want $ \displaystyle\int \cot xdx = \displaystyle\int \dfrac{\cos x}{\sin x}dx $\\
+
+$u = \sin x \Rightarrow du = \cos xdx$\\
+
+$ \displaystyle\int \dfrac{1}{u}du = \ln|u| + c $\\
+
+$ \displaystyle\int \cot xdx = \ln|\sin x| + c $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

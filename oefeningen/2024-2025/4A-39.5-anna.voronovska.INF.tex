@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 39.5\\
+
+\medskip
+
+\normalsize
+
+
+$\displaystyle\int \dfrac{3x - 1}{(x^2 + 4x + 5)^3}dx = \displaystyle\int \dfrac{3x - 1}{((x + 2)^2 + 1)^3}dx$\\
+
+$u = x + 2 \Rightarrow x = u - 2$ en $dx = du$\\
+
+$\displaystyle\int \dfrac{3(u-2) - 1}{(u^2 + 1)^3}du = \displaystyle\int \dfrac{3u - 7}{(u^2 + 1)^3}du = 3\displaystyle\int \dfrac{u}{(u^2 + 1)^3}du - 7\displaystyle\int \dfrac{1}{(u^2 + 1)^3}du$\\
+
+Eerste integraal:\\
+
+$3\displaystyle\int \dfrac{u}{(u^2 + 1)^3}du$\\
+
+$t = u^2 + 1 \Rightarrow dt = 2udu \Rightarrow udu = \dfrac{1}{2}dt$\\
+
+$\dfrac{3}{2} \displaystyle\int t^{-3}dt = \dfrac{3}{2} \cdot \dfrac{t^{-2}}{-2} = -\dfrac{3}{4(u^2 + 1)^2}$\\
+
+Tweede integraal:\\
+
+$7\displaystyle\int \dfrac{1}{(u^2 + 1)^3}du$\\
+
+Recursie: $I_n = \dfrac{u}{2(n-1)(u^2+1)^{n-1}} + \dfrac{2n-3}{2n-2}I_{n-1}$:\\
+
+$I_1 = \operatorname{Bgsin}(u)$)\\
+
+$I_3 = \dfrac{u}{4(u^2+1)^2} + \dfrac{3}{4}I_2 = \dfrac{u}{4(u^2+1)^2} + \dfrac{3}{4} \left( \dfrac{u}{2(u^2+1)} + \dfrac{1}{2}\operatorname{Bgsin}(u) \right)$\\
+
+Dus:\\
+
+$\displaystyle\int \dfrac{3x - 1}{(x^2 + 4x + 5)^3}dx = -\dfrac{3}{4(x^2+4x+5)^2} $\\
+
+$- 7 \left[ \dfrac{x+2}{4(x^2+4x+5)^2} + \dfrac{3(x+2)}{8(x^2+4x+5)} + \dfrac{3}{8}\operatorname{Bgsin}(x+2) \right] + c$
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Mohamed Shafik \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks: 6B nr 14\\
+
+\medskip
+
+\normalsize
+
+De som van de eerste $n$ natuurlijke getallen is 780. Bepaal $n$.\\
+
+Rekenkundige rij met $x_1 = 1$, $x_n = n$, $s_n = \dfrac{x_1 + x_n}{2} \cdot n$\\
+
+\begin{eqnarray*}
+s_n = \dfrac{x_1 + x_n}{2} \cdot n = \dfrac{1 + n}{2} \cdot n = \dfrac{n(n+1)}{2} &=& 780\\
+n(n+1) &=& 1560\\
+n^2 + n - 1560 &=& 0\\
+\end{eqnarray*}
+
+Berekening discriminant\\
+
+\begin{eqnarray*}
+D &=& 1^2 + 4 \cdot 1560 = 1 + 6240 = 6241\\
+\sqrt{D} &=& 79\\
+\end{eqnarray*}
+
+Berekening $n$ met (abc-formule)\\
+
+\begin{eqnarray*}
+n &=& \dfrac{-1 + 79}{2} = \dfrac{78}{2} = 39\\
+\end{eqnarray*}
+
+($n = \dfrac{-1 - 79}{2} = -40$ voldoet niet want $n \in \mathbb{N}$)\\
+
+Verificatie: $s_{39} = \dfrac{1 + 39}{2} \cdot 39 = \dfrac{40}{2} \cdot 39 = 780$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document}

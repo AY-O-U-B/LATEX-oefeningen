@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\llim}{\lim\limits}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\pafg}[2][]{\dfrac{\partial #1}{\partial #2}}
+\begin{document}
+  
+\noindent \large Auteur: Mathijs Pittoors \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 11.1\\
+
+\medskip
+
+\normalsize
+
+$ f: \Omega \subseteq \mathbb{R}^3 \rightarrow \mathbb{R}: (x,y,z) \rightarrow z \cdot\Bgtan\dfrac{x}{y}$\\
+
+$ \pafg[f]{x} = \pafg{x} \left(z \cdot \Bgtan \dfrac{x}{y}\right) = z \cdot \dfrac{1}{1+\left(\dfrac{x}{y}\right)^2} \cdot \dfrac{1}{y} = \dfrac{zy}{x^2+y^2}$\\
+
+$ \pafg[f]{y} = \pafg{y} \left(z \cdot \Bgtan \dfrac{x}{y}\right) = z \cdot \dfrac{1 \cdot x}{\left(1+\left(\dfrac{x}{y}\right)^2\right)(-y^2)} = - \dfrac{xz}{y^2 + x^2}$\\
+
+$ \pafg[f]{z} = \pafg{z} \left(z \cdot \Bgtan \dfrac{x}{y}\right) = \Bgtan\dfrac{x}{y}$\\
+
+$$Df = \left (
+\begin{array}{ccc}
+        \dfrac{zy}{y^2 + x^2} & -\dfrac{zx}{y^2 + x^2} & \operatorname{Bgtan}\dfrac{x}{y}\\
+\end{array}
+\right )$$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

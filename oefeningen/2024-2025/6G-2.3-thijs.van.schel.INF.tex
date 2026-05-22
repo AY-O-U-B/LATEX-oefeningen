@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6G nr. 2.3\\
+
+\medskip
+
+\normalsize
+
+$f(x) = |\sin x|$ op $[-\pi, \pi]$\\
+
+$f(x)$ is even $ \Rightarrow b_n = 0$\\
+
+$a_0 = \dfrac{1}{\pi} \dint\limits_{-\pi}^{\pi} |\sin x| dx = \dfrac{2}{\pi} \dint\limits_{0}^{\pi} \sin x dx$\\
+
+$= \dfrac{2}{\pi} [-\cos x]_{0}^{\pi} = \dfrac{2}{\pi} (1 - (-1)) = \dfrac{4}{\pi}$ \\
+
+$a_n = \dfrac{1}{\pi} \dint\limits_{-\pi}^{\pi} |\sin x| \cos(nx) dx = \dfrac{2}{\pi} \dint\limits_{0}^{\pi} \sin x \cos(nx)dx$\\
+
+$\Rightarrow$ Simpson:\\
+
+$a_n = \dfrac{1}{\pi} \dint\limits_{0}^{\pi} (\sin(1+n)x + \sin(1-n)x)dx$\\
+
+$= \dfrac{1}{\pi} \left[ -\dfrac{\cos(1+n)x}{1+n} - \dfrac{\cos(1-n)x}{1-n} \right]_{0}^{\pi}$\\
+
+$= \dfrac{1}{\pi}\left( \dfrac{- \cos(1+n)\pi + 1}{1+n} + \dfrac{- \cos(1-n)\pi + 1}{1-n}\right)$\\
+
+$\cos(1 \pm n)\pi = -\cos(n\pi) = -(-1)^n$\\
+
+$\Rightarrow a_n = \dfrac{1}{\pi} \left( \dfrac{(-1)^n + 1}{1+n} + \dfrac{(-1)^n + 1}{1-n} \right)$\\
+
+$= \dfrac{(-1)^n + 1}{\pi} \left( \dfrac{1}{1+n} + \dfrac{1}{1-n} \right) = \dfrac{(-1)^n + 1}{\pi} \left( \dfrac{2}{1-n^2} \right)$\\
+
+$n $ is oneven $ \Rightarrow a_n = 0$\\
+
+$n $ is even $ (n=2k) \Rightarrow a_n = \dfrac{4}{\pi(1-n^2)}$\\
+
+$\Rightarrow f(x) = \dfrac{a_0}{2} + \displaystyle\sum_{n=1}^{\infty} a_n \cos(nx)$\\
+
+$= \dfrac{2}{\pi} + \displaystyle\sum_{k=1}^{\infty} \dfrac{4}{\pi(1-(2k)^2)} \cos(2kx)$\\
+
+$= \dfrac{2}{\pi} - \dfrac{4}{\pi} \displaystyle\sum_{k=1}^{\infty} \dfrac{1}{4k^2-1} \cos(2kx)$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

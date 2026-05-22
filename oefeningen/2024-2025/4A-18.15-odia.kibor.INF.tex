@@ -1,0 +1,80 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Odia Kibor \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 18.15\\
+
+\medskip
+
+\normalsize
+
+
+$\displaystyle\int x^2 \cos^2 x dx = \displaystyle\int x^2 \cdot \dfrac{1 + \cos 2x}{2} dx$\\
+
+$= \dfrac{1}{2} \displaystyle\int x^2 dx + \dfrac{1}{2} \displaystyle\int x^2 \cos 2x dx$\\
+
+$\left\{
+\begin{array}{l}
+	u = x^2 \\ 
+	dv = \cos 2x dx
+\end{array}\right.
+\Rightarrow 
+\left\{
+\begin{array}{l}
+	du = 2x dx\\
+ 	v = \dfrac{1}{2} \sin 2x 
+\end{array}
+\right.$\\
+
+$= \dfrac{1}{2} \cdot \dfrac{x^3}{3} + \dfrac{1}{2} \left(\dfrac{x^2}{2} \sin 2x -\displaystyle\int x \sin 2x dx \right)$\\
+
+$\left\{
+\begin{array}{l}
+	u = x \\ 
+	dv = \sin 2x dx
+\end{array}\right.
+\Rightarrow 
+\left\{
+\begin{array}{l}
+	du = dx\\
+ 	v = -\dfrac{1}{2} \cos 2x 
+\end{array}
+\right.$\\
+
+$= \dfrac{x^3}{6} + \dfrac{x^2}{4} \sin 2x - \dfrac{1}{2} \left(-\dfrac{x}{2} \cos 2x -\displaystyle\int -\dfrac{1}{2} \cos 2x dx \right)$\\
+
+$= \dfrac{x^3}{6} + \dfrac{x^2}{4} \sin 2x - \dfrac{1}{2} \left(-\dfrac{x}{2} \cos 2x + \dfrac{1}{4} \sin 2x \right)$\\
+
+$= \dfrac{x^3}{6} + \dfrac{x^2}{4} \sin 2x + \dfrac{x}{4} \cos 2x - \dfrac{1}{8} \sin 2x + C$\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

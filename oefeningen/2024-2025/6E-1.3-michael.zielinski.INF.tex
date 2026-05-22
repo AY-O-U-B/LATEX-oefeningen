@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}    
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6E nr. 1.3 \\
+
+\medskip
+
+\normalsize
+
+$T_5(f,0)(x)$ voor $f(x)=e^{\sin x}$ \\
+
+$\left|\begin{array}{ll}
+     & f(x)=e^{\sin x} \\
+     \\
+     & f'(x)=e^{\sin x}\cos x \\
+     \\
+     & f''(x)=e^{\sin x}\cos^2x-e^{\sin x}\sin x \\
+\end{array}\right.$ \\
+
+We gebruiken de bekende Taylorontwikkelingen rond $0$: \\
+
+$ \sin x = x-\dfrac{x^3}{6}+\dfrac{x^5}{120} $ \\
+
+$ e^u = 1+u+\dfrac{u^2}{2!}+\dfrac{u^3}{3!}+\dfrac{u^4}{4!}+\dfrac{u^5}{5!} $ \\
+
+Met: \\
+
+$ u = \sin x = x-\dfrac{x^3}{6}+\dfrac{x^5}{120} $ \\
+
+Dus: \\
+
+$ e^{\sin x}
+= 1+\left(x-\dfrac{x^3}{6}+\dfrac{x^5}{120}\right)
++\dfrac{\left(x-\dfrac{x^3}{6}+\dfrac{x^5}{120}\right)^2}{2!} $ \\
+
+$ \quad +\dfrac{\left(x-\dfrac{x^3}{6}+\dfrac{x^5}{120}\right)^3}{3!}
++\dfrac{\left(x-\dfrac{x^3}{6}+\dfrac{x^5}{120}\right)^4}{4!}
++\dfrac{\left(x-\dfrac{x^3}{6}+\dfrac{x^5}{120}\right)^5}{5!} $ \\
+
+Tot en met graad $5$ geeft dit: \\
+
+$ e^{\sin x}
+= 1+x+\dfrac{x^2}{2}-\dfrac{x^4}{8}-\dfrac{x^5}{15} $ \\
+
+Dus: \\
+
+$ T_5(f,0)(x)=1+x+\dfrac{x^2}{2}-\dfrac{x^4}{8}-\dfrac{x^5}{15} $ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

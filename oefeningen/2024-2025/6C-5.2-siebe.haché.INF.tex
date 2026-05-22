@@ -1,0 +1,67 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6C nr. 5.2 \\
+
+\medskip
+\normalsize
+Bereken $\lim\limits_{n \rightarrow +\infty}x_n, \operatorname*{adh}\limits_{n \rightarrow \infty}\left(x_n\right), \liminf\limits_{n \rightarrow \infty}x_n, \limsup\limits_{n \rightarrow \infty}x_n$ voor:\\
+
+$x_n=\displaystyle\sum_{i=0}^{n}r^i$ \\
+
+Voor $r \neq 1$ geldt de formule: $x_n = \dfrac{1 - r^{n+1}}{1 - r}$. \\
+
+Voor $r = 1$ geldt de formule: $x_n = n + 1$. \\
+
+Geval 1: $|r| < 1$ \\
+
+$\lim\limits_{n \to \infty} x_n = \dfrac{1}{1 - r}$ \\
+
+$\operatorname*{adh}\limits_{n \to \infty} (x_n) = \left\{ \dfrac{1}{1 - r} \right\}$ \\
+
+$\liminf\limits_{n \to \infty} x_n = \dfrac{1}{1 - r}$ \\
+
+$\limsup\limits_{n \to \infty} x_n = \dfrac{1}{1 - r}$ \\
+
+Geval 2: $r \geq 1$ \\
+
+$\lim\limits_{n \to \infty} x_n = +\infty$ \\
+
+$\operatorname*{adh}\limits_{n \to \infty} (x_n) = \emptyset$ \\
+
+$\liminf\limits_{n \to \infty} x_n = +\infty$ \\
+
+$\limsup\limits_{n \to \infty} x_n = +\infty$ \\
+
+Geval 3: $r = -1$ \\
+
+De rij is $(1, 0, 1, 0,...)$,er is geen limiet. \\
+
+$\operatorname*{adh}\limits_{n \to \infty} (x_n) = \{0, 1\}$ \\
+
+$\liminf\limits_{n \to \infty} x_n = 0$ \\
+
+$\limsup\limits_{n \to \infty} x_n = 1$ \\
+
+Geval 4: $r < -1$ \\
+
+De rij divergeert zonder specifieke waarde, wisselt constant tussen $+$ en $-$. \\
+
+$\operatorname*{adh}\limits_{n \to \infty} (x_n) = \emptyset$ \\
+
+$\liminf\limits_{n \to \infty} x_n = -\infty$ \\
+
+$\limsup\limits_{n \to \infty} x_n = +\infty$ \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

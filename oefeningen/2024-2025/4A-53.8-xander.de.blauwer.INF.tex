@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\noindent \large Auteur: Xander De Blauwer \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 53.8\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int \sin^{-2}(x)\cos^{-4}(x)dx $ \\
+
+$ = \displaystyle\int \dfrac{dx}{\dfrac{\sin^2(x)}{\cos^2(x)} \cdot \cos^6(x)} = \displaystyle\int \dfrac{dx}{\tan^2(x)\cos^6(x)} $ \\
+
+$ = \displaystyle\int \dfrac{\sec^6(x)}{\tan^2(x)}dx = \displaystyle\int \dfrac{(1+\tan^2(x))^2 \cdot \sec^2(x)}{\tan^2(x)}dx $ \\
+
+$ = \displaystyle\int \dfrac{(1 + 2\tan^2(x) + \tan^4(x)) \sec^2(x)} {\tan^2(x)}dx $ \\
+
+$ = \displaystyle\int \left(\dfrac{1}{\tan^2(x)} + 2 + \tan^2(x)\right)\sec^2(x)dx $ \\
+
+Stel $u = \tan(x) \Rightarrow du = \sec^2(x)dx $ \\
+
+$ = \displaystyle\int (u^{-2} + 2 + u^2)du $ \\
+
+$ = \dfrac{-1}{\tan(x)} + 2\tan(x) + \dfrac{\tan^3(x)}{3} + c $ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

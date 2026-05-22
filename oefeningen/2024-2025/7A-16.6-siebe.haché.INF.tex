@@ -1,0 +1,62 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 7A nr. 16.6\\
+
+\medskip
+\normalsize
+
+$f(x,y) = 
+\left\{
+\begin{array}{ll}
+\dfrac{x^3 - y^3}{x^2 + y^2} & \text{als } (x,y) \neq (0,0) \\
+0 & \text{als } (x,y) = (0,0)
+\end{array}
+\right. \\$
+
+continuïteit: \\
+
+$x = r \cos(\theta)$ en $y = r \sin(\theta): \\$
+
+$\lim\limits_{r \to 0} \dfrac{r^3 \cos^3(\theta) - r^3 \sin^3(\theta)}{r^2 \cos^2(\theta) + r^2 \sin^2(\theta)} = \lim\limits_{r \to 0} \dfrac{r^3 (\cos^3(\theta) - \sin^3(\theta))}{r^2} = \lim\limits_{r \to 0} r (\cos^3(\theta) - \sin^3(\theta)) = 0 \\$
+
+$\Rightarrow$ de limiet is gelijk aan $f(0,0) = 0$, dus $f$ is continu in $(0,0)$. \\
+
+partiële afgeleiden: \\
+
+$\dfrac{\partial f}{\partial x}(0,0) = \lim\limits_{\lambda \to 0} \dfrac{f(\lambda, 0) - f(0,0)}{\lambda} = \lim\limits_{\lambda \to 0} \dfrac{\dfrac{\lambda^3 - 0}{\lambda^2 + 0} - 0}{\lambda} = \lim\limits_{\lambda \to 0} \dfrac{\lambda}{\lambda} = 1 \\$
+
+$\dfrac{\partial f}{\partial y}(0,0) = \lim\limits_{\lambda \to 0} \dfrac{f(0, \lambda) - f(0,0)}{\lambda} = \lim\limits_{\lambda \to 0} \dfrac{\dfrac{0 - \lambda^3}{0 + \lambda^2} - 0}{\lambda} = \lim\limits_{\lambda \to 0} \dfrac{-\lambda}{\lambda} = -1 \\$
+
+$\Rightarrow$ beide partiële afgeleiden bestaan in $(0,0)$. \\
+
+afleidbaarheid: \\
+
+stel $\bar h = (h_1, h_2)$ en $h_1 \neq h_2 \neq1$\\
+
+$Df(\bar 0,\bar h) = \lim\limits_{\lambda \to 0} \dfrac{f(\lambda h_1, \lambda h_2) - f(0,0)}{\lambda} \\$
+
+$= \lim\limits_{\lambda \to 0} \dfrac{\dfrac{\lambda^3 h_1^3 - \lambda^3 h_2^3}{\lambda^2 h_1^2 + \lambda^2 h_2^2} - 0}{\lambda} = \lim\limits_{\lambda \to 0} \dfrac{\lambda^3 (h_1^3 - h_2^3)}{\lambda^3 (h_1^2 + h_2^2)} = \dfrac{h_1^3 - h_2^3}{h_1^2 + h_2^2} \\$
+
+$\Rightarrow$ alle richtingsafgeleiden bestaan, dus $f$ is afleidbaar in $(0,0)$. \\
+
+differentieerbaarheid: \\
+
+$Df(\bar 0,\bar h) \neq Df(\bar 0) \cdot \bar h \\$
+
+$\dfrac{h_1^3 - h_2^3}{h_1^2 + h_2^2} \neq h_1 - h_2 \\$
+
+$\Rightarrow f$ is niet differentieerbaar in $(0,0)$. \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

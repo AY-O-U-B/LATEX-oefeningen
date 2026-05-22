@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6F nr. 15\\
+
+\medskip
+
+\normalsize
+
+$ f_n:\mathbb{R}\rightarrow \mathbb{R}:x\mapsto \left(\dfrac{n^2+1}{n^2}\right)x=x+\dfrac{x}{n^2} $\\
+
+\begin{enumerate}
+
+\item Puntsgewijze convergentie
+
+$ \lim\limits_{n \rightarrow \infty}\left(x+\dfrac{x}{n^2}\right)=x+\dfrac{x}{\infty}=x+0=x $\\
+
+$ \Rightarrow $ puntsgewijze limietfunctie: $ f(x)=x $\\
+
+\item Uniforme convergentie
+
+$ \left|f_n(x)-f(x)\right| $\\
+
+$ =\left|x+\dfrac{x}{n^2}-x\right|=\left|\dfrac{x}{n^2}\right| $\\
+
+$ \sup\limits_{x\in \mathbb{R}}\left|\dfrac{x}{n^2}\right|=+\infty $\\
+
+$ \Rightarrow $ convergentie is niet uniform\\
+
+\end{enumerate}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

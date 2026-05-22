@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+\newcommand{\integral}{\displaystyle\int}
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6G nr. 2.2\\
+
+\medskip
+
+\normalsize
+
+
+$f(-x) = -\sin x = -f(x) \Rightarrow$  f(x) is oneven $\Rightarrow a_0 = a_n = 0 $\\
+
+$b_n = \dfrac{2}{\pi}\integral_{0}^{\pi}\sin x\sin nxdx$ \\
+
+$= \dfrac{1}{\pi}\integral_{0}^{\pi} (\cos(x - nx) - \cos (x + nx))dx$ \\
+
+$= \dfrac{1}{\pi}\left[\dfrac{\sin (x - nx)}{1-n} - \dfrac{\sin (x + nx)}{1+n}\right]_{0}^{\pi}$\\
+
+$= \dfrac{1}{\pi}\left(\dfrac{\sin (\pi - n\pi)}{1 - \pi} - \dfrac{\sin (\pi + n\pi)}{1 + n}\right)$ \\
+
+$= \dfrac{1}{\pi}\left(\dfrac{0}{1 - \pi} - \dfrac{0}{1 + n}\right) = 0\Rightarrow b_n = 0$ voor $n \neq 1$ \\
+
+$b_1 = \dfrac{2}{\pi}\integral_{0}^{\pi}\sin^2xdx$ \\
+
+$= \dfrac{1}{\pi} \integral_{0}^{\pi} ( 1- \cos2x)dx$ \\
+
+$=\dfrac{1}{\pi}\left[x-\dfrac{\sin 2x}{2}\right]_0^{\pi} = 1$ \\
+
+$\Rightarrow \displaystyle\sum_{n = 1}^\infty b_n\sin nx$ met $b_n = 0$, $b_1 = 1 $ \\
+
+$\Rightarrow$ fourierreeks: $\sin x$
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

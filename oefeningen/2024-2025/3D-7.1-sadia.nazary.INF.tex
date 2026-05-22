@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}  
+
+\newcommand{\degree}{^{\circ}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Bgcos}{\operatorname{Bgcos}}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Sadia Nazary  \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3C nr. 7.1\\
+
+\medskip
+
+\normalsize
+
+$f(x)=x^x \quad (x>0)$ \\
+
+$\ln f(x)=\ln(x^x)=x\ln x$ \\
+
+$f(x)=e^{x\ln x}$ \\
+
+$f'(x)=e^{x\ln x}(x\ln x)'$ \\
+
+$(x\ln x)'=1\cdot \ln x+x\cdot\dfrac{1}{x}$ \\
+
+$=\ln x+1$ \\
+
+$f'(x)=e^{x\ln x}(\ln x+1)$ \\
+
+$=x^x(\ln x+1)$ \\
+
+$f'(x)=0$ \\
+
+$x^x(\ln x+1)=0$ \\
+
+$\ln x+1=0$ \\
+
+$\ln x=-1$ \\
+
+$x=e^{-1}$ \\
+
+\medskip
+
+\begin{center}
+\begin{tabular}{c|ccc}
+$x$ & $0$ & $e^{-1}$ & $+\infty$ \\
+\hline
+$\ln x+1$ & $-$ & $0$ & $+$ \\
+$f'(x)$ & $-$ & $0$ & $+$ \\
+$f(x)$ & $\searrow$ & & $\nearrow$
+\end{tabular}
+\end{center}
+
+$f(e^{-1})=(e^{-1})^{e^{-1}}=e^{-1/e}$ \\
+
+\fbox{minimum $(e^{-1},e^{-1/e})$}
+
+\end{document}

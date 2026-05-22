@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5F nr. 1.1\\
+
+\medskip
+
+\normalsize
+
+
+
+Bepaal van de volgende functie gegeven in poolcoordinaten de oppervlakte begrensd door de grafiek. \\
+
+$ r = - \cos \theta $ \\
+
+r is positief op interval $ \left[ \dfrac{\pi}{2}, \dfrac{3\pi}{2} \right] $ \\
+
+$ S = \dfrac{1}{2} \dint_{\tfrac{\pi}{2}}^{\tfrac{3\pi}{2}} \cos^2 \theta d\theta  $ \\
+
+$= \dfrac{1}{2} \dint_{\tfrac{\pi}{2}}^{\tfrac{3\pi}{2}} \left( \dfrac{1 + \cos 2\theta}{2} \right) d\theta  $ \\
+
+$= \dfrac{1}{4} \dint_{\tfrac{\pi}{2}}^{\tfrac{3\pi}{2}} \left( 1 + \cos 2\theta \right) d\theta  $ \\
+
+$= \dfrac{1}{4} \dint_{\tfrac{\pi}{2}}^{\tfrac{3\pi}{2}} d\theta + \dfrac{1}{4} \dint_{\tfrac{\pi}{2}}^{\tfrac{3\pi}{2}} \cos 2\theta d\theta  $ \\
+
+$ u = 2 \theta \Rightarrow du = 2 d\theta \Rightarrow d\theta = \dfrac{du}{2} $ \\
+
+$= \dfrac{1}{4} \dint_{\tfrac{\pi}{2}}^{\tfrac{3\pi}{2}} d\theta + \dfrac{1}{8} \dint_{\pi}^{3\pi} \cos u du  $ \\
+
+$= \dfrac{1}{4} \left[ \theta \right]_{\tfrac{\pi}{2}}^{\tfrac{3\pi}{2}} + \dfrac{1}{8} \left[ \sin u \right]_{\pi}^{3\pi} $ \\
+
+$= \dfrac{1}{4} \left[ \dfrac{3\pi}{2} - \dfrac{\pi}{2} \right] + \dfrac{1}{8} \left[ 0 - 0 \right] $ \\
+
+$= \dfrac{\pi}{4} $ \\
+
+
+
+\begin{figure}[h]
+\centering
+    \includegraphics[width=\linewidth]{5F-1.1-mark.gijsbrechts.INF.png}\\
+\end{figure}
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

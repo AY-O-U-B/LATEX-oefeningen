@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 25.12\\
+
+\medskip
+
+\normalsize
+
+
+
+
+
+$\dint \dfrac{x+1}{x-1} dx $ \\
+
+$= \dint \dfrac{x-1+2}{x-1} dx $ \\
+
+$= \dint \dfrac{x-1}{x-1} dx + \dint \dfrac{2}{x-1} dx $ \\
+
+$= \dint dx + 2\dint \dfrac{dx}{x-1} $ \\
+
+Stel $ t = x - 1 \Rightarrow dt = dx $ \\
+
+$= \dint dx + 2\dint \dfrac{dt}{t} $ \\
+
+$= x + 2 \ln|t| + c $ \\
+
+$= x + 2 \ln|x-1| + c $ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

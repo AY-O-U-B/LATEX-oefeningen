@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 2.5\\
+
+\medskip
+
+\normalsize
+
+$f(x,y)= (x^2+y^2)e^{-(x^2+y^2)}$\\
+	
+Eerste orde:\\
+	
+$\dfrac{\partial f}{\partial x} = 2xe^{-(x^2+y^2)(1-x^2-y^2)}$\\
+	
+$\dfrac{\partial f}{\partial y} = 2ye^{-(x^2+y^2)(1-x^2-y^2)}$\\
+
+Kritiek punt: $(0,0)$ en alle punten in $x^2+y^2 = 1$\\
+
+$f(x,y)= (x^2+y^2)e^{-(x^2+y^2)} \Rightarrow$ beide termen zijn altijd positief dus in $f(0,0)$ bereikt het een minimum.\\
+
+Stel $x^2 + y^2 = m$\\
+
+$f(m) = me^{-m}$\\
+
+$f'(m) = e^{-m}(1-m)$\\
+
+Nulpunt: $m = 1$\\
+
+\begin{tabular}{c|ccc}
+$m$     & & $1$ &\\ \hline
+$f'(m)$ &$\nearrow$& $0$ &$\searrow$ \\
+\end{tabular}\\
+
+Alle punten in $x^2+y^2 = 1$ bereiken een maximum.\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

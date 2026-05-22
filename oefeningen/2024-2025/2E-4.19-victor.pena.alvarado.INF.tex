@@ -1,0 +1,30 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+	
+	\noindent \large Auteur: Victor Pena \\
+	\noindent \large Studierichting: Informatica\\
+	\noindent \large Oefeningenreeks 2E nr. 4.19\\
+	
+	\medskip
+	
+	\normalsize 
+	
+	$\lim\limits_{x\to\infty}$$\left(\dfrac{ax^2+bx+c}{ax^2+dx+f}\right)^x = \lim\limits_{x\to\infty}\left(\dfrac{x^2}{x^2}\right)^x=\left(\dfrac{\infty}{\infty}\right)^\infty = 1^\infty$ \\
+	
+	$\Rightarrow \lim\limits_{x\to\infty}$$\left(\dfrac{ax^2+bx+c}{ax^2+dx+f}\right)^x = \lim\limits_{x\to\infty}$$\left(\dfrac{ax^2+dx+f}{ax^2+dx+f} + \dfrac{bx+c-dx-f}{ax^2+dx+f} \right)^x$ \\  
+	
+	$ = \lim\limits_{x\to\infty}\left(1 + \dfrac{(b-d)x + (c-f)}{ax^2+dx+f} \right)^x = e^{\lim\limits_{x\to\infty}x\tfrac{(b-d)x + (c-f)}{ax^2+dx+f}}
+	= e^{\lim\limits_{x\to\infty}\tfrac{(b-d)x^2 + (c-f)x}{ax^2+dx+f}}$ \\
+	
+	$= e^{\lim\limits_{x\to\infty}\tfrac{(b-d)x^2}{ax^2}} = e^{\tfrac{b-d}{a}}$
+	
+	
+	\begin{thebibliography}{999}
+		%\bibitem{a} Referentie
+	\end{thebibliography}
+\end{document} 

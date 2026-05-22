@@ -1,0 +1,67 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6D nr. 31.16\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\sum_{n=0}^{\infty} e^{-\tfrac{\sqrt{n}}{2}}$\\
+
+De algemene term is $x_n = e^{-\tfrac{\sqrt{n}}{2}} > 0$ en de rij $(x_n)_n$ is dalend naar $0$.\\
+
+We passen het integraalcriterium (Criterium 9) toe:\\
+
+Zij $f:[0,+\infty[\to[0,+\infty[$ met $f$ dalend naar $0$. Dan zijn de volgende\\
+
+beweringen equivalent:\\
+
+(i) De reeks $\displaystyle\sum_{n=n_0}^{\infty} f(n)$ is convergent.\\
+
+(ii) De oneigenlijke integraal $\displaystyle\int_{n_0}^{+\infty} f(x)dx$ bestaat.\\
+
+$f(x) = e^{-\tfrac{\sqrt{x}}{2}}$\\
+
+$\displaystyle\int_0^{+\infty} e^{-\tfrac{\sqrt{x}}{2}}dx$\\
+
+Substitutie:\\
+
+Stel $t = \sqrt{x}$, dus $x = t^2$ en $dx = 2tdt$.\\
+
+$\displaystyle\int_0^{+\infty} e^{-\tfrac{\sqrt{x}}{2}}dx
+  = \displaystyle\int_0^{+\infty} e^{-\tfrac{t}{2}} \cdot 2tdt
+  = 2\displaystyle\int_0^{+\infty} te^{-\tfrac{t}{2}}dt$\\
+
+Partiele integratie:\\ 
+
+$\left\{ \begin{array}{l} 
+    u = t \\ 
+    dv = e^{-\tfrac{t}{2}}  dt 
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l} 
+    du = dt \\ 
+    v = -2e^{-\tfrac{t}{2}} 
+\end{array} \right.$\\
+
+$\displaystyle\int_0^{+\infty} te^{-\tfrac{t}{2}}dt
+  = \left[-2te^{-\tfrac{t}{2}}\right]_0^{+\infty}
+    + 2\displaystyle\int_0^{+\infty} e^{-\tfrac{t}{2}}d = 0 + 2\left(0-(-2)\right) = 0 + 4 = 4$\\
+    
+$\displaystyle\int_0^{+\infty} e^{-\tfrac{\sqrt{x}}{2}}dx = 2 \cdot 4 = 8$\\
+
+De integraal bestaat en is eindig. Volgens de integraalcriterium is de reeks
+$\displaystyle\sum_{n=0}^{\infty} e^{-\tfrac{\sqrt{n}}{2}}$ dus convergent.
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

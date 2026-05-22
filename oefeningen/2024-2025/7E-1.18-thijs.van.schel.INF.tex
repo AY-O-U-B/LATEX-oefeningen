@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\dlim}{\lim\limits}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 1.18\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = x^4 + y^4 - 4xy$ \\
+
+$
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial f}{\partial x} = 4x^3 - 4y = 0 \\ 
+\dfrac{\partial f}{\partial y} = 4y^3 - 4x = 0 
+\end{array} 
+\right.
+\Rightarrow
+\left\{ 
+\begin{array}{l} 
+y = x^3 \\ 
+(x^3)^3 - x = 0 
+\end{array} 
+\right.
+\Rightarrow
+\left\{ 
+\begin{array}{l} 
+y = x^3 \\ 
+x(x^8 - 1) = 0 
+\end{array} 
+\right.
+\Rightarrow
+\left\{ 
+\begin{array}{l} 
+x \in \{-1, 0, 1\} \\ 
+y \in \{-1, 0, 1\}
+\end{array} 
+\right.
+$ \\
+
+$\Rightarrow (x,y) \in \{(-1, -1), (0, 0), (1, 1)\}$ \\
+
+$
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial^2 f}{\partial x^2} = 12x^2 \\ 
+\dfrac{\partial^2 f}{\partial x \partial y} = \dfrac{\partial^2 f}{\partial y \partial x} = -4 \\
+\dfrac{\partial^2 f}{\partial y^2} = 12y^2
+\end{array} 
+\right.
+\Rightarrow H(x,y) = 144x^2y^2 - 16
+$ \\
+
+\begin{itemize}
+    \item $H(-1, -1) = 128 > 0 \text{ en } \dfrac{\partial^2 f}{\partial x^2}(-1, -1) = 12 > 0 \Rightarrow (-1, -1)$ minimum
+    \item $H(0, 0) = -16 < 0 \Rightarrow (0, 0)$ zadelpunt
+    \item $H(1, 1) = 128 > 0 \text{ en } \dfrac{\partial^2 f}{\partial x^2}(1, 1) = 12 > 0 \Rightarrow (1, 1)$ minimum
+\end{itemize}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

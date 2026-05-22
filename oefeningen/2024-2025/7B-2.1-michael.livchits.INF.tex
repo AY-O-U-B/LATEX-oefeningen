@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 2.1\\
+
+\medskip
+
+\normalsize
+
+$w = \ln(x^2+y^2+z^2)$ met $x = s-t$, $y = s+t$ en $z = 2\sqrt{st}$\\
+
+$\dfrac{\partial w}{\partial x} = \dfrac{2x}{x^2+y^2+z^2}$\\
+
+$\dfrac{\partial w}{\partial y} = \dfrac{2y}{x^2+y^2+z^2}$\\
+
+$\dfrac{\partial w}{\partial z} = \dfrac{2z}{x^2+y^2+z^2}$\\
+
+Eerst voor s:\\
+
+$\dfrac{\partial x}{\partial s} = 1$\\
+
+$\dfrac{\partial y}{\partial s} = 1$\\
+
+$\dfrac{\partial z}{\partial s} = \dfrac{t}{\sqrt{st}}$\\
+
+$Dw(x,y,z)=\left(\begin{array}{ccc}
+\dfrac{2x}{x^2+y^2+z^2} & \dfrac{2y}{x^2+y^2+z^2} &\dfrac{2z}{x^2+y^2+z^2}
+\end{array}\right)$\\
+
+$D(x,y,z)(s)=\left(\begin{array}{c}
+1 \\
+1 \\
+\dfrac{t}{\sqrt{st}}
+\end{array}\right)$\\
+
+$Dw(x,y,z)\cdot D(x,y,z)(s) = \dfrac{2x+2y+\dfrac{2zt}{\sqrt{st}}}{x^2+y^2+z^2}$\\
+
+$= \dfrac{2(s-t)+2(s+t)+4t}{(s-t)^2+(s+t)^2+4st} = \dfrac{2}{(s+t)}$\\
+
+$\dfrac{\partial w}{\partial s}= \dfrac{2}{(s+t)}$\\
+
+Nu voor $t$:\\
+
+$\dfrac{\partial x}{\partial t} = -1$\\
+
+$\dfrac{\partial y}{\partial t} = 1$\\
+
+$\dfrac{\partial z}{\partial t} = \dfrac{s}{\sqrt{st}}$\\
+
+$D(x,y,z)(t)=\left(\begin{array}{c}
+-1 \\
+1 \\
+\dfrac{s}{\sqrt{st}}
+\end{array}\right)$\\
+
+$Dw(x,y,z)\cdot D(x,y,z)(t) = \dfrac{-2x+2y+\dfrac{2zs}{\sqrt{st}}}{x^2+y^2+z^2}$\\
+
+$= \dfrac{-2(s-t)+2(s+t)+4s}{2(s+t)^2} = \dfrac{2}{s+t}$\\
+
+$\dfrac{\partial w}{\partial t} = \dfrac{2}{s+t}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Mohamed Shafik \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks: 4A nr 18.11\\
+
+\medskip
+
+\normalsize
+
+Bereken $\displaystyle\int \dfrac{x}{\sin^2 x} dx$ door parti\"ele integratie\\
+
+Stel\\
+
+$\left\{\begin{array}{l} u = x \\ dv = \dfrac{dx}{\sin^2 x} \end{array}\right. \Rightarrow \left\{\begin{array}{l} du = dx \\ v = -\cot x \end{array}\right.$\\
+
+dan wordt\\
+
+\begin{eqnarray*}
+I &=& -x \cot x - \displaystyle\int (-\cot x) dx\\
+&=& -x \cot x + \displaystyle\int \cot x dx\\
+&=& -x \cot x + \displaystyle\int \dfrac{\cos x}{\sin x} dx\\
+&=& -x \cot x + \ln|\sin x| + c\\
+\end{eqnarray*}
+
+\begin{thebibliography}{9}
+\end{thebibliography}
+\end{document}

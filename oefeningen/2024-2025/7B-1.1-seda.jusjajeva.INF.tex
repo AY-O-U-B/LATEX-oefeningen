@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+\newcommand{\integral}{\displaystyle\int}
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 1.1\\
+
+\medskip
+
+\normalsize
+
+$w = e^{-x^2 - y^2}$ met $x = t$ en $y = \sqrt{t}$ \\
+
+$\dfrac{dw}{dt} = \dfrac{\partial w}{\partial x} \dfrac{dx}{dt} + \dfrac{\partial w}{\partial y} \dfrac{dy}{dt}$ \\
+
+$\dfrac{\partial w}{\partial x} = -2xe^{-x^2 - y^2}$ \\
+
+$\dfrac{\partial w}{\partial y} = -2ye^{-x^2 - y^2}$ \\
+
+$\dfrac{dx}{dt} = 1$ \\
+
+$\dfrac{dy}{dt} = \dfrac{1}{2\sqrt{t}}$ \\
+
+$\dfrac{\partial w}{\partial t} = \left(-2xe^{-x^2 - y^2}\right) \cdot 1 + \left(-2y e^{-x^2 - y^2}\right) \cdot \dfrac{1}{2\sqrt{t}}$ \\
+
+$= -2x e^{-x^2 - y^2} - t^{-\tfrac{1}{2}}ye^{-x^2 - y^2}$ \\
+
+$= -2t e^{-t^2-t} - t^{-\tfrac{1}{2}}t^{\tfrac{1}{2}}e^{-t^2-t}$ \\
+
+$= -2t e^{-t^2-t} - e^{-t^2-t}$ \\
+
+$ = (-2t - 1)e^{-t^2-t}$ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

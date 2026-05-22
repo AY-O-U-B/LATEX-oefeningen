@@ -1,0 +1,29 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 25.16\\
+
+\medskip
+
+\normalsize
+$ \displaystyle\int \dfrac{x^3 + 1}{x - 1}dx  = \displaystyle\int \dfrac{x^3 - 1 + 2}{x - 1}dx = \displaystyle\int \dfrac{(x-1)(x^2 + x + 1)}{x-1}dx +  \displaystyle\int \dfrac{2}{x-1}dx$\\
+
+$=\displaystyle\int (x^2 + x + 1)dx +  \displaystyle\int \dfrac{2}{x-1}dx =  \displaystyle\int x^2dx +  \displaystyle\int  xdx +  \displaystyle\int 1dx + \displaystyle\int \dfrac{2}{x-1}dx$\\
+
+$u = x - 1 \Rightarrow du = dx$\\
+
+$\displaystyle\int \dfrac{2}{x-1}dx  = \displaystyle\int \dfrac{2}{u}du = 2 \ln|u| +c = 2 \ln|x - 1| +c $\\
+
+$ \displaystyle\int \dfrac{x^3 + 1}{x - 1}dx = \dfrac{x^3}{3} + \dfrac{x^2}{2} + x + 2 \ln|x - 1| + c $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

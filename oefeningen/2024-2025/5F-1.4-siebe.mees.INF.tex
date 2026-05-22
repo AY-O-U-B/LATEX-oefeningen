@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5F nr. 1.4\\
+
+\medskip
+
+\normalsize
+
+$r = 9\sin 2\theta$\\
+
+$r' = 18\cos 2\theta$\\
+
+\begin{tabular}{c|ccccc}
+
+$\theta$ & $0$ & $\dfrac{\pi}{4}$ & $\dfrac{\pi}{2}$ & $\dfrac{3\pi}{4}$ & $\pi$ \\ \hline
+
+$r$ & $0$ & $9$ & $0$ & $-9$ & $0$ \\
+
+$r'$ & $+$ & $0$ & $-$ & $0$ & $+$ \\ \hline
+
+$r$ & $\nearrow$ & & $\searrow$ & & $\nearrow$ \\
+
+\end{tabular}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=5cm]{5F-1.4-siebe.mees.INF.png}
+\end{figure}
+
+$S_1 = \dfrac{1}{2} \displaystyle\int_{0}^{\tfrac{\pi}{2}} (9\sin 2\theta)^2 d\theta$\\
+
+$= \dfrac{1}{2} \displaystyle\int_{0}^{\tfrac{\pi}{2}} 81\sin^2 2\theta d\theta$\\
+
+$= \dfrac{81}{2} \displaystyle\int_{0}^{\tfrac{\pi}{2}} \sin^2 2\theta d\theta$\\
+
+$= \dfrac{81}{2} \displaystyle\int_{0}^{\tfrac{\pi}{2}} \dfrac{1 - \cos 4\theta}{2} d\theta$\\
+
+$= \dfrac{81}{4} \displaystyle\int_{0}^{\tfrac{\pi}{2}} (1 - \cos 4\theta) d\theta$\\
+
+$= \dfrac{81}{4} \left[ \theta - \dfrac{1}{4}\sin 4\theta \right]_{0}^{\tfrac{\pi}{2}}$\\
+
+$= \dfrac{81}{4} \left( \dfrac{\pi}{2} - 0 \right)$\\
+
+$= \dfrac{81\pi}{8}$\\
+
+$S = 4 \cdot S_1$\\
+
+$= 4 \cdot \dfrac{81\pi}{8}$\\
+
+$= \dfrac{81\pi}{2}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

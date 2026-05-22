@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 1.1\\
+
+\medskip
+
+\normalsize
+
+
+$T_4(f,0)(x)$ voor $f(x) = \dfrac{1}{1 + x}$ \\
+
+$T_n(f,a)(x) = \displaystyle\sum_{k = 0}^{n} \dfrac{f^{(k)}(a)}{k!}(x - a)^k$ \\
+
+$T_4(f,0)(x) = \displaystyle\sum_{k = 0}^{4} \dfrac{\left(\dfrac{1}{1 + x}\right)^{(k)}(0)}{k!}(x - 0)^k$ \\
+
+$\left(\dfrac{1}{1 + x}\right)' = (1 + x)^{-2}$ \\
+
+$\left(\dfrac{1}{1 + x}\right)'' = -2(1 + x)^{-3}$ \\
+
+$\left(\dfrac{1}{1 + x}\right)''' = 6(1 + x)^{-4}$ \\
+
+$\left(\dfrac{1}{1 + x}\right)^{iv} = -24(1 + x)^{-5}$ \\
+
+$\Rightarrow T_4(f,0)(x) = \dfrac{\left(\dfrac{1}{1 + x}\right)(0)}{0!}x^0 +  \dfrac{\left((1 + x)^{-2}\right)(0)}{1!}x^1 + \dfrac{\left(-2(1 + x)^{-3}\right)(0)}{2!}x^2 + \dfrac{\left(6(1 + x)^{-4}\right)(0)}{3!}x^3 + \dfrac{\left(-24(1 + x)^{-5}\right)(0)}{4!}x^4 $ \\
+
+$= \dfrac{1}{1}x^0 +  \dfrac{1^{-2}}{1}x^1 + \dfrac{-2}{2}x^2 + \dfrac{6}{6}x^3 + \dfrac{-24}{24}x^4 $ \\
+
+$= 1 + x - x^2 + x^3 - x^4 $ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

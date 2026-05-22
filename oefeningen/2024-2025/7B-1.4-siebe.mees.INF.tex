@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 1.4\\
+
+\medskip
+
+\normalsize
+
+$w=\ln(u+v+z)$\\
+
+$u=\cos^2t, v=\sin^2t, z=t^2$\\
+
+$\dfrac{dw}{dt} =\dfrac{\partial w}{\partial u}\dfrac{du}{dt} +\dfrac{\partial w}{\partial v}\dfrac{dv}{dt} +\dfrac{\partial w}{\partial z}\dfrac{dz}{dt}$\\
+
+$\dfrac{\partial w}{\partial u} =\dfrac{1}{u+v+z}$\\
+
+$\dfrac{\partial w}{\partial v} =\dfrac{1}{u+v+z}$\\
+
+$\dfrac{\partial w}{\partial z} =\dfrac{1}{u+v+z}$\\
+
+$\dfrac{du}{dt} =-2\cos t\sin t$\\
+
+$\dfrac{dv}{dt} =2\sin t\cos t$\\
+
+$\dfrac{dz}{dt} =2t$\\
+
+$\dfrac{dw}{dt}=\dfrac{1}{u+v+z}(-2\cos t\sin t)+\dfrac{1}{u+v+z}(2\sin t\cos t)+\dfrac{1}{u+v+z}(2t)$\\
+
+$\dfrac{dw}{dt}=\dfrac{2t}{u+v+z}$\\
+
+$\dfrac{dw}{dt}=\dfrac{2t}{\cos^2t+\sin^2t+t^2}$\\
+
+$\dfrac{dw}{dt}=\dfrac{2t}{1+t^2}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

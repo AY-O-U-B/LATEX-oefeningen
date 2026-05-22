@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Noran Ben Said\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3C nr. 18.17 \\
+
+\medskip
+\normalsize
+
+$\lim\limits_{x \to 0} \left(\dfrac{1}{\ln(1+x)} - \dfrac{1}{x}\right) = \dfrac{1}{0} - \dfrac{1}{0} =\infty - \infty$\\
+
+$\lim\limits_{x \to 0} \dfrac{x - \ln(1+x)}{x\ln(1+x)}$\\
+
+$\overset{H}{=} \lim\limits_{x \to 0} \dfrac{(x - \ln(1+x))'}{(x\ln(1+x))'}$\\
+
+$= \lim\limits_{x \to 0} \dfrac{1 - \dfrac{1}{1+x}}
+{\ln(1+x) + \dfrac{x}{1+x}}$\\
+
+$= \lim\limits_{x \to 0} \dfrac{x}{(1+x)\ln(1+x) + x} = \dfrac{0}{0}$\\
+
+Terug L'Hopital:\\
+
+$\overset{H}{=} \lim\limits_{x \to 0} \dfrac{x'}{\left((1+x)\ln(1+x) + x\right)'}$\\
+
+$= \lim\limits_{x \to 0} \dfrac{1}{\ln(1+x) + (1+x)\dfrac{1}{1+x} + 1}$\\
+
+$ = \lim\limits_{x \to 0}\dfrac{1}{\ln(1+x) + 2}
+= \dfrac{1}{\ln(1) + 2} = \dfrac{1}{2}$\\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+

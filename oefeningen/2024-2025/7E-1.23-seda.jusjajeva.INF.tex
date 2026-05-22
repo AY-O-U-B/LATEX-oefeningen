@@ -1,0 +1,77 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+\newcommand{\integral}{\displaystyle\int}
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 1.23\\
+
+\medskip
+
+\normalsize
+
+$f(x, y) = 4xy - 2x^4 - y^2$ \\
+
+$\left\{\begin{array}{l}
+	\dfrac{\partial f}{\partial x}(x, y) = 4y - 8x^3 \\
+	\dfrac{\partial f}{\partial y}(x, y) = 4x - 2y
+\end{array}\right.$ \\
+
+$\left\{\begin{array}{l}
+    -8x^3 + 4y = 0 \\
+    4x - 2y = 0
+\end{array}\right.$ \\
+
+$\Leftrightarrow\left\{\begin{array}{l}
+    -8x^3 + 8x = 0 \\
+    y = 2x
+\end{array}\right.$ \\
+
+$\Leftrightarrow\left\{\begin{array}{l}
+    8x(-x^2 + 1) = 0 \\
+    y = 2x
+\end{array}\right.$ \\
+
+$\Leftrightarrow\left\{\begin{array}{l}
+    8x = 0 \vee -x^2 + 1 = 0 \\
+    y = 2x
+\end{array}\right.$ \\
+
+$\Leftrightarrow\left\{\begin{array}{l}
+    x = 0 \vee x = -1 \vee x = 1 \\
+    y = 0 \vee y = -2 \vee y = 2
+\end{array}\right.$ \\
+
+$\nabla f(x, y) = o$ als $ (x, y) = (-1, -2) \vee (x, y) = (0,0) \vee (x, y) = (1, 2)$ \\
+
+Er zijn dus 3 kritieke punten $(-1, -2)$, $(0, 0)$ en $(1, 2)$ \\
+
+$\Delta(x, y) = \left|\begin{array}{cc}
+    -24x^2 & 4  \\
+    4      & -2
+\end{array}\right| = 48x^2 - 16$ \\
+
+$\Delta(-1, -2) = \Delta(1, 2) = 48 - 16 = 32 > 0 \Rightarrow$ minima/maxima \\
+
+$\left(A = -24x^2\right)$ \\
+
+$A(-1, -2) = A(1, 2) = -24\cdot1 = -24 < 0 \Rightarrow$ maxima \\
+
+$\Delta(0, 0) = -16 < 0 \Rightarrow$ zadelpunt \\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

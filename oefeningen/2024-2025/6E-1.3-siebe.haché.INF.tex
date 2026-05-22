@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6E nr. 1.3\\
+
+\medskip
+\normalsize
+
+Bepaal de Taylorpolynoom $T_5(f,0)(x)$ voor $f(x) = e^{\sin x}$ door de afgeleiden te berekenen in $x=0$.\\
+
+$f(x) = e^{\sin x} \implies f(0) = e^0 = \mathbf{1}$\\
+
+$f'(x) = f(x) \cos x \implies f'(0) = 1 \cdot 1 = 1$\\
+
+$f''(x) = f'(x) \cos x - f(x) \sin x \implies f''(0) = 1 \cdot 1 - 1 \cdot 0 =1$\\
+
+$f'''(x) = f''(x) \cos x - 2f'(x) \sin x - f(x) \cos x \implies f'''(0) = 1 \cdot 1 - 0 - 1 \cdot 1 = 0$\\
+
+$f^{iv}(x) = f'''(x) \cos x - 3f''(x) \sin x - 3f'(x) \cos x + f(x) \sin x \implies f^{(4)}(0) = 0 - 0 - 3(1)(1) + 0 = -3$\\
+
+$f^{v}(x) = f^{iv}(x) \cos x - 4f'''(x) \sin x - 6f''(x) \cos x + 4f'(x) \sin x + f(x) \cos x$\\
+    
+$\implies f^{(5)}(0) = -3(1) - 0 - 6(1)(1) + 0 + 1(1) = -3 - 6 + 1 = -8$\\
+
+$T_5(x) = 1 + \dfrac{1}{1}x + \dfrac{1}{2}x^2 + \dfrac{0}{6}x^3 + \dfrac{-3}{24}x^4 + \dfrac{-8}{120}x^5$ \\
+
+$T_5(x) = 1 + x + \dfrac{1}{2}x^2 - \dfrac{1}{8}x^4 - \dfrac{1}{15}x^5$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

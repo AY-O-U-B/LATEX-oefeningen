@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 24.3\\
+
+\medskip
+
+\normalsize
+$\displaystyle\int \dfrac{x-1}{x^2} \ln xdx = \displaystyle\int \left( \dfrac{x}{x^2} - \dfrac{1}{x^2} \right) \ln xdx = \displaystyle\int \dfrac{\ln x}{x}dx - \displaystyle\int \dfrac{\ln x}{x^2}dx $\\
+
+Eerste integraal:\\
+
+$u = \ln x \Rightarrow du = \dfrac{1}{x}dx$:\\
+
+$ \displaystyle\int udu = \dfrac{u^2}{2} = \dfrac{\ln^2 x}{2}$\\
+
+Tweede integraal:\\
+
+$\displaystyle\int \ln x \cdot x^{-2}dx$\\
+
+$\left\{ \begin{array}{l} 
+    u = \ln x \\ 
+    dv = x^{-2} \, dx 
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l} 
+    du = \dfrac{1}{x} \, dx \\ 
+    v = -\dfrac{1}{x} 
+\end{array} \right.$\\
+
+$\displaystyle\int \dfrac{\ln x}{x^2}dx = \ln x \cdot \left( -\dfrac{1}{x} \right) - \displaystyle\int \left( -\dfrac{1}{x} \right) \cdot \dfrac{1}{x}dx = -\dfrac{\ln x}{x} + \displaystyle\int \dfrac{1}{x^2}dx = -\dfrac{\ln x}{x} - \dfrac{1}{x}$\\
+
+Dus:\\
+
+$\displaystyle\int \dfrac{x-1}{x^2} \ln xdx = \dfrac{\ln^2 x}{2} - \left( -\dfrac{\ln x}{x} - \dfrac{1}{x} \right) + c = \dfrac{\ln^2 x}{2} + \dfrac{\ln x}{x} + \dfrac{1}{x} + c$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

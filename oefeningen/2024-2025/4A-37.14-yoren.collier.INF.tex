@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\asa}{\Leftrightarrow} %als slechts als
+\newcommand{\adR}{\Rightarrow} %als dan Rechts
+\newcommand{\adL}{\Leftarrow}
+\newcommand{\Lh}{\left(} %Links haakje
+\newcommand{\Rh}{\right)}
+\newcommand{\Lv}{\left[} %Links vierkanthaakje
+\newcommand{\Rv}{\right]}
+\newcommand{\La}{\left\{} %Links acolade
+\newcommand{\Ra}{\right\}}
+\newcommand{\Ras}{\right.} %Rechts acolade stelsel (omdat om stelsels te maken heb je een punt nodig
+\newcommand{\pnR}{\rightarrow} %pijl naar Rechts
+\newcommand{\limiet}{\lim\limits_}
+\newcommand{\schrap}{\cancel}
+\newcommand{\schrapb}{\bcancel} %backslash
+\newcommand{\schrapk}{\xcancel} %kruis
+\newcommand{\vervang}{\cancelto}
+\newcommand{\intgrl}{\displaystyle\int} %integraal teken (bij het berekenen van primitieven)
+
+\begin{document}
+
+\noindent \large Auteur: Yoren Collier \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 37.14\\
+
+\medskip
+
+\normalsize
+
+$ I =  \intgrl \dfrac{4dx}{x^2 +x +1} dx = \intgrl \dfrac{4dx}{x^2 +x \dfrac{1}{4} + \dfrac{3}{4}} dx = \intgrl \dfrac{4dx}{\Lh x + \dfrac{1}{2} \Rh^2 + \dfrac{3}{4}} dx$\\
+
+Stel: $t = x + \dfrac{1}{2} \adR dt = dx$\\
+
+$= 4\intgrl \dfrac{1}{t^2 + \sqrt{\dfrac{3}{4}}} dt = 4 \cdot \dfrac{1}{\sqrt{\dfrac{3}{4}}} \operatorname{Bgtan} \Lh \dfrac{t}{\sqrt{\dfrac{3}{4}}} \Rh +c$\\
+
+$= \dfrac{8}{\sqrt{3}} \operatorname{Bgtan} \Lh \dfrac{x + \dfrac{1}{2}}{\dfrac{\sqrt{3}}{2}} \Rh +c = \dfrac{8\sqrt{3}}{3} \operatorname{Bgtan} \Lh \dfrac{\Lh 2x + 1 \Rh \sqrt{3}}{3} \Rh +c$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Michaël Francken \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 27.2\\
+
+\medskip
+
+\normalsize
+
+$\dint\dfrac{5xdx}{(x^2-3)^2}$\\
+
+
+$u = x^2-3$\\
+
+$du = 2xdx$\\
+
+$xdx=\dfrac{du}{2}$\\
+
+$\Rightarrow \dint\dfrac{5}{(u)^2}\dfrac{du}{2}$\\
+
+$=\dfrac{5}{2}\dint\dfrac{1}{(u)^2}du$\\
+
+$=\dfrac{5}{2}\dint(u)^{-2} du$\\
+
+$=\dfrac{5}{2}\cdot\dfrac{u^{-1}}{-1}+c$\\
+
+$=\dfrac{5}{2}\cdot\dfrac{1}{-u}+c$\\
+
+$=\dfrac{5}{-2u}+c$\\
+
+$=\dfrac{5}{-2(x^2-3)}+c$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6A nr. 9.1\\
+
+\medskip
+
+\normalsize
+
+RR:
+$\left \{
+\begin{array}{l}
+     x_{n-1} + x_n + x_{n+1} = 51 \space(1) \\
+     x_{n-1} \cdot x_n \cdot x_{n+1} = 4641 \space(2)
+\end{array}
+\right .$ \\
+
+$x_{n+1} = x_n + v \text{ en } x_{n-1} = x_n - v$ \\
+
+$(1): x_n \cancel{-v} + x_n + x_n \cancel{+v} = 51$ \\
+
+$\Rightarrow 3x_n = 51$ \\
+
+$\Rightarrow x_n = 17$ \\
+
+$(2): (x_n-v)x_n(x_n+v) = 4641$ \\
+
+$\Rightarrow x_n\left(x_n^2-v^2\right) = 4641$ \\
+
+$\Rightarrow 17\left(17^2 - v^2\right) = 4641$ \\
+
+$\Rightarrow \cancelto{+}{-}v^2 = \cancelto{+}{-}16$ \\
+
+$\Rightarrow v = \pm 4$ \\
+
+$\Rightarrow (x_n)_n = (13, 17, 21) \text{ of } (x_n)_n = (21, 17, 13)$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

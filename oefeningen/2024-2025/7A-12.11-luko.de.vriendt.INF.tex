@@ -1,0 +1,50 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 12.11\\
+
+\medskip
+
+\normalsize
+
+$f(x,y,z) = e^x + yz \hspace{1cm} \vec{a}(1,1,1) \hspace{1cm} \vec{h}(1,-1,1)$ \\
+
+$Df(x,y,z) =
+\left(
+\begin{array}{ccc}
+	e^x & z & y
+\end{array}
+\right)$ \\
+
+$Df(1,1,1)=
+\left(
+\begin{array}{ccc}
+	e & 1 & 1
+\end{array}
+\right)$ \\
+
+$\Rightarrow Df(\vec{a},\vec{h}) = Df(\vec{a})\vec{h} =
+\left(
+\begin{array}{ccc}
+	e & 1 & 1
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+	1 \\
+    -1 \\
+    1
+\end{array}
+\right) = e \cancel{- 1} \cancel{+ 1} = e$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

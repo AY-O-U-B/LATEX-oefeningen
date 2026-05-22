@@ -1,0 +1,78 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}    
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6E nr. 8.2 \\
+
+\medskip
+
+\normalsize
+
+Bereken met een Taylorreeks tot op $12$ decimalen: \\
+
+$ \cos\left(\dfrac{1}{3}\right) $ \\
+
+De Taylorreeks van $\cos x$ rond $0$ is: \\
+
+$ \cos x = \displaystyle\sum_{n=0}^{\infty}(-1)^n\dfrac{x^{2n}}{(2n)!} $ \\
+
+Dus: \\
+
+$ \cos x = 1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+\dfrac{x^8}{8!}-\dfrac{x^{10}}{10!}+\dfrac{x^{12}}{12!}-\cdots $ \\
+
+Voor $x=\dfrac{1}{3}$ krijgen we: \\
+
+$ \cos\left(\dfrac{1}{3}\right)
+= 1-\dfrac{\left(\dfrac{1}{3}\right)^2}{2!}
++\dfrac{\left(\dfrac{1}{3}\right)^4}{4!}
+-\dfrac{\left(\dfrac{1}{3}\right)^6}{6!}
++\dfrac{\left(\dfrac{1}{3}\right)^8}{8!}
+-\dfrac{\left(\dfrac{1}{3}\right)^{10}}{10!}
++\cdots $ \\
+
+We moeten weten tot hoeveel termen we moeten gaan. \\
+
+Omdat dit een alternerende reeks is, is de fout kleiner dan de eerstvolgende term die we niet meenemen. \\
+
+Na de term met macht $10$ is de eerstvolgende term: \\
+
+$ \dfrac{\left(\dfrac{1}{3}\right)^{12}}{12!} $ \\
+
+$ = \dfrac{1}{3^{12}\cdot 12!} $ \\
+
+$ = \dfrac{1}{531441\cdot 479001600} $ \\
+
+$ \approx 3.93\cdot 10^{-18} $ \\
+
+Omdat: \\
+
+$ 3.93\cdot 10^{-18} < 0.5\cdot 10^{-12} $ \\
+
+volstaat het om te rekenen tot en met de term met macht $10$. \\
+
+Dus: \\
+
+$ \cos\left(\dfrac{1}{3}\right)
+\approx 1-\dfrac{1}{18}
++\dfrac{1}{1944}
+-\dfrac{1}{524880}
++\dfrac{1}{264539520}
+-\dfrac{1}{214326028800} $ \\
+
+$ \approx 0.944956946315 $ \\
+
+Dus: \\
+
+$ \boxed{\cos\left(\dfrac{1}{3}\right) \approx 0.944956946315} $ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

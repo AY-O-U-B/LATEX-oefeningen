@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 42.15\\
+
+\bigskip
+
+\normalsize
+
+$\displaystyle \int \dfrac{x^3+x}{x^2-1}\,dx$\\
+
+$\displaystyle \dfrac{x^3+x}{x^2-1}=x+\dfrac{2x}{x^2-1}$\\
+
+$\displaystyle x^2-1=(x-1)(x+1)$\\
+
+$\displaystyle \dfrac{2x}{x^2-1}=\dfrac{2x}{(x-1)(x+1)}=\dfrac{A}{x-1}+\dfrac{B}{x+1}$\\
+
+$\displaystyle A=\left.\dfrac{2x}{x+1}\right|_{x=1}=\dfrac{2}{2}=1$\\
+
+$\displaystyle B=\left.\dfrac{2x}{x-1}\right|_{x=-1}=\dfrac{-2}{-2}=1$\\
+
+$\displaystyle \dfrac{x^3+x}{x^2-1}=x+\dfrac{1}{x-1}+\dfrac{1}{x+1}$\\
+
+$\displaystyle \int \dfrac{x^3+x}{x^2-1}\,dx=\int x\,dx+\int\dfrac{dx}{x-1}+\int\dfrac{dx}{x+1}$\\
+
+$\displaystyle =\dfrac{x^2}{2}+\ln|x-1|+\ln|x+1|+c$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

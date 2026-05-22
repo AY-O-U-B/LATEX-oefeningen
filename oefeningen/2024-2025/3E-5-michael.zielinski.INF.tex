@@ -1,56 +1,68 @@
 \documentclass[a4paper]{article}
-\usepackage{amsfonts,amsmath,amssymb,graphicx}
+\usepackage{amsfonts}    
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
 
 \begin{document}
-
+  
 \noindent \large Auteur: Michael Zielinski \\
-
 \noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3E nr. 5\\
 
-\noindent \large Oefeningenreeks 3E nr. 5 \\
+\medskip
 
 \normalsize
 
-\section*{Oplossing}
+Uit de driehoek volgt: \\
 
-Stel het punt onder de Multanova als oorsprong en laat $x$ de afstand van de wagen tot die oorsprong zijn,\\
-met $v=\dfrac{dx}{dt}$ de lineaire snelheid. \\
+$ \tan x = \dfrac{y}{20} $ \\
 
-Omdat $\tan\theta = \dfrac{x}{20}$ geldt\\
+$ y = 20\tan x $ \\
 
-$\theta = \operatorname{Bgtan}\left(\dfrac{x}{20}\right)$ \\
+We leiden af naar de tijd: \\
 
-Differentieer naar de tijd:\\
+$ y' = 20 \cdot \dfrac{1}{\cos^2 x} \cdot x' $ \\
 
-$\omega = \dfrac{d\theta}{dt}
-= \dfrac{d}{dx}\operatorname{Bgtan}\left(\dfrac{x}{20}\right)\dfrac{dx}{dt}
-= \dfrac{20}{x^{2}+400}v$ \\
+Omdat $x' = 1.28$, krijgen we: \\
 
-Hieruit volgt\\
+$ y' = 20 \cdot \dfrac{1}{\cos^2 x} \cdot 1.28 $ \\
 
-$v = \dfrac{x^{2}+400}{20}\omega$ \\
+Op het gevraagde moment geldt: \\
 
-Invullen van $x=15\ \mathrm{m}$ en $\omega=1,28\ \mathrm{s^{-1}}$ geeft\\
+$ \tan x = \dfrac{15}{20} = \dfrac{3}{4} $ \\
 
-$$
-v = \dfrac{15^{2}+400}{20}\cdot 1,28
-= \dfrac{225+400}{20}\cdot 1,28
-= 31,25\cdot 1,28
-= 40\ \mathrm{m/s}
-$$
+$ x = \Bgtan\dfrac{3}{4} $ \\
 
-Omzetten naar km/u:\\
+Dus: \\
 
-$$
-v = 40\cdot 3,6 = 144\ \mathrm{km/u}
-$$
+$ y' = 20 \cdot \dfrac{1}{\cos^2\left(\Bgtan\dfrac{3}{4}\right)} \cdot 1.28 $ \\
 
-Dit is $144 - 120 = 24\ \mathrm{km/u}$ boven de toegelaten snelheid\\
+Aangezien: \\
 
-en dus een zware overtreding. \\
+$ \dfrac{1}{\cos^2 x} = 1+\tan^2 x $ \\
 
-\begin{thebibliography}{9}
-% \bibitem{ref} Referentie
+krijgen we: \\
+
+$ y' = 20 \cdot \left(1+\left(\dfrac{3}{4}\right)^2\right) \cdot 1.28 $ \\
+
+$ = 20 \cdot \left(1+\dfrac{9}{16}\right) \cdot 1.28 $ \\
+
+$ = 20 \cdot \dfrac{25}{16} \cdot 1.28 $ \\
+
+$ = 40 \text{ m/s} $ \\
+
+Omzetten naar km/h: \\
+
+$ 40 \cdot 3.6 = 144 \text{ km/h} $ \\
+
+$ 144 > 120+10 $ \\
+
+Dus dit is een zware overtreding. \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
 \end{thebibliography}
-
-\end{document} 
+\end{document}

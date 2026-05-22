@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Hina Rana \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3B nr. 6.4\\
+
+\medskip
+
+\normalsize
+
+$x \to x^n \sin\left(\dfrac{1}{x}\right)$ als $x \neq 0$ en $0$ als $x = 0$\\
+
+
+$f_3'(x) = 3x^2 \sin\left(\dfrac{1}{x}\right)+ x^3 \cos\left(\dfrac{1}{x}\right) \cdot \left(\dfrac{-1}{x^2}\right) = 3x^2 \sin \left(\dfrac{1}{x}\right) - x \cos \left(\dfrac{1}{x}\right)$\\
+
+
+$f_3'(0) = \lim\limits_{h \to 0} \dfrac{h^3 \sin\left(\dfrac{1}{h}\right) - 0}{h} = \lim\limits_{h \to 0} h^2 \sin\left(\dfrac{1}{h}\right) = 0$\\
+
+
+$\lim\limits_{x \to 0} 3x^2 \sin\left(\dfrac{1}{x}\right) - x \cos\left(\dfrac{1}{x}\right) = 0 - 0 = 0$\\
+
+
+$f_3'$ is continu $\to$ $f_3$ is continu differentieerbaar in $0$.\\
+
+
+$f_3'(0) = \lim\limits_{h \to 0} \dfrac{f_3'(h) - f_3'(0)}{h} = \lim\limits_{h \to 0} \dfrac{3h^2 \sin\left(\dfrac{1}{h}\right)-h \cos\left(\dfrac{1}{h}\right)-0}{h}$\\
+
+
+$\lim\limits_{h \to 0} 3h \sin\left(\dfrac{1}{h}\right) - \cos\left(\dfrac{1}{h}\right)$ bestaat niet want $\cos \left(\dfrac{1}{h}\right)$ blijft oscilleren,dus $f_3'$ is niet differentieerbaar in $0$.
+
+\end{document}
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

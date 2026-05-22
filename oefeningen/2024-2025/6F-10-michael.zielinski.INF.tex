@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6F nr. 10\\
+
+\medskip
+
+\normalsize
+
+$ f_n:\mathbb{R}\rightarrow\mathbb{R}:x\mapsto e^{\tfrac{x}{n}} $ \\
+
+We bepalen eerst de puntsgewijze limiet. \\
+
+Voor een vaste $x\in\mathbb{R}$ geldt: \\
+
+$ \lim\limits_{n\rightarrow\infty} f_n(x)
+= \lim\limits_{n\rightarrow\infty} e^{\tfrac{x}{n}} $ \\
+
+Omdat: \\
+
+$ \lim\limits_{n\rightarrow\infty}\dfrac{x}{n}=0 $ \\
+
+volgt: \\
+
+$ \lim\limits_{n\rightarrow\infty} e^{\tfrac{x}{n}}=e^0=1 $ \\
+
+Dus: \\
+
+$ f:\mathbb{R}\rightarrow\mathbb{R}:x\mapsto 1 $ \\
+
+$ f_n \stackrel{p}{\rightarrow} f $ \\
+
+Nu onderzoeken we uniforme convergentie. \\
+
+$ \left|\left|f_n-f\right|\right|_{\infty}
+= \sup\limits_{x\in\mathbb{R}}\left|e^{\tfrac{x}{n}}-1\right| $ \\
+
+Voor $x\rightarrow+\infty$ geldt: \\
+
+$ e^{\tfrac{x}{n}}\rightarrow+\infty $ \\
+
+Dus: \\
+
+$ \left|e^{\tfrac{x}{n}}-1\right|\rightarrow+\infty $ \\
+
+Hieruit volgt: \\
+
+$ \sup\limits_{x\in\mathbb{R}}\left|e^{\tfrac{x}{n}}-1\right|=+\infty $ \\
+
+Dus: \\
+
+$ \left|\left|f_n-f\right|\right|_{\infty}=+\infty $ \\
+
+Daarom geldt: \\
+
+$ \lim\limits_{n\rightarrow\infty}\left|\left|f_n-f\right|\right|_{\infty}\neq 0 $ \\
+
+Dus $f_n$ convergeert niet uniform naar $f$. \\
+
+Conclusie: \\
+
+$ f_n \stackrel{p}{\rightarrow} f $ \\
+
+maar \\
+
+$ f_n \stackrel{u}{\not\rightarrow} f $ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

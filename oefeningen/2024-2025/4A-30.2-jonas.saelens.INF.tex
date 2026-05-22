@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Jonas Saelens \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 30.2\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int x^3 \sqrt{x^2+1} dx$ \\
+
+$$ t=x^2+1$$ $$dt=2xdx$$ $$\dfrac{dt}{2x} = dx$$ \\
+
+$= \displaystyle \int \dfrac{x^3 \sqrt{t} dt}{2x}$ \\
+
+$= \displaystyle \int \dfrac{x^2 \sqrt{t} dt}{2}$ \\
+
+$= \displaystyle \int \dfrac{\left( t-1 \right) \sqrt{t} dt}{2}$ \\
+
+$= \displaystyle \int \dfrac{\left( t-1 \right) t^{\tfrac{1}{2}} dt}{2}$ \\
+
+$= \dfrac{1}{2} \displaystyle \int \left( t^{\tfrac{3}{2}} - t^{\tfrac{1}{2}} \right)  dt$ \\
+
+$= \left( \dfrac{t^{\tfrac{5}{2}}}{\tfrac{5}{2}} - \dfrac{t^{\tfrac{3}{2}}}{\tfrac{3}{2}} \right) \dfrac{1}{2} + c$ \\
+
+$= \left( \dfrac{2t^{\tfrac{5}{2}}}{5} - \dfrac{2t^{\tfrac{3}{2}}}{3} \right) \dfrac{1}{2} + c$ \\
+
+$= \dfrac{t^{\tfrac{5}{2}}}{5} - \dfrac{t^{\tfrac{3}{2}}}{3} + c$ \\
+
+$= \dfrac{\sqrt{t^5}}{5} - \dfrac{\sqrt{t^3}}{3} + c$ \\
+
+$= \dfrac{\sqrt{\left( x^2+1 \right)^5}}{5} - \dfrac{\sqrt{\left( x^2+1 \right)^3}}{3} + c$ \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

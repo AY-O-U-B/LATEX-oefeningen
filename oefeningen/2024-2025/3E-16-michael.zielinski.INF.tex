@@ -1,0 +1,91 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}    
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefening 3E nr. 16\\
+
+\medskip
+
+\normalsize
+
+Gegeven: \\
+
+$ v(t) = 340(1-e^{-200t}) \text{ km/u} $ \\
+
+De versnelling is de afgeleide van de snelheid: \\
+
+$ a(t) = v'(t) $ \\
+
+$ a(t) = 340 \cdot 200 e^{-200t} $ \\
+
+$ a(t) = 68000e^{-200t} \text{ km/u}^2 $ \\
+
+De maximale versnelling is bij $t=0$: \\
+
+$ a(0) = 68000e^0 $ \\
+
+$ a(0) = 68000 \text{ km/u}^2 $ \\
+
+Omzetten naar $\text{m/s}^2$: \\
+
+$ 1 \text{ km/u}^2 = \dfrac{1000}{3600^2} \text{ m/s}^2 $ \\
+
+$ a(0) = 68000 \cdot \dfrac{1000}{3600^2} $ \\
+
+$ a(0) = \dfrac{68000000}{12960000} $ \\
+
+$ a(0) \approx 5.25 \text{ m/s}^2 $ \\
+
+De comfortnorm is: \\
+
+$ 0.7g = 0.7 \cdot 9.81 $ \\
+
+$ 0.7g \approx 6.87 \text{ m/s}^2 $ \\
+
+Omdat: \\
+
+$ 5.25 < 6.87 $ \\
+
+wordt de comfortnorm gehaald. \\
+
+\bigskip
+
+Voor een passagier van $100 \text{ kg}$ geldt: \\
+
+$ F_z = mg $ \\
+
+$ F_z = 100 \cdot 9.81 $ \\
+
+$ F_z = 981 \text{ N} $ \\
+
+De horizontale kracht door de versnelling is: \\
+
+$ F_h = ma $ \\
+
+$ F_h = 100 \cdot 5.25 $ \\
+
+$ F_h = 525 \text{ N} $ \\
+
+Het maximale schijnbare gewicht is: \\
+
+$ F = \sqrt{F_z^2 + F_h^2} $ \\
+
+$ F = \sqrt{981^2 + 525^2} $ \\
+
+$ F \approx 1113 \text{ N} $ \\
+
+Dus het maximale gewicht van de passagier is ongeveer: \\
+
+$ \boxed{1113 \text{ N}} $ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

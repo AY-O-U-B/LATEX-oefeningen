@@ -1,0 +1,99 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 20.5\\
+
+\bigskip
+
+\normalsize
+
+$ z^4 +4 = 0$\\
+
+$ \Rightarrow z^4 = -4 $ \\
+
+$ \Rightarrow z^2 = \pm{2i} $ \\
+
+We moeten nu dus de vierkantswortels zoeken van $\pm{2i}$:\\
+
+Voor $+2i$: \\
+
+$\left\{
+    \begin{array}{lll} 
+        x^2 - y^2 &=& 0 \\
+        2xy &=& 2
+    \end{array}
+\right .$\\
+
+$\Rightarrow$ $\left\{
+    \begin{array}{lll} 
+        x^2 + (-y^2) &=& 0 \\
+        xy &=& 2 \\
+        xy > 0
+    \end{array}
+\right .$\\
+
+$\Leftrightarrow \left\{
+    \begin{array}{lll} 
+        x^2 + (-y^2) &=& 0 \\
+        x^2 \cdot (-y^2) &=& -1 \\
+    \end{array}
+\right .$\\
+
+$\Rightarrow$ $ \lambda^2 -1 = 0 $ \\
+
+$\Rightarrow $ vierkantswortels voor $2i$ : ${-1-i,1+i}$\\
+
+Voor $-2i$: \\
+
+$\left\{
+    \begin{array}{lll} 
+        x^2 - y^2 &=& 0 \\
+        2xy &=& -2
+    \end{array}
+\right .$\\
+
+$\Rightarrow$ $\left\{
+    \begin{array}{lll} 
+        x^2 + (-y^2) &=& 0 \\
+        xy &=& -1 \\
+        xy < 0
+    \end{array}
+\right .$\\
+
+$\Leftrightarrow \left\{
+    \begin{array}{lll} 
+        x^2 + (-y^2) &=& 0 \\
+        x^2 \cdot (-y^2) &=& -1 \\
+    \end{array}
+\right .$\\
+
+$\Rightarrow \lambda^2 -1 = 0 $ \\
+
+$\Rightarrow $ vierkantswortels voor $-2i$ : ${-1+i,1-i}$\\
+
+Antwoord: ${-1-i,1-i,-1+i,1+i}$\\
+
+Ontbinden over $\mathbb{R}[z]$:\\
+
+$(z-1-i)(z-1+i) \cdot (z+1+i)(z+1-i)$\\
+
+$\Rightarrow (z^2 - 2z +2)(z^2 + 2z + 2)$\\
+
+$\Rightarrow R[z] = (z^2 - 2z +2)(z^2 + 2z + 2)$
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+'template' code gekopieerd van Oubayy Ahale van de repo 24-25.
+voor de rest de oefening volledig zelf opgelost en nog extra rightarrows toegevoegd.
+\end{thebibliography}
+\end{document}

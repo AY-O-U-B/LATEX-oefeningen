@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\dlim}{\lim\limits}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 7.3\\
+
+\medskip
+
+\normalsize
+
+$\mathbf{f}(x,y) = (\sin(xy), \sinh(xy))$\\
+
+$D\mathbf{f}(x,y) = \left(\begin{array}{c c} \dfrac{\partial}{\partial x}(\sin(xy)) & \dfrac{\partial}{\partial y}(\sin(xy)) \\[3ex] \dfrac{\partial}{\partial x}(\sinh(xy)) & \dfrac{\partial}{\partial y}(\sinh(xy)) \end{array}\right)$\\
+
+$= \left(\begin{array}{c c} y\cos(xy) & x\cos(xy) \\[1.5ex] y\cosh(xy) & x\cosh(xy) \end{array}\right)$\\
+
+$\det(D\mathbf{f}(x,y)) = (y\cos(xy))(x\cosh(xy)) - (x\cos(xy))(y\cosh(xy))$\\
+
+$= xy\cos(xy)\cosh(xy) - xy\cos(xy)\cosh(xy)$\\
+
+$= 0$\\
+
+$\Rightarrow \det(Df(x,y)) = 0 \quad \forall (x,y) \in \mathbb{R}^2$\\
+
+$\Rightarrow \not\exists \f^{-1}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

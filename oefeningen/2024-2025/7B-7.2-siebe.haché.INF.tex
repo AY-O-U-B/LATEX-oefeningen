@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\newcommand{\R}{\mathbb{R}} 
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 7B nr. 7.2\\
+
+\medskip
+\normalsize
+
+$f:\Omega \subseteq \R^2\longrightarrow \R^2:(x,y)\longmapsto(e^{xy},\ln\dfrac{x}{y})$ 
+ \\
+
+$Df(x,y) = \begin{pmatrix} \dfrac{\partial f_1}{\partial x} & \dfrac{\partial f_1}{\partial y} \\ 
+                           \dfrac{\partial f_2}{\partial x} & \dfrac{\partial f_2}{\partial y} \end{pmatrix}
+= 
+            \begin{pmatrix} y e^{xy} & x e^{xy} \\
+                        \dfrac{1}{x} & -\dfrac{1}{y} \end{pmatrix} \\$
+
+det $Df^{-1}(x,y) = (y e^{xy})(-\dfrac{1}{y}) - (x e^{xy})(\dfrac{1}{x}) = -e^{xy} - e^{xy} = -2e^{xy} \\$
+
+$e^{xy} > 0$ voor alle $(x,y) \in \Omega \Rightarrow$ inverteerbaar.\\
+
+afgeleide van de inverse: \\
+
+$Df^{-1}(a,b) = \dfrac{1}{-2e^{xy}} =             \begin{pmatrix}  -\dfrac{1}{y}& -xe^{xy} \\
+                                                                  -\dfrac{1}{x} &  y e^{xy} \end{pmatrix}$\\
+                                                                  
+                                   $ =              \begin{pmatrix}  \dfrac{1}{2ye^{xy}}& \dfrac{x}{2} \\
+                                                                  \dfrac{1}{2xe^{xy}} & -\dfrac{y}{2} \end{pmatrix}\\$
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

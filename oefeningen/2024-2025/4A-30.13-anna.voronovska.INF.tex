@@ -1,0 +1,29 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 30.13\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int\dfrac{x^4dx}{\sqrt{1-x^{10}}}=\displaystyle\int\dfrac{x^4dx}{\sqrt{1-x^{5 \cdot 2}}}$\\
+
+$u = x^5 \Rightarrow du = 5x^4dx \Rightarrow x^4dx = \dfrac{1}{5}du$\\
+
+$\displaystyle\int\dfrac{x^4dx}{\sqrt{1-x^{10}}} = \displaystyle\int\dfrac{1}{\sqrt{1-u^2}}\cdot\dfrac{1}{5}du = \dfrac{1}{5}\displaystyle\int\dfrac{1}{\sqrt{1-u^2}}du$\\
+
+$= \dfrac{1}{5} \operatorname{Bgsin}(u) + c = \dfrac{1}{5} \operatorname{Bgsin}(x^5) + c$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

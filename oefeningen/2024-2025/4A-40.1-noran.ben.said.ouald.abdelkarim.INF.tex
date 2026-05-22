@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}    
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+
+\noindent \large Auteur: Noran Ben Said \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 40.1\\
+
+\medskip
+
+\normalsize
+
+
+$\displaystyle\int \dfrac{dx}{\sqrt{x\left( 4-x \right) }}$\\
+
+$= \displaystyle\int \dfrac{dx}{\sqrt{- x^2 + 4x}} $\\
+
+$\Rightarrow - x^2 + 4x = - \left( x^2 -4x +2^2 \right) + 4 = 4 - \left(x-2 \right)^2 $\\
+
+$\Rightarrow \displaystyle\int \dfrac{dx}{\sqrt{4 - \left(x -2 \right)^2}}$\\
+
+Stel $t = x-2 \Rightarrow dt = dx  $\\
+
+$\Rightarrow \displaystyle\int \dfrac{dt}{\sqrt{4 - t^2}} = \displaystyle\int \dfrac{dt}{\sqrt{2^2 - t^2}} $\\
+
+$= \Bgsin \dfrac{t}{2} + c = \Bgsin \dfrac{x-2}{2} + c $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

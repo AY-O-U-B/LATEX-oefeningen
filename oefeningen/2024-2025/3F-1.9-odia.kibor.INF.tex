@@ -1,0 +1,88 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{cancel}
+\newcommand{\Bgcot}{\operatorname{Bgcot}}
+
+\begin{document}
+  
+\noindent \large Auteur: Odia Kibor \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3F nr. 1.9\\
+
+\medskip
+
+\normalsize
+
+
+$f(x) = \dfrac{5x^2 -x -1}{x - 4}$\\
+
+$\operatorname{dom}(f)=\mathbb{R}\setminus\{4\}$\\
+
+nulpunten noemer: $4$\\
+
+VA\\
+
+$\lim\limits_{x \rightarrow 4}f(x) = \dfrac{75}{0} \Rightarrow $ Tekenonderzoek \\
+
+nulpunten teller:\\
+
+$\dfrac{1\pm \sqrt{21}}{10} \Rightarrow \dfrac{1+\sqrt{21}}{10}$ en $\dfrac{1-\sqrt{21}}{10}$\\
+
+\begin{tabular}{c|ccccccc}
+$x$     &      &  $\dfrac{1-\sqrt{21}}{10}$ &       &  $\dfrac{1+\sqrt{21}}{10}$  & & $4$ &   \\ \hline
+$5x^2 -x -1$   & $+$  &  $0$  &  $-$     &  $0$  & $+$ & $+$ & $+$\\
+$x-4$  & $-$  &  $-$  &  $-$     &  $-$  & $-$ & $|$ & $+$\\ \hline
+$f(x)$  & $-$  &  $0$  &  $+$     &  $0$  & $-$ & $|$ & $+$\\
+\end{tabular}\\
+
+$\lim\limits_{x \rightarrow 4-}f(x) = -\infty$\\
+
+$\lim\limits_{x \rightarrow 4+}f(x) = +\infty$\\
+
+HA\\
+
+Geen horizontale asymptoot omdat de graad van de teller groter is dan de noemer.\\
+
+SA\\
+
+$a = \lim\limits_{x \rightarrow \infty} \dfrac{f(x)}{x} = \lim\limits_{x \rightarrow \infty}\dfrac{5x^2 -x -1}{x^2 - 4x} = 5$\\
+
+$b = \lim\limits_{x \rightarrow \infty} (f(x) - 5x)$\\
+
+$ = \lim\limits_{x \rightarrow \infty}\dfrac{5x^2 -x -1}{x - 4} - \dfrac{5x(x-4)}{x-4} = = \lim\limits_{x \rightarrow \infty}\dfrac{19x - 1}{x - 4} = 19$
+
+SA $= 5x + 19$\\
+
+Ligging van de grafiek t.o.v. de schuine asymptoot:\\
+
+$f(x) - (5x+19) = \dfrac{75}{x-4}$\\
+
+Voor $x < 4 \rightarrow \dfrac{75}{x-4} < 0 \Rightarrow$ de grafiek ligt onder de schuine asymptoot.\\
+
+Voor $x > 4 \rightarrow \dfrac{75}{x-4} > 0 \Rightarrow$ de grafiek ligt boven de schuine asymptoot.\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

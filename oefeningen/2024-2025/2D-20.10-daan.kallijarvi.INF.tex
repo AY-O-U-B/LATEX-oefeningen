@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Daan Kallijarvi \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 20.10\\
+
+\medskip
+
+\normalsize
+
+Bereken $\displaystyle\lim_{x \to \pm\infty} \dfrac{2 - |x|}{3x + 3|x|}$.\\
+
+\textbf{Geval 1: $x \to -\infty$}\\
+
+Voor $x < 0$ geldt $|x| = -x$, dus de noemer wordt $3x + 3(-x) = 0$.
+De limiet \textbf{bestaat niet} want de noemer is identiek $0$.\\
+
+\textbf{Geval 2: $x \to +\infty$}\\
+
+Voor $x > 0$ geldt $|x| = x$, dus:
+
+$$\lim_{x \to +\infty} \dfrac{2 - |x|}{3x + 3|x|}
+= \lim_{x \to +\infty} \dfrac{2 - x}{3x + 3x}
+= \lim_{x \to +\infty} \dfrac{2 - x}{6x}
+= \lim_{x \to +\infty} \dfrac{-x}{6x}
+= -\dfrac{1}{6}$$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 39.4\\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{3x+1}{(x^2-4x+5)^2}dx$\\
+
+$= \dint \dfrac{3x+1}{((x-2)^2+1)^2}$\\
+
+$t = x-2 \Rightarrow dt = dx$\\
+
+$\Rightarrow \dint \dfrac{3t+7}{(t^2+1)^2}dt$\\
+
+$= 3\dint\dfrac{t}{(t^2+1)^2}dt+7\dint\dfrac{dt}{(t^2+1)^2}$\\
+
+$A = 3 \dint \dfrac{t}{(t^2+1)^2} dt = \dfrac{3}{2} \dint (t^2+1)^{-2} d(t^2+1) = -\dfrac{3}{2(t^2+1)}$\\
+
+$B = 7 \dint \dfrac{1}{(t^2+1)^2} dt = 7 \left( \dfrac{t}{2(t^2+1)} + \dfrac{1}{2} \dint \dfrac{1}{t^2+1} dt \right)$\\
+
+$=\dfrac{7t}{2(t^2+1)} + \dfrac{7}{2} \Bgtan (t)$\\
+
+$A + B = \dfrac{7t-3}{2(t^2+1)} + \dfrac{7}{2} \Bgtan(t) + C$\\
+
+$= \dfrac{7(x-2)-3}{2((x-2)^2+1)} + \dfrac{7}{2} \Bgtan(x-2) + C $
+
+$= \dfrac{7x-17}{2(x^2-4x+5)} + \dfrac{7}{2} \Bgtan(x-2) + C $
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

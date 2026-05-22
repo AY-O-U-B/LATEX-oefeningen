@@ -1,0 +1,59 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6F nr. 3\\
+
+\medskip
+
+\normalsize
+
+$ f_n : \mathbb{R}_0^+ \rightarrow \mathbb{R} : x \mapsto \dfrac{1}{nx^2} $ \\
+
+We bepalen eerst de puntsgewijze limiet: \\
+
+$ \lim\limits_{n \rightarrow \infty} f_n(x)
+= \lim\limits_{n \rightarrow \infty}\dfrac{1}{nx^2} $ \\
+
+Voor elke vaste $x \in \mathbb{R}_0^+$ geldt: \\
+
+$ \lim\limits_{n \rightarrow \infty}\dfrac{1}{nx^2} = 0 $ \\
+
+Dus: \\
+
+$ f : \mathbb{R}_0^+ \rightarrow \mathbb{R} : x \mapsto 0 $ \\
+
+$ f_n \stackrel{p}{\rightarrow} f $ \\
+
+Nu onderzoeken we uniforme convergentie: \\
+
+$ \left|\left|f_n-f\right|\right|_{\infty}
+= \sup\limits_{x \in \mathbb{R}_0^+}\left|\dfrac{1}{nx^2}-0\right| $ \\
+
+$ = \sup\limits_{x \in \mathbb{R}_0^+}\dfrac{1}{nx^2} $ \\
+
+Omdat $x$ willekeurig dicht bij $0$ kan liggen, wordt $\dfrac{1}{nx^2}$ onbeperkt groot. \\
+
+Dus: \\
+
+$ \left|\left|f_n-f\right|\right|_{\infty}=+\infty $ \\
+
+Hieruit volgt: \\
+
+$ \lim\limits_{n \rightarrow \infty}\left|\left|f_n-f\right|\right|_{\infty}\neq 0 $ \\
+
+Dus: \\
+
+$ f_n \stackrel{u}{\not\rightarrow} f $ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

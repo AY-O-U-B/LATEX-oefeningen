@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+\newcommand{\integral}{\displaystyle\int}
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 2.2\\
+
+\medskip
+
+\normalsize
+
+
+
+$f(x, y) = e^{-x}\sin^2y$ \\
+
+$\left\{\begin{array}{l}
+	\dfrac{\partial f}{\partial x}(x, y) = -e^{-x}\sin^2y \\
+	\dfrac{\partial f}{\partial y}(x, y) = 2e^{-x}\sin y\cos y = e^{-x}\sin 2y
+\end{array}\right.$ \\
+
+$\Leftrightarrow\left\{\begin{array}{l}
+    -e^{-x}\sin^2y = 0 \\
+    e^{-x}\sin 2y = 0
+\end{array}\right.$ \\
+
+$\Leftrightarrow\left\{\begin{array}{l}
+    -\sin^2y = 0 \\
+    \sin 2y = 0
+\end{array}\right.$ \\
+
+$\Leftrightarrow\left\{\begin{array}{l}
+    y = k\pi            \\
+    y = \dfrac{k\pi}{2}
+\end{array}\right. \Rightarrow y = k\pi \quad \left(k \in \mathbb{Z}\right)$ \\
+
+
+$\nabla f(x, y) = o$ als $ y = k\pi$ \\
+
+$\Delta(x, y) = \left|\begin{array}{cc}
+    e^{-x}\sin^2y  & -e^{-x}\sin 2y \\
+    -e^{-x}\sin 2y & 2e^{-x}\cos 2y
+\end{array}\right|$ \\
+
+$= e^{-x}\sin^2y \cdot 2e^{-x}\cos 2y - e^{-x}\sin 2y \cdot e^{-x}\sin 2y$ \\
+
+$= e^{-2x}\left(\sin^2y \cdot 2\cos 2y - \sin 2y \cdot \sin 2y\right)$ \\
+
+$= e^{-2x}\left(2\sin^2y\cos 2y - \sin^22y\right)$ \\
+
+$\Delta(x, k\pi) = e^{-2x}\left(2\sin^2k\pi\cos 2k\pi - \sin^22k\pi\right) = (0 - 0) = 0 \Rightarrow$ onbeslist \\
+
+$f$ is positief, $f(x, k\pi) = 0 \Rightarrow$ $f$ kan alleen hoger gaan bij andere punten dus voor alle $(x, k\pi)$ heb je minima. \\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

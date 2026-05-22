@@ -1,0 +1,82 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\begin{document}
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 7E nr. 3.2 \\
+\medskip
+\normalsize
+Bepaal van volgende functies van drie veranderlijken de kritieke punten, en ga na of de functie in die punten een extremum bereikt.\\
+
+De gegeven functie is $f(x,y,z) = 2x^{2} + 6y^{2} + 4z^{2} - 4xy + 4xz$.\\
+
+$\dfrac{\partial f}{\partial x} = 4x - 4y + 4z$\\
+
+$\dfrac{\partial f}{\partial y} = 12y - 4x$\\
+
+$\dfrac{\partial f}{\partial z} = 8z + 4x$\\
+
+Kritieke punten:\\
+
+$\left\{ \begin{array}{l}
+4x - 4y + 4z = 0 \\
+-4x + 12y = 0 \\
+4x + 8z = 0
+\end{array} \right.$\\
+
+Uit de tweede vergelijking: $-4x + 12y = 0 \implies x = 3y$.\\
+
+Uit de derde vergelijking: $4x + 8z = 0 \implies z = -\dfrac{x}{2} = -\dfrac{3y}{2}$.\\
+
+Substitutie in de eerste vergelijking:\\
+
+$4(3y) - 4y + 4\left(-\dfrac{3y}{2}\right) = 12y - 4y - 6y = 2y = 0 \implies y = 0$\\
+
+Dus $y = 0$, $x = 0$, $z = 0$.\\
+
+Het enige kritieke punt is $(0, 0, 0)$.\\
+
+Tweede-orde partiële afgeleiden:\\
+
+$\dfrac{\partial^{2} f}{\partial x^{2}} = 4$\\
+
+$\dfrac{\partial^{2} f}{\partial y^{2}} = 12$\\ 
+
+$\dfrac{\partial^{2} f}{\partial z^{2}} = 8$\\
+
+$\dfrac{\partial^{2} f}{\partial x \partial y} = -4$\\
+
+$\dfrac{\partial^{2} f}{\partial x \partial z} = 4$\\ 
+
+$\dfrac{\partial^{2} f}{\partial y \partial z} = 0$\\
+
+De Hessiaanse matrix in $(0,0,0)$ is:\\
+
+$H(0) = \left(\begin{array}{ccc}
+4 & -4 & 4 \\ -4 & 12 & 0 \\ 4 & 0 & 8 \end{array} \right)$\\
+
+$H - \lambda I = \left( \begin{array}{ccc} 4-\lambda & -4 & 4 \\ -4 & 12-\lambda & 0 \\ 4 & 0 & 8-\lambda \end{array} \right)$\\
+
+$\det(H - \lambda I) = (4-\lambda)\begin{vmatrix} 12-\lambda & 0 \\ 0 & 8-\lambda \end{vmatrix}
+-(-4)\begin{vmatrix} -4 & 0 \\ 4 & 8-\lambda \end{vmatrix}
++4\begin{vmatrix} -4 & 12-\lambda \\ 4 & 0 \end{vmatrix}$\\
+
+$p(\lambda) = \lambda^{3} - 24\lambda^{2} + 144\lambda - 64$\\\
+
+Stel $\lambda \leq 0$. Dan geldt term per term:\\
+
+$\lambda^{3} \leq 0, -24\lambda^{2} \leq 0,  144\lambda \leq 0,  -64 < 0$\\
+
+Alle termen zijn dus strikt negatief of nul, zodat $p(\lambda) < 0$ voor alle $\lambda \leq 0$.\\
+
+Dit betekent dat $p$ geen wortels kan hebben in $(-\infty, 0]$, en bijgevolg zijn alle eigenwaarden van $H(0)$ strikt positief.\\
+
+Dus de functie $f$ bereikt in het kritieke punt $(0, 0, 0)$ een strikt lokaal minimum.\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document}

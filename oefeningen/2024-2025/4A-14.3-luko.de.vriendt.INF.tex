@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 14.3\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int (x^2 + x + 2)\ln(x)dx$ \\
+
+$\left \{
+\begin{array}{l}
+     u = \ln(x) \\
+     dv = (x^2 + x + 2)dx
+\end{array}
+\right .
+\Rightarrow
+\left \{
+\begin{array}{l}
+     du = \dfrac{1}{x}dx \\ \\
+     v = \dfrac{x^3}{3} + \dfrac{x^2}{2} + 2x
+\end{array}
+\right .$ \\
+
+$= \left ( \dfrac{x^3}{3} + \dfrac{x^2}{2} + 2x \right )\ln(x) - \displaystyle \int \left ( \dfrac{x^3}{3} + \dfrac{x^2}{2} + 2x \right ) \dfrac{1}{x}dx$ \\
+
+$= \left ( \dfrac{x^3}{3} + \dfrac{x^2}{2} + 2x \right )\ln(x) - \displaystyle \int \left ( \dfrac{x^2}{3} + \dfrac{x}{2} + 2 \right ) dx$ \\
+
+$= \left ( \dfrac{x^3}{3} + \dfrac{x^2}{2} + 2x \right )\ln(x) - \left ( \dfrac{x^3}{9} + \dfrac{x^2}{4} + 2x \right ) + c$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

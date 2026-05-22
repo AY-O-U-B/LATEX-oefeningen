@@ -1,0 +1,90 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}  
+
+\newcommand{\degree}{^{\circ}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Bgcos}{\operatorname{Bgcos}}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Sadia Nazary  \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3E nr. 10\\
+
+\medskip
+
+\normalsize
+
+Inhoud $=360\,\text{m}^3$ \\
+
+grondvlak $=x^2$ \\
+
+hoogte $=\dfrac{360}{x^2}$ \\
+
+prijs grondvlak $=400x^2$ \\
+
+prijs deksel $=600x^2$ \\
+
+oppervlakte wanden $=4x\cdot\dfrac{360}{x^2}$ \\
+
+$=\dfrac{1440}{x}$ \\
+
+prijs wanden $=300\cdot\dfrac{1440}{x}$ \\
+
+$=\dfrac{432000}{x}$ \\
+
+$p(x)=400x^2+600x^2+\dfrac{432000}{x}$ \\
+
+$p(x)=1000x^2+\dfrac{432000}{x}$ \\
+
+$p'(x)=2000x-\dfrac{432000}{x^2}$ \\
+
+$p'(x)=0$ \\
+
+$2000x-\dfrac{432000}{x^2}=0$ \\
+
+$2000x^3-432000=0$ \\
+
+$x^3=216$ \\
+
+$x=6$ \\
+
+\medskip
+
+\begin{center}
+\begin{tabular}{c|ccc}
+$x$ & $0$ & $6$ & $+\infty$ \\
+\hline
+$p'(x)$ & $-$ & $0$ & $+$ \\
+$p(x)$ & $\searrow$ & & $\nearrow$
+\end{tabular}
+\end{center}
+
+$p''(x)=2000+\dfrac{864000}{x^3}$ \\
+
+$p''(6)>0$ \\
+
+$\Rightarrow$ minimum \\
+
+hoogte $=\dfrac{360}{6^2}$ \\
+
+$=\dfrac{360}{36}$ \\
+
+$=10$ \\
+
+$p(6)=1000\cdot36+\dfrac{432000}{6}$ \\
+
+$=36000+72000$ \\
+
+$=108000$ \\
+
+\fbox{afmetingen $6\,\text{m}\times6\,\text{m}\times10\,\text{m}$} \\
+
+\fbox{minimale prijs $=108000\,€$}
+
+\end{document}

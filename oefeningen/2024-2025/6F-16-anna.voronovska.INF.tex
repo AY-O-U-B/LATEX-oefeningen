@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6F nr. 16\\
+
+\medskip
+
+\normalsize
+
+Puntsgewijze limiet:\\
+
+$\lim\limits_{n \to +\infty} f_n(x) = \lim\limits_{n \to +\infty} \left(\dfrac{n^2+1}{n^2}\right)x = \lim\limits_{n \to +\infty} \left(1 + \dfrac{1}{n^2}\right)x = 1 \cdot x = x$\\
+
+Dus de puntsgewijze limiet is $f(x) = x$ op $[0,1]$.\\
+
+Uniforme limiet:\\
+
+$\displaystyle\sup_{x \in [0,1]} \left|f_n(x) - f(x)\right| = \displaystyle\sup_{x \in [0,1]} \left|\left(\dfrac{n^2+1}{n^2}\right)x - x\right| = \displaystyle\sup_{x \in [0,1]} \dfrac{1}{n^2} x $\\
+
+$= \dfrac{1}{n^2} \displaystyle\sup_{x \in [0,1]} x = \dfrac{1}{n^2}$\\
+
+Dus:\\
+
+$\lim\limits_{n \to +\infty} \displaystyle\sup_{x \in [0,1]} \left|f_n(x) - f(x)\right| = \lim\limits_{n \to +\infty} \dfrac{1}{n^2} = 0$\\
+
+Omdat de supremum naar $0$ gaat, convergeert $f_n$ uniform naar $f(x) = x$ op $[0,1]$.
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

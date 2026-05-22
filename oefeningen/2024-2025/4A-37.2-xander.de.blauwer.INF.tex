@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\noindent \large Auteur: Xander De Blauwer \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 37.2\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int \dfrac{1}{(x - 2)^2 + 9}dx  = \displaystyle\int \dfrac{1}{(x - 2)^2 + 3^2}dx $ \\
+
+Stel $t = x - 2 \Rightarrow dt = dx $ \\ 
+
+$ = \displaystyle\int \dfrac{1}{t^2 + 3^2}dt = \displaystyle\int \dfrac{1}{3^2\left(\left(\dfrac{t}{3}\right)^2 + 1^2\right)} dt $ \\
+
+Stel $ u = \dfrac{t}{3} \Rightarrow du = \dfrac{1}{3}dt \Rightarrow dt = 3du$ \\
+
+$ =  \displaystyle\int \dfrac{3}{3^2(u^2 + 1^2)}du = \dfrac{1}{3} \displaystyle\int \dfrac{1}{u^2 + 1}du $ \\
+
+$ = \dfrac{1}{3}\operatorname{Bgtan}(u) + c = \dfrac{1}{3}\operatorname{Bgtan}\left(\dfrac{t}{3}\right) + c $ \\
+
+$  = \dfrac{1}{3}\operatorname{Bgtan}\left(\dfrac{x-2}{3}\right) + c $ \\
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

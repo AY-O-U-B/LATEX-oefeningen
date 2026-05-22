@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Noran Ben Said \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 7.10 \\
+\medskip
+
+\normalsize
+
+$ \displaystyle\int_0^{\tfrac{\pi}{2}} \dfrac{\sin^3 x}{\cos x + \sin x}\,dx$\\
+
+Stel $ I = \displaystyle\int_0^{\tfrac{\pi}{2}} \dfrac{\sin^3 x}{\cos x + \sin x}\,dx$\\
+
+Stel $ x = \dfrac{\pi}{2} - t \Rightarrow dx = -dt$\\
+
+Als $x=0$, dan $t=\dfrac{\pi}{2}$\\
+
+Als $x=\dfrac{\pi}{2}$, dan $t=0$\\
+
+$ I = \displaystyle\int_{\tfrac{\pi}{2}}^0 \dfrac{\sin^3\left(\dfrac{\pi}{2}-t\right)}{\cos\left(\dfrac{\pi}{2}-t\right)+\sin\left(\dfrac{\pi}{2}-t\right)}(-dt)$\\
+
+$ = \displaystyle\int_0^{\tfrac{\pi}{2}} \dfrac{\cos^3 t}{\sin t + \cos t}\,dt$\\
+
+$ = \displaystyle\int_0^{\tfrac{\pi}{2}} \dfrac{\cos^3 x}{\sin x + \cos x}\,dx$\\
+
+Dus:\\
+
+$ 2I = \displaystyle\int_0^{\tfrac{\pi}{2}} \dfrac{\sin^3 x + \cos^3 x}{\sin x + \cos x}\,dx$\\
+
+$ = \displaystyle\int_0^{\tfrac{\pi}{2}} \dfrac{(\sin x + \cos x)(\sin^2 x - \sin x \cos x + \cos^2 x)}{\sin x + \cos x}\,dx$\\
+
+$ = \displaystyle\int_0^{\tfrac{\pi}{2}} (\sin^2 x - \sin x \cos x + \cos^2 x)\,dx$\\
+
+$ = \displaystyle\int_0^{\tfrac{\pi}{2}} (1 - \sin x \cos x)\,dx$\\
+
+$ = \displaystyle\int_0^{\tfrac{\pi}{2}} 1\,dx - \int_0^{\frac{\pi}{2}} \sin x \cos x\,dx$\\
+
+$ = \left[x\right]_0^{\tfrac{\pi}{2}} - \left[\dfrac{\sin^2 x}{2}\right]_0^{\tfrac{\pi}{2}}$\\
+
+$ = \dfrac{\pi}{2} - \dfrac{1}{2}$\\
+
+$ 2I = \dfrac{\pi}{2} - \dfrac{1}{2}$\\
+
+$ I = \dfrac{\pi}{4} - \dfrac{1}{4} = \dfrac{\pi - 1}{4}$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

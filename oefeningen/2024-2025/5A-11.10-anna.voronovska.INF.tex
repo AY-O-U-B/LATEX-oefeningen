@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 11.10\\
+
+\medskip
+
+\normalsize
+
+Bereken de volgende bepaalde integralen door partiële integratie\\
+
+$\displaystyle\displaystyle\int_{0}^{\tfrac{\pi}{2}} x^{2} \sin x \cos^{3} x \cdot dx$ \\
+
+onbepaalde integraal: \\
+
+$ \left\{ \begin{array}{l} 
+    u = x^{2} \\
+    
+    dv = \sin x \cos^{3} x \cdot dx
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l} 
+    du = 2x \cdot dx\\
+    
+    v = -\dfrac{1}{4} \cos^{4} x\\
+\end{array} \right. $ \\
+
+$I = -\dfrac{1}{4} x^{2} \cos^{4} x + \dfrac{1}{2} \displaystyle\int x \cos^{4} x \cdot dx$ \\
+
+Dubbel toepassen van de halveringsformule geeft:\\
+
+$\displaystyle\int x \cos^{4} x \cdot dx = \displaystyle\int x \left( \dfrac{3}{8} + \dfrac{1}{2} \cos(2x) + \dfrac{1}{8} \cos(4x) \right) \cdot dx$ \\
+
+$= \dfrac{3}{16} x^{2} + \dfrac{1}{2} \displaystyle\int x \cos(2x) \cdot dx + \dfrac{1}{8} \displaystyle\int x \cos(4x) \cdot dx$ \\
+
+De termen $\displaystyle\int x \cos(ax) \cdot dx$: \\
+
+$\displaystyle\int x \cos(ax) \cdot dx = \dfrac{x}{a} \sin(ax) + \dfrac{1}{a^{2}} \cos(ax)$ \\
+
+$I = -\dfrac{1}{4} x^{2} \cos^{4} x + \dfrac{3}{32} x^{2} + \dfrac{x}{8} \sin(2x) + \dfrac{1}{16} \cos(2x) + \dfrac{x}{64} \sin(4x) + \dfrac{1}{256} \cos(4x) + c$ \\
+
+De bepaalde integraal: \\
+
+$I = \left[ -\dfrac{1}{4} x^{2} \cos^{4} x + \dfrac{3}{32} x^{2} + \dfrac{x}{8} \sin(2x) + \dfrac{1}{16} \cos(2x) + \dfrac{x}{64} \sin(4x) + \dfrac{1}{256} \cos(4x) \right]_{0}^{\tfrac{\pi}{2}}$ \\
+
+bovengrens: $\dfrac{\pi}{2}$: \\
+
+$\left( 0 + \dfrac{3\pi^{2}}{128} + 0 - \dfrac{1}{16} + 0 + \dfrac{1}{256} \right) = \dfrac{3\pi^{2}}{128} - \dfrac{15}{256}$ \\
+
+ondergrens: $0$: \\
+
+$\left( 0 + 0 + 0 + \dfrac{1}{16} + 0 + \dfrac{1}{256} \right) = \dfrac{17}{256}$ \\
+
+$I = \left( \dfrac{3\pi^{2}}{128} - \dfrac{15}{256} \right) - \dfrac{17}{256} = \dfrac{3\pi^{2}}{128} - \dfrac{32}{256} = \dfrac{3\pi^{2}}{128} - \dfrac{1}{8}$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

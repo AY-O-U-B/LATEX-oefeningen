@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6D nr. 31.30\\
+
+\medskip
+\normalsize
+
+Onderzoek de convergentie van de reeks $\displaystyle\sum_{n=1}^{\infty}\dfrac{1}{n^2}\sin\dfrac{\pi}{n}$ \\
+
+Convergente majoranten\\
+
+Stel $x_n = \dfrac{1}{n^2} \sin\dfrac{\pi}{n}$.\\
+
+Als $x \ge 0$ dan $\sin x \le x$. Voor alle $n \ge 1$ is $\dfrac{\pi}{n} > 0$.\\
+
+dus:\\
+
+$\sin\dfrac{\pi}{n} \le \dfrac{\pi}{n}$\\
+
+
+$x_n = \dfrac{1}{n^2} \sin\dfrac{\pi}{n} \le \dfrac{1}{n^2} \cdot \dfrac{\pi}{n} = \dfrac{\pi}{n^3}$\\
+
+Stel $y_n = \dfrac{\pi}{n^3}$. De reeks $\displaystyle\sum_{n=1}^{\infty} y_n = \pi \sum_{n=1}^{\infty} \dfrac{1}{n^3}$ is een hyperharmonische reeks met $p = 3 > 1$.\\
+
+Aangezien $x_n \le y_n$ voor alle $n \ge 1$ en de majorant $\displaystyle\sum_{n=1}^{\infty} y_n$ convergeert is $x_n$ ook convergent.\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

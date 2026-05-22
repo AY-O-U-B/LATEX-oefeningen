@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6D nr. 31.4\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\sum_{n = 2}^{\infty}\dfrac{\ln n}{n^2}$ met $x_n = \dfrac{\ln n}{n^2}$\\
+
+Gebruik van criterium 5$(+)$\\
+
+$h(x)=\sqrt{x}-\ln x $\\
+
+$h'(x)=\dfrac{1}{2\sqrt{x}}-\dfrac{1}{x}$\\
+
+$h'(x)=\dfrac{\sqrt{x}-2}{2x}$\\
+
+Hierbij weten we dat $h'(x)$ nulpunt $4$ heeft en stijgt vanaf $4$, m.a.w:\\
+
+$\sqrt{4}- \ln 4 > 0$\\
+
+$x\ge 4 \Rightarrow h'(x)\ge 0$\\
+
+$\Rightarrow\forall n\ge 4: \ln n\le \sqrt{n}$\\
+
+Nu moeten we nog zien dat het ook geld voor $n=3$ en $n=2$\\
+
+$\ln 2 <\sqrt{2}$ en $\ln 3 <\sqrt{3}$\\
+
+Dit klopt ook dus kunnen wij zeggen:\\
+
+$\forall n\ge 2: \ln n\le \sqrt{n}$\\
+
+$\Rightarrow \ln(n)\le \sqrt{n}$\\
+
+$\Rightarrow \dfrac{\ln n}{n^2}\le \dfrac{\sqrt{n}}{n^2}$\\
+
+$\Rightarrow \dfrac{\ln n}{n^2}\le \dfrac{1}{n^{3/2}}$\\
+
+$\displaystyle\sum_{n=2}^{\infty}\dfrac{1}{n^{3/2}}$ met $y_n = \dfrac{1}{n^{3/2}}$\\
+
+Deze is dus een $p-$reeks met $p= \dfrac{3}{2}> 1$\\
+
+$\Rightarrow \displaystyle\sum_{n=2}^{\infty}\dfrac{1}{n^{3/2}}$ convergeert\\
+
+$\Rightarrow$ volgens criterium $5(+)$ convergeert $\displaystyle\sum_{n=2}^{\infty}\dfrac{\ln n}{n^2}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3D nr. 2.8\\
+
+\medskip
+
+\normalsize
+
+
+$f(x) = \dfrac{x^2}{x-1}$\\
+
+Domein: $\text{dom } f = \mathbb{R} \setminus \{1\}$\\
+
+Afgeleide:\\
+
+$ f'(x) = \dfrac{2x(x-1) - x^2 \cdot 1}{(x-1)^2} = \dfrac{2x^2 - 2x - x^2}{(x-1)^2} = \dfrac{x^2 - 2x}{(x-1)^2} = \dfrac{x(x-2)}{(x-1)^2} $\\
+
+Nulpunten:\\
+
+$x(x-2) = 0 \Leftrightarrow x = 0$ of $x = 2$\\
+
+Verloopschema:\\
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{c|ccccccc}
+$x$     & $-\infty$ &            & 0     &            & 2     &            & $+\infty$ \\ \hline
+$f'(x)$ &           & $+$        & 0     & $-$        & 0     & $+$        & \\ \hline
+$f(x)$  &           & $\nearrow$ & 0     & $\searrow$ & 4     & $\nearrow$ & \\
+        &           &            & (max) &            & (min) &            & 
+\end{tabular}
+\end{center}
+
+
+\end{document}
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

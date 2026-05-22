@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 15.9\\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{x^3}{e^{2x}}dx$\\
+
+$\left\{
+\begin{array}{l}
+u = x^3 \\
+dv = \dfrac{dx}{e^{2x}}
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = 3x^2dx \\
+v = -\dfrac{1}{2e^{2x}}
+\end{array}
+\right.$\\
+
+$= \dfrac{-x^3}{2e^{2x}} + \dfrac{3}{2}\dint \dfrac{x^2}{e^{2x}}dx$\\
+
+$\left\{
+\begin{array}{l}
+u = x^2 \\
+dv = \dfrac{dx}{e^{2x}}
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = 2xdx \\
+v = -\dfrac{1}{2e^{2x}}
+\end{array}
+\right.$\\
+
+$= \dfrac{-x^3}{2e^{2x}} + \dfrac{3}{2}\left[\dfrac{-x^2}{2e^{2x}}+\dint \dfrac{x}{e^{2x}}dx\right]$\\
+
+$\left\{
+\begin{array}{l}
+u = x \\
+dv = \dfrac{dx}{e^{2x}}
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = dx \\
+v = -\dfrac{1}{2e^{2x}}
+\end{array}
+\right.$\\
+
+$= \dfrac{-x^3}{2e^{2x}} + \dfrac{3}{2}\left[\dfrac{-x^2}{2e^{2x}}+\left(\dfrac{-x}{2e^{2x}}+\dfrac{1}{2}\dint \dfrac{1}{e^{2x}}dx\right)\right]$\\
+
+$= \dfrac{-x^3}{2e^{2x}} - \dfrac{3x^2}{4e^{2x}}- \dfrac{3x}{4e^{2x}}-\dfrac{3}{8e^{2x}} + C$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

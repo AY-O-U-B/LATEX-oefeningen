@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 67.5\\
+
+\medskip
+
+\normalsize
+
+
+$\integral\dfrac{x}{x^4 + 2x^2 + 2}dx$ \\
+
+$= \integral\dfrac{x}{x^4 + 2x^2 + 1 + 1}dx$ \\
+
+$= \integral\dfrac{x}{(x^2 + 1)^2 + 1}dx$ \\
+
+Substitutie: $t = x^2 + 1 \Rightarrow dt = 2xdx$ \\
+
+$= \dfrac{1}{2}\integral\dfrac{1}{t^2 + 1}dt$ \\
+
+$= \dfrac{1}{2}\operatorname{Bgtan} t + c$ \\
+
+$= \dfrac{1}{2}\operatorname{Bgtan} (x^2 + 1) + c$ \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

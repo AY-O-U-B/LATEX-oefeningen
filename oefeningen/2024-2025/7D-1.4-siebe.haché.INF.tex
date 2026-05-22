@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 7D nr. 1.4\\
+
+\medskip
+\normalsize
+
+$f(x,y) = \sin(x^2y) - x \cos(y^2)$ in het punt $(0,0)$, graad 3. \\
+
+eerste orde: \\
+
+$f(0,0) = \sin(0) - 0 \cdot \cos(0) = 0 \\$
+
+$\dfrac{\partial f}{\partial x} = \cos(x^2y) \cdot 2xy - \cos(y^2) \implies \dfrac{\partial f}{\partial x}(0,0) = 0 - 1 = -1 \\$
+
+$\dfrac{\partial f}{\partial y} = \cos(x^2y) \cdot x^2 + x \sin(y^2) \cdot 2y \implies \dfrac{\partial f}{\partial y}(0,0) = 0 + 0 = 0 \\$
+
+tweede orde: \\
+
+$\dfrac{\partial^2 f}{\partial x^2} = 2y \cos(x^2y) - 4x^2y^2 \sin(x^2y) \implies \dfrac{\partial^2 f}{\partial x^2}(0,0) = 0 \\$
+
+$\dfrac{\partial^2 f}{\partial x \partial y} = 2x \cos(x^2y) - 2x^3y \sin(x^2y) + 2y \sin(y^2) \implies \dfrac{\partial^2 f}{\partial x \partial y}(0,0) = 0 \\$
+
+$\dfrac{\partial^2 f}{\partial y^2} = -x^4 \sin(x^2y) + 2x \sin(y^2) + 4xy^2 \cos(y^2) \implies \dfrac{\partial^2 f}{\partial y^2}(0,0) = 0 \\$
+
+derde orde: \\
+
+$\dfrac{\partial^3 f}{\partial x^3} = -4xy^2 \sin(x^2y) - 8xy^2 \sin(x^2y) - 8x^3y^3 \cos(x^2y) \implies \dfrac{\partial^3 f}{\partial x^3}(0,0) = 0 \\$
+
+$\dfrac{\partial^3 f}{\partial x^2 \partial y} = 2 \cos(x^2y) - 2x^2y \sin(x^2y) - 8x^2y \sin(x^2y) - 4x^4y^2 \cos(x^2y) \implies \dfrac{\partial^3 f}{\partial x^2 \partial y}(0,0) = 2 \\$
+
+$\dfrac{\partial^3 f}{\partial x \partial y^2} = -4x^3 \sin(x^2y) - 2x^5y \cos(x^2y) + 2\sin(y^2) + 4y^2 \cos(y^2) \implies \dfrac{\partial^3 f}{\partial x \partial y^2}(0,0) = 0 \\$
+
+$\dfrac{\partial^3 f}{\partial y^3} = -x^6 \cos(x^2y) + 4xy \cos(y^2) + 8xy \cos(y^2) - 8xy^3 \sin(y^2) \implies \dfrac{\partial^3 f}{\partial y^3}(0,0) = 0 \\$
+
+Taylorpolynoom: \\
+
+$P_3(x,y) = f(0,0) + \left(\dfrac{\partial f}{\partial x}x + \dfrac{\partial f}{\partial y}y\right) + \dfrac{1}{2}\left(\dfrac{\partial^2 f}{\partial x^2}x^2 + 2\dfrac{\partial^2 f}{\partial x \partial y}xy + \dfrac{\partial^2 f}{\partial y^2}y^2\right) + \dfrac{1}{6}\left(\dfrac{\partial^3 f}{\partial x^3}x^3 + 3\dfrac{\partial^3 f}{\partial x^2 \partial y}x^2y + 3\dfrac{\partial^3 f}{\partial x \partial y^2}xy^2 + \dfrac{\partial^3 f}{\partial y^3}y^3\right) \\$
+
+$P_3(x,y) = 0 + (-1 \cdot x + 0 \cdot y) + 0 + \dfrac{1}{6}(0 + 3 \cdot 2 \cdot x^2y + 0 + 0) \\$
+
+$P_3(x,y) = -x + x^2y \\$
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}\textbf{}

@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 41.1\\
+
+\medskip
+
+\normalsize
+
+$\integral\dfrac{1}{\sqrt{x^2 - 4}}dx$ \\
+
+$= \integral\dfrac{1}{\sqrt{4\left(\dfrac{x^2}{4} - 1\right)}}dx$ \\
+
+$= \dfrac{1}{2}\integral\dfrac{1}{\sqrt{\dfrac{x^2}{4} - 1}}dx$ \\
+
+$= \dfrac{1}{2}\integral\dfrac{1}{\sqrt{\left(\dfrac{x}{2}\right)^2 - 1}}dx$ \\
+
+Substitutie: $t = \dfrac{x}{2} \Rightarrow dt = \dfrac{1}{2}dx$ \\
+
+$= \integral\dfrac{1}{\sqrt{t^2 - 1}}dt$ \\
+
+$= \ln|t + \sqrt{t^2 - 1}| + c$ \\
+
+$= \ln\left|\dfrac{x}{2} + \sqrt{\dfrac{x^2}{4} - 1}\right| + c$ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

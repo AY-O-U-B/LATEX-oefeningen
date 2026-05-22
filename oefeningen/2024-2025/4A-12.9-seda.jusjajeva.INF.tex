@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 12.9 \\
+
+\medskip
+
+\normalsize
+
+
+$\integral\dfrac{2^{x + 2} + 5^{x - 2}}{4^{x - 1}}dx$ \\
+
+$= \integral\dfrac{2^{x + 2}}{4^{x - 1}}dx + \integral\dfrac{ 5^{x - 2}}{4^{x - 1}}dx$ \\
+
+$= \integral\dfrac{2^{x + 2}}{2^{2(x - 1)}}dx + \integral\dfrac{ 5^{x}\cdot 5^{-2}}{4^{x}\cdot 4^{-1}}dx$ \\
+
+$= \integral\dfrac{2^{x + 2}}{2^{2x - 2}}dx + \dfrac{5^{-2}}{4^{-1}}\integral\dfrac{ 5^{x}}{4^{x}}dx$ \\
+
+$= \integral 2^{x+2-(2x-2)} dx +  \dfrac{4}{25}\integral\dfrac{5^x}{4^x}dx$ \\
+
+$= \integral 2^{-x+4} dx + \dfrac{4}{25}\integral\left(\dfrac{5}{4}\right)^xdx$ \\
+
+$= \integral 2^{-x} \cdot 2^4 dx + \dfrac{4}{25}\dfrac{\left(\dfrac{5}{4}\right)^x}{\ln \dfrac{5}{4}}$ \\
+
+$= 16 \integral 2^{-x} dx + \dfrac{4\left(\dfrac{5}{4}\right)^x}{25\ln \dfrac{5}{4}}$ \\
+
+$= 16 \integral \left(\dfrac{1}{2}\right)^{x} dx + \dfrac{4\left(\dfrac{5}{4}\right)^x}{25\ln \dfrac{5}{4}} + c$ \\
+
+$= \dfrac{16\left(\dfrac{1}{2}\right)^x}{\ln \dfrac{1}{2}} + \dfrac{4\left(\dfrac{5}{4}\right)^x}{25\ln \dfrac{5}{4}} + c$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

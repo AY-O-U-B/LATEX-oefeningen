@@ -1,0 +1,73 @@
+\documentclass[a4paper]{article} 
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+\noindent \large Auteur: Nathan De Roy \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3H nr. 5.1\\
+
+\medskip
+\normalsize
+
+\noindent \textbf{Schets de functie:} $r = 1 + \cos(\theta)$\\
+
+$\left .
+\begin{array}{l}
+    \operatorname{dom} r    = \mathbb{R}\\
+    P                       = 2\pi
+\end{array}
+\right \}
+\text{Bep. Dom.} = [0, 2\pi]$\\
+
+\noindent \textbf{Nulpunten:}\\
+
+$r = 0 \Leftrightarrow \cos(\theta) = -1 \Leftrightarrow \theta = \pi \longrightarrow \theta \in \{\pi\}$\\
+
+$r' = 0 \Leftrightarrow -\sin(\theta) = 0 \Leftrightarrow \theta = k\pi$ met $k \in \mathbb{N} \longrightarrow \theta \in \{ 0, \pi, 2\pi\}$\\
+
+\noindent \textbf{Schema:}\\
+
+\begin{tabular}{c|ccccc}
+$\theta$ & $0$ & $$ & $\pi$ & $$ & $2\pi$ \\ \hline
+$r$ & $2$ & $+$ & $0$ & $+$ & $2$ \\
+$r'$ & $0$ & $-$ & $0$ & $+$ & $0$ \\
+$$ & Max & $\searrow$ & min & $\nearrow$ & Max  
+\end{tabular}
+
+%De volgende Tikz grafiek is volledig door chatGPT geschreven
+\bigskip
+\noindent \textbf{Grafiek in poolcoördinaten:}\\
+
+\noindent Volgende grafiek is geschreven door \cite{a}\\
+
+\begin{center}
+\begin{tikzpicture}[scale=2]
+
+% polar grid
+\draw[thin,gray!40] (0,0) circle (1),
+\draw[thin,gray!40] (0,0) circle (2),
+
+\foreach \a in {0,30,...,330}
+    \draw[gray!40] (0,0) -- (\a:2.2),
+
+% cardioid
+\draw[domain=0:360,samples=200,smooth,variable=\t,blue,thick]
+plot ({(1+cos(\t))*cos(\t)}, {(1+cos(\t))*sin(\t)}),
+
+% axes
+\draw[->] (-2.2,0) -- (2.2,0),
+\draw[->] (0,-2.2) -- (0,2.2),
+
+\end{tikzpicture}
+\end{center}
+
+\begin{thebibliography}{999}
+\bibitem{a} OpenAI. \textit{ChatGPT (GPT-5.3)}. 
+\end{thebibliography}
+\end{document} 

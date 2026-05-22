@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 39.3 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{2dx}{(x^2+2)^3}$ \\
+
+$x = \sqrt{2}z$ \\
+
+$= 2 \dint \dfrac{1}{(2(z^2+1))^3} \cdot \sqrt{2} dz$ \\
+
+$= 2 \dint \dfrac{1}{8(z^2+1)^3} \cdot \sqrt{2} dz$ \\
+
+$= 2 \cdot \dfrac{1}{8} \cdot \sqrt{2} \dint \dfrac{dz}{(z^2+1)^3}$ \\
+
+$= \dfrac{\sqrt{2}}{4} \dint \dfrac{dz}{(z^2+1)^3}$ \\
+
+$= \dfrac{\sqrt{2}}{4} M_3(z)$ \\
+
+$M_2 = \dfrac{1}{2}M_1 + \dfrac{z}{2(z^2+1)} = \dfrac{1}{2} \Bgtan(z) + \dfrac{z}{2(z^2+1)} + C$ \\
+
+$M_3 = \dfrac{3}{4}M_2 + \dfrac{z}{4(z^2+1)^2} = \dfrac{3}{4}\left(\dfrac{1}{2} \Bgtan(z) + \dfrac{z}{2(z^2+1)}\right) + \dfrac{z}{4(z^2+1)^2} + C$ \\
+
+$= \dfrac{3}{8} \Bgtan(z) + \dfrac{3z}{8(z^2+1)} + \dfrac{z}{4(z^2+1)^2} + C$ \\
+
+$= \dfrac{\sqrt{2}}{4} \left(\dfrac{3}{8} \Bgtan(z) + \dfrac{3z}{8(z^2+1)} + \dfrac{z}{4(z^2+1)^2}\right) + C$ \\
+
+$= \dfrac{\sqrt{2}}{4} \left(\dfrac{3}{8} \Bgtan\left(\dfrac{x}{\sqrt{2}}\right) + \dfrac{3 \cdot \dfrac{x}{\sqrt{2}}}{8 \cdot \dfrac{x^2+2}{2}} + \dfrac{\dfrac{x}{\sqrt{2}}}{4 \cdot \dfrac{(x^2+2)^2}{4}}\right) + C$ \\
+
+$= \dfrac{\sqrt{2}}{4} \left(\dfrac{3}{8} \Bgtan\left(\dfrac{x}{\sqrt{2}}\right) + \dfrac{3x}{4\sqrt{2}(x^2+2)} + \dfrac{x}{\sqrt{2}(x^2+2)^2}\right) + C$ \\
+
+$= \dfrac{3\sqrt{2}}{32} \Bgtan\left(\dfrac{x}{\sqrt{2}}\right) + \dfrac{3x}{16(x^2+2)} + \dfrac{x}{4(x^2+2)^2} + C$ \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

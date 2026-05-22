@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+
+\noindent \large Auteur: Mathijs Pittoors \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2B nr. 1.4\\
+
+\medskip
+
+\normalsize
+
+$\cos (\Bgsin x)$\\
+
+Neem $y = \Bgsin x$ waar $y \in \left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]$, dan\\
+
+\begin{eqnarray*}
+    \sin y &=& x\\
+    \sin^2 y &=& x^2\\
+    1 - \sin^2 y &=& 1 - x^2\\
+    \cos^2 y &=& 1 - x^2\\
+    \cos y &=& + \sqrt{1-x^2} \text{, aangezien } y \in \left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right] \text{ mogen we de negatieve wortel negeren}
+\end{eqnarray*}
+
+Dus $\cos(\Bgsin x) = \sqrt{1-x^2}$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

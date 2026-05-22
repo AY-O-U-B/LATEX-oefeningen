@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article} 
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+\noindent \large Auteur: Nathan De Roy \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 42.4\\
+
+\medskip
+\normalsize
+
+
+\textbf{Los volgende integraal op a.d.h.v Fuss:} $I = \displaystyle\int \dfrac{2x + 1}{x^2 - 1}dx$\\
+
+$I = \displaystyle\int \dfrac{2x + 1}{x^2 - 1}dx = \displaystyle\int \dfrac{2x + 1}{(x + 1)(x - 1)}dx$\\
+
+Neem $A, B \in \mathbb{R}$ zodat:\\
+
+$I = \displaystyle\int \left( \dfrac{A}{x - 1} + \dfrac{B}{x + 1} \right) dx$\\
+
+met:\\
+
+$\left. A = \dfrac{2x + 1}{x + 1} \right|_{x=1} = \dfrac{3}{2}$\\
+
+$\left. B = \dfrac{2x + 1}{x - 1} \right|_{x = -1} = \dfrac{1}{2}$\\
+
+$\Rightarrow I = \dfrac{3}{2} \displaystyle\int \dfrac{dx}{x - 1} + \dfrac{1}{2} \displaystyle\int \dfrac{dx}{x + 1}$\\
+
+$\Rightarrow I = \dfrac{3}{2} \ln|x - 1| + \dfrac{1}{2} \ln|x + 1| + C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

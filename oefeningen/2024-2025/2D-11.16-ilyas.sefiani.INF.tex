@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Ilyas Sefiani \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2D nr. 11.16\\
+
+\medskip
+
+\normalsize
+
+$\lim\limits_{x \rightarrow 0}\dfrac{-5}{\sqrt{7-x}-\sqrt{x+7}} = \dfrac{-5}{0}$\\
+
+
+Opsplitsen:\\
+
+Voor $0^-$:\\
+
+$\lim\limits_{x \rightarrow 0-}\dfrac{-5}{\sqrt{7-x}-\sqrt{x+7}} = \dfrac{-5}{\sqrt{7-0^-}-\sqrt{0^-+7}} = \dfrac{-5}{\sqrt{7^+}-\sqrt{7^-}}$\\
+
+$=\dfrac{-5}{0^+} = -\infty$\\
+
+Voor $0^+$:\\
+
+$\lim\limits_{x \rightarrow 0+}\dfrac{-5}{\sqrt{7-x}-\sqrt{x+7}} = \dfrac{-5}{\sqrt{7-0^+}-\sqrt{0^++7}} = \dfrac{-5}{\sqrt{7^-}-\sqrt{7^+}}$\\
+
+$=\dfrac{-5}{0^-} = +\infty$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

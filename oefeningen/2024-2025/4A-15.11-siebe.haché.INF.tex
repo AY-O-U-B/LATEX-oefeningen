@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+
+\noindent \large Auteur: Siebe Haché \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 15.11\\
+
+\medskip
+\normalsize
+
+$\displaystyle\int x^2\cdot \cosh x \cdot dx$\\
+
+$\left\{ \begin{array}{l} 
+    u = x^2 \\
+    dv = \cosh x \cdot dx
+\end{array} \right.
+\Rightarrow\left\{ \begin{array}{l} 
+    du = 2x \cdot dx\\
+    v = \sinh x\\
+\end{array} \right. $\\
+
+$= x^2 \sinh x - \displaystyle\int 2x \sinh x \cdot dx$\\
+
+$\left\{ \begin{array}{l} 
+    u = 2x\\
+
+    dv = \sinh x \cdot dx
+\end{array} \right. $
+$\Rightarrow$
+$\left\{ \begin{array}{l} 
+    du = 2 \cdot dx\\
+    
+    v = \cosh x\\
+\end{array} \right. $\\
+
+$= x^2 \sinh x- (2x \cosh x - \displaystyle\int 2 \cosh x \cdot dx)$\\
+
+$= x^2 \sinh x - 2x \cosh x+ 2 \displaystyle\int \cosh x \cdot dx$\\
+
+$= x^2 \sinh x-2x \cosh x + 2 \sinh x + C$\\
+
+$= (x^2 + 2) \sinh x-2x \cosh x + C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

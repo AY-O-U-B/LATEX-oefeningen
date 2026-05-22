@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 12.3\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = x^3 - x^2y + xy^2 - y^3$ \\
+
+$a(1,-1)$ en $h(2,3)$. \\
+
+$
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial f}{\partial x}(x,y) = 3x^2 - 2xy + y^2 \\[3ex] 
+\dfrac{\partial f}{\partial y}(x,y) = -x^2 + 2xy - 3y^2 
+\end{array} 
+\right.
+\Rightarrow
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial f}{\partial x}(1,-1) = 3(1)^2 - 2(1)(-1) + (-1)^2 = 6 \\[3ex] 
+\dfrac{\partial f}{\partial y}(1,-1) = -(1)^2 + 2(1)(-1) - 3(-1)^2 = -6 
+\end{array} 
+\right.
+$ \\
+
+$\Rightarrow Df(a,h) = \left(\begin{array}{c c} 6 & -6 \end{array}\right) \left(\begin{array}{c} 2 \\ 3 \end{array}\right) = -6$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{cancel}
+\newcommand{\llim}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 2D nr. 10.6  \\
+
+
+
+\medskip
+
+\normalsize
+
+$\llim_{x \rightarrow -\sqrt{3}} \dfrac{x^2 + 2\sqrt{3}x + 3}{x^2 - 3} = \dfrac{0}{0}$ \\
+
+We noemen de vergelijking in de teller en noemer respectievelijk $t(x)$ en $n(x)$\\
+
+$t(x)$ is van de vorm $(a+b)^2$ met: \\
+
+$\Rightarrow \left\{
+\begin{array}{lll}
+a^2 = x^2 &\Rightarrow& a = x    \\
+
+b^2 = 3 &\Rightarrow& b = \sqrt{3}
+\end{array}
+\right .$\\
+
+$t(x) = \left(x+\sqrt{3}\right)^2 =\left(x+\sqrt{3}\right)\left(x+\sqrt{3}\right) $\\
+
+$n(x)$ is van de vorm $a^2 - b^2 = (a+b)(a-b)$ met:
+
+$\Rightarrow \left\{
+\begin{array}{lll}
+a^2 = x^2 &\Rightarrow& a = x    \\
+
+b^2 = 3 &\Rightarrow& b = \sqrt{3}  \\
+\end{array}
+\right .$\\
+
+$n(x) = \left(x+\sqrt{3}\right) \left(x-\sqrt{3}\right)$ \\
+
+$\llim_{x \rightarrow -\sqrt{3}} \dfrac{t(x)}{n(x)}$ \\
+
+$= \llim_{x \rightarrow -\sqrt{3}} \dfrac{\cancel{\left(x+\sqrt{3}\right)}\left(x+\sqrt{3}\right)}{\cancel{\left(x+\sqrt{3}\right)}\left(x-\sqrt{3}\right)}$ \\
+
+$=\llim_{x \rightarrow -\sqrt{3}} \dfrac{x+\sqrt{3}}{x-\sqrt{3}}$ \\
+
+$= \dfrac{-\sqrt{3} + \sqrt{3}}{-\sqrt{3} - \sqrt{3}}$ \\
+
+$= \dfrac{0}{-2\sqrt{3}}$ \\
+
+$= 0$ \\
+
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

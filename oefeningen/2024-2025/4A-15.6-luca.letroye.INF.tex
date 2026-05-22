@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 15.6
+\\
+
+\medskip
+\normalsize
+
+$\displaystyle\int (x^2+x-2)e^xdx$\\
+
+$\left\{
+\begin{array}{l}
+	u=(x^2+x-2) \\ 
+	dv=e^x dx
+\end{array}
+\right.
+\Rightarrow 
+\left\{
+\begin{array}{l}
+	du= 	(2x+1)dx\\
+ 	v= e^x
+\end{array}
+\right.$\\
+
+$\Rightarrow (x^2+x-2)e^x - \displaystyle\int (2x+1)e^xdx$\\
+
+$\left\{
+\begin{array}{l}
+	u=2x+1 \\ 
+	dv=e^x dx
+\end{array}
+\right.
+\Rightarrow 
+\left\{
+\begin{array}{l}
+	du= 	2dx\\
+ 	v= e^x
+\end{array}
+\right.$\\
+
+$\Rightarrow (x^2+x-2)e^x - \left((2x+1)e^x - 2\displaystyle\int e^xdx \right)$\\
+
+$ = x^2e^x+xe^x-2e^x - 2xe^x-e^x+2e^x +C$\\ 
+
+$ = (x^2-x-1)e^x +C$\\ 
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 12.6\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = \sqrt{x^2 + y^2}$ \\
+
+$a(1,0)$ en $h\left(\dfrac{2\sqrt{5}}{5}, \dfrac{\sqrt{5}}{5}\right)$. \\
+
+$
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial f}{\partial x}(x,y) = \dfrac{2x}{2\sqrt{x^2 + y^2}} = \dfrac{x}{\sqrt{x^2 + y^2}} \\ 
+\dfrac{\partial f}{\partial y}(x,y) = \dfrac{2y}{2\sqrt{x^2 + y^2}} = \dfrac{y}{\sqrt{x^2 + y^2}} 
+\end{array} 
+\right.
+\Rightarrow
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial f}{\partial x}(1,0) = \dfrac{1}{\sqrt{1^2 + 0^2}} = 1 \\ 
+\dfrac{\partial f}{\partial y}(1,0) = \dfrac{0}{\sqrt{1^2 + 0^2}} = 0 
+\end{array} 
+\right.
+$ \\
+
+$\Rightarrow Df(a,h) = \left(\begin{array}{c c} 1 & 0 \end{array}\right) \left(\begin{array}{c} \dfrac{2\sqrt{5}}{5} \\ \dfrac{\sqrt{5}}{5} \end{array}\right) = \dfrac{2\sqrt{5}}{5}$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

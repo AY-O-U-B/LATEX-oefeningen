@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 2.1\\
+
+\medskip
+
+\normalsize
+
+
+$f^{(k)}(x) = e^x$ \\
+
+$\Rightarrow f^{(k)}(0) = e^0 = 1$ voor $k \in \mathbb{N}$ \\
+
+$f(x) = T_n(f,a)(x) + R_n(x)$ \\
+
+$\Leftrightarrow e^x = \displaystyle\sum_{k = 0}^n \dfrac{x^k}{k!} + \dfrac{(x - 0)^{n + 1}}{(n + 1)!}f^{(n + 1)}(\xi)$ \\
+
+$\Leftrightarrow e^x = \displaystyle\sum_{k = 0}^n \dfrac{x^k}{k!} + \dfrac{x^{n + 1}}{(n + 1)!}e^\xi$ met $\xi \in ]0,x[$ \\
+
+Bewijs dat $\forall x \in \mathbb{R}: \limit_{n \to +\infty} R_n(x) = 0$: \\
+
+$x\ge0 \Rightarrow 0\le\xi\le x \Rightarrow e^\xi\le e^x$ \\
+
+$x < 0 \Rightarrow x\le\xi\le0 \Rightarrow e^\xi\le1$ \\
+
+$\Rightarrow$ Stel $M_x = \max(1,e^x) \Rightarrow e^\xi\le M_x$ \\
+
+$\Rightarrow \left|R_n(x)\right| = \left|\dfrac{x^{n + 1}}{(n + 1)!}e^\xi\right| \le \dfrac{|x|^{n + 1}}{(n + 1)!}M_x$ \\
+
+$M_x$ is een constante, het volstaat om aan te tonen dat $\limit_{n \to +\infty} \dfrac{|x|^{n + 1}}{(n + 1)!} = 0$. \\
+
+d'Alembert: \\
+
+$\limit_{n \to +\infty}\dfrac{\dfrac{|x|^{n + 2}}{(n + 2)!}}{\dfrac{|x|^{n + 1}}{(n + 1)!}}$ \\
+
+$= \limit_{n \to +\infty}\dfrac{|x|^{n + 2}(n + 1)!}{|x|^{n + 1}(n + 2)!}$ \\
+
+$= \limit_{n \to +\infty}\dfrac{|x|}{n + 2} = 0 < 1 \Rightarrow$ convergeert naar 0\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

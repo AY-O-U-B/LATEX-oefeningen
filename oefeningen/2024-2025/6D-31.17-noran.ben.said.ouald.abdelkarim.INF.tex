@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\noindent \large Auteur: Noran Ben Said \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6D nr. 31.17\\
+
+\medskip
+\normalsize
+
+$\displaystyle\sum_{n=0}^{\infty} e^{-\tfrac{n^2}{2}}$ \\
+
+Criterium 7(+) (d'Alembert)\\
+
+Stel $x_n = e^{-\tfrac{n^2}{2}}$ \\
+
+Stel $x_{n+1} = e^{-\tfrac{(n+1)^2}{2}}$ \\
+
+$L = \lim\limits_{n \to \infty} \dfrac{e^{-\tfrac{(n+1)^2}{2}}}{e^{-\tfrac{n^2}{2}}}$ \\
+
+$= \lim\limits_{n \to \infty} e^{-\tfrac{n^2+2n+1}{2} + \tfrac{n^2}{2}}$ \\
+
+$= \lim\limits_{n \to \infty} e^{\tfrac{-n^2-2n-1+n^2}{2}}$ \\
+
+$= \lim\limits_{n \to \infty} e^{\tfrac{-2n-1}{2}}$ \\
+
+$= \lim\limits_{n \to \infty} e^{-n - \tfrac{1}{2}} = 0$ \\
+
+Aangezien $L = 0 < 1$, is de reeks volgens het criterium van d'Alembert convergent.
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

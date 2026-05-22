@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\dlim}{\lim\limits}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7C nr. 2.1\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = \sin(xy^2)$ \\
+
+1ste partiële afgeleiden:\\
+
+$\left\{ 
+\begin{array}{l} 
+\dfrac{\partial f}{\partial x}(x,y) = y^2 \cos(xy^2) \\ 
+\dfrac{\partial f}{\partial y}(x,y) = 2xy \cos(xy^2) 
+\end{array} 
+\right.$ \\
+
+2de partiële afgeleiden:\\
+
+$\left\{ 
+\begin{array}{l} 
+\dfrac{\partial^2 f}{\partial x^2}(x,y) = -y^4 \sin(xy^2) \\ 
+\dfrac{\partial^2 f}{\partial y^2}(x,y) = 2x \cos(xy^2) - 4x^2y^2 \sin(xy^2) \\
+\dfrac{\partial^2 f}{\partial y \partial x}(x,y) = 2y \cos(xy^2) - 2xy^3 \sin(xy^2) \\
+\dfrac{\partial^2 f}{\partial x \partial y}(x,y) = 2y \cos(xy^2) - 2xy^3 \sin(xy^2)
+\end{array} 
+\right.$ \\
+
+Hessiaanse matrix:\\
+
+$D^2f(x,y) = \left(\begin{array}{c c} -y^4 \sin(xy^2) & 2y \cos(xy^2) - 2xy^3 \sin(xy^2) \\ 2y \cos(xy^2) - 2xy^3 \sin(xy^2) & 2x \cos(xy^2) - 4x^2y^2 \sin(xy^2) \end{array}\right)$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

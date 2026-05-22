@@ -1,0 +1,62 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Noran Ben Said \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 48.5\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle\int \ln\left(\dfrac{x^2+1}{x^2-1}\right)dx$\\
+
+Partiële integratie:\\
+
+$\left\{ \begin{array}{l} 
+    u = \ln\left(\dfrac{x^2+1}{x^2-1}\right)\\ 
+    dv = dx 
+\end{array} \right. 
+\Rightarrow 
+\left\{ \begin{array}{l} 
+    du = \left(\dfrac{2x}{x^2+1}-\dfrac{2x}{x^2-1}\right)dx = \dfrac{-4x}{x^4-1}dx\\ 
+    v = x
+\end{array} \right.$\\
+
+$ I = x\ln\left(\dfrac{x^2+1}{x^2-1}\right) - \displaystyle\int x \cdot \dfrac{-4x}{x^4-1}dx$\\
+
+$ = x\ln\left(\dfrac{x^2+1}{x^2-1}\right)+ \displaystyle\int \dfrac{4x^2}{x^4-1}dx$\\
+
+$ x^4-1 = (x-1)(x+1)(x^2+1)$\\
+
+$ \dfrac{4x^2}{x^4-1}=\dfrac{A}{x-1}+\dfrac{B}{x+1}+\dfrac{Cx+D}{x^2+1}$\\
+
+$ A = \left.\dfrac{4x^2}{(x+1)(x^2+1)}\right|_{x=1}= \dfrac{4}{2\cdot 2}=1$\\
+
+$ B = \left.\dfrac{4x^2}{(x-1)(x^2+1)}\right|_{x=-1}= \dfrac{4}{-2\cdot 2}=-1$\\
+
+$ Ci+D = \left.\dfrac{4x^2}{x^2-1}\right|_{x=i}= \dfrac{-4}{-2}=2$\\
+
+$ \Rightarrow C=0,\quad D=2$\\
+
+$ \dfrac{4x^2}{x^4-1}=\dfrac{1}{x-1}-\dfrac{1}{x+1}+\dfrac{2}{x^2+1}$\\
+
+$ \displaystyle\int \dfrac{4x^2}{x^4-1}dx=\displaystyle\int\left(\dfrac{1}{x-1}-\dfrac{1}{x+1}+\dfrac{2}{x^2+1}\right)dx$\\
+
+$ = \ln|x-1|-\ln|x+1|+2\operatorname{Bgtan}x + c$\\
+
+$ = \ln\left|\dfrac{x-1}{x+1}\right|+2\operatorname{Bgtan}x+c$\\
+
+Dus:\\
+
+$ I =x\ln\left(\dfrac{x^2+1}{x^2-1}\right)+\ln\left|\dfrac{x-1}{x+1}\right|+2\operatorname{Bgtan}x+c$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

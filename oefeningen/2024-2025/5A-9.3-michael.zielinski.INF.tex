@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}   
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 9.3\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int^1_0 x^{\tfrac{1}{2}}(1-x)^{\tfrac{1}{2}} dx $ \\
+
+$ x = \sin^2 u $ \\
+
+$ dx = 2\sin u \cos u \, du $ \\
+
+$ x = 0 \Rightarrow u = 0 $ \\
+
+$ x = 1 \Rightarrow u = \dfrac{\pi}{2} $ \\
+
+$ \displaystyle\int^1_0 x^{\tfrac{1}{2}}(1-x)^{\tfrac{1}{2}} dx
+= \displaystyle\int^{\dfrac{\pi}{2}}_0 \sqrt{\sin^2 u}\sqrt{1-\sin^2 u} \cdot 2\sin u \cos u \, du $ \\
+
+$ = \displaystyle\int^{\dfrac{\pi}{2}}_0 \sin u \cos u \cdot 2\sin u \cos u \, du $ \\
+
+$ = \displaystyle\int^{\dfrac{\pi}{2}}_0 2\sin^2 u \cos^2 u \, du $ \\
+
+$ = \displaystyle\int^{\dfrac{\pi}{2}}_0 \dfrac{1}{2}\sin^2(2u) \, du $ \\
+
+$ = \displaystyle\int^{\dfrac{\pi}{2}}_0 \dfrac{1}{4}(1-\cos(4u)) \, du $ \\
+
+$ = \left[ \dfrac{u}{4} - \dfrac{\sin(4u)}{16} \right]^{\dfrac{\pi}{2}}_0 $ \\
+
+$ = \left( \dfrac{\pi}{8} - \dfrac{\sin(2\pi)}{16} \right) - \left( 0 - \dfrac{\sin(0)}{16} \right) $ \\
+
+$ = \dfrac{\pi}{8} $ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

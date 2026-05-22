@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 42.8\\
+
+\bigskip
+
+\normalsize
+
+$\displaystyle 42.8\quad \int \dfrac{dx}{x^3-7x+6}$\\
+
+$\displaystyle x^3-7x+6=(x-1)(x-2)(x+3)$\\
+
+$\displaystyle \dfrac{1}{x^3-7x+6}=\dfrac{1}{(x-1)(x-2)(x+3)}=\dfrac{A}{x-1}+\dfrac{B}{x-2}+\dfrac{C}{x+3}$\\
+
+$\displaystyle A=\left.\dfrac{1}{(x-2)(x+3)}\right|_{x=1}=\dfrac{1}{(-1)(4)}=-\dfrac{1}{4}$\\
+
+$\displaystyle B=\left.\dfrac{1}{(x-1)(x+3)}\right|_{x=2}=\dfrac{1}{(1)(5)}=\dfrac{1}{5}$\\
+
+$\displaystyle C=\left.\dfrac{1}{(x-1)(x-2)}\right|_{x=-3}=\dfrac{1}{(-4)(-5)}=\dfrac{1}{20}$\\
+
+$\displaystyle \dfrac{1}{x^3-7x+6}=-\dfrac{1}{4(x-1)}+\dfrac{1}{5(x-2)}+\dfrac{1}{20(x+3)}$\\
+
+$\displaystyle \int \dfrac{dx}{x^3-7x+6}=-\dfrac{1}{4}\ln|x-1|+\dfrac{1}{5}\ln|x-2|+\dfrac{1}{20}\ln|x+3|+c$
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\llim}{\lim\limits}
+\newcommand{\adh}{\underset{n\rightarrow+\infty}{\operatorname{adh}}}
+
+\begin{document}
+  
+\noindent \large Auteur: Mathijs Pittoors \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6D nr. 31.13\\
+
+\medskip
+
+\normalsize
+
+$x_n = \displaystyle\sum_{n=1}^{\infty} \dfrac{5^{\tfrac{1}{n}}}{n}$\\
+
+Het verdichtingscriterium stelt dat dit equivalent is aan\\
+
+het convergentie-onderzoek van $\displaystyle\sum_{n=1}^{\infty} \dfrac{5^{\tfrac{1}{2^n}}}{2^n}$\\
+
+Uit het kleine criterium van Cauchy volgt dan\\
+
+$\limsup\limits_{n\rightarrow +\infty} \sqrt[n]{\dfrac{5^{\tfrac{1}{2^n}}}{2^n}} = \limsup\limits_{n\rightarrow +\infty} \dfrac{5^{\tfrac{1}{2^n \cdot n}}}{2} = \dfrac{1}{2} \Rightarrow$ \textbf{Convergent}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

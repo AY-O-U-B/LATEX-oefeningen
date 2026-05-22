@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 40.1\\
+
+\medskip
+
+\normalsize
+
+
+$\displaystyle\int \dfrac{dx}{\sqrt{x(4-x)}}= \displaystyle\int \dfrac{dx}{\sqrt{4x - x^2}} =\displaystyle\int \dfrac{dx}{\sqrt{-(x^2 - 4x)}}$\\
+
+$= \displaystyle\int \dfrac{dx}{\sqrt{-(x^2 - 4x + 4 - 4)}} =\displaystyle\int \dfrac{dx}{\sqrt{4 - (x-2)^2}} $\\
+
+$t = x-2 \Rightarrow dt = dx$\\
+
+$\displaystyle\int \dfrac{dx}{\sqrt{4-(x-2)^2}} = \displaystyle\int \dfrac{dt}{\sqrt{4-t^2}} = \displaystyle\int \dfrac{dt}{\sqrt{4\left(1-\dfrac{t^2}{4}\right)}} = \displaystyle\int \dfrac{dt}{2\sqrt{1-\left(\dfrac{t}{2}\right)^2}}$\\
+
+$u = \dfrac{t}{2} \Rightarrow du = \dfrac{1}{2}dt \Rightarrow dt = 2du$\\
+
+$= \displaystyle\int \dfrac{2du}{2\sqrt{1-u^2}} = \displaystyle\int \dfrac{du}{\sqrt{1-u^2}} = \operatorname{Bgsin}(u) + c$\\
+
+Dus:\\
+
+$\displaystyle\int \dfrac{dx}{\sqrt{x(4-x)}} = \operatorname{Bgsin}\left(\dfrac{x-2}{2}\right) + c$
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

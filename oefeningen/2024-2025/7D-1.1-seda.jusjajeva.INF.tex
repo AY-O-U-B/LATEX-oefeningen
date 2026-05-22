@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+\newcommand{\integral}{\displaystyle\int}
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7D nr. 1.1\\
+
+\medskip
+
+\normalsize
+
+
+$f(x, y) = x^3 + x^2y^3 - 3y^4$ in $(1, -1)$, graad $2$ \\
+
+$f(1, -1) = 1 - 1 - 3 = -3$ \\
+
+$\dfrac{\partial f}{\partial x}(x, y) = 3x^2 + 2xy^3 \Rightarrow \dfrac{\partial f}{\partial x}(1, -1) = 1$ \\
+
+$\dfrac{\partial f}{\partial y}(x, y) = 3x^2y^2 - 12y^3 \Rightarrow \dfrac{\partial f}{\partial y}(1, -1) = 15$ \\
+
+$\dfrac{\partial^2 f}{\partial x^2}(x, y) = 6x + 2y^3 \Rightarrow \dfrac{\partial^2 f}{\partial x^2}(1, -1) = 4$ \\
+
+$\dfrac{\partial^2 f}{\partial x\partial y}(x, y) = 6xy^2 \Rightarrow \dfrac{\partial^2 f}{\partial x\partial y}(1, -1) = 6$ \\
+
+$\dfrac{\partial^2 f}{\partial y^2}(x, y) = 6x^2y - 36y^2 \Rightarrow \dfrac{\partial^2 f}{\partial y^2}(1, -1) = -42$ \\
+
+$T_2(f,(1, -1))(1 + h, -1 + k) = -3 + h + 15k + \dfrac{1}{2!}\left(4h^2 - 12hk -42k^2\right)$ met $h = x - 1$ en $k = y + 1$ \\
+
+$T_2(f,(1, -1))(x, y) = -3 + (x - 1) + 15(y + 1) + \dfrac{1}{2!}\left(4(x - 1)^2 - 12(x - 1)(y + 1) -42(y + 1)^2\right)$ \\
+
+$= -3 + x - 1 + 15y + 15 + 2x^2 - 4x + 2 - 6xy + 6x - 6y - 6 - 21y^2 - 42y - 21$ \\
+
+$= -14 + 3x - 33y + 2x^2 - 6xy - 21y^2$ \\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

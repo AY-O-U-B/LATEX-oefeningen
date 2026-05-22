@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6D nr. 31.12\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\sum_{n=1}^{\infty} \dfrac{n\sin\left(\dfrac{1}{n}\right)}{\dfrac{1}{n}+5}$\\
+
+Volgens de criterium 1 (negatief criterium voor divergente reeksen):\\
+
+Als voor de algemene term van een reeks $\displaystyle\sum_{n=1}^{\infty} x_n$ geldt dat $\lim\limits_{n\to+\infty} x_n \neq 0$\\
+
+dan is de reeks divergent.\\
+
+$x_n = \dfrac{n\sin\left(\dfrac{1}{n}\right)}{\dfrac{1}{n}+5}$\\
+
+Wij weten dat $\lim\limits_{u\to 0}\dfrac{\sin u}{u}=1$, dus met $u=\dfrac{1}{n}\to 0$:\\
+
+$\lim\limits_{n\to+\infty} n\sin\left(\dfrac{1}{n}\right)
+  = \lim\limits_{n\to+\infty} \dfrac{\sin\left(\dfrac{1}{n}\right)}{\dfrac{1}{n}}
+  = 1$\\
+  
+Dus:\\
+
+$\lim\limits_{n\to+\infty} x_n
+  = \lim\limits_{n\to+\infty} \dfrac{n\sin\left(\dfrac{1}{n}\right)}{\dfrac{1}{n}+5}
+  = \dfrac{1}{0+5} = \dfrac{1}{5} \neq 0$\\
+
+Omdat $\lim\limits_{n\to+\infty} x_n = \dfrac{1}{5} \neq 0$, is de reeks divergent.
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

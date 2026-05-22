@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 15.8 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{x^2}{e^x} dx$ \\
+
+$= \dint e^{-x} \cdot x^2 dx$ \\
+
+$ \left\{
+\begin{array}{l}
+u = x^2  \\
+dv = e^{-x} dx
+\end{array} \right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = 2x dx \\
+v = -e^{-x}
+\end{array} 
+\right.$ \\
+
+$= x^2 \cdot (-e^{-x}) - \dint -e^{-x} \cdot 2x dx$ \\
+
+$= -x^2 e^{-x} + 2 \dint x e^{-x} dx$ \\
+
+$ \left\{
+\begin{array}{l}
+u = x \\
+dv = e^{-x} dx
+\end{array} \right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = 1dx \\
+v = -e^{-x}
+\end{array} 
+\right.$ \\
+
+$= -x^2e^{-x} + 2 \left[ x \cdot(-e^{-x}) - \dint -e^{-x} dx \right]$ \\
+
+$= -x^2e^{-x} + 2 \left[-x e^{-x} + \dint e^{-x} dx \right]$ \\
+
+$= -x^2e^{-x} + 2 \left[-x e^{-x} + (-e^{-x}) \right] + C$ \\
+
+$= -x^2e^{-x} + 2 \left[-x e^{-x} - e^{-x} \right] + C$ \\
+
+$= -x^2e^{-x} - 2xe^{-x} - 2e^{-x} + C$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

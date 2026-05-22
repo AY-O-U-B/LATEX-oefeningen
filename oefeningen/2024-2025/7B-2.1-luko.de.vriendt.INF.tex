@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\newcommand{\hsp}{\hspace{1cm}}
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 2.1\\
+
+\medskip
+
+\normalsize
+
+$w = \ln (x^2 + y^2 + z^2) \hsp x = s-t \hsp y = s+t \hsp z = 2\sqrt{st}$ \\
+
+$\dfrac{dx}{ds} = 1 \hsp \dfrac{dx}{dt} = -1$ \\
+
+$\dfrac{dy}{ds} = 1 \hsp \dfrac{dy}{dt} = 1$ \\
+
+$\dfrac{dz}{ds} = \dfrac{\cancel{2}t}{\cancel{2}\sqrt{st}} \hsp \dfrac{dz}{dt} = \dfrac{\cancel{2}s}{\cancel{2}\sqrt{st}}$ \\
+
+\medskip
+
+$\dfrac{\partial w}{\partial x} = \dfrac{2x}{x^2 + y^2 + z^2}$ \\
+
+$\dfrac{\partial w}{\partial y} = \dfrac{2y}{x^2 + y^2 + z^2}$ \\
+
+$\dfrac{\partial w}{\partial z} = \dfrac{2z}{x^2 + y^2 + z^2}$ \\
+
+\medskip
+
+$\dfrac{\partial w}{\partial s} = \dfrac{2x\sqrt{st}}{(x^2 + y^2 + z^2)\sqrt{st}} + \dfrac{2y\sqrt{st}}{(x^2 + y^2 + z^2)\sqrt{st}} + \dfrac{2zt}{(x^2 + y^2 + z^2)\sqrt{st}}$ \\
+
+$= \dfrac{2x\sqrt{st} + zy\sqrt{st} + 2zt}{(x^2 + y^2 + z^2)\sqrt{st}}$ \\
+
+$= \dfrac{2(s-t)\bcancel{\sqrt{st}} +2(s+t)\bcancel{\sqrt{st}}+4t\bcancel{\sqrt{st}}}{((s-t)^2+(s+t)^2 +(2\sqrt{st})^2)\bcancel{\sqrt{st}}}$ \\
+
+$=\dfrac{2s \bcancel{- 2t} + 2s \bcancel{+ 2t} + 4t}{s^2 \bcancel{-2st} + t^2 + s^2 \bcancel{+ 2st} + t^2 + 4st}$ \\
+
+$= \dfrac{\cancelto{2}{4}(s+t)}{\cancel{2}(s+t)^2}$ \\
+
+$= \dfrac{2}{s+t}$ \\
+
+\medskip
+
+$\dfrac{\partial w}{\partial t} = \dfrac{-2x\sqrt{st}}{(x^2 + y^2 + z^2)\sqrt{st}} + \dfrac{2y\sqrt{st}}{(x^2 + y^2 + z^2)\sqrt{st}} + \dfrac{2zs}{(x^2 + y^2 + z^2)\sqrt{st}}$ \\
+
+$= \dfrac{-2x\sqrt{st} + zy\sqrt{st} + 2zs}{(x^2 + y^2 + z^2)\sqrt{st}}$ \\
+
+$= \dfrac{-2(s-t)\bcancel{\sqrt{st}} +2(s+t)\bcancel{\sqrt{st}}+4s\bcancel{\sqrt{st}}}{((s-t)^2+(s+t)^2 +(2\sqrt{st})^2)\bcancel{\sqrt{st}}}$ \\
+
+$=\dfrac{\bcancel{-2s} + 2t \bcancel{+ 2s} + 2t + 4s}{s^2 \bcancel{-2st} + t^2 + s^2 \bcancel{+ 2st} + t^2 + 4st}$ \\
+
+$= \dfrac{\cancelto{2}{4}(t+s)}{\cancel{2}(s+t)^2}$ \\
+
+$= \dfrac{2}{s+t}$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

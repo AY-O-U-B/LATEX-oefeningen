@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5D nr. 4.8\\
+
+\medskip
+
+\normalsize
+
+$y = x^3-3x+2, y = 0$\\
+
+$\Rightarrow x^3-3x+2 = 0 \Rightarrow (x-1)(x^2+x-2)=0\Rightarrow (x-1)^2(x+2)=0$\\
+
+$S = \dint\limits_{-2}^1(x^3-3x+2)dx$\\
+
+$= \left[\dfrac{x^4}{4}-\dfrac{3x^2}{2}+2x\right]_{-2}^1$\\
+
+$=\dfrac{1}{4}-\dfrac{6}{4}+2-4+6+4 = \dfrac{27}{4}$\\
+
+Tekening: \\
+
+\begin{center}
+\begin{tabular}{c|ccccccccc}
+$x$ & $-\infty$ & & $-2$ & & $-1$ & & $1$ & & $+\infty$ \\
+\hline
+$f(x)$ & & $-$ & $0$ & $+$ & $4$ & $+$ & $0$ & $+$ & \\
+$f'(x)$ & & $+$ & $+$ & $+$ & $0$ & $-$ & $0$ & $+$ & \\
+\end{tabular}
+\end{center}\\
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\linewidth]{5D-4.8-thijs.van.schel.INF.png}
+\end{figure} 
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

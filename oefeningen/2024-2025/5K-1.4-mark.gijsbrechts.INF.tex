@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5K nr. 1.4\\
+
+\medskip
+
+\normalsize
+
+
+
+
+
+$ r = \sin^2 \dfrac{\theta}{2} $ op het interval $ \left[0, 2\pi \right]  $ \\
+
+$ r^2 = \sin^4 \dfrac{\theta}{2} $ \\
+
+$ r' = 2 \sin \dfrac{\theta}{2} \cos \dfrac{\theta}{2} \cdot \dfrac{1}{2} = \sin \dfrac{\theta}{2} \cos \dfrac{\theta}{2} $ \\
+
+$ (r')^2 = \sin^2 \dfrac{\theta}{2} \cos^2 \dfrac{\theta}{2} $ \\
+
+$ L = \dint_{0}^{2 \pi} \sqrt{\sin^4 \dfrac{\theta}{2} + \sin^2 \dfrac{\theta}{2} \cos^2 \dfrac{\theta}{2}} d\theta  $ \\
+
+$= \dint_{0}^{2 \pi} \sqrt{ \sin^2 \dfrac{\theta}{2} \left( \sin^2 \dfrac{\theta}{2} + \cos^2 \dfrac{\theta}{2} \right)} d\theta  $ \\
+
+$= \dint_{0}^{2 \pi} \sqrt{ \sin^2 \dfrac{\theta}{2} } d\theta  $ \\
+
+$= \dint_{0}^{2 \pi} \sin \dfrac{\theta}{2} d\theta  $ \\
+
+$ u = \dfrac{\theta}{2} \Rightarrow du = \dfrac{1}{2} d\theta \Rightarrow d\theta = 2du $ \\
+
+$= 2 \dint_{0}^{\pi} \sin u du  $ \\
+
+$= -2 \left[ \cos u \right]_{0}^{\pi} $ \\
+
+$= -2 \left[ -1 - 1 \right] $ \\
+
+$= 4 $
+
+
+\begin{figure}[h]
+\centering
+    \includegraphics[width=\linewidth]{5K-1.4-mark.gijsbrechts.png}\\
+\end{figure}
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

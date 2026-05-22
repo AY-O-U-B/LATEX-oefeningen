@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\begin{document}
+\noindent \large Auteur: Luko De Vriendt\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 2A nr. 10.1\\
+
+\medskip
+
+\normalsize
+
+$f$ ctu. $: I \subseteq \mathbb{R} \Rightarrow \mathbb{R} $\\
+
+$g$ ctu. $: J \subseteq \mathbb{R} \Rightarrow \mathbb{R} $\\
+
+$h$ ctu. $: G \subseteq \mathbb{R} \Rightarrow \mathbb{R} $\\
+
+$\Rightarrow f + g + h : I \wedge J \wedge G \subseteq \mathbb{R} \Rightarrow \mathbb{R} $ ctu. \\
+
+$a \in  I \cap J \cap G$ \\
+
+Pak $\varepsilon > 0$ \\
+
+$\Rightarrow \exists \delta_1 > 0, \forall x \in I : \left| x-a \right| < \delta_1 \Rightarrow \left| f(x)-f(a) \right| < \dfrac{\varepsilon}{3}$ \\
+
+$\Rightarrow \exists \delta_2 > 0, \forall x \in J : \left| x-a \right| < \delta_2 \Rightarrow \left| g(x)-g(a) \right| < \dfrac{\varepsilon}{3}$ \\
+
+$\Rightarrow \exists \delta_3 > 0, \forall x \in G : \left| x-a \right| < \delta_3 \Rightarrow \left| h(x)-h(a) \right| < \dfrac{\varepsilon}{3}$ \\
+
+Stel $\delta := \delta_1 \wedge \delta_2 \wedge \delta_3 > 0$ \\
+
+Als $\left| x-a \right| < \delta$ \\
+
+Dan $\left| (f+g+h)(x)-(f+g+h)(a) \right| = \left| f(x)+g(x)+h(x)-f(a)-g(a)-h(a)\right|$ \\
+
+$\leq \left| f(x)-f(a) \right| + \left| g(x)-g(a) \right| + \left| h(x)-h(a) \right| < \varepsilon$ \\
+
+$ <\dfrac{\varepsilon}{3} + \dfrac{\varepsilon}{3} + \dfrac{\varepsilon}{3} < \varepsilon$ \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} mathbb{R}ferentie
+\end{thebibliography}
+\end{document} 

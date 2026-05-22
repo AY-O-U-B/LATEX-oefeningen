@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\noindent \large Auteur: Xander De Blauwer \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 63.5\\
+
+\medskip
+
+\normalsize
+
+
+$ = \displaystyle\int \dfrac{dx}{(\sqrt{1+x^2})^3}$ \\
+
+Stel $x = \tan(t) \Rightarrow dx = \sec^2(t)dt $ \\
+
+$ = \displaystyle\int \dfrac{\sec^2(t)}{\sqrt{\sec^2(t)}^3}dt $ \\
+
+$ = \displaystyle\int \dfrac{dt}{\sec(t)} = \displaystyle\int \cos(t)dt $ \\
+
+$ = \sin(t) + c = \sin(\operatorname{Bgtan}(x)) + c $ \\
+
+Stel $\theta = \operatorname{Bgtan}(x) \Rightarrow \tan(\theta) = x $ \\
+
+$\tan(\theta) = \dfrac{\sin(\theta)}{\cos(\theta)} $ \\
+
+$ \Rightarrow x = \dfrac{\sin(\theta)}{\cos(\theta)} \Leftrightarrow \sin(\theta) = x\cos(\theta) $ \\
+
+$x^2\cos^2(\theta) + \cos^2(\theta) = 1 $ \\
+
+$\Rightarrow \cos(\theta) = \dfrac{1}{\sqrt{1+x^2}}$ \\
+
+$\Rightarrow \sin(\theta) = \dfrac{x}{\sqrt{1+x^2}}$
+
+$\displaystyle\int \dfrac{dx}{(\sqrt{1+x^2})^3} = \dfrac{x}{\sqrt{1+x^2}} + c $ \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

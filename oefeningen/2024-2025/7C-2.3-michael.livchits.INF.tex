@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7C nr. 2.3\\
+
+\medskip
+
+\normalsize
+
+$f(x,y)= e^{(x-2y^2)^2}$\\
+	
+Eerste orde:\\
+	
+$\dfrac{\partial f}{\partial x} = e^{(x-2y^2)^2}\cdot(2x-4y^2)$\\
+	
+$\dfrac{\partial f}{\partial y} = e^{(x-2y^2)^2}\cdot(-8xy+16y^3)$\\
+
+Tweede orde:\\
+	
+$\dfrac{\partial^2 f}{\partial x^2} = e^{(x-2y^2)^2}\cdot(2x-4y^2)^2+2e^{(x-2y^2)^2}$\\
+
+$= 2e^{(x-2y^2)^2}\cdot\left(2(x-2y^2)^2+1\right)$\\
+	
+$\dfrac{\partial^2 f}{\partial y^2} = e^{(x-2y^2)^2}\cdot(-8xy+16y^3)^2+e^{(x-2y^2)^2}\cdot(-8xy+48y^2)$\\
+
+$= 8e^{(x-2y^2)^2}\cdot\left(8(-xy+2y^3)^2-x+6y^2\right)$\\
+	
+$\dfrac{\partial^2 f}{\partial x\partial y} = e^{(x-2y^2)^2}\cdot(2x+4y^2)^2+e^{(x-2y^2)^2}\cdot(-8y)$\\
+
+$= 4e^{(x-2y^2)^2}\cdot\left((x-2y^2)^2-2y\right)$\\
+	
+$\dfrac{\partial^2 f}{\partial y\partial x} = e^{(x-2y^2)^2}\cdot(-8xy+16y^3)^2 + e^{(x-2y^2)^2}\cdot(-8y)$\\
+
+$= 8e^{(x-2y^2)^2}\cdot\left(8(-xy-2y^3)^2-y\right)$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

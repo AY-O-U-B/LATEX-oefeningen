@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 1.5\\
+
+\medskip
+
+\normalsize
+
+$T_7\left(f,2\right)(x)$ voor $f(x)=\dfrac{1}{x-1}$\\
+
+$f(x)=(x-1)^{-1}$\\
+
+$f'(x)=-1(x-1)^{-2}$\\
+
+$f''(x)=2(x-1)^{-3}$\\
+
+$f'''(x)=-6(x-1)^{-4}$\\
+
+$f^{iv}(x)=24(x-1)^{-5}$\\
+
+$f^{v}(x)=-120(x-1)^{-6}$\\
+
+$f^{vi}(x)=720(x-1)^{-7}$\\
+
+$f^{vii}(x)=-5040(x-1)^{-8}$\\
+
+$f(2)=1$\\
+
+$f'(2)=-1$\\
+
+$f''(2)=2$\\
+
+$f'''(2)=-6$\\
+
+$f^{iv}(2)=24$\\
+
+$f^{v}(2)=-120$\\
+
+$f^{vi}(2)=720$\\
+
+$f^{vii}(2)=-5040$\\
+
+$\Rightarrow T_7\left(f,2\right)(x)=\displaystyle\sum_{k=0}^{7}\dfrac{f^{(k)}(2)}{k!}(x-2)^k$\\
+
+$=\dfrac{1}{0!}+\dfrac{-1}{1!}(x-2)+\dfrac{2}{2!}(x-2)^2+\dfrac{-6}{3!}(x-2)^3+\dfrac{24}{4!}(x-2)^4$\\
+
+$+\dfrac{-120}{5!}(x-2)^5+\dfrac{720}{6!}(x-2)^6+\dfrac{-5040}{7!}(x-2)^7$\\
+
+$=1-(x-2)+(x-2)^2-(x-2)^3+(x-2)^4-(x-2)^5+(x-2)^6-(x-2)^7$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

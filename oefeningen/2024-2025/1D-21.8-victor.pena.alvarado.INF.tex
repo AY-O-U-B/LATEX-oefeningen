@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\DeclareMathOperator{\cis}{cis}
+
+\begin{document}
+	
+	\noindent \large Auteur: Victor Pena \\
+	\noindent \large Studierichting: Informatica\\
+	\noindent \large Oefeningenreeks 1D nr. 21.8\\
+	
+	\medskip
+	
+	\normalsize 
+	
+	$P(z)=z^3 -z^2 + 3z - 10$ \\
+	
+	
+	$P(2)=8 - 4 + 6 - 10 = 0$\\
+	
+	$\Rightarrow$ \begin{tabular}{l|lll|l}
+		 & 1 & -1 & 3  &-10 \\
+		2&   & 2  & 2  &10 \\  \cline{1-5}
+		 & 1 & 1  & 5  &0
+	\end{tabular} $\Rightarrow P(z) = (z-2)(z^2 + z + 5)$\\
+	
+	
+	De wortels van $z^2 + z + 5$ zijn gegeven door: \\
+	
+	$z = \dfrac{-1 \pm i\sqrt{20-1}}{2} = \dfrac{-1 \pm i\sqrt{19}}{2} = -\dfrac{1}{2} \pm i\dfrac{\sqrt{19}}{2}$\\
+	
+	
+	Dus, $P(z) = (z-2)(z+\dfrac{1}{2}-i\dfrac{\sqrt{19}}{2})(z+\dfrac{1}{2}+i\dfrac{\sqrt{19}}{2})$, met wortels $2,-\dfrac{1}{2}+i\dfrac{\sqrt{19}}{2}$ en $-\dfrac{1}{2}-i\dfrac{\sqrt{19}}{2}$ \\
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\begin{thebibliography}{999}
+		%\bibitem{a} Referentie
+	\end{thebibliography}
+\end{document} 

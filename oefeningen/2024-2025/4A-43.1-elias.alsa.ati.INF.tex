@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Elias Alsa Ati         \\
+\noindent \large Studierichting: Informatica    \\
+\noindent \large Oefeningenreeks 4A nr. 43.1    \\
+
+\medskip
+
+\normalsize
+
+$$\integral \dfrac{dx}{x(x-1)^2}$$
+
+We splitsen de integraal op in partiële Breuken: \\
+
+$\begin{array}{l}
+    
+    \dfrac{1}{x(x-1)^2} \Rightarrow \dfrac{A}{x} + \dfrac{B}{(x-1)^2} + \dfrac{C}{(x-1)} \\
+    
+    \left.
+    \begin{array}{l}
+        A = \dfrac{1}{(x-1)^2}  \\
+    \end{array}
+    \right|_{x=0} = 1           \\
+
+    \left.
+    \begin{array}{l}
+        B = \dfrac{1}{x}        \\
+    \end{array}
+    \right|_{x=1} = 1           \\
+
+    \left.
+    \begin{array}{ll}
+        C   &= \left(\dfrac{1}{x(x-2)^2} - \dfrac{B}{(x-1)^2}\right) \cdot (x - 1)     \\
+            &= \left(\dfrac{1 - x}{x(x-1)^2}\right) \cdot (x-1)         \\
+            &= \left(\dfrac{-(x-1)^2}{x(x-1)^2}\right) = - \dfrac{1}{x} \\
+    \end{array}
+    \right|_{x=1} = -1                                                  \\
+\end{array}$    \\
+
+Hier uit weten we nu dat $A = 1$, $B = 1$, $C = -1$ \\
+
+en we vullen het in de opsplitsing:                 \\
+
+$$ \Rightarrow \integral \dfrac{A}{x} dx + \integral \dfrac{B}{(x-1)^2} dx + \integral \dfrac{C}{x-1} dx $$
+
+$\begin{array}{l}
+    = \integral \dfrac{1}{x} dx + \integral \dfrac{1}{(x-1)^2} dx - \integral \dfrac{1}{x-1} dx \\
+    = \ln|x| + \integral \dfrac{1}{(x-1)^2} dy - \integral \dfrac{1}{x-1} dx    \\
+    = \ln|x| + \integral y^{-2} dy - \integral \dfrac{1}{y} dy    \\
+    = \ln|x| - \dfrac{1}{y} - \ln|y| + c    \\
+    = \ln|x| - \dfrac{1}{x-1} - \ln|x-1| + c    \\
+\end{array}
+\begin{array}{l}
+    y = x - 1 \Rightarrow x = y + 1 \\
+    dy = dx     \\
+\end{array}$    \\
+
+Je resultaat is dan:    \\
+
+$$\ln|x| - \dfrac{1}{x-1} - \ln|x-1| + c$$
+
+\end{document} 

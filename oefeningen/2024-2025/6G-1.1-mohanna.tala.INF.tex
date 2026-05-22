@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+  
+\noindent \large Auteur: Tala Mohanna \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6G nr. 1.1\\
+
+\medskip
+
+\normalsize
+
+$ f_n = \mathbf{1}_{\left[0, \tfrac{1}{n}\right]} $ \\
+
+\begin{enumerate}
+
+\item Kwadratisch gemiddelde\\
+
+$ \dint |f_n(x) - 0|^2 dx = \dint_0^{1/n} 1^2 dx $ \\
+
+$ = \left[ x \right]_0^{1/n} = \dfrac{1}{n} $  \\
+
+$ \lim\limits_{n \rightarrow \infty} \dfrac{1}{n} = 0 $ \\
+
+$ \Rightarrow $ deze rij in kwadratisch gemiddelde convergeert naar de nulfuctie. \\
+
+\item Puntsgewijze convergentie\\
+
+Neem $ x = 0 $: \\
+
+$ f_n(0) = 1 $ voor alle $ n $ \\
+
+$ \lim\limits_{n \rightarrow \infty} f_n(0) = 1 \neq 0 $ \\
+
+$ \Rightarrow (f_n)_n $ convergeert naar de nulfunctie maar niet puntsgewijs. \\
+
+\end{enumerate}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\dx}{\dfrac{d}{dx}}
+
+\begin{document}
+	
+	\noindent \large Auteur: Victor Pena \\
+	\noindent \large Studierichting: Informatica\\
+	\noindent \large Oefeningenreeks 3B nr. 2.4\\
+	
+	\medskip
+	
+	\normalsize 
+	
+	$f(x) = \ln^2 x$ \\
+	
+	$f'(x) = \dfrac{2\ln x}{x}$ \\ 
+	
+	$f''(x) = 2\dx\left(\dfrac{\ln x}{x}\right) = 2 \dx \left[\dfrac{1}{x}\cdot \ln x \right] = 2 \left[\dfrac{1}{x}\cdot\dx\ln x + \dx\left(\dfrac{1}{x}\right) \cdot \ln x\right]$ \\
+	
+	$ = 2\left[\dfrac{1}{x^2} - \dfrac{\ln x}{x^2}\right] = 2\left[\dfrac{1}{x^2}\left(1-\ln x\right)\right]$\\
+	
+	$f'''(x) = 2\dx\left[\dfrac{1}{x^2}\left(1-\ln x\right)\right] =  2 \left[\dfrac{1}{x^2}\cdot\dx\left(1-\ln x\right) + \dx\left(\dfrac{1}{x^2}\right) \cdot \left(1 - \ln x\right)\right] $\\
+	
+	$=2\left[-\dfrac{1}{x^3} - \dfrac{2}{x^3} +\dfrac{2\ln x}{x^3}\right] = \dfrac{4\ln x - 6}{x^3}$ 
+	
+	
+	
+	\begin{thebibliography}{999}
+		%\bibitem{a} Referentie
+	\end{thebibliography}
+\end{document} 

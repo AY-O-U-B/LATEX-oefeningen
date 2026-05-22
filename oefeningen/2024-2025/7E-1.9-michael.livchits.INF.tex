@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 1.9\\
+
+\medskip
+
+\normalsize
+
+$f(x,y)= 10+12x-12y-3x^2-2y^2$\\
+	
+Eerste orde:\\
+	
+$\dfrac{\partial f}{\partial x} = 12-6x \Rightarrow x = 2$\\
+	
+$\dfrac{\partial f}{\partial y} = -12-4y \Rightarrow x = -3$\\
+
+Kritiek punt: $(2,-3)$\\
+
+Hessian matrix:\\
+
+$\Rightarrow D^2f(x,y,z,t) = \left(\begin{array}{cc}
+\dfrac{\partial^2 f}{\partial x^2} = -6 & \dfrac{\partial^2 f}{\partial y\partial x} = 0\\
+\dfrac{\partial^2 f}{\partial x\partial y} = 0 & \dfrac{\partial^2 f}{\partial y^2} = -4
+\end{array}\right)$\\
+
+$\det H(x,y) = 24$\\
+
+$H(2,-3) = 24 > 0$ en $\dfrac{\partial^2 f}{\partial x^2} = -6 < 0\Rightarrow$ bereikt een maximum\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

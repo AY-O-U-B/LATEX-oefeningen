@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 12.2\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = e^x\sin y$ in $a\left(0,\dfrac{\pi}{4}\right)$ in de richting $h(1,-1)$\\
+
+$f\left(0,\dfrac{\pi}{4}\right) = \dfrac{\sqrt{2}}{2}$\\
+
+$Df(a,h) = \lim\limits_{\lambda\rightarrow 0}\dfrac{f\left(\lambda,\dfrac{\pi}{4}-\lambda\right) - f\left(0,\dfrac{\pi}{4}\right)}{\lambda}$\\
+
+$= \lim\limits_{\lambda\rightarrow 0}\dfrac{e^\lambda\sin\left(\dfrac{\pi}{4}-\lambda\right) - \dfrac{\sqrt{2}}{2}}{\lambda}$\\
+
+Met l'hôpital:\\
+
+$= \lim\limits_{\lambda\rightarrow 0}\left(e^\lambda\sin\left(\dfrac{\pi}{4}-\lambda\right)-e^\lambda\cos\left(\dfrac{\pi}{4}-\lambda\right)\right)$\\
+
+$= \sin\dfrac{\pi}{4} - \cos\dfrac{\pi}{4} = 0$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

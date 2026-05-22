@@ -1,0 +1,59 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 4\\
+
+\medskip
+
+\normalsize
+
+Zij $g(x,y) = e^x\sin y$ en zij $f(x,y) = (xy^2,x^2y)$\\
+
+Eerst voor $g(x,y)$:\\
+
+$\dfrac{\partial g}{\partial x} = e^x\sin y$\\
+
+$\dfrac{\partial g}{\partial y} = e^x\cos y$\\
+
+Daarna voor $f(x,y)$:\\
+
+$\dfrac{\partial f_1}{\partial x} = y^2$\\
+
+$\dfrac{\partial f_2}{\partial x} = 2xy$\\
+
+$\dfrac{\partial f_1}{\partial y} = 2xy$\\
+
+$\dfrac{\partial f_2}{\partial y} = x^2$\\
+
+$Dg(x,y)=\left(\begin{array}{cc}
+e^x\sin y & e^x\cos y
+\end{array}\right)$\\
+
+$Df(x,y)=\left(\begin{array}{cc}
+y^2 & 2xy \\
+2xy & x^2
+\end{array}\right)$\\
+
+Vul $f(x,y) = (xy^2,x^2y)$ in $g(x,y)$:\\
+
+$Dg(f(x,y))=\left(\begin{array}{cc}
+e^{xy^2}\sin (x^2y) & e^{xy^2}\cos (x^2y)
+\end{array}\right)$\\
+
+Nu de kettingregel toepassen:\\
+
+$D(g\circ f)(x,y) = \left(\begin{array}{cc}
+e^{xy^2}\left(y^2\sin(x^2y)+2xy\cos(x^2y)\right) & e^{xy^2}\left(2xy\sin(x^2y)+x^2\cos(x^2y)\right)
+\end{array}\right)$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\ddx}{\dfrac{d}{dx}}
+\newcommand{\ddg}{\dfrac{d}{dg}}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6D nr. 31.8
+
+\medskip
+\normalsize
+
+$ \displaystyle\sum_{n=2}^{\infty} \dfrac{2^{2n}}{2n!} $\\
+
+$\Rightarrow $ D'Alembert\\
+
+$\dfrac{\dfrac{2^{2n+2}}{(2n+2)!}}{\dfrac{2^{2n}}{2n!}} = \dfrac{2^{2n+2}}{(2n+2)!}\cdot \dfrac{2n!}{2^{2n}}$\\
+
+$= \dfrac{4}{(2n+2)(2n+1)} $\\
+
+$\Rightarrow \lim\limits_{n\rightarrow +\infty} \dfrac{4}{(2n+2)(2n+1)}  = 0 < 1 \Rightarrow $ convergent\\
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

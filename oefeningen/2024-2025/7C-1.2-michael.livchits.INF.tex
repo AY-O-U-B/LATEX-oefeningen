@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7C nr. 1.2\\
+
+\medskip
+
+\normalsize
+
+$f(x,y,z,t)= \ln \dfrac{xy}{zt}$\\
+	
+Eerste orde:\\
+	
+$\dfrac{\partial f}{\partial x} = \dfrac{zt}{xy}\cdot\dfrac{y}{zt} = \dfrac{1}{x}$\\
+	
+$\dfrac{\partial f}{\partial y} = \dfrac{zt}{xy}\cdot\dfrac{x}{zt} = \dfrac{1}{y}$\\
+	
+$\dfrac{\partial f}{\partial z} = \dfrac{zt}{xy}\cdot\left(-\dfrac{xy}{z^2t}\right) = -\dfrac{1}{z}$\\
+	
+$\dfrac{\partial f}{\partial t} = \dfrac{zt}{xy}\cdot\left(-\dfrac{xy}{zt^2}\right) = -\dfrac{1}{t}$\\
+
+Tweede orde:\\
+	
+$\dfrac{\partial^2 f}{\partial x^2} = -\dfrac{1}{x^2}$\\
+	
+$\dfrac{\partial^2 f}{\partial y^2} = -\dfrac{1}{y^2}$\\
+	
+$\dfrac{\partial^2 f}{\partial z^2} = \dfrac{1}{z^2}$\\
+	
+$\dfrac{\partial^2 f}{\partial t^2} = \dfrac{1}{t^2}$\\
+
+$\Rightarrow D^2f(x,y,z,t) = \left(\begin{array}{cccc}
+-\dfrac{1}{x^2}&0&0&0 \\
+0&-\dfrac{1}{y^2}&0&0 \\
+0&0&\dfrac{1}{z^2}&0 \\
+0&0&0&\dfrac{1}{t^2}
+\end{array}\right)$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Mohamed Shafik \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks: 4A nr 24.3\\
+
+\medskip
+
+\normalsize
+
+Bereken $\displaystyle\int \dfrac{x-1}{x^2} \ln x dx$\\
+
+Splits de breuk:\\
+
+\begin{eqnarray*}
+\displaystyle\int \dfrac{x-1}{x^2} \ln x dx &=& \displaystyle\int \left(\dfrac{1}{x} - \dfrac{1}{x^2}\right) \ln x dx\\
+&=& \displaystyle\int \dfrac{\ln x}{x} dx - \displaystyle\int \dfrac{\ln x}{x^2} dx\\
+\end{eqnarray*}
+
+Eerste integraal: substitueer $t = \ln x$, dan is $dt = \dfrac{dx}{x}$\\
+
+\begin{eqnarray*}
+\displaystyle\int \dfrac{\ln x}{x} dx &=& \displaystyle\int t dt\\
+&=& \dfrac{t^2}{2} + c\\
+&=& \dfrac{\ln^2 x}{2} + c\\
+\end{eqnarray*}
+
+Tweede integraal: parti\"ele integratie\\
+
+Stel\\
+
+$\left\{\begin{array}{l} u = \ln x \\ dv = \dfrac{dx}{x^2} \end{array}\right. \Rightarrow \left\{\begin{array}{l} du = \dfrac{dx}{x} \\ v = -\dfrac{1}{x} \end{array}\right.$\\
+
+dan wordt\\
+
+\begin{eqnarray*}
+\displaystyle\int \dfrac{\ln x}{x^2} dx &=& -\dfrac{\ln x}{x} - \displaystyle\int \left(-\dfrac{1}{x}\right) \cdot \dfrac{dx}{x}\\
+&=& -\dfrac{\ln x}{x} + \displaystyle\int \dfrac{dx}{x^2}\\
+&=& -\dfrac{\ln x}{x} - \dfrac{1}{x} + c\\
+\end{eqnarray*}
+
+Samen:\\
+
+\begin{eqnarray*}
+I &=& \dfrac{\ln^2 x}{2} - \left(-\dfrac{\ln x}{x} - \dfrac{1}{x}\right) + c\\
+&=& \dfrac{\ln^2 x}{2} + \dfrac{\ln x}{x} + \dfrac{1}{x} + c\\
+\end{eqnarray*}
+
+\begin{thebibliography}{9}
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+\usepackage[landscape]{geometry}
+
+\newcommand{\limit}{\lim\limits}
+\newcommand{\integral}{\displaystyle\int}
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7C nr. 1.1\\
+
+\medskip
+
+\normalsize
+
+
+$Df(x, y, z) = \left(\begin{array}{c}
+    y^2z^3   + 2xy^3z^4    + 3x^2y^4z^5 \\
+    2xyz^3   + 3x^2y^2z^4 + 4x^3y^3z^5 \\
+    3xy^2z^2 + 4x^2y^3z^3 + 5x^3y^4z^4
+\end{array}\right)$ \\
+
+$D^2f(x, y, z) = \left(\begin{array}{ccc}
+    0       + 2y^3z^4  + 6xy^4z^5    & 2yz^3  + 6xy^2z^4    + 12x^2y^3z^5 & 3y^2z^2 + 8xy^3z^3    + 15x^2y^4z^4 \\
+    2yz^3   + 6xy^2z^4 + 12x^2y^3z^5 & 2xz^3  + 6x^2yz^4    + 12x^3y^2z^5 & 6xyz^2  + 12x^2y^2z^3 + 20x^3y^3z^4 \\
+    3y^2z^2 + 8xy^3z^3 + 15x^2y^4z^4 & 6xyz^2 + 12x^2y^2z^3 + 20x^3y^3z^4 & 6xy^2z  + 12x^2y^3z^2 + 20x^3y^4z^3
+\end{array}\right)$ \\
+
+$D^2f(x, y, z) = \left(\begin{array}{ccc}
+    2y^3z^4\left(1 + 3xyz\right)              & 2yz^3\left(1 + 3xyz + 6x^2y^2z^2\right)   & y^2z^2\left(3 + 8xyz + 15x^2y^2z^2\right) \\
+    2yz^3\left(1 + 3xyz + 6x^2y^2z^2\right)   & 2xz^3\left(1 + 3xyz + 6x^2y^2z^2\right)   & 2xyz^2\left(3 + 6xyz + 10x^2y^2z^2\right) \\
+    y^2z^2\left(3 + 8xyz + 15x^2y^2z^2\right) & 2xyz^2\left(3 + 6xyz + 10x^2y^2z^2\right) & 2xy^2z\left(3 + 6xyz + 10x^2y^2z^2\right)
+\end{array}\right)$ \\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

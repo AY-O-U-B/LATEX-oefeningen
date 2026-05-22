@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Mohamed Shafik \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks: 4A nr 20.9\\
+
+\medskip
+
+\normalsize
+
+Bereken $\displaystyle\int \cosh^3 x dx$\\
+
+\begin{eqnarray*}
+\displaystyle\int \cosh^3 x dx &=& \displaystyle\int \cosh x \cdot \cosh^2 x dx\\
+&=& \displaystyle\int \cosh x (1 + \sinh^2 x) dx\\
+\end{eqnarray*}
+
+Substitueer $t = \sinh x$, dan is $dt = \cosh x dx$\\
+
+\begin{eqnarray*}
+&=& \displaystyle\int (1 + t^2) dt\\
+&=& t + \dfrac{t^3}{3} + c\\
+&=& \sinh x + \dfrac{\sinh^3 x}{3} + c\\
+\end{eqnarray*}
+
+\begin{thebibliography}{9}
+\end{thebibliography}
+\end{document}

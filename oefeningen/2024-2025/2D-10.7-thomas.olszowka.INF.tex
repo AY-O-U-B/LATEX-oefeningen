@@ -1,0 +1,76 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{cancel}
+\newcommand{\llim}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Thomas Olszowka \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 2D nr. 10.7  \\
+
+
+
+\medskip
+
+\normalsize
+
+$\llim_{x \rightarrow -2\sqrt{5}} \dfrac{\sqrt{5}x^2 + 9x - 2\sqrt{5}}{2x^2 + 3x\sqrt{5} - 10} = \dfrac{0}{0}$ \\
+
+We noemen de vergelijking in de teller en noemer respectievelijk $t(x)$ en $n(x)$\\
+
+$x_{1,2}$ van $t(x)$: \\
+
+$D = 81 - 4\cdot \sqrt{5} \cdot \left(-2\sqrt{5}\right)$ \\
+
+$= 81 +40 = 121$ \\
+
+$\sqrt{D} = 11$ \\
+
+$x_{1,2} = \dfrac{-9 \pm 11}{2\sqrt{5}} \Rightarrow \dfrac{1}{\sqrt{5}}$ en $-2\sqrt{5}$ \\
+
+$t(x) = \sqrt{5}(x-x_1)(x-x_2)$ \\
+
+$= \sqrt{5}\left(x - \dfrac{1}{\sqrt{5}}\right)\left(x + 2\sqrt{5}\right)$ \\
+
+$= \left(\sqrt{5}x - 1\right) \left(x + 2\sqrt{5}\right)$ \\
+
+$x_{1,2}$ van $n(x)$: \\
+
+$D = \left(3\sqrt{5}\right)^2 - 4\cdot 2 \cdot(-10)$ \\
+
+$= 9 \cdot 5 + 80$ \\
+
+$= 45 + 80 = 125$ \\
+
+$\sqrt{D} = 5\sqrt{5}$ \\
+
+$x_{1,2} = \dfrac{-3\sqrt{5} \pm 5\sqrt{5}}{4} \Rightarrow \dfrac{\sqrt{5}}{2}$ en $-2\sqrt{5}$ \\
+
+$n(x) = 2(x-x_1)(x-x_2)$ \\
+
+$= 2\left(x-\dfrac{\sqrt{5}}{2}\right)\left(x+ 2\sqrt{5}\right)$ \\
+
+$= \left(2x-\sqrt{5}\right)\left(x+2\sqrt{5}\right)$ \\
+
+$\llim_{x \rightarrow -2\sqrt{5}} \dfrac{t(x)}{n(x)}$ \\
+
+$= \llim_{x \rightarrow -2\sqrt{5}} \dfrac{\left(\sqrt{5}x - 1\right) \cancel{\left(x+2\sqrt{5}\right)}}{\left(2x-\sqrt{5}\right)\cancel{\left(x+2\sqrt{5}\right)}}$ \\
+
+$=\llim_{x \rightarrow -2\sqrt{5}} \dfrac{\sqrt{5}x - 1}{2x-\sqrt{5}}$ \\
+
+$= \dfrac{\left(\sqrt{5}(-2\sqrt{5}) - 1\right)}{\left(2(-2\sqrt{5}) - \sqrt{5}\right)}$ \\
+
+$= \dfrac{-2 \cdot 5 -1}{-4\sqrt{5} - \sqrt{5}}$ \\
+
+$= \dfrac{-11}{-5\sqrt{5}}$ \\
+
+$= \dfrac{11\sqrt5}{25}$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

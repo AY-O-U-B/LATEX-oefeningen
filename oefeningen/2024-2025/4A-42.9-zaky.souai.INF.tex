@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 42.9\\
+
+\bigskip
+
+\normalsize
+
+$\displaystyle \int \dfrac{5x-2}{x^2-4}\,dx$\\
+
+$\displaystyle x^2-4=(x-2)(x+2)$\\
+
+$\displaystyle \dfrac{5x-2}{x^2-4}=\dfrac{5x-2}{(x-2)(x+2)}=\dfrac{A}{x-2}+\dfrac{B}{x+2}$\\
+
+$\displaystyle A=\left.\dfrac{5x-2}{x+2}\right|_{x=2}=\dfrac{8}{4}=2$\\
+
+$\displaystyle B=\left.\dfrac{5x-2}{x-2}\right|_{x=-2}=\dfrac{-12}{-4}=3$\\
+
+$\displaystyle \dfrac{5x-2}{x^2-4}=\dfrac{2}{x-2}+\dfrac{3}{x+2}$\\
+
+$\displaystyle \int \dfrac{5x-2}{x^2-4}\,dx=2\int\dfrac{dx}{x-2}+3\int\dfrac{dx}{x+2}$\\
+
+$\displaystyle =2\ln|x-2|+3\ln|x+2|+c$
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

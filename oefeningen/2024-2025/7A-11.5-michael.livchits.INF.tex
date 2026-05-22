@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 11.5\\
+
+\medskip
+
+\normalsize
+
+$f:\Omega \subseteq \mathbb{R}^4 \rightarrow \mathbb{R}^2:(w,x,y,z) \rightarrow \left(\cot\dfrac{w\ln|z|}{xy^2},\ln\left|\dfrac{x\cos y}{(z-1)^2}\right|\right)$\\
+
+Voor $w$:\\
+
+$\dfrac{\partial f_1}{\partial w} = -\csc^2\left(\dfrac{w\ln|z|}{xy^2}\right)\cdot\dfrac{\ln|z|}{xy^2}$\\
+
+$\dfrac{\partial f_2}{\partial w} = \dfrac{(z-1)^2}{x\cos y}\cdot0 = 0$\\
+
+Voor $x$:\\
+
+$\dfrac{\partial f_1}{\partial x} = \csc^2\left(\dfrac{w\ln|z|}{xy^2}\right)\cdot\dfrac{w\ln|z|}{x^2y^2}$\\
+
+$\dfrac{\partial f_2}{\partial x} = \dfrac{(z-1)^2}{x\cos y}\cdot D_x\left(\dfrac{x\cos y}{(z-1)^2}\right) = \dfrac{(z-1)^2}{x\cos y}\cdot\dfrac{\cos y}{(z-1)^2} = \dfrac{1}{x}$\\
+
+Voor $y$:\\
+
+$\dfrac{\partial f_1}{\partial y} = -\csc^2\left(\dfrac{w\ln|z|}{xy^2}\right)\cdot D_y\left(\dfrac{w\ln|z|}{xy^2}\right) = \csc^2\left(\dfrac{w\ln|z|}{xy^2}\right)\cdot\dfrac{2w\ln|z|}{xy^3}$\\
+
+$\dfrac{\partial f_2}{\partial y} = \dfrac{(z-1)^2}{x\cos y}\cdot\dfrac{-x\sin y}{(z-1)^2} = -\dfrac{\sin y}{\cos y} = -\tan y$\\
+
+Voor $z$:\\
+
+$\dfrac{\partial f_1}{\partial z}=-\csc^2\left(\dfrac{w\ln|z|}{xy^2}\right)\cdot\dfrac{w}{xy^2z}$\\
+
+$\dfrac{\partial f_2}{\partial z} = \dfrac{(z-1)^2}{x\cos y}\cdot\left(-\dfrac{2x\cos y}{(z-1)^3}\right) = -\dfrac{2}{z-1}$\\
+
+Matrix met $u = \dfrac{w\ln|z|}{xy^2}$\\
+
+$Df(w,x,y,z)= \left(\begin{array}{cccc}
+-\csc^2\left(u\right)\cdot\dfrac{\ln|z|}{xy^2} & \csc^2\left(u\right)\cdot\dfrac{w\ln|z|}{x^2y^2} &
+\csc^2\left(u\right)\cdot\dfrac{2w\ln|z|}{xy^3} & -\csc^2\left(u\right)\cdot\dfrac{w}{xy^2z} \\
+0 & \dfrac{1}{x} & -\tan y & -\dfrac{2}{z-1}
+\end{array} \right)$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

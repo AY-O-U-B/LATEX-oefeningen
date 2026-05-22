@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Noran Ben Said \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 1.24\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = 8xy -2x^2 - y^4$\\
+
+$\dfrac{\partial f}{\partial x} = 8y - 4x = 0 \leftrightarrow 8y = 4x\Rightarrow x = 2y$\\
+
+$\dfrac{\partial f}{\partial y} = 8x-4y^3 = 0$\\
+
+$\Rightarrow 8(2y)-4y^3 = 0$\\
+
+$= 16y - 4y^3 = 4y (4-y^2)$\\
+
+$ \Rightarrow 4 - y^2 = 0 \Rightarrow y^2 = \pm 2$\\
+
+$\text{Punten: } (0,0), (4,2), (-4,-2)$\\
+
+$H(x,y) = 
+\left|
+\begin{array}{ccc}
+-4 & 8\\
+8 & -12y^2
+\end{array}
+\right|
+\Rightarrow 48y^2 -64$\\
+
+$H(0, 0) = -64 \Rightarrow \text{zadelpunt}$\\
+
+$H(4, 2) = 128 \Rightarrow \dfrac{\partial^2 f}{\partial x^2}(4,2) = -4 < 0 \Rightarrow $ Maximum\\
+
+$H(-4, -2) = 128 \Rightarrow \dfrac{\partial^2 f}{\partial x^2}(-4,-2) = -4 < 0 \Rightarrow$ Maximum\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

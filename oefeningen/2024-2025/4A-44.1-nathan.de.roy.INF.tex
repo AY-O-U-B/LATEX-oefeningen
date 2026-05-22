@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article} 
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+\noindent \large Auteur: Nathan De Roy \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 44.1\\
+
+\medskip
+\normalsize
+
+
+\textbf{Los volgende integraal op a.d.h.v Fuss:} $I = \displaystyle\int \dfrac{5x^2 + 3}{x^3 + x}dx$\\
+
+$I = \displaystyle\int \dfrac{5x^2 + 3}{x^3 + x}dx = \displaystyle\int \dfrac{5x^2 + 3}{x (x^2 + 1)}dx$\\
+
+Neem $A, B, C \in \mathbb{R}$ zodat:\\
+
+$I = \displaystyle\int \left( \dfrac{A}{x} + \dfrac{Bi + C}{x^2 + 1} \right) dx$\\
+
+met:\\
+
+$\left. A = \dfrac{5x^2 + 3}{x^2 + 1} \right|_{x=0} = 3$\\
+
+$\left. Bi + C = \dfrac{5x^2 + 3}{x} \right|_{x = i} = 2i + 0$\\
+
+$\Rightarrow (B, C) = (2, 0)$\\
+
+$\Rightarrow I = 3 \displaystyle\int \dfrac{1}{x}dx + \displaystyle\int \dfrac{2x}{x^2 + 1}dx$\\
+
+$\Rightarrow I = 3 \ln|x| + C + \displaystyle\int \dfrac{2x}{x^2 + 1}dx$\\
+
+Stel: $t = x^2 + 1$\\
+
+$\Rightarrow dt = dx^2 + 1 = 2xdx$\\
+
+$\Rightarrow \displaystyle\int \dfrac{2x}{x^2 + 1}dx = \displaystyle\int \dfrac{1}{t}dt$\\
+
+$\Rightarrow I = 3 \ln|x| + \ln|t| + C$\\
+
+$\Rightarrow I = 3 \ln|x| + \ln|x^2 + 1| + C$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

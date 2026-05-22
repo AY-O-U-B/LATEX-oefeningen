@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3C nr. 14.1\\
+
+\medskip
+
+\normalsize
+
+Zij $h>0$. \\
+
+$f:[a-h,a+h] \rightarrow \mathbb{R}$ is continu op $[a-h,a+h]$ en differentieerbaar op $]a-h,a+h[$. \\
+
+Te bewijzen: \\
+
+$ \exists \theta_1 \in ]0,1[ :
+\dfrac{f(a+h)-f(a-h)}{h}
+= f'(a+\theta_1h)+f'(a-\theta_1h) $ \\
+
+Definieer: \\
+
+$ F:[0,1]\rightarrow \mathbb{R}: x \mapsto f(a+hx)-f(a-hx) $ \\
+
+$F$ is continu op $[0,1]$ en differentieerbaar op $]0,1[$. \\
+
+Volgens de stelling van Lagrange bestaat er een $\theta_1 \in ]0,1[$ zodat: \\
+
+$ F'(\theta_1)=\dfrac{F(1)-F(0)}{1-0} $ \\
+
+We berekenen: \\
+
+$ F(1)=f(a+h)-f(a-h) $ \\
+
+$ F(0)=f(a)-f(a)=0 $ \\
+
+en: \\
+
+$ F'(x)=h f'(a+hx)+h f'(a-hx) $ \\
+
+Dus: \\
+
+$ F'(\theta_1)
+= h f'(a+h\theta_1)+h f'(a-h\theta_1) $ \\
+
+Hieruit volgt: \\
+
+$ h f'(a+h\theta_1)+h f'(a-h\theta_1)
+= f(a+h)-f(a-h) $ \\
+
+Delen door $h$ geeft: \\
+
+$ f'(a+h\theta_1)+f'(a-h\theta_1)
+= \dfrac{f(a+h)-f(a-h)}{h} $ \\
+
+Dus: \\
+
+$ \dfrac{f(a+h)-f(a-h)}{h}
+= f'(a+\theta_1h)+f'(a-\theta_1h) $ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

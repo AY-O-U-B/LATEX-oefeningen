@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Mathijs Pittoors \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 1D nr. 20.5\\
+
+\medskip
+
+\normalsize
+
+\begin{eqnarray*}
+z^4 + 4 &=& 0 \\
+z^4 &=& -4 \\
+-4 &=& 4\left(\cos(\pi + 2k\pi) + i\sin(\pi + 2k\pi)\right)\\
+z_k &=& \sqrt[4]{4}
+\left(\cos\left(\dfrac{\pi + 2k\pi}{4}\right) + i\sin\left(\dfrac{\pi + 2k\pi}{4}\right)\right) \\
+&=& \sqrt{2}\left(\cos\left(\dfrac{\pi}{4} + \dfrac{k\pi}{2}\right) + i\sin\left(\dfrac{\pi}{4} + \dfrac{k\pi}{2}\right) \right), \text{met } k=0,1,2,3
+\end{eqnarray*}
+
+Complexe nulpunten:
+
+\begin{eqnarray*}
+z_0 &=& 1 + i \\
+z_1 &=& -1 + i \\
+z_2 &=& -1 - i \\
+z_3 &=& 1 - i
+\end{eqnarray*}
+
+Ontbinding van de veelterm in $\mathbb{R}$:\\
+
+\begin{eqnarray*}
+    z^4 + 4 &=& ((z-z_0) (z-z_1)) ((z-z_2) (z-z_3)\\
+    &=& (z^2 - 2z + 2)(z^2 + 2z + 2) \text{ waar elke factor een discriminant kleiner dan 0 heeft.}
+\end{eqnarray*}
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

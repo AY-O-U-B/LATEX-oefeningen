@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 63.3\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int\sqrt{(1-x^2)^3}dx $ \\
+
+Neem: \\
+
+$ x = \cos t $ \\
+
+$ dx = -\sin t dt $ \\
+
+Dan: \\
+
+$ \displaystyle\int\sqrt{(1-x^2)^3}dx
+= -\displaystyle\int\sqrt{(1-\cos^2 t)^3}\sin t dt $ \\
+
+$ = -\displaystyle\int\sqrt{\sin^6 t}\sin t dt $ \\
+
+$ = -\displaystyle\int\sin^3 t \sin t dt $ \\
+
+$ = -\displaystyle\int\sin^4 t dt $ \\
+
+$ = -\displaystyle\int\left(\dfrac{1-\cos 2t}{2}\right)^2 dt $ \\
+
+$ = -\dfrac{1}{4}\displaystyle\int(1-2\cos 2t+\cos^2 2t)dt $ \\
+
+$ = -\dfrac{1}{4}\displaystyle\int 1dt
++ \dfrac{1}{2}\displaystyle\int\cos 2t dt
+- \dfrac{1}{4}\displaystyle\int\cos^2 2t dt $ \\
+
+$ = -\dfrac{1}{4}t
++ \dfrac{1}{4}\sin 2t
+- \dfrac{1}{4}\displaystyle\int\dfrac{1+\cos 4t}{2}dt $ \\
+
+$ = -\dfrac{1}{4}t
++ \dfrac{1}{4}\sin 2t
+- \dfrac{1}{8}\displaystyle\int(1+\cos 4t)dt $ \\
+
+$ = -\dfrac{1}{4}t
++ \dfrac{1}{4}\sin 2t
+- \dfrac{1}{8}t
+- \dfrac{1}{32}\sin 4t + c $ \\
+
+$ = -\dfrac{3}{8}t
++ \dfrac{1}{4}\sin 2t
+- \dfrac{1}{32}\sin 4t + c $ \\
+
+Terug substitueren: \\
+
+$ t = \operatorname{Bgcos}x $ \\
+
+$ = -\dfrac{3}{8}\operatorname{Bgcos}x
++ \dfrac{1}{4}\sin(2\operatorname{Bgcos}x)
+- \dfrac{1}{32}\sin(4\operatorname{Bgcos}x) + c $ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

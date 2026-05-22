@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 51.9\\
+
+\medskip
+
+\normalsize
+
+$\dint \cos^5xdx = \dint \cos^4x\cos xdx$\\
+
+$\dint (\cos^2x)^2\cos xdx = \dint (1-\sin^2x)^2\cos xdx$\\
+
+$t = \sin x \Rightarrow dt = \cos x dx$\\
+
+$\dint (1-t^2)^2dt = \dint (t^4-2t^2+1)dt$\\
+
+$= \dint t^4dt -2 \dint t^2dt+\dint t^0dt$\\
+
+$= \dfrac{t^5}{5}-\dfrac{2t^3}{3}+t + C$\\
+
+$= \dfrac{1}{5}\sin^5 x - \dfrac{2}{3}\sin^3x+\sin x + C$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Ilyas Sefiani \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 5.7\\
+
+\medskip
+
+\normalsize
+
+$\dint_{\pi}^{2\pi} \cos^2(x)dx$\\
+
+Eerst de integraal $\displaystyle\int \cos^2(x)dx$ oplossen:\\
+
+$\displaystyle\int \cos^2(x)dx$\\
+
+$= \displaystyle\int \dfrac{1+\cos(2x)}{2}dx$\\
+
+$= \displaystyle\int \dfrac{1}{2}dx + \dfrac{1}{2}\displaystyle\int \cos(2x)dx$\\
+
+$$t = 2x$$ $$dt = 2dx$$\\
+
+$= \dfrac{x}{2} + \dfrac{1}{4}\displaystyle\int \cos(t)dx$\\
+
+$= \dfrac{x}{2} + \dfrac{\sin(t)}{4} + C$\\
+
+$= \dfrac{x}{2} + \dfrac{\sin(2x)}{4} + C$\\
+
+Nu met de grenzen!:\\
+
+$= \dfrac{2\pi}{2} + \dfrac{\sin(4\pi)}{4} - \dfrac{\pi}{2} - \dfrac{\sin(2\pi)}{4}$\\
+
+$= \pi + 0 - \dfrac{\pi}{2} - 0 = \dfrac{\pi}{2}$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 

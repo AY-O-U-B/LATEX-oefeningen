@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Tala Mohanna \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6F nr. 10\\
+
+\medskip
+
+\normalsize
+
+$ f_n:\mathbb{R}\rightarrow \mathbb{R}: x\mapsto e^{\tfrac{x}{n}} $\\
+
+\begin{enumerate}
+
+\item Puntsgewijze convergentie
+
+Voor vaste $x\in\mathbb{R}$ geldt dat\\
+
+$ \lim\limits_{n\rightarrow +\infty}\dfrac{x}{n}=0 $\\
+
+Bijgevolg is\\
+
+$ \lim\limits_{n\rightarrow +\infty} f_n(x)
+= \lim\limits_{n\rightarrow +\infty} e^{\tfrac{x}{n}}
+= e^0
+=1 $\\
+
+$ \Rightarrow f:\mathbb{R}\rightarrow\mathbb{R}:x\mapsto 1 $ en $ f_n\stackrel{p}{\rightarrow}f $\\
+
+\item Uniforme convergentie
+
+$ \left\|f_n-f\right\|_{\infty}
+=\sup\limits_{x\in\mathbb{R}}\left|e^{\tfrac{x}{n}}-1\right| $\\
+
+Voor elke $n\in\mathbb{N}_0$ geldt dat\\
+
+$ \lim\limits_{x\rightarrow +\infty}\left(e^{\tfrac{x}{n}}-1\right)=+\infty $\\
+
+Dus\\
+
+$ \sup\limits_{x\in\mathbb{R}}\left|e^{\tfrac{x}{n}}-1\right|=+\infty $\\
+
+$ \Rightarrow $ niet uniform convergent\\
+\end{enumerate}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

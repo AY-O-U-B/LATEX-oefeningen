@@ -1,0 +1,40 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+\newcommand{\integral}{\displaystyle\int}
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 12.5\\
+
+\medskip
+
+\normalsize
+
+
+$Df\left(\left(\dfrac{\pi}{3}, -\dfrac{2\pi}{3}\right), (4, -3)\right) = \limit_{\lambda \to 0} \dfrac{f\left(\dfrac{\pi}{3} + 4\lambda, -\dfrac{2\pi}{3} - 3\lambda\right) - f\left(\dfrac{\pi}{3},\dfrac{-2\pi}{3}\right)}{\lambda}$ \\
+
+$= \limit_{\lambda \to 0} \dfrac{\sin\left(\dfrac{\pi}{3} + 4\lambda\right) \cdot \cos\left(\dfrac{-2\pi}{3} - 3\lambda\right) - \dfrac{\sqrt{3}}{4}}{\lambda}$ \\
+
+$\overset{H}{=} \limit_{\lambda \rightarrow 0} \left(4\cos\left(\dfrac{\pi}{3} + 4\lambda\right)\cos\left(\dfrac{-2\pi}{3} - 3\lambda\right) + \sin\left(\dfrac{\pi}{3} + 4\lambda\right)\left(-3\sin\left(\dfrac{-2\pi}{3} - 3\lambda\right)\right)\right)$ \\
+
+$= 4\cos\dfrac{\pi}{3}\cos\dfrac{-2\pi}{3} - \sin\dfrac{\pi}{3}3\sin\dfrac{-2\pi}{3}$ \\
+
+$= -1 - \dfrac{9}{4}$ \\
+
+$= -\dfrac{13}{4}$ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

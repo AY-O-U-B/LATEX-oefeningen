@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+  
+\noindent \large Auteur: Siebe Mees \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 15.12\\
+
+\medskip
+
+\normalsize
+
+$f(x,y)=2xye^{\dfrac{-4x^2+y^2}{8}}$\\
+
+$\dfrac{\partial f}{\partial x}=2ye^{\dfrac{-4x^2+y^2}{8}}+2xy\left(\dfrac{-8x}{8}\right)e^{\dfrac{-4x^2+y^2}{8}}=2ye^{\dfrac{-4x^2+y^2}{8}}-2x^2ye^{\dfrac{-4x^2+y^2}{8}}=2ye^{\dfrac{-4x^2+y^2}{8}}(1-x^2)$\\
+
+$\dfrac{\partial f}{\partial y}=2xe^{\dfrac{-4x^2+y^2}{8}}+2xy\left(\dfrac{-2y}{8}\right)e^{\dfrac{-4x^2+y^2}{8}}=2xe^{\dfrac{-4x^2+y^2}{8}}-\dfrac{1}{2}xy^2e^{\dfrac{-4x^2+y^2}{8}}=2xe^{\dfrac{-4x^2+y^2}{8}}\left(1-\dfrac{y^2}{4}\right)$\\
+
+$\Rightarrow y(1-x^2)=0 \rightarrow y=0, x=\pm1$\\
+
+$\Rightarrow x\left(1-\dfrac{y^2}{4}\right)=0$\\
+
+Als $ y=0 : x\left(1-\dfrac{0^2}{4}\right)=0$\\
+
+$\Rightarrow x=0$\\
+
+Als $ x=\pm1 : 1\left(1-\dfrac{y^2}{4}\right)=0$\\
+
+$\Rightarrow 1-\dfrac{y^2}{4}=0$\\
+
+$\Rightarrow -\dfrac{y^2}{4}=-1$\\
+
+$\Rightarrow y^2=4$\\
+
+$\Rightarrow y=\pm2$\\
+
+$\Rightarrow (0,0),(1,2),(-1,2),(1,-2),(-1,-2)$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

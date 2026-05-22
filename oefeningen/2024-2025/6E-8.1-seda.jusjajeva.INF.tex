@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 8.1\\
+
+\medskip
+
+\normalsize
+
+$\sin x = T_n(\sin x,0)(x) + R_n(x)$ \\
+
+$R_n(x) = \dfrac{(x - a)^{n + 1}}{(n + 1)!}f^{(n + 1)}(c)$ \\
+
+Stel $-|x| < c < |x|$: \\
+
+$R_{2n + 1}(x) = \dfrac{x^{2n + 2}\sin^{(2n + 2)}c}{(2n + 2)!}$ \\
+
+$\overset{x = -0.7}\Rightarrow |R_{2n + 1}(-0.7)| = \dfrac{0.7^{2n + 2}\sin^{(2n + 2)}c}{(2n + 2)!}$ \\
+
+$\overset{|\sin^{(k)}c| \le 1}\Rightarrow |R_{2n+1}(-0.7)| \le \dfrac{0.7^{2n+2}}{(2n+2)!}$ \\
+
+$\overset{n = 4}\Rightarrow |R_{9}(-0.7)| \le \dfrac{0.7^{10}}{10!}$ \\
+
+$\dfrac{0.7^{10}}{10!} \approx 7.78 \cdot 10^{-9} < 5 \cdot 10^{-8}$ \\
+
+We nemen dus de Taylorpolynoom tot en met graad 9:
+
+$T_n(\sin x,0)x = \displaystyle\sum_{k = 0}^{n} \dfrac{(\sin 0)^{(k)}}{k!}x^k$ \\
+
+$= \dfrac{\sin 0}{1}x^0 + \dfrac{\cos 0}{1}x + \dfrac{-\sin 0}{2}x^2 + \dfrac{-\cos 0}{6}x^3 + \dfrac{\sin 0}{24}x^4 + \dfrac{\cos 0}{120}x^5 + \dfrac{-\sin 0}{720}x^6 + \dfrac{-\cos 0}{5040}x^7 + \dfrac{\sin 0}{40320}x^8 + \dfrac{\cos 0}{362880}x^9 ...$ \\
+
+$= x + -\dfrac{x^3}{6} + \dfrac{x^5}{120} - \dfrac{x^7}{5040} + \dfrac{x^9}{362880} ...$ \\
+
+$\sin(-0.7) \approx -0.7 + -\dfrac{(-0.7)^3}{6} + \dfrac{(-0.7)^5}{120} - \dfrac{(-0.7)^7}{5040} + \dfrac{(-0.7)^9}{362880}$ \\
+
+$\Rightarrow \sin(-0.7) \approx -0.6442177$ \\
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

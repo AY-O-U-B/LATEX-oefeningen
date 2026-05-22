@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\dlim}{\lim\limits}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 1.9\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = -3x^2 - 2y^2 + 12x - 12y + 10$ \\
+
+$
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial f}{\partial x} = -6x + 12 = 0 \\ 
+\dfrac{\partial f}{\partial y} = -4y - 12 = 0 
+\end{array} 
+\right.
+\Rightarrow
+\left\{ 
+\begin{array}{l} 
+-6(x - 2) = 0 \\ 
+-4(y + 3) = 0 
+\end{array} 
+\right.
+\Rightarrow
+\left\{ 
+\begin{array}{l} 
+x = 2 \\ 
+y = -3 
+\end{array} 
+\right.
+$ \\
+
+$\Rightarrow (x,y) \in \{(2, -3)\}$ \\
+
+$
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial^2 f}{\partial x^2} = -6 \\ 
+\dfrac{\partial^2 f}{\partial x \partial y} = \dfrac{\partial^2 f}{\partial y \partial x} = 0 \\
+\dfrac{\partial^2 f}{\partial y^2} = -4
+\end{array} 
+\right.
+\Rightarrow H(x,y) = 24
+$ \\
+
+\begin{itemize}
+    \item $H(2, -3) = 24 > 0 \text{ en } \dfrac{\partial^2 f}{\partial x^2}(2, -3) = -6 < 0 \Rightarrow (2, -3)$ maximum
+\end{itemize}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

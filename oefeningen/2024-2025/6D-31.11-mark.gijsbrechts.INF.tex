@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Mark Gijsbrechts \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6D nr. 31.11\\
+
+\medskip
+
+\normalsize
+
+
+
+$ \displaystyle\sum\limits_{n=2}^\infty \dfrac{ \left| \sin 2^n \right| + 5 \ln n }{ n^3 } $ \\
+
+$= \displaystyle\sum\limits_{n=2}^\infty \dfrac{ \left| \sin 2^n \right| }{n^3} + 5\displaystyle\sum_{n=2}^\infty \dfrac{ \ln n }{n^3} $ \\
+
+Rechter reeks is convergent (zie oefening 31.5) \\
+
+De sinusfunctie heeft als beeld $ \left[ -1, 1 \right] $ dus $ \left| \sin 2^n \right| \leq 1 $ en \\
+
+$ \displaystyle\sum\limits_{n=2}^\infty \dfrac{ \left| \sin 2^n \right| }{n^3} \leq \displaystyle\sum\limits_{n=2}^\infty \dfrac{1}{n^3} $ \\
+
+Linker reeks is convergent, want minorant van een convergerende reeks ($p$-test: $ 3 > 1 $ ) \\
+
+De som van twee convergerende reeksen is convergent, dus \\
+
+$ \displaystyle\sum\limits_{n=2}^\infty \dfrac{ \left| \sin 2^n \right| + 5 \ln n }{ n^3 } $ \\
+
+is convergent. \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

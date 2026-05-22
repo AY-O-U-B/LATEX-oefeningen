@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\dlim}{\lim\limits}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 1.5\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = x^2 - y^2$ \\
+
+$
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial f}{\partial x} = 2x = 0 \\ 
+\dfrac{\partial f}{\partial y} = -2y = 0 
+\end{array} 
+\right.
+\Rightarrow
+\left\{ 
+\begin{array}{l} 
+x = 0 \\ 
+y = 0 
+\end{array} 
+\right.
+$ \\
+
+$\Rightarrow (x,y) \in \{(0, 0)\}$ \\
+
+$
+\left\{ 
+\begin{array}{l} 
+\dfrac{\partial^2 f}{\partial x^2} = 2 \\ 
+\dfrac{\partial^2 f}{\partial x \partial y} = \dfrac{\partial^2 f}{\partial y \partial x} = 0 \\
+\dfrac{\partial^2 f}{\partial y^2} = -2
+\end{array} 
+\right.
+\Rightarrow H(x,y) = -4
+$ \\
+
+\begin{itemize}
+    \item $H(0, 0) = -4 < 0 \Rightarrow (0, 0)$ zadelpunt
+\end{itemize}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

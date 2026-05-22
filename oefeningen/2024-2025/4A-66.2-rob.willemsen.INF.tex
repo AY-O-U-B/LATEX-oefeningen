@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+
+\noindent \large Auteur: Rob Willemsen \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 66.2 \\
+
+\medskip
+
+\normalsize
+
+$\dint \dfrac{\sqrt{x^2-1}}{x}dx$ \\
+
+$= \dint \dfrac{\sqrt{x^2-1}}{x^2} xdx$ \\
+
+$t = \sqrt{x^2-1} \Rightarrow t^2 = x^2 - 1 \Rightarrow 2tdt = 2xdx \Rightarrow tdt = xdx$ \\
+
+$= \dint \dfrac{t}{t^2+1} tdt$ \\
+
+$= \dint \dfrac{t^2}{t^2+1} dt$ \\
+
+$= \dint \dfrac{t^2+1-1}{t^2+1} dt$ \\
+
+$= \dint \dfrac{t^2+1}{t^2+1} dt - \dint \dfrac{1}{t^2+1} dt$ \\
+
+$= \dint 1 dt - \dint \dfrac{1}{t^2+1} dt$ \\
+
+$= t - \Bgtan t + C$ \\
+
+$= \sqrt{x^2-1} - \Bgtan \sqrt{x^2-1} + C$ \\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

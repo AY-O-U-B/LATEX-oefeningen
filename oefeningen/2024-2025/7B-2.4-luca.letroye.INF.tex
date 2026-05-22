@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Luca Letroye \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr 2.4\\
+
+\medskip
+
+\normalsize
+
+$w = yz+zx+xy$\\
+
+$x = s^2-t^2 \Rightarrow \dfrac{\partial w}{\partial x} = z+y$\\
+
+$y = s^2+t^2 \Rightarrow \dfrac{\partial w}{\partial y} = z+x$\\
+
+$z = s^2t^2 \Rightarrow \dfrac{\partial w}{\partial z} = y+x$\\
+
+$\dfrac{\partial x}{\partial s} = 2s$\\
+
+$\dfrac{\partial y}{\partial s} = 2s$\\
+
+$\dfrac{\partial z}{\partial s} = 2st^2$\\
+
+$\dfrac{\partial x}{\partial t} = -2t$\\
+
+$\dfrac{\partial y}{\partial t} = 2t$\\
+
+$\dfrac{\partial z}{\partial t} = 2ts^2$\\
+
+$\dfrac{\partial w}{\partial s} = (z+y)(2s)+(z+x)(2s)+(y+x)(2st^2)$\\
+
+$ = (s^2t^2+s^2+t^2)(2s)+(s^2t^2+s^2-t^2)(2s)+(2s^2)(2st^2)$\\
+
+$ = 2s^3t^2+2s^3+2st^2+2s^3t^2+2s^3-2st^2+4s^3t^2$\\
+
+$= 8s^3t^2+4s^3$\\
+
+$\dfrac{\partial w}{\partial t} = (s^2t^2+s^2+t^2)(-2t)+(s^2t^2+s^2-t^2)(2t)+(2s^2)(2st^2)$\\
+
+$= -2s^2t^3-2s^2t-2t^3+2s^2t^3+2s^2t-2t^3+4s^4t$\\
+
+$= -4t^3+4s^4t$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

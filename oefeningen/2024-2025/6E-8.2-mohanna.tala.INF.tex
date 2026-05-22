@@ -1,0 +1,122 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Tala Mohanna \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 8.2\\
+
+\medskip
+
+\normalsize
+
+Bereken $\cos\left(\dfrac13\right)$ tot op 12 decimalen door middel van een Taylorreeks. Geef ook de restterm.
+
+\begin{enumerate}
+
+\item Taylorontwikkeling van $\cos x$ rond $0$\\
+
+$f(x)=\cos x$\\
+
+$f'(x)=-\sin x$\\
+
+$f''(x)=-\cos x$\\
+
+$f'''(x)=\sin x$\\
+
+$f^{iv}(x)=\cos x$\\
+
+$f(0)=1$\\
+
+$f'(0)=0$\\
+
+$f''(0)=-1$\\
+
+$f'''(0)=0$\\
+
+$f^{iv}(0)=1$\\
+
+$\Rightarrow f^{(2k+1)}(0)=0$ en $f^{(2k)}(0)=(-1)^k$\\
+
+$\Rightarrow T_n\left(\cos x,0\right)(x)=\displaystyle\sum_{k=0}^{\infty}\dfrac{f^{(k)}(0)}{k!}x^k$\\
+
+Alleen even termen blijven over:\\
+
+$=\displaystyle\sum_{k=0}^{\infty}\dfrac{f^{(2k)}(0)}{(2k)!}x^{2k}
+=\displaystyle\sum_{k=0}^{\infty}\dfrac{(-1)^k}{(2k)!}x^{2k}$\\
+
+Dus
+
+\[
+\cos x
+=
+1-\dfrac{x^2}{2!}
++\dfrac{x^4}{4!}
+-\dfrac{x^6}{6!}
++\dfrac{x^8}{8!}
+-\dfrac{x^{10}}{10!}
++R_{10}(x)
+\]
+
+Stel nu $x=\dfrac13$, dan hebben we dus
+
+\begin{align*}
+\cos\left(\dfrac13\right)
+&=
+1-\dfrac{\left(\dfrac13\right)^2}{2!}
++\dfrac{\left(\dfrac13\right)^4}{4!}
+-\dfrac{\left(\dfrac13\right)^6}{6!}
++\dfrac{\left(\dfrac13\right)^8}{8!}
+-\dfrac{\left(\dfrac13\right)^{10}}{10!}
++R_{10}\left(\dfrac13\right)
+\\[2mm]
+&\approx
+0.944956946314085
++
+R_{10}\left(\dfrac13\right)
+\end{align*}
+
+\item Restterm\\
+
+$R_{10}\left(\dfrac13\right)
+=
+\dfrac{f^{(12)}(\xi)}{12!}\left(\dfrac13\right)^{12}
+\quad \xi\in\left[0,\dfrac13\right]$\\
+
+$\left|f^{(12)}(\xi)\right|\leq1$\\
+
+$\Rightarrow
+\left|R_{10}\left(\dfrac13\right)\right|
+\leq
+\dfrac{\left(\dfrac13\right)^{12}}{12!}$\\
+
+$\Rightarrow
+\left|R_{10}\left(\dfrac13\right)\right|
+=
+\dfrac{1}{3^{12}\cdot12!}
+\approx
+3.928206751\cdot10^{-15}$\\
+
+Aangezien
+
+\[
+3.928206751\cdot10^{-15}<10^{-12}
+\]
+
+mogen we afronden tot op 12 decimalen. Bijgevolg is
+
+\[
+\cos\left(\dfrac13\right)\approx0.944956946315
+\]
+
+\end{enumerate}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

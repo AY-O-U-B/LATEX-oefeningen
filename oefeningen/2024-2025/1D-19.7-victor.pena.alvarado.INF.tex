@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\DeclareMathOperator{\cis}{cis}
+
+\begin{document}
+	
+	\noindent \large Auteur: Victor Pena\\
+	\noindent \large Studierichting: Informatica\\
+	\noindent \large Oefeningenreeks 1D nr. 19.7\\
+	
+	\medskip
+	
+	\normalsize 
+	
+	$P(z)=z^4 +4z^3 + 19z^2 -4z -20$ \\
+	
+	$P(1)=1 + 4 + 19 -4 -20 = 0$
+	
+	\medskip
+	
+	$\Rightarrow$ \begin{tabular}{l|llll|l}
+	  & $1$ & $4$ & $19$ &$-4$ &$-20$ \\
+	$1$ &   & $1$ & $5$  &$24$ & $20$ \\  \cline{1-6}
+	  & $1$ & $5$ & $24$ &$20$ & $0$
+	\end{tabular} $\Rightarrow P(z) = (z-1)(z^3 + 5z^2 + 24z + 20)$
+	
+	
+	\medskip
+	
+	$P(-1) = (-1-1)(-1  +5 - 24 + 20) = (-2)(0) = 0$  
+	
+	\medskip
+	
+	$\Rightarrow$ \begin{tabular}{l|lll|l}
+		& $1$ & $5$  & $24$ &$20$ \\
+       $-1$&  & $-1$ & $-4$  &$-20$ \\  \cline{1-5}
+		& $1$ & $4$  & $20$ &$0$
+	\end{tabular} $\Rightarrow P(z) = (z-1)(z+1)(z^2 + 4z + 20)$ 
+	
+	\medskip
+	
+	De wortels van $z^2 + 4z + 20$ zijn gegeven door: \\
+	
+	$z = \dfrac{-4 \pm i\sqrt{80-16}}{2} = \dfrac{-4 \pm 8i}{2} = -2 \pm 4i$\\
+	
+
+	Dus, $P(z) = (z+1)(z-1)(z^2 + 4z + 20)$, met wortels $1,-1,-2+4i$ en $-2-4i$
+	
+	
+
+	
+	
+
+	
+	
+	
+	
+	\begin{thebibliography}{999}
+		%\bibitem{a} Referentie
+	\end{thebibliography}
+\end{document} 

@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}   
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Zielinski \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 6.9\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int^1_0 x(1-x)^8 dx $ \\
+
+$ u = 1-x $ \\
+
+$ du = -dx $ \\
+
+$ x = 1-u $ \\
+
+$ x = 0 \Rightarrow u = 1 $ \\
+
+$ x = 1 \Rightarrow u = 0 $ \\
+
+$ \displaystyle\int^1_0 x(1-x)^8 dx
+= \displaystyle\int^0_1 (1-u)u^8(-du) $ \\
+
+$ = \displaystyle\int^1_0 (1-u)u^8 du $ \\
+
+$ = \displaystyle\int^1_0 (u^8 - u^9)du $ \\
+
+$ = \left[ \dfrac{u^9}{9} - \dfrac{u^{10}}{10} \right]^1_0 $ \\
+
+$ = \left( \dfrac{1}{9} - \dfrac{1}{10} \right) - 0 $ \\
+
+$ = \dfrac{10}{90} - \dfrac{9}{90} $ \\
+
+$ = \dfrac{1}{90} $ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}
