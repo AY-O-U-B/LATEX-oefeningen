@@ -331,6 +331,63 @@
     }
 
     /* ── LEADERBOARD ── */
+    .leaderboard-wrapper {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    
+    .schandpaal {
+      flex-shrink: 0;
+      width: 200px;
+      background: #dc2626;
+      border: 2px solid #b91c1c;
+      border-radius: 12px;
+      padding: 16px;
+      color: white;
+    }
+    
+    .schandpaal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .schandpaal-content {
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    
+    .schandpaal-image {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 12px;
+      display: block;
+    }
+    
+    .schandpaal-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    
+    .schandpaal-count {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    
+    .leaderboard-main {
+      flex: 1;
+      min-width: 0;
+    }
+
     .lb-top3 {
       display: flex;
       flex-direction: column;
@@ -500,8 +557,21 @@
       <button class="year-tab" onclick="switchLbYear('2024-2025')">2024–2025</button>
     </div>
 
-    <div class="lb-top3" id="lb-top3"></div>
-    <div class="lb-list" id="lb-list"></div>
+    <div class="leaderboard-wrapper">
+      <div class="schandpaal" id="schandpaal">
+        <div class="schandpaal-title">Schandpaal</div>
+        <div class="schandpaal-content">
+          <img src="schandpaal.png" alt="Schandpaal" class="schandpaal-image">
+          <div class="schandpaal-name">Zaky Souai</div>
+          <div class="schandpaal-count">41 oef.</div>
+        </div>
+      </div>
+      
+      <div class="leaderboard-main">
+        <div class="lb-top3" id="lb-top3"></div>
+        <div class="lb-list" id="lb-list"></div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -20095,7 +20165,11 @@
             "count": 49
         },
         {
-            "name": "Ayoub Jaaouan",
+            "name": "Antwerp Fighter",
+            "count": 41
+        },
+        {
+            "name": "MrKrypton",
             "count": 41
         },
         {
@@ -20693,14 +20767,28 @@ function naturalSort(a, b) {
   const MEDALS   = ["🥇","🥈","🥉"];
 
   function renderLeaderboard(data, year) {
-    const sorted = [...data].sort((a, b) => b.count - a.count);
-    const max    = sorted[0]?.count || 1;
+    // Filter Zaky Souai uit de lijst (blijft alleen in schandpaal)
+    const filtered = data.filter(p => p.name !== "Zaky Souai");
+    
+    // Sorteer de lijst
+    const sorted = [...filtered].sort((a, b) => b.count - a.count);
+    
+    // Hardcode Ayoub Jaaouan op plaats 1 met 271 oefeningen
+    const hardcodedFirst = {
+      name: "Ayoub Jaaouan",
+      count: 271
+    };
+    
+    // Schuif de rest een plaats op
+    const finalList = [hardcodedFirst, ...sorted];
+    
+    const max = hardcodedFirst.count; // 271 is nu het maximum
 
     document.getElementById("lb-meta").textContent =
-      `${year} · ${sorted.length} deelnemers`;
+      `${year} · ${finalList.length} deelnemers`;
 
     // Top 3 — subtiele rijen met medaille emoji
-    const top3 = sorted.slice(0, 3);
+    const top3 = finalList.slice(0, 3);
     document.getElementById("lb-top3").innerHTML = top3.map((p, i) => {
       const pct = Math.round((p.count / max) * 100);
       return `
@@ -20715,7 +20803,7 @@ function naturalSort(a, b) {
     }).join("");
 
     // Lijst 4e+
-    document.getElementById("lb-list").innerHTML = sorted.slice(3).map((p, i) => {
+    document.getElementById("lb-list").innerHTML = finalList.slice(3).map((p, i) => {
       const rank = i + 4;
       const pct  = Math.round((p.count / max) * 100);
       return `
