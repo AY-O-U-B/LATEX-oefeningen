@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.11)  22 MAY 2026 20:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.11)  22 MAY 2026 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -138,7 +138,8 @@ tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count298
 )
-No file 1A-4.3-michael.francken.INF.aux.
+(C:\Users\legen\OneDrive - Universiteit Antwerpen\1BA\SEM 2\Calculus\LATEX-oefe
+ningen\temp_latex\1A-4.3-michael.francken.INF.aux)
 \openout1 = `1A-4.3-michael.francken.INF.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -155,6 +156,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -253,10 +255,10 @@ L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2280 strings out of 467871
- 34178 string characters out of 5418376
- 438185 words of memory out of 5000000
- 31185 multiletter control sequences out of 15000+600000
+ 2283 strings out of 467871
+ 34476 string characters out of 5418376
+ 438176 words of memory out of 5000000
+ 31186 multiletter control sequences out of 15000+600000
  630323 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,5n,65p,351b,132s stack positions out of 10000i,1000n,20000p,200000b,200000s
