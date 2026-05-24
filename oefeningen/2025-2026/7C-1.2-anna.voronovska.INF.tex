@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7C nr. 1.2\\
+
+\medskip
+
+\normalsize
+
+$f(x,y,z,t) = \ln\left(\dfrac{xy}{zt}\right) = \ln|x| + \ln|y| - \ln|z| - \ln|t|$\\
+
+Eerste partiële afgeleiden:\\
+
+$\dfrac{\partial f}{\partial x} = \dfrac{1}{x}$\\
+
+$\dfrac{\partial f}{\partial y} = \dfrac{1}{y}$\\
+
+$\dfrac{\partial f}{\partial z} = -\dfrac{1}{z}$\\
+
+$\dfrac{\partial f}{\partial t} = -\dfrac{1}{t}$\\
+
+Tweede partiële afgeleiden:\\
+
+$\dfrac{\partial^2 f}{\partial x^2} = -\dfrac{1}{x^2}$\\
+
+$\dfrac{\partial^2 f}{\partial y^2} = -\dfrac{1}{y^2}$\\
+
+$\dfrac{\partial^2 f}{\partial z^2} =\dfrac{1}{z^2}$\\
+
+$\dfrac{\partial^2 f}{\partial t^2} =\dfrac{1}{t^2}$\\
+
+Alle gemengde afgeleiden zijn $0$.\\
+
+$\Rightarrow D^2f(x,y,z,t) = \left(\begin{array}{cccc}
+-\dfrac{1}{x^2}&    0          &0             &0 \\
+0              &-\dfrac{1}{y^2}&0             &0 \\
+0              &0              &\dfrac{1}{z^2}&0 \\
+0              &0              &0             &\dfrac{1}{t^2}
+\end{array}\right)$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

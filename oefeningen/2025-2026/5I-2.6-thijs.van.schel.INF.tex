@@ -1,0 +1,69 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\dsum}{\displaystyle\sum}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Bgcos}{\operatorname{Bgcos}}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5I nr. 2.6\\
+
+\medskip
+
+\normalsize
+
+$L = \dint_{\pi/4}^{\pi/3} \sqrt{1 + (f'(x))^2} dx$\\
+
+$f'(x) = \left(-\dfrac{1}{4}\sin(x) + \ln(\sec(x)+\tan(x))\right)'$\\
+
+$f'(x) = -\dfrac{1}{4}\cos(x) + \dfrac{1}{\sec(x)+\tan(x)} \cdot (\sec(x)\tan(x) + \sec^2(x))$\\
+
+$f'(x) = -\dfrac{1}{4}\cos(x) + \dfrac{\sec(x)(\tan(x)+\sec(x))}{\sec(x)+\tan(x)}$\\
+
+$f'(x) = -\dfrac{1}{4}\cos(x) + \sec(x)$\\
+
+$(f'(x))^2 = \left(-\dfrac{1}{4}\cos(x) + \sec(x)\right)^2$\\
+
+$(f'(x))^2 = \dfrac{1}{16}\cos^2(x) - 2\left(\dfrac{1}{4}\cos(x)\right)\sec(x) + \sec^2(x)$\\
+
+$(f'(x))^2 = \dfrac{1}{16}\cos^2(x) - \dfrac{1}{2} + \sec^2(x)$\\
+
+$1 + (f'(x))^2 = 1 + \dfrac{1}{16}\cos^2(x) - \dfrac{1}{2} + \sec^2(x)$\\
+
+$1 + (f'(x))^2 = \dfrac{1}{16}\cos^2(x) + \dfrac{1}{2} + \sec^2(x)$\\
+
+$1 + (f'(x))^2 = \left(\dfrac{1}{4}\cos(x) + \sec(x)\right)^2$\\
+
+$L = \dint_{\pi/4}^{\pi/3} \sqrt{\left(\dfrac{1}{4}\cos(x) + \sec(x)\right)^2} dx$\\
+
+$L = \dint_{\pi/4}^{\pi/3} \left(\dfrac{1}{4}\cos(x) + \sec(x)\right) dx$\\
+
+$L = \left[ \dfrac{1}{4}\sin(x) + \ln|\sec(x)+\tan(x)| \right]_{\pi/4}^{\pi/3}$\\
+
+$L = \left(\dfrac{1}{4}\sin\left(\dfrac{\pi}{3}\right) + \ln\left|\sec\left(\dfrac{\pi}{3}\right)+\tan\left(\dfrac{\pi}{3}\right)\right|\right) - \left(\dfrac{1}{4}\sin\left(\dfrac{\pi}{4}\right) + \ln\left|\sec\left(\dfrac{\pi}{4}\right)+\tan\left(\dfrac{\pi}{4}\right)\right|\right)$\\
+
+$L = \left(\dfrac{1}{4}\left(\dfrac{\sqrt{3}}{2}\right) + \ln|2+\sqrt{3}|\right) - \left(\dfrac{1}{4}\left(\dfrac{\sqrt{2}}{2}\right) + \ln|\sqrt{2}+1|\right)$\\
+
+$L = \dfrac{\sqrt{3}}{8} + \ln(2+\sqrt{3}) - \dfrac{\sqrt{2}}{8} - \ln(\sqrt{2}+1)$\\
+
+$L = \dfrac{\sqrt{3}-\sqrt{2}}{8} + \ln\left(\dfrac{2+\sqrt{3}}{\sqrt{2}+1}\right)$\\
+
+tekening:\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{5I-2.6-thijs.van.schel.INF.png}
+\end{figure}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

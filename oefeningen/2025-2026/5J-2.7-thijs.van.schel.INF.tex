@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5J nr. 2.7\\
+
+\medskip
+
+\normalsize
+
+$L = \dint_{0}^{4} \sqrt{(x'(t))^2 + (y'(t))^2} dt$\\
+
+$x'(t) = \left(\dfrac{2}{3}t^{\tfrac{3}{2}}\right)' = t^{\tfrac{1}{2}}$\\
+
+$(x'(t))^2 = t$\\
+
+$y'(t) = \left(\dfrac{4}{9}t^{\tfrac{9}{4}}\right)' = t^{\tfrac{5}{4}}$\\
+
+$(y'(t))^2 = t^{\tfrac{5}{2}}$\\
+
+$L = \dint_{0}^{4} \sqrt{t + t^{\tfrac{5}{2}}} dt$\\
+
+$L = \dint_{0}^{4} \sqrt{t(1 + t^{\tfrac{3}{2}})} dt$\\
+
+$L = \dint_{0}^{4} t^{\tfrac{1}{2}} \sqrt{1 + t^{\tfrac{3}{2}}} dt$\\
+
+$u = 1 + t^{\tfrac{3}{2}} \Rightarrow du = \dfrac{3}{2}t^{\tfrac{1}{2}}dt \Rightarrow t^{\tfrac{1}{2}}dt = \dfrac{2}{3}du$\\
+
+$t = 0 \Rightarrow u = 1$\\
+
+$t = 4 \Rightarrow u = 1 + 4^{\tfrac{3}{2}} = 1 + 8 = 9$\\
+
+$L = \dint_{1}^{9} \sqrt{u} \cdot \dfrac{2}{3} du$\\
+
+$L = \dfrac{2}{3} \dint_{1}^{9} u^{\tfrac{1}{2}} du$\\
+
+$L = \dfrac{2}{3} \left[ \dfrac{2}{3}u^{\tfrac{3}{2}} \right]_{1}^{9}$\\
+
+$L = \dfrac{4}{9} \left( 9^{\tfrac{3}{2}} - 1^{\tfrac{3}{2}} \right)$\\
+
+$L = \dfrac{4}{9} (27 - 1)$\\
+
+$L = \dfrac{4}{9} \cdot 26$\\
+
+$L = \dfrac{104}{9}$\\
+
+tekening:\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{5J-2.7-thijs.van.schel.INF.png}
+\end{figure}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

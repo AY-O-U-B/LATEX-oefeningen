@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6C nr. 4.2\\
+
+\medskip
+
+\normalsize
+
+$\left(x_n\right)_n=
+(0.1,1.1,2.1,0.01,1.01,2.01,0.001,1.001,2.001,\ldots)$\\
+
+We bekijken de drie deelrijen:\\
+
+$x_{3k+1}=10^{-k}$\\
+
+$x_{3k+2}=1+10^{-k}$\\
+
+$x_{3k+3}=2+10^{-k}$\\
+
+Dus:\\
+
+$\lim\limits_{k\to+\infty}x_{3k+1}=0$\\
+
+$\lim\limits_{k\to+\infty}x_{3k+2}=1$\\
+
+$\lim\limits_{k\to+\infty}x_{3k+3}=2$\\
+
+Daarom bestaat
+$\lim\limits_{n\to+\infty}x_n$
+niet.\\
+
+$\operatorname*{adh}\limits_{n\to+\infty}x_n=\{0,1,2\}$\\
+
+$\liminf\limits_{n\to+\infty}x_n=0$\\
+
+$\limsup\limits_{n\to+\infty}x_n=2$\\
+
+\[
+\boxed{
+\begin{array}{c}
+\lim\limits_{n\to+\infty}x_n
+\text{ bestaat niet}\\
+\operatorname*{adh}\limits_{n\to+\infty}x_n=\{0,1,2\}\\
+\liminf\limits_{n\to+\infty}x_n=0\\
+\limsup\limits_{n\to+\infty}x_n=2
+\end{array}
+}
+\]
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

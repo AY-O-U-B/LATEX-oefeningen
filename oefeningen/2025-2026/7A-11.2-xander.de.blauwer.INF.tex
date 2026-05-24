@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\noindent \large Auteur: Xander De Blauwer \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 11.2\\
+
+\medskip
+
+\normalsize
+
+$f : \Omega \subseteq \mathbb{R} \to \mathbb{R}^4: x\rightarrow \left(2^{\sec{x}}, \coth{x}, \log_5 \sqrt{\cos{x}},x^{{x}^x}\right) $ \\
+
+$\dfrac{\partial }{\partial x}(2^{\sec{x}}) = 2^{\sec x} \cdot \ln 2 \cdot \sec x \tan x$ \\
+
+$\dfrac{\partial }{\partial x}(\coth{x}) = -\csc^2{x} $ \\
+
+$\dfrac{\partial }{\partial x}(\log_5 \sqrt{\cos{x}}) = \dfrac{-\tan{x}}{2\ln{5}} $ \\
+
+$\dfrac{\partial }{\partial x}\left(x^{{x}^x}\right) = \dfrac{\partial }{\partial x}(e^{x{^x}\ln{x}})$ \\ 
+
+$ = e^{x{^x}\ln{x}} \cdot \dfrac{\partial }{\partial x}(x^{x}\ln{x}) $ \\
+
+$ = x^{{x}^x} \cdot \dfrac{\partial }{\partial x}(x^{x}\ln{x}) $ \\
+
+$ = x^{{x}^x} \left(\dfrac{x^x}{x} + x^x \cdot (\ln{x} + 1)\cdot \ln{x}\right) $ \\
+
+$ = x^{{x}^x} \left(x^{x}(\ln{x}+1)\ln{x} + x^{x-1} \right)$ \\ 
+
+
+$Df(x)= \left(\begin{array}{c}
+2^{\sec x} \cdot\ln 2  \cdot\sec x \tan x \\
+-\csc^2 x \\
+-\dfrac{\tan x}{2\ln 5} \\
+x^{x^x}\left(x^{x}(\ln x+1)\ln x + x^{x-1}\right)
+\end{array}\right)$ \\
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

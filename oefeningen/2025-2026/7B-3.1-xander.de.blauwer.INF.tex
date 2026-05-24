@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\noindent \large Auteur: Xander De Blauwer \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 3.1\\
+
+\medskip
+
+\normalsize
+
+\textbf{Kettingregel:} \\
+$\left(\dfrac{\partial r}{\partial x} \dfrac{\partial r}{\partial y} \dfrac{\partial r}{\partial z}\right)
+\left(\dfrac{\partial r}{\partial u}  \dfrac{\partial r}{\partial v}  \dfrac{\partial r}{\partial w}\right)
+\left(\begin{array}{ccc}
+\dfrac{\partial u}{\partial x} & \dfrac{\partial u}{\partial y} & \dfrac{\partial u}{\partial z} \\
+\dfrac{\partial v}{\partial x} & \dfrac{\partial v}{\partial y} & \dfrac{\partial v}{\partial z} \\
+\dfrac{\partial w}{\partial x} & \dfrac{\partial w}{\partial y} & \dfrac{\partial w}{\partial z}
+\end{array}\right)$ \\
+
+
+\textbf{u=yz:} \\
+
+$\dfrac{\partial r}{\partial u} = e^{u+v+w}$ \\
+
+$\dfrac{\partial u}{\partial x} = 0 $ en $\dfrac{\partial u}{\partial y} = z$ en $\dfrac{\partial u}{\partial z} = y $ \\
+
+\textbf{v=xz:} \\
+
+$\dfrac{\partial r}{\partial v} = e^{u+v+w}$ \\
+
+$\dfrac{\partial v}{\partial x} = z $ en $\dfrac{\partial v}{\partial y} = 0$ en $\dfrac{\partial v}{\partial z} = x $ \\
+
+\textbf{w=xy:} \\
+
+$\dfrac{\partial r}{\partial w} = e^{u+v+w}$ \\
+
+$\dfrac{\partial w}{\partial x} = y $ en $\dfrac{\partial w}{\partial y} = x$ en $\dfrac{\partial w}{\partial z} = 0 $ \\
+
+
+
+$\Rightarrow \left(\dfrac{\partial r}{\partial x} \ \dfrac{\partial r}{\partial y} \ \dfrac{\partial r}{\partial z}\right)= \left(e^{xy+xz+yz} \ e^{xy+xz+yz} \ e^{xy+xz+yz}\right)
+\left(\begin{array}{ccc}
+0 & z & y \\
+z & 0 & x \\
+y & x & 0
+\end{array}\right)$ \\
+
+$\dfrac{\partial r}{\partial x} = (y+z)(e^{xy+xz+yz})$ \\
+
+$\dfrac{\partial r}{\partial y} = (x+z)(e^{xy+xz+yz})$ \\
+
+$\dfrac{\partial r}{\partial z} = (x+y)(e^{xy+xz+yz})$ \\
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

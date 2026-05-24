@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Sinh}{\operatorname{sinh}}
+\newcommand{\Cosh}{\operatorname{cosh}}
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 6.8\\
+
+\bigskip
+
+\normalsize
+
+$ \displaystyle\int\limits_{-1}^{0} \Sinh(5x)dx $\\
+
+$ u=5x \Rightarrow du=5dx \Rightarrow dx=\dfrac{du}{5}$\\
+
+$ x=-1 \Rightarrow u=-5 $\\
+
+$ x=0 \Rightarrow u=0 $\\
+
+$ \displaystyle\int\limits_{-1}^{0}\Sinh(5x)dx = \displaystyle\int\limits_{-5}^{0}\Sinh(u)\dfrac{du}{5} $\\
+
+$ = \dfrac{1}{5}\displaystyle\int\limits_{-5}^{0}\Sinh(u)du $\\
+
+$ = \dfrac{1}{5}\left[\Cosh(u)\right]_{-5}^{0} $\\
+
+$ = \dfrac{1}{5}\left(\Cosh(0)-\Cosh(-5)\right) $\\
+
+$ = \dfrac{1}{5}\left(1-\Cosh(5)\right) $\\
+
+$ = \dfrac{1-\Cosh(5)}{5} $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

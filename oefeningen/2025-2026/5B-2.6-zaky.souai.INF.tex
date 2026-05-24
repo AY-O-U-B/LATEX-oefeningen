@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 2.6\\
+
+\bigskip
+
+\normalsize
+
+$\displaystyle\int_{-\infty}^{+\infty}\dfrac{x}{x^2+4}dx$\\
+
+$=\displaystyle\int_{-\infty}^{0}\dfrac{x}{x^2+4}dx+ \displaystyle \int_{0}^{+\infty}\dfrac{x}{x^2+4}dx$\\
+
+$u=x^2+4 \Rightarrow du=2xdx \Rightarrow \dfrac{du}{2} = xdx$
+
+$\displaystyle\int\dfrac{x}{x^2+4}dx=\dfrac{1}{2}\ln(x^2+4) + C$\\
+
+$\displaystyle\int_{0}^{+\infty}\dfrac{x}{x^2+4}dx=\lim_{b\to+\infty}\left[\dfrac{1}{2}\ln(x^2+4)\right]_{0}^{b}$\\
+
+$=\lim_{b\to+\infty}\left(\dfrac{1}{2}\ln(b^2+4)-\dfrac{1}{2}\ln4\right) =+\infty$\\
+
+$\displaystyle\int_{-\infty}^{0}\dfrac{x}{x^2+4}dx=\lim_{a\to-\infty}\left[\dfrac{1}{2}\ln(x^2+4)\right]_{a}^{0}$\\
+
+$=\lim_{a\to-\infty}\left(\dfrac{1}{2}\ln4-\dfrac{1}{2}\ln(a^2+4)\right) =-\infty$\\
+
+$\displaystyle\int_{-\infty}^{+\infty}\dfrac{x}{x^2+4}dx$ bestaat niet\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

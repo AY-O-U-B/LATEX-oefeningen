@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 12.10\\
+
+\medskip
+
+\normalsize
+
+$f(x,y,z) = \ln(1+x^2+y^2-z^2)$ in $\mathbf{a}(1,-1,1)$, richting $\mathbf{h}(2,-2,-3)$\\
+
+$\dfrac{\partial f}{\partial x} = \dfrac{2x}{1+x^2+y^2-z^2}$\\
+
+$\dfrac{\partial f}{\partial y} = \dfrac{2y}{1+x^2+y^2-z^2}$\\
+
+$\dfrac{\partial f}{\partial z} = \dfrac{-2z}{1+x^2+y^2-z^2}$\\
+
+Noemer in $\mathbf{a}$: $1+1+1-1=2$, dus:\\
+
+$Df(\mathbf{a}) = \left(\dfrac{2}{2} \hspace{1cm} \dfrac{-2}{2} \hspace{1cm} \dfrac{-2}{2}\right) = \left(1 \hspace{1cm} -1 \hspace{1cm} -1\right)$\\
+
+$Df(\mathbf{a},\mathbf{h}) = Df(\mathbf{a}) \cdot \mathbf{h} = (1 \hspace{0.5cm} -1 \hspace{0.5cm} -1) \cdot \begin{pmatrix} 2 \\ -2 \\ -3 \end{pmatrix} = 2+2+3 = 7$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\Bgsin}{\text{Bgsin}}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 22.5 \\
+
+\medskip
+
+\normalsize
+
+$I = \dint x\sqrt{1-x^2}\Bgsin(x)dx$\\
+
+$\dint u dv = uv - \dint v du$\\
+
+$\left\{
+    \begin{array}{l}
+        u = \Bgsin(x)\\
+        dv = x\sqrt{1-x^2}dx\\
+    \end{array}
+\right. \Rightarrow \left\{
+    \begin{array}{l}
+        du = \dfrac{1}{\sqrt{1-x^2}}dx\\
+        v = \dint x(1-x^2)^{\tfrac{1}{2}}dx\\
+    \end{array}
+\right.$\\
+
+$w = 1-x^2 \Rightarrow dw = -2xdx \Rightarrow xdx = \dfrac{-1}{2}dw$\\
+
+$v = \dint \dfrac{-1}{2} w^{\tfrac{1}{2}} dw = \dfrac{-1}{2} \cdot \dfrac{2}{3} w^{\tfrac{3}{2}} = \dfrac{-1}{3}(1-x^2)^{\tfrac{3}{2}}$\\
+
+$I = \Bgsin(x) \cdot \left(\dfrac{-1}{3}(1-x^2)^{\tfrac{3}{2}}\right) - \dint \left(\dfrac{-1}{3}(1-x^2)^{\tfrac{3}{2}}\right) \dfrac{1}{\sqrt{1-x^2}}dx$\\
+
+$I = \dfrac{-1}{3}(1-x^2)^{\tfrac{3}{2}}\Bgsin(x) + \dfrac{1}{3} \dint (1-x^2)dx$\\
+
+$I = \dfrac{-1}{3}(1-x^2)^{\tfrac{3}{2}}\Bgsin(x) + \dfrac{1}{3} \left(x - \dfrac{x^3}{3}\right) + C$\\
+
+$I = \dfrac{-1}{3}(1-x^2)\sqrt{1-x^2}\Bgsin(x) + \dfrac{1}{3}x - \dfrac{1}{9}x^3 + C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

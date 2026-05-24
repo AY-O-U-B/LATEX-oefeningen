@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6B nr. 21.2\\
+
+\medskip
+
+\normalsize
+
+$\dfrac{1}{1 \cdot 4} + \dfrac{1}{4 \cdot 7} + \dfrac{1}{7 \cdot 10} + \ldots + \dfrac{1}{(3n-2)(3n+1)}$\\
+
+$s_n = \dfrac{1}{3} \left(1 - \dfrac{1}{4} + \dfrac{1}{4} - \dfrac{1}{7} + \dfrac{1}{7} - \dfrac{1}{10} + \ldots + \dfrac{1}{3n-2} - \dfrac{1}{3n+1} \right)$\\
+
+$ = \dfrac{1}{3} \left(1 - \cancel{\dfrac{1}{4}} + \cancel{\dfrac{1}{4}} - \bcancel{\dfrac{1}{7}} + \bcancel{\dfrac{1}{7}} - \cancel{\dfrac{1}{10}} + \ldots + \bcancel{\dfrac{1}{3n-2}} - \dfrac{1}{3n+1} \right)$\\
+
+$= \dfrac{1}{3} \left(1 - \dfrac{1}{3n+1} \right)$\\
+
+$= \dfrac{1}{3} \left(\dfrac{3n+1}{3n+1} - \dfrac{1}{3n+1} \right)$\\
+
+$= \dfrac{1}{3} \cdot \dfrac{3n}{3n+1}$\\
+
+$= \dfrac{n}{3n+1}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

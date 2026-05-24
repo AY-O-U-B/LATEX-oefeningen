@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Noran Ben Said \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 58.1\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle\int \dfrac{1}{1-\sin x}dx$\\
+
+Stel $ t=\tan\left(\dfrac{x}{2}\right)$\\
+
+$ \sin x=\dfrac{2t}{1+t^2} \Rightarrow dx=\dfrac{2}{1+t^2}dt$\\
+
+Dus:\\
+
+$ I=\displaystyle\int\dfrac{1}{1-\dfrac{2t}{1+t^2}}\cdot\dfrac{2}{1+t^2}dt=\displaystyle\int\dfrac{1+t^2}{1+t^2-2t}\cdot\dfrac{2}{1+t^2}dt$\\
+
+$ =\displaystyle\int\dfrac{1+t^2}{(t-1)^2}\cdot\dfrac{2}{1+t^2}dt=\displaystyle\int\dfrac{2}{(t-1)^2}dt$\\
+
+$ =2\displaystyle\int (t-1)^{-2}dt=2\cdot\dfrac{(t-1)^{-1}}{-1}+c=\dfrac{-2}{t-1}+c$\\
+
+Terug substitueren:\\
+
+$ I=\dfrac{-2}{\tan\left(\dfrac{x}{2}\right)-1}+c$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

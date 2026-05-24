@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Noran Ben Said \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 57.4\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle\int \dfrac{1}{\tan x-1}dx$\\
+
+Stel $ t=\tan x \Rightarrow dx=\dfrac{1}{1+t^2}dt$\\
+
+Dus:\\
+
+$ I=\displaystyle\int\dfrac{1}{t-1}\cdot\dfrac{1}{1+t^2}dt =\displaystyle\int\dfrac{1}{(t-1)(t^2+1)}dt$\\
+
+$ \dfrac{1}{(t-1)(t^2+1)}=\dfrac{A}{t-1}+\dfrac{Bt+C}{t^2+1}$\\
+
+$ A=\left.\dfrac{1}{t^2+1}\right|_{t=1}=\dfrac{1}{2}$\\
+
+$ Bi+C=\left.\dfrac{1}{t-1}\right|_{t=i}=\dfrac{1}{i-1}$\\
+
+$ =\dfrac{-1-i}{(-1+i)(-1-i)}=\dfrac{-1-i}{2}$\\
+
+$ =-\dfrac{1}{2}-\dfrac{1}{2}i$\\
+
+$ B=-\dfrac{1}{2},C=-\dfrac{1}{2}$\\
+
+$ I=\dfrac{1}{2}\displaystyle\int\dfrac{1}{t-1}dt-\dfrac{1}{2}\displaystyle\int\dfrac{t+1}{t^2+1}dt$\\
+
+$ =\dfrac{1}{2}\displaystyle\int\dfrac{1}{t-1}dt-\dfrac{1}{4}\displaystyle\int\dfrac{2t}{t^2+1}dt-\dfrac{1}{2}\displaystyle\int\dfrac{1}{t^2+1}dt$\\
+
+$ =\dfrac{1}{2}\ln|t-1|-\dfrac{1}{4}\ln(t^2+1)-\dfrac{1}{2}\operatorname{Bgtan}t+c$\\
+
+Terug substitueren:\\
+
+$ I=\dfrac{1}{2}\ln|\tan x-1|-\dfrac{1}{4}\ln(\tan^2x+1)-\dfrac{1}{2}x+c$\\
+
+$ 1+\tan^2x=\dfrac{1}{\cos^2x}$\\
+
+Dus:\\
+
+$ I=\dfrac{1}{2}\ln\left|\dfrac{\sin x-\cos x}{\cos x}\right|-\dfrac{1}{4}\ln\left(\dfrac{1}{\cos^2x}\right)-\dfrac{1}{2}x+c$\\
+
+$ =\dfrac{1}{2}\ln|\sin x-\cos x|-\dfrac{1}{2}x+c$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

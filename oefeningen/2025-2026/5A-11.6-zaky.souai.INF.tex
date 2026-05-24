@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Sinh}{\operatorname{sinh}}
+\newcommand{\Cosh}{\operatorname{cosh}}
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 11.6\\
+
+\bigskip
+
+\normalsize
+
+$ \displaystyle\int\limits_0^1 \dfrac{xe^x}{(x+1)^2}dx $\\
+
+$ \left\{
+\begin{array}{l}
+u=xe^x\\
+dv=\dfrac{dx}{(x+1)^2}
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du=(x+1)e^xdx\\
+v=-\dfrac{1}{x+1}
+\end{array}
+\right. $\\
+
+$ \displaystyle\int\limits_0^1 \dfrac{xe^x}{(x+1)^2}dx = \left[-\dfrac{xe^x}{x+1}\right]_0^1 - \displaystyle\int\limits_0^1 \left(-\dfrac{1}{x+1}\right)(x+1)e^xdx $\\
+
+$ =\left[-\dfrac{xe^x}{x+1}\right]_0^1+\displaystyle\int\limits_0^1 e^xdx $\\
+
+$ =\left(-\dfrac{e}{2}-0\right)+\left[e^x\right]_0^1 $\\
+
+$ =-\dfrac{e}{2}+(e-1) $\\
+
+$ =\dfrac{e}{2}-1 $\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

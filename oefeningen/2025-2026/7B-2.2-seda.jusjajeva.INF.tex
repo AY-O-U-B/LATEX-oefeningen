@@ -1,0 +1,89 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{extarrows}
+
+\newcommand{\limit}{\lim\limits}
+\newcommand{\integral}{\displaystyle\int}
+
+
+\begin{document}
+
+\noindent \large Auteur: Seda Jusjajeva\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 2.2\\
+
+\medskip
+
+\normalsize
+
+
+$w = pq\sin r$ met $p = 2s + t$, $q = s - t$ en $r = st$ \\
+
+$\dfrac{\partial w}{\partial t} = \dfrac{\partial w}{\partial p} \dfrac{\partial p}{\partial t} + \dfrac{\partial w}{\partial q} \dfrac{\partial q}{\partial t} + \dfrac{\partial w}{\partial r} \dfrac{\partial r}{\partial t}$ \\
+
+$\dfrac{\partial w}{\partial p} = q\sin r$ \\
+
+$\dfrac{\partial w}{\partial q} = p\sin r$ \\
+
+$\dfrac{\partial w}{\partial r} = pq\cos r$ \\
+
+$\dfrac{\partial p}{\partial t} = 1$ \\
+
+$\dfrac{\partial q}{\partial t} = -1$ \\
+
+$\dfrac{\partial r}{\partial t} = s$ \\
+
+$\dfrac{\partial w}{\partial t} = q\sin r - p\sin r + pqs\cos r $ \\
+
+$= (q - p)\sin r + pqs\cos r $ \\
+
+$= ((s - t) - (2s + t))\sin st + (2s + t)(s - t)s\cos st $ \\
+
+$= (-s - 2t)\sin st + (2s^2 - st - t^2)s\cos st $ \\
+
+
+$= (-s - 2t)\sin st + (2s^3 - s^2t - st^2)\cos st $ \\
+
+
+
+$\dfrac{\partial w}{\partial s} = \dfrac{\partial w}{\partial p} \dfrac{\partial p}{\partial s} + \dfrac{\partial w}{\partial q} \dfrac{\partial q}{\partial s} + \dfrac{\partial w}{\partial r} \dfrac{\partial r}{\partial s}$ \\
+
+$\dfrac{\partial p}{\partial s} = 2$ \\
+
+$\dfrac{\partial q}{\partial s} = 1$ \\
+
+$\dfrac{\partial r}{\partial s} = t$ \\
+
+$\dfrac{\partial w}{\partial s} = 2q\sin r + p\sin r + pqt\cos r $ \\
+
+$= 2(s - t)\sin st + (2s + t)\sin st + (2s + t)(s - t)t\cos st $ \\
+
+$= (2s - 2t + 2s + t)\sin st + (2s + t)(s - t)t\cos st $ \\
+
+$= (4s - t)\sin st + (2s + t)(s - t)t\cos st $ \\
+
+$\Rightarrow Dw = \left(\dfrac{\partial w}{\partial t} \quad \dfrac{\partial w}{\partial s}\right)$
+
+$= \left((-s - 2t)\sin st + (2s^3 - s^2t - st^2)\cos st \quad (4s - t)\sin st + (2s + t)(s - t)t\cos st\right)$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

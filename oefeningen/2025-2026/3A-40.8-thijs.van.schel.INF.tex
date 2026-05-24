@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel\\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 3A nr. 40.8 \\
+
+\medskip
+
+\normalsize
+
+$f(x) = e^{\tfrac{\sqrt[3]{\sin x}}{x}}$\\
+
+$f'(x) = e^{\tfrac{\sqrt[3]{\sin x}}{x}} \cdot \left(\dfrac{\sqrt[3]{\sin x}}{x}\right)'$\\
+
+$\left(\dfrac{\sqrt[3]{\sin x}}{x}\right)' = \dfrac{x \cdot (\sqrt[3]{\sin x})' - \sqrt[3]{\sin x} \cdot (x)'}{x^2}$\\
+
+$(\sqrt[3]{\sin x})' = \left((\sin x)^{\tfrac{1}{3}}\right)' = \dfrac{1}{3}(\sin x)^{-\tfrac{2}{3}} \cdot \cos x = \dfrac{\cos x}{3\sqrt[3]{\sin^2 x}}$\\
+
+$\left(\dfrac{\sqrt[3]{\sin x}}{x}\right)' = \dfrac{x \cdot \dfrac{\cos x}{3\sqrt[3]{\sin^2 x}} - \sqrt[3]{\sin x}}{x^2}$\\
+
+$\left(\dfrac{\sqrt[3]{\sin x}}{x}\right)' = \dfrac{\dfrac{x \cos x - 3 \sqrt[3]{\sin x} \cdot \sqrt[3]{\sin^2 x}}{3\sqrt[3]{\sin^2 x}}}{x^2}$\\
+
+$\left(\dfrac{\sqrt[3]{\sin x}}{x}\right)' = \dfrac{x \cos x - 3\sin x}{3x^2\sqrt[3]{\sin^2 x}}$\\
+
+$f'(x) = e^{\tfrac{\sqrt[3]{\sin x}}{x}} \cdot \dfrac{x \cos x - 3\sin x}{3x^2\sqrt[3]{\sin^2 x}}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

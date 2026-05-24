@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5F nr. 2.9\\
+
+\medskip
+
+\normalsize
+
+$A = \dfrac{1}{2} \dint_{0}^{2\pi} (r_1^2 - r_2^2) d\theta$\\
+
+$\left\{
+    \begin{array}{l}
+        r_1 = 3 + \sin(\theta)\\
+        r_2 = 2 + \sin(\theta)\\
+    \end{array}
+\right.$\\
+
+$A = \dfrac{1}{2} \dint_{0}^{2\pi} \left((3 + \sin(\theta))^2 - (2 + \sin(\theta))^2\right) d\theta$\\
+
+$=\dfrac{1}{2} \dint_{0}^{2\pi} \left((9 + 6\sin(\theta) + \sin^2(\theta)) - (4 + 4\sin(\theta) + \sin^2(\theta))\right) d\theta$\\
+
+$=\dfrac{1}{2} \dint_{0}^{2\pi} (5 + 2\sin(\theta)) d\theta$\\
+
+$=\dfrac{1}{2} \left[ 5\theta - 2\cos(\theta) \right]_{0}^{2\pi}$\\
+
+$=\dfrac{1}{2} \left( (10\pi - 2\cos(2\pi)) - (0 - 2\cos(0)) \right)$\\
+
+$=\dfrac{1}{2} \left( (10\pi - 2) - (-2) \right)$\\
+
+$=\dfrac{1}{2} (10\pi)$\\
+
+$A = 5\pi$\\
+
+Tekening: \\
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\linewidth]{5F-2.9-thijs.van.schel.INF.png}
+\end{figure} 
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}
