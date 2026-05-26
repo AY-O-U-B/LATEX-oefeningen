@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 6.11\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle\dint_{0}^{\tfrac{\pi}{2}} \cos^3xdx$\\
+
+Eerst vinden we de onbepaalde integraal\\
+
+$\displaystyle\int \cos x\cos^2xdx = \displaystyle\int \cos x(1-\sin^2x)dx$\\
+
+Stel $u = \sin x$\\
+
+$du = \cos xdx$\\
+
+$\displaystyle\int (1-u^2)du$\\
+
+$= u\left(1-\dfrac{u^2}{3}\right) + C$\\
+
+Pas grenzen aan en vul in\\
+
+$I = \left[u\left(1-\dfrac{u^2}{3}\right)\right]_{0}^{1}$\\
+
+$I = \dfrac{2}{3}$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

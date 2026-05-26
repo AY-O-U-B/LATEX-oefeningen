@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\dsum}{\displaystyle\sum}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Bgcos}{\operatorname{Bgcos}}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 1.4\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = x^4 + y^4 + 2x^2y^2$\\
+
+$\left\{
+    \begin{array}{l}
+        \dfrac{\partial f}{\partial x} = 4x^3 + 4xy^2 = 0\\
+        \dfrac{\partial f}{\partial y} = 4y^3 + 4x^2y = 0\\
+    \end{array}
+\right. \Rightarrow \left\{
+    \begin{array}{l}
+        4x(x^2 + y^2) = 0\\
+        4y(x^2 + y^2) = 0\\
+    \end{array}
+\right.$\\
+
+kritieke punten:\\
+
+$(x,y) = (0,0)$\\
+
+$H(x,y) = \left(
+    \begin{array}{cc}
+        12x^2 + 4y^2 & 8xy \\
+        8xy & 12y^2 + 4x^2 \\
+    \end{array}
+\right)$\\
+
+$H(0,0) = \left(
+    \begin{array}{cc}
+        0 & 0 \\
+        0 & 0 \\
+    \end{array}
+\right)$\\
+
+$D = \det(H(0,0)) = 0 \cdot 0 - 0 \cdot 0 = 0$\\
+
+omdat $D = 0$, geeft de Hessiaan geen uitsluitsel, we bekijken de oorspronkelijke functie nog eens:\\
+
+$f(x,y) = x^4 + 2x^2y^2 + y^4 = (x^2 + y^2)^2$\\
+
+omdat $(x^2 + y^2)^2 \ge 0$ voor alle $(x,y)$ en $f(0,0) = 0$, is $(0,0)$ een globaal minimum\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

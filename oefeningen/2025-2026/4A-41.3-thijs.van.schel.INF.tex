@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}      
+
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\dsum}{\displaystyle\sum}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+\newcommand{\Bgcos}{\operatorname{Bgcos}}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Thijs Van Schel \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 41.3\\
+
+\medskip
+
+\normalsize
+
+$\dint\dfrac{1}{\sqrt{3x^2+2}} dx$\\
+
+$t = \sqrt{3}x \Rightarrow dt = \sqrt{3} dx \Rightarrow dx = \dfrac{1}{\sqrt{3}} dt$\\
+
+$= \dint \dfrac{1}{\sqrt{t^2+2}} \cdot \dfrac{1}{\sqrt{3}} dt$\\
+
+$= \dfrac{1}{\sqrt{3}} \dint \dfrac{1}{\sqrt{t^2+2}} dt$\\
+
+$= \dfrac{1}{\sqrt{3}} \ln|t + \sqrt{t^2+2}| + C$\\
+
+$= \dfrac{1}{\sqrt{3}} \ln|\sqrt{3}x + \sqrt{3x^2+2}| + C$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

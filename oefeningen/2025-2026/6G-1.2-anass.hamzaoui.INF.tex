@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\newcommand{\dint}{\displaystyle\int}
+\begin{document}
+
+\noindent \large Auteur: Anass Hamzaoui \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 6G nr. 1.2 \\
+\medskip
+\normalsize
+
+$\left(f_n = n \cdot \textbf{1}_{\left]0,\tfrac{1}{n}\right]}\right)_{n \in \mathbb{N}_0}$ \\
+
+$\lim\limits_{n \rightarrow +\infty} \dint_{a}^{b} |f_n(x) - f(x)|^2 dx$ \\
+
+$\begin{array}{lll}
+    \lim\limits_{n \rightarrow +\infty} \dint_{0}^{\tfrac{1}{n}} n^2 \, dx
+    &=& \lim\limits_{n \rightarrow +\infty} \left[n^2 x\right]_{0}^{\tfrac{1}{n}} \\
+    &=& \lim\limits_{n \rightarrow +\infty} \left(n - 0\right) \\
+    &=& +\infty \neq 0
+\end{array}$ \\
+
+Rij convergeert niet in kwadratisch gemiddelde. \\
+
+Puntgewijze convergentie: \\
+
+$\forall x \in I, \forall \varepsilon > 0, \exists n_0 \in \mathbb{N}_0, \forall n \geq n_0 : \left|f_n(x) - f(x)\right| < \varepsilon$ \\
+
+$\left|\begin{array}{ll}
+    & x = 0: \text{ triviaal, want } f_n(0) = 0 \text{ en } f(0) = 0. \\
+    & x > 0: \\
+    & f_n(x) = 0 \text{ voor } x > \dfrac{1}{n} \text{ en } f_n(x) = n \text{ voor } x \leq \dfrac{1}{n} \\
+    & \text{Dus } \forall n > \dfrac{1}{x}, \left|f_n(x) - f(x)\right| = 0 < \varepsilon \\
+\end{array}\right.$ \\
+
+De rij convergeert dus puntsgewijs naar de nulfunctie.
+
+\begin{thebibliography}{999}
+    %\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

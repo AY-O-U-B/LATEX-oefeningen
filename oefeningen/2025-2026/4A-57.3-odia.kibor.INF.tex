@@ -1,0 +1,101 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Odia Kibor \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 57.3
+\\
+
+\medskip
+
+\normalsize
+
+
+$ \displaystyle\int \dfrac{dx}{1+ \tan x} $\\
+
+$t = \tan x$\\
+
+$dt = (1 + t^2)dx$\\
+
+$ \dfrac{dt}{1 + t^2} = dx$\\
+
+$\Rightarrow \displaystyle\int \dfrac{dx}{1+ \tan x} = \displaystyle\int \dfrac{1}{1+ t} \cdot \dfrac{1}{1 + t^2}dt$\\
+
+$= \displaystyle\int \dfrac{1}{(1 + t)(1 + t^2)}dt$\\
+
+$ \dfrac{1}{(1 + t)(1 + t^2)} = \dfrac{A}{1 + t} + \dfrac{Bt + C}{1 + t^2}$\\
+
+$ A = \dfrac{1}{1 + t^2}\bigg|_{t = -1} = \dfrac{1}{2}$\\
+
+$ Bi + C = \dfrac{1}{1 + t}\bigg|_{t = i} = \dfrac{1}{1+i}$\\
+
+$ Bi + C = \dfrac{1-i}{(1+i)(1-i)} = \dfrac{1-i}{2}$\\
+
+$ Bi + C = \dfrac{1}{2} - \dfrac{1}{2}i$\\
+
+$\Rightarrow (B, C) = \left(-\dfrac{1}{2}, \dfrac{1}{2}\right)$\\
+
+$\Rightarrow \displaystyle\int \dfrac{1}{(1 + t)(1 + t^2)}dt
+= \displaystyle\int \left(\dfrac{\dfrac{1}{2}}{1 + t} + \dfrac{-\dfrac{1}{2}t + \dfrac{1}{2}}{1 + t^2}\right)dt$\\
+
+$= \dfrac{1}{2}\displaystyle\int \dfrac{1}{1 + t}dt
+-\dfrac{1}{2}\displaystyle\int \dfrac{t}{1 + t^2}dt
++\dfrac{1}{2}\displaystyle\int \dfrac{1}{1 + t^2}dt$\\
+
+$= \dfrac{\ln|1+t|}{2}
+-\dfrac{1}{2}\displaystyle\int \dfrac{t}{1 + t^2}dt
++\dfrac{\operatorname{Bgtan} t}{2} + C$\\
+
+$u = 1 + t^2$\\
+
+$du = 2tdt$\\
+
+$\dfrac{du}{2} = tdt$\\
+
+$\Rightarrow \displaystyle\int \dfrac{t}{1 + t^2}dt
+= \dfrac{1}{2}\displaystyle\int \dfrac{1}{u}du$\\
+
+$= \dfrac{1}{2}\ln|u|$\\
+
+$= \dfrac{1}{2}\ln|1+t^2|$\\
+
+$\Rightarrow \displaystyle\int \dfrac{dx}{1+ \tan x}
+= \dfrac{\ln|1+t|}{2}
+-\dfrac{1}{4}\ln|1+t^2|
++\dfrac{\operatorname{Bgtan} t}{2} + C$\\
+
+$= \dfrac{\ln|1+\tan x|}{2}
+-\dfrac{1}{4}\ln|1+\tan^2 x|
++\dfrac{x}{2} + C$\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

@@ -1,0 +1,33 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+
+\noindent \large Auteur: Anass Hamzaoui \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 5F nr. 3.7 \\
+\medskip
+\normalsize
+
+$\begin{array}{ll}
+A &= \dfrac{1}{2}\displaystyle\int_0^\pi(1+\cos\theta)^2  d\theta - \dfrac{1}{2}\displaystyle\int_0^{\tfrac{\pi}{2}}\cos^2\theta  d\theta \\
+&= \dfrac{1}{2}\displaystyle\int_0^\pi (1+2\cos\theta+\cos^2\theta)  d\theta - \dfrac{1}{4}\displaystyle\int_0^{\tfrac{\pi}{2}}(1+\cos 2\theta)  d\theta \\
+&= \dfrac{1}{4}\displaystyle\int_0^\pi(2+4\cos\theta+1+\cos 2\theta)  d\theta - \dfrac{1}{4}\displaystyle\int_0^{\tfrac{\pi}{2}}(1+\cos 2\theta)  d\theta \\
+&= \dfrac{1}{4}\left[3\theta + 4\sin\theta + \dfrac{\sin 2\theta}{2}\right]_0^\pi - \dfrac{1}{4}\left[\theta + \dfrac{\sin 2\theta}{2}\right]_0^{\tfrac{\pi}{2}} \\
+&= \dfrac{1}{4}(3\pi + 0 + 0) - \dfrac{1}{4}\left(\dfrac{\pi}{2} + 0\right) \\
+&= \dfrac{3}{4}\pi - \dfrac{1}{8}\pi \\
+&= \dfrac{5}{8}\pi \\
+\end{array}$ \\
+
+Grafiek: \\
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{5F-3.7-anass-hamzaoui.INF.png}
+\end{figure}
+
+\begin{thebibliography}{999}
+    %\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

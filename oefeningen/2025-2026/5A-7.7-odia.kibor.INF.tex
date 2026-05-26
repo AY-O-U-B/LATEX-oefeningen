@@ -1,0 +1,80 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Odia Kibor \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 7.7
+\\
+
+\medskip
+
+\normalsize
+
+
+$\displaystyle\int_{0}^{\tfrac{\pi}{2}} \dfrac{dx}{2 + \sin x}dx  $\\
+
+$t = \tan \dfrac{x}{2}$\\
+
+$\sin x = \dfrac{2t}{1 + t^2}$\\
+
+$\dfrac{2}{1 + t^2} dt= dx$\\
+
+$\Rightarrow \displaystyle\int_{0}^{1} \dfrac{1}{2 + \dfrac{2t}{1 + t^2}} \cdot \dfrac{2}{1 + t^2}dt$\\  
+
+$= \displaystyle\int_{0}^{1} \dfrac{1}{\dfrac{2 + 2t^2}{1 + t^2} + \dfrac{2t}{1 + t^2}} \cdot \dfrac{2}{1 + t^2}dt$\\ 
+
+$= \displaystyle\int_{0}^{1} \dfrac{2}{2t^2 + 2t + 2}dt$\\ 
+
+$= \displaystyle\int_{0}^{1} \frac{1}{t^2 + t + 1 }dt$\\ 
+
+$= \displaystyle\int_{0}^{1} \dfrac{1}{\left(t + \dfrac{1}{2}\right)^2 + \dfrac{3}{4}}dt$\\ 
+
+$= \displaystyle\int_{0}^{1} \dfrac{1}{\dfrac{3}{4} \left(\dfrac{\left(t + \dfrac{1}{2}\right)}{\dfrac{3}{4}}^2 + 1\right)}dt$\\ 
+
+$= \dfrac{4}{3}\displaystyle\int_{0}^{1} \dfrac{1}{\left(\dfrac{2\left(t + \dfrac{1}{2}\right)}{\sqrt{3}}\right)^2 + 1}dt$\\ 
+
+$u = \dfrac{2t + 1}{\sqrt{3}}$\\
+
+$du = \dfrac{2}{\sqrt{3}} dt$\\
+
+$\Rightarrow \dfrac{4\sqrt{3}}{6} \displaystyle\int_{\tfrac{1}{\sqrt{3}}}^{\sqrt{3}} \dfrac{1}{u^2 + 1}$\\
+
+$= \dfrac{2\sqrt{3}}{3} \left[\operatorname{Bgtan} u\right]_{\tfrac{1}{\sqrt{3}}}^{\sqrt{3}} $\\
+
+$= \dfrac{2\sqrt{3}}{3} \left(\operatorname{Bgtan} (\sqrt{3}) -  \operatorname{Bgtan} \left(\dfrac{1}{\sqrt{3}}\right)\right) $\\
+
+$= \dfrac{2\sqrt{3}}{3} \left(\dfrac{\pi}{3} - \dfrac{\pi}{6}\right)$\\
+
+$= \dfrac{2\sqrt{3}}{3}\cdot\dfrac{\pi}{6}$\\
+
+$= \dfrac{2\sqrt{3}\pi}{18} = \dfrac{\sqrt{3}\pi}{9}$\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

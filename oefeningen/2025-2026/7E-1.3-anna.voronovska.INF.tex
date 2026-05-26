@@ -1,0 +1,67 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 1.3\\
+
+\medskip
+
+\normalsize
+
+$f(x,y) = y^2 + x^2y + x^4$\\
+
+Kritieke punten:\\
+
+$\left\{ \begin{array}{l} \dfrac{\partial f}{\partial x} = 2xy + 4x^3 = 0 \\ \dfrac{\partial f}{\partial y} = 2y + x^2 = 0 \end{array} \right.$\\
+
+$y = -\dfrac{x^2}{2}$\\
+
+invullen in de eerste:\\
+
+$2x\left(-\dfrac{x^2}{2}\right) + 4x^3 = 3x^3 = 0$\\
+
+$x = 0$\\
+
+$y = 0$\\
+
+Kritiek punt: $(0,0)$\\
+
+Tweede afgeleiden:\\
+
+$\dfrac{\partial^2 f}{\partial x^2} = 2y+12x^2$\\
+
+$\dfrac{\partial^2 f}{\partial x\partial y} = 2x$\\
+
+$\dfrac{\partial^2 f}{\partial y^2} = 2$\\
+
+$H(0,0) = \left(\begin{array}{cc} 
+
+0 & 0 \\
+0 & 2 
+
+\end{array}\right)$\\
+
+$\det H(0,0) = 0$\\
+
+$\det H(0,0) = 0$\\
+
+Geen besluit. Verder onderzoeken:\\
+
+$f(x,y) = y^2 + x^2y + x^4 = \left(y + \dfrac{x^2}{2}\right)^2 - \dfrac{x^4}{4} + x^4 = \left(y + \dfrac{x^2}{2}\right)^2 + \dfrac{3x^4}{4}$\\
+
+$f(x,y) = \left(y + \dfrac{x^2}{2}\right)^2 + \dfrac{3x^4}{4} \geq 0$ voor alle $(x,y) \in \mathbb{R}^2$\\
+
+$f(x,y) = 0 \Leftrightarrow x = 0$ en $y = 0$\\
+
+Dus $f(x,y) \geq f(0,0)$ voor alle $(x,y)$, en $(0,0)$ is een globaal minimum.
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

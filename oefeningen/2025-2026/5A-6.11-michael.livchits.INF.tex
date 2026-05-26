@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 6.11\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle\dint_{2}^{9} \dfrac{3x}{\sqrt[3]{x-1}}dx$\\
+
+Eerst vinden we de onbepaalde integraal\\
+
+Stel $t = \sqrt[3]{x-1}$\\
+
+$t^3 + 1 = x$\\
+
+$dx = 3t^2dt$\\
+
+$3\displaystyle\int \dfrac{t^3+1}{t}\cdot3t^2dt$\\
+
+$= 9\displaystyle\int (t^4+t)dt$\\
+
+$= \dfrac{9}{5}t^5 + \dfrac{9}{2}t^2 + C$
+
+Pas grenzen aan en vul in\\
+
+$I = 9\left[\dfrac{t^5}{5} + \dfrac{t^2}{2}\right]_{1}^{2}$\\
+
+$I = \dfrac{693}{10}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
