@@ -1,0 +1,100 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6A nr. 7.5\\
+
+\medskip
+
+\normalsize
+
+$x_n = x_1 \cdot q^{n-1}$\\
+
+Gegeven:\\
+
+$x_1 \cdot x_3 = 36$\\
+
+$x_2 + x_4 = 60$\\
+
+Alles uitdrukken in $x_1$ en $q$:\\
+
+$x_2 = x_1 \cdot q$\\
+
+$x_3 = x_1 \cdot q^2$\\
+
+$x_4 = x_1 \cdot q^3$\\
+
+Substitutie in de gegeven vergelijkingen:\\
+
+$\left\{ \begin{array}{l}
+    x_1 \cdot (x_1 \cdot q^2) = 36 \\
+    x_1 \cdot q + x_1 \cdot q^3 = 60
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l}
+    (x_1 \cdot q)^2 = 36 \\
+    x_1 \cdot q \cdot (1 + q^2) = 60
+\end{array} \right.
+$\\
+
+Uit de eerste vergelijking volgt dat:\\ 
+
+$x_1 \cdot q = 6$\\
+
+$x_1 \cdot q = -6$\\
+
+Geval 1 ($x_1 \cdot q = 6$):\\
+
+$x_1 \cdot q = 6$ in de tweede vergelijking:\\
+
+$6 \cdot (1 + q^2) = 60$\\
+
+$1 + q^2 = 10$\\
+
+$q^2 = 9$\\
+
+$q_1 = 3$\\
+
+$q_2 = -3$\\
+
+
+Als $q_1 = 3$: \\
+
+$x_1 \cdot 3 = 6 \implies x_1 = 2$. \\
+
+De eerste drie termen zijn dus: $2, 6, 18$.\\
+    
+Als $q_2 = -3$: \\
+
+$x_1 \cdot (-3) = 6 \implies x_1 = -2$. \\
+
+De eerste drie termen zijn dus: $-2, 6, -18$.\\
+
+Stap 3: Geval 2 ($x_1 \cdot q = -6$):\\
+
+$x_1 \cdot q = -6$ in de tweede vergelijking:\\
+
+$-6 \cdot (1 + q^2) = 60$ \\
+
+$1 + q^2 = -10$\\
+
+$q^2 = -11$\\
+
+Geen reële oplossingen.\\
+
+Dus er zijn twee mogelijke oplossingen voor de eerste drie termen van de rij:\\
+
+Oplossing 1: $2, 6, 18$\\
+
+Oplossing 2: $ -2, 6, -18$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

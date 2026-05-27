@@ -1,0 +1,97 @@
+\documentclass[a4paper]{article}     
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7E nr. 1.2\\
+
+\medskip
+
+\normalsize
+
+Gegeven:\\
+
+$f(x,y)=x^2+2y^2-4x-8y-5$\\
+
+We bepalen eerst de kritieke punten.\\
+
+Daarvoor berekenen we de eerste partiele afgeleiden.\\
+
+$\dfrac{\partial f}{\partial x}=2x-4$\\
+
+$\dfrac{\partial f}{\partial y}=4y-8$\\
+
+Een kritisch punt voldoet aan:\\
+
+$\dfrac{\partial f}{\partial x}=0$\\
+
+$\dfrac{\partial f}{\partial y}=0$\\
+
+Dus:\\
+
+$2x-4=0$\\
+
+$4y-8=0$\\
+
+Hieruit volgt:\\
+
+$x=2$\\
+
+$y=2$\\
+
+Het enige kritieke punt is dus:\\
+
+$(2,2)$\\
+
+Nu berekenen we de tweede partiele afgeleiden.\\
+
+$\dfrac{\partial^2 f}{\partial x^2}=2$\\
+
+$\dfrac{\partial^2 f}{\partial y^2}=4$\\
+
+$\dfrac{\partial^2 f}{\partial x\partial y}=0$\\
+
+We gebruiken:\\
+
+$D=f_{xx}f_{yy}-(f_{xy})^2$\\
+
+Dus:\\
+
+$D=2\cdot4-0^2$\\
+
+$D=8$\\
+
+Omdat $D>0$ en $f_{xx}=2>0$, heeft $f$ een lokaal minimum in $(2,2)$.\\
+
+We berekenen de functiewaarde.\\
+
+$f(2,2)=2^2+2\cdot2^2-4\cdot2-8\cdot2-5$\\
+
+$=4+8-8-16-5$\\
+
+$=-17$\\
+
+Besluit:\\
+
+$f$ bereikt een lokaal minimum in $(2,2)$.\\
+
+De minimale waarde is $-17$.\\
+
+Er is geen lokaal maximum.\\
+
+$\boxed{\text{Lokaal minimum in }(2,2)\text{ met waarde }-17}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

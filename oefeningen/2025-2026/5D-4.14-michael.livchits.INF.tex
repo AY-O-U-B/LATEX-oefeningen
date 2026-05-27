@@ -1,0 +1,59 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5D nr. 4.14\\
+
+\medskip
+
+\normalsize
+
+$f(x) = -x^2+4$ en $g(x) = 0$, $x = 0$\\
+
+$v(x) = f(x)-g(x)$\\
+
+$v(x) =-x^2+4$\\
+
+$x_{1,2} = \pm2$\\
+
+\begin{tabular}{c|cccccc}
+    $x$ &   &   $-2$&       &   $2$    &       & \\ \hline
+    $v(x)$  &   $-$ &   $0$ &   $+$     &   $0$ &   $-$   &   \\
+\end{tabular}\\
+
+$I = \displaystyle\dint_{-2}^2 \left(-x^2+4\right)dx$\\
+
+$= \displaystyle\dint_{-2}^{0} \left(-x^2+4\right)dx + \displaystyle\dint_{0}^{2} \left(-x^2+4\right)dx$\\
+
+$= \left[-\dfrac{x^3}{3} + 4x\right]_{-2}^{0} + \left[-\dfrac{x^3}{3} + 4x\right]_{0}^{2}$\\
+
+$= \dfrac{16}{3} + \dfrac{16}{3} = \dfrac{32}{3}$\\
+
+Nodig voor de tekening:\\
+
+$f(x) = -x^2+4$ met nulpunten $x = \pm2$\\
+
+$f'(x) = -2x$ met nulpunt $x = 0$\\
+
+\begin{tabular}{c|cccccccc}
+$x$     &       & $-2$  &       & $0$  &       & $2$   &       &\\ \hline
+$f(x)$  & $-$   & $0$   & $+$   &    $+$   & $+$   & $0$   & $-$   &\\
+$f'(x)$ & $\nearrow$   &$\nearrow$&$\nearrow$& $M(4)$   & $\searrow$&$\searrow$& $\searrow$   &\\
+$f''(x)$&$\frown$&$\frown$&$\frown$&$\smile$&$\frown$&$\frown$&$\frown$&\\
+\end{tabular}\\
+
+\noindent
+\includegraphics[width=7cm,angle=-90]{5D-4.14-michael.livchits.INF.png}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

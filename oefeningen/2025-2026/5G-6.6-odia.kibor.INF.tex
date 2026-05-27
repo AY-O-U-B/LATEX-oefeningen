@@ -1,0 +1,99 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Odia Kibor \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5G nr. 6.6
+\\
+
+\medskip
+
+\normalsize
+
+
+$ f(x) = -2x^2 + 6x $\\
+
+$ g(x) = x^2 $\\
+
+$ f(x) = g(x) $\\
+
+$ -2x^2 + 6x = x^2 $\\
+
+$ \Leftrightarrow -3x^2 + 6x = 0 $\\
+
+$ \Leftrightarrow -3x(x - 2) = 0 $\\
+
+$ \Leftrightarrow x = 0 \text{ of } x = 2 $\\
+
+$\Rightarrow x \in [0, 2]$\\
+
+We testen een punt tussen $0$ en $2$:  $x = 1$\\
+
+$ f(1) = -2(1)^2 + 6(1) = 4 $\\
+
+$ g(1) = 1^2 = 1 $\\
+
+$\Rightarrow f(x)$ is de bovenste functie\\
+
+$\Rightarrow V = \pi \displaystyle\int_0^2 \left(f(x)^2 - g(x)^2\right)dx$\\
+
+$= \pi \displaystyle\int_0^2 \left((-2x^2 + 6x)^2 - (x^2)^2\right)dx$\\
+
+$(-2x^2 + 6x)^2 = 4x^4 - 24x^3 + 36x^2$\\
+
+$(x^2)^2 = x^4$\\
+
+$\Rightarrow (-2x^2 + 6x)^2 - (x^2)^2 = 4x^4 - 24x^3 + 36x^2 - x^4$\\
+
+$= 3x^4 - 24x^3 + 36x^2$\\
+
+$\Rightarrow V = \pi \displaystyle\int_0^2 (3x^4 - 24x^3 + 36x^2)dx$\\
+
+$= \pi \left[\dfrac{3x^5}{5} - \dfrac{24x^4}{4} + \dfrac{36x^3}{3}\right]_0^2$\\
+
+$= \pi \left[\dfrac{3x^5}{5} - 6x^4 + 12x^3\right]_0^2$\\
+
+$= \pi \left(\dfrac{3(2)^5}{5} - 6(2)^4 + 12(2)^3\right) - \pi \left(\dfrac{3(0)^5}{5} - 6(0)^4 + 12(0)^3\right)$\\
+
+$= \pi \left(\dfrac{96}{5} - 96 + 96\right) - \pi(0)$\\
+
+$= \pi \cdot \dfrac{96}{5}$\\
+
+$\Rightarrow V = \dfrac{96\pi}{5}$\\
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm]{5G-6.6-odia.kibor.INF.png}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

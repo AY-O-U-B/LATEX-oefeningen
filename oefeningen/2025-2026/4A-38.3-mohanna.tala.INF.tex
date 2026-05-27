@@ -1,0 +1,50 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\adR}{\Rightarrow}
+\newcommand{\Lh}{\left(}
+\newcommand{\Rh}{\right)}
+\newcommand{\intgrl}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Tala Mohanna \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 38.3\\
+
+\medskip
+
+\normalsize
+
+$ I = \intgrl \dfrac{2x+1}{4x^2-4x+3} dx$\\
+
+$= \intgrl \dfrac{\dfrac{1}{4}\Lh 8x-4\Rh +2}{4x^2-4x+3} dx$\\
+
+$= \dfrac{1}{4}\intgrl \dfrac{8x-4}{4x^2-4x+3} dx + 2\intgrl \dfrac{1}{4x^2-4x+3} dx$\\
+
+Stel: $t = 4x^2-4x+3 \adR dt = \Lh 8x-4\Rh dx$\\
+
+$= \dfrac{1}{4}\intgrl \dfrac{dt}{t} + 2\intgrl \dfrac{1}{4x^2-4x+3} dx$\\
+
+$= \dfrac{1}{4}\ln |t| + 2\intgrl \dfrac{1}{\Lh 2x-1\Rh^2+2} dx$\\
+
+$= \dfrac{1}{4}\ln |4x^2-4x+3| + 2\intgrl \dfrac{1}{\Lh 2x-1\Rh^2+2} dx$\\
+
+Stel: $u = 2x-1 \adR du = 2dx \adR dx = \dfrac{du}{2}$\\
+
+$= \dfrac{1}{4}\ln |4x^2-4x+3| + 2\intgrl \dfrac{1}{u^2+2}\cdot \dfrac{du}{2}$\\
+
+$= \dfrac{1}{4}\ln |4x^2-4x+3| + \intgrl \dfrac{1}{u^2+\Lh \sqrt{2}\Rh^2}du$\\
+
+$= \dfrac{1}{4}\ln |4x^2-4x+3| + \dfrac{1}{\sqrt{2}}\operatorname{Bgtan}\Lh \dfrac{u}{\sqrt{2}}\Rh + c$\\
+
+$= \dfrac{1}{4}\ln |4x^2-4x+3| + \dfrac{1}{\sqrt{2}}\operatorname{Bgtan}\Lh \dfrac{2x-1}{\sqrt{2}}\Rh + c$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,80 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5D nr. 4.19\\
+
+\medskip
+
+\normalsize
+
+$f(x) = x+2$, $g(x) = -3x$ en $h(x) = \dfrac{2-x}{3}$\\
+
+Eerst: $f(x) = h(x)$\\
+
+$x+2 = \dfrac{2-x}{3}$\\
+
+$x = -1$\\
+
+$f(-1)=1$\\
+
+$\Rightarrow (-1,1)$\\
+
+Ten tweede: $f(x) = g(x)$\\
+
+$x+2 = -3x$\\
+
+$4x = -2$\\
+
+$x = -\dfrac{1}{2}$\\
+
+$f\left(-\dfrac{1}{2}\right)=\dfrac{3}{2}$\\
+
+$\Rightarrow \left(-\dfrac{1}{2},\dfrac{3}{2}\right)$\\
+
+Ten laatste: $g(x) = h(x)$\\
+
+$-3x = \dfrac{2-x}{3}$\\
+
+$-8x = 2$\\
+
+$x = -\dfrac{1}{4}$\\
+
+$g\left(-\dfrac{1}{4}\right)=\dfrac{3}{4}$\\
+
+$\Rightarrow \left(-\dfrac{1}{4},\dfrac{3}{4}\right)$\\
+
+Wij hebben twee intervallen $\left[-1,-\dfrac{1}{2}\right]$ en $\left[-\dfrac{1}{2},-\dfrac{1}{4}\right]$\\
+
+Vul waarden tussen deze intervallen in en zie welke boven- en onderaan is:\\
+
+Eerste gebied: $x \in \left[-1,-\dfrac{1}{2}\right]$\\
+
+$v_1(x) = f(x)-h(x) = x+2-\dfrac{2-x}{3} = \dfrac{4x+4}{3}$\\
+
+Tweede gebied: $x \in \left[-\dfrac{1}{2},-\dfrac{1}{4}\right]$\\
+
+$v_2(x) = g(x)-h(x) = -3x-\dfrac{2-x}{3} = \dfrac{-8x-2}{3}$\\
+
+$I = \displaystyle\dint_{-1}^{-\tfrac{1}{2}} \left(\dfrac{4x+4}{3}\right)dx + \displaystyle\dint_{-\tfrac{1}{2}}^{-\tfrac{1}{4}} \left(\dfrac{-8x-2}{3}\right)dx$\\
+
+$= \left[\dfrac{2x^2+4x}{3}\right]_{-1}^{-\tfrac{1}{2}} + \left[\dfrac{-4x^2-2x}{3}\right]_{-\tfrac{1}{2}}^{-\tfrac{1}{4}}$\\
+
+$= \dfrac{1}{6}+\dfrac{1}{12} = \dfrac{1}{4}$\\
+
+\begin{figure}[h]
+\includegraphics[width=6cm]{5D-4.19-michael.livchits.INF.png} \\
+\end{figure}
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

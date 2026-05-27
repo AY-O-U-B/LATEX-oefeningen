@@ -1,0 +1,66 @@
+\documentclass[a4paper]{article}     
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 5.3\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int_{-1}^{0}\dfrac{1}{\sqrt{1+x}}\,dx$\\
+
+$=
+\displaystyle \lim\limits_{a\to -1+}
+\int_a^0\dfrac{1}{\sqrt{1+x}}\,dx$\\
+
+$=
+\displaystyle \lim\limits_{a\to -1+}
+\int_a^0(1+x)^{-\tfrac{1}{2}}\,dx$\\
+
+Stel $u=1+x\Rightarrow du=dx$\\
+
+$x=a\Rightarrow u=1+a$\\
+
+$x=0\Rightarrow u=1$\\
+
+$=
+\displaystyle \lim\limits_{a\to -1+}
+\int_{1+a}^1 u^{-\tfrac{1}{2}}\,du$\\
+
+$=
+\displaystyle \lim\limits_{a\to -1+}
+\left[
+2\sqrt{u}
+\right]_{1+a}^1$\\
+
+$=
+\displaystyle \lim\limits_{a\to -1+}
+\left(
+2\sqrt{1}-2\sqrt{1+a}
+\right)$\\
+
+$=
+\displaystyle \lim\limits_{a\to -1+}
+\left(
+2-2\sqrt{1+a}
+\right)$\\
+
+$=
+2$\\
+
+De oneigenlijke integraal is convergent.\\
+
+$\boxed{2}$\\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+
+\end{document}

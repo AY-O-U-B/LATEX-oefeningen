@@ -1,0 +1,170 @@
+\documentclass[a4paper]{article}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5A nr. 10.3\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int_0^1\sqrt{1-e^{-2x}}\,dx$\\
+
+Neem:\\
+
+$u=e^{-x}$\\
+
+$du=-e^{-x}\,dx$\\
+
+$du=-u\,dx$\\
+
+$dx=-\dfrac{du}{u}$\\
+
+Grenzen aanpassen:\\
+
+$x=0\Rightarrow u=1$\\
+
+$x=1\Rightarrow u=e^{-1}$\\
+
+Dus:\\
+
+$\displaystyle \int_0^1\sqrt{1-e^{-2x}}\,dx$\\
+
+$=
+\displaystyle \int_1^{e^{-1}}
+\sqrt{1-u^2}\left(-\dfrac{du}{u}\right)$\\
+
+$=
+\displaystyle \int_{e^{-1}}^1
+\dfrac{\sqrt{1-u^2}}{u}\,du$\\
+
+Neem:\\
+
+$u=\cos t$\\
+
+$du=-\sin t\,dt$\\
+
+$\sqrt{1-u^2}=\sqrt{1-\cos^2t}$\\
+
+$\sqrt{1-u^2}=\sin t$\\
+
+Dan:\\
+
+$\displaystyle \int\dfrac{\sqrt{1-u^2}}{u}\,du$\\
+
+$=
+\displaystyle \int
+\dfrac{\sin t}{\cos t}(-\sin t)\,dt$\\
+
+$=
+-\displaystyle \int
+\dfrac{\sin^2t}{\cos t}\,dt$\\
+
+$=
+-\displaystyle \int
+\dfrac{1-\cos^2t}{\cos t}\,dt$\\
+
+$=
+-\displaystyle \int
+\left(\dfrac{1}{\cos t}-\cos t\right)\,dt$\\
+
+$=
+-\displaystyle \int
+(\sec t-\cos t)\,dt$\\
+
+$=
+-\ln|\sec t+\tan t|+\sin t$\\
+
+Terug substitueren:\\
+
+$\sin t=\sqrt{1-u^2}$\\
+
+$\sec t=\dfrac{1}{u}$\\
+
+$\tan t=\dfrac{\sqrt{1-u^2}}{u}$\\
+
+$\sec t+\tan t
+=
+\dfrac{1+\sqrt{1-u^2}}{u}$\\
+
+Dus:\\
+
+$\displaystyle \int\dfrac{\sqrt{1-u^2}}{u}\,du$\\
+
+$=
+\sqrt{1-u^2}
+-
+\ln
+\left|
+\dfrac{1+\sqrt{1-u^2}}{u}
+\right|$\\
+
+Nu de grenzen invullen:\\
+
+$\displaystyle \int_{e^{-1}}^1
+\dfrac{\sqrt{1-u^2}}{u}\,du$\\
+
+$=
+\left[
+\sqrt{1-u^2}
+-
+\ln
+\left|
+\dfrac{1+\sqrt{1-u^2}}{u}
+\right|
+\right]_{e^{-1}}^1$\\
+
+$=
+0
+-
+\left(
+\sqrt{1-e^{-2}}
+-
+\ln
+\left(
+\dfrac{1+\sqrt{1-e^{-2}}}{e^{-1}}
+\right)
+\right)$\\
+
+$=
+-\sqrt{1-e^{-2}}
++
+\ln
+\left(
+e(1+\sqrt{1-e^{-2}})
+\right)$\\
+
+$=
+-\sqrt{1-e^{-2}}
++
+\ln(e)
++
+\ln(1+\sqrt{1-e^{-2}})$\\
+
+$=
+1+\ln(1+\sqrt{1-e^{-2}})
+-\sqrt{1-e^{-2}}$\\
+
+$=
+\ln(e+\sqrt{e^2-1})
+-
+\dfrac{\sqrt{e^2-1}}{e}$\\
+
+$\boxed{
+\ln(e+\sqrt{e^2-1})
+-
+\dfrac{\sqrt{e^2-1}}{e}
+}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a}
+\end{thebibliography}
+
+\end{document}

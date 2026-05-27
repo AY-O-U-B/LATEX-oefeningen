@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 62.8\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle\int\dfrac{dx}{x^2\sqrt{x^2-4}}$\\
+
+Vorm $\sqrt{x^2-a^2}$ met $a=2$, stel $x = \dfrac{2}{\cos t} \Rightarrow dx = \dfrac{2\sin t}{\cos^2 t}dt$\\
+
+$\sqrt{x^2-4} = \sqrt{\dfrac{4}{\cos^2 t}-4} = \dfrac{2\sin t}{\cos t}$\\
+
+$= \displaystyle\int \dfrac{1}{\dfrac{4}{\cos^2 t} \cdot \dfrac{2\sin t}{\cos t}} \cdot \dfrac{2\sin t}{\cos^2 t}dt$\\
+
+$= \displaystyle\int \dfrac{\cos^3 t}{8\sin t} \cdot \dfrac{2\sin t}{\cos^2 t}dt$\\
+
+$= \displaystyle\int \dfrac{\cos t}{4}dt$\\
+
+$= \dfrac{\sin t}{4} + c$\\
+
+Terugsubstitutie: $\cos t = \dfrac{2}{x}$, $\sin t = \dfrac{\sqrt{x^2-4}}{x}$\\
+
+$= \dfrac{\sqrt{x^2-4}}{4x} + c$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,133 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6G nr. 2.5\\
+
+\medskip
+
+\normalsize
+
+$f(x) = x^3 - x^2$\\
+
+$f(-x)=(-x)^3-(-x)^2=-x^3-x^2$\\
+
+$f(-x)\neq f(x)$\\
+
+Dus $f$ is niet even.\\
+
+$-f(x)=-(x^3-x^2)=-x^3+x^2$\\
+
+$f(-x)\neq -f(x)$\\
+
+Dus $f$ is ook niet oneven.\\
+
+We ontbinden:\\
+
+$f_E(x) = \dfrac{f(x)+f(-x)}{2} = -x^2,$\\
+
+$f_O(x) = \dfrac{f(x)-f(-x)}{2} = x^3$\\
+
+$a_0$ berekenen:\\
+
+$a_0 = \dfrac{2}{\pi}\displaystyle\int_0^{\pi} (-x^2)dx
+= -\dfrac{2}{\pi}\left[\dfrac{x^3}{3}\right]_0^{\pi}
+= -\dfrac{2\pi^2}{3}$\\
+
+$a_n$ berekenen:\\
+
+$a_n = \dfrac{2}{\pi}\displaystyle\int_0^{\pi} (-x^2)\cos(nx)dx$\\
+
+Parti\"ele integratie:\\
+
+$\left\{ \begin{array}{l} 
+    u = x^2 \\ 
+    dv = \cos(nx)  dx 
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l} 
+    du = 2x  dx \\ 
+    v = \dfrac{\sin(nx)}{n} 
+\end{array} \right.$:\\
+
+$= -\dfrac{2}{\pi}\left(
+\left[\dfrac{x^2 \sin(nx)}{n}\right]_0^{\pi}
+- \dfrac{2}{n}\displaystyle\int_0^{\pi} x\sin(nx)dx
+\right)
+= \dfrac{4}{n\pi}\displaystyle\int_0^{\pi} x\sin(nx)dx$\\
+
+Parti\"ele integratie:\\
+
+$\left\{ \begin{array}{l} 
+    u = x \\ 
+    dv = \sin(nx)  dx 
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l} 
+    du = 1  dx \\ 
+    v = -\dfrac{\cos(nx)}{n} 
+\end{array} \right.$:\\
+
+$\displaystyle\int_0^{\pi} x\sin(nx)dx
+= \left[-\dfrac{x\cos(nx)}{n}\right]_0^{\pi}
++ \dfrac{1}{n}\left[\dfrac{\sin(nx)}{n}\right]_0^{\pi}
+= \dfrac{(-1)^{n+1}\pi}{n}$\\
+
+Dus:\\
+
+$a_n = \dfrac{4}{n\pi} \cdot \dfrac{(-1)^{n+1}\pi}{n} = \dfrac{4(-1)^{n+1}}{n^2}$\\
+
+$b_n$ berekenen:\\
+
+$b_n = \dfrac{2}{\pi}\displaystyle\int_0^{\pi} x^3\sin(nx)dx$\\
+
+Parti\"ele integratie:\\
+
+$\left\{ \begin{array}{l} 
+    u = x^3 \\ 
+    dv = \sin(nx)  dx 
+\end{array} \right.
+\Rightarrow
+\left\{ \begin{array}{l} 
+    du = 3x^2  dx \\ 
+    v = -\dfrac{\cos(nx)}{n} 
+\end{array} \right.$:\\
+
+$= \dfrac{2}{\pi}\left(
+\left[-\dfrac{x^3\cos(nx)}{n}\right]_0^{\pi}
++ \dfrac{3}{n}\displaystyle\int_0^{\pi} x^2\cos(nx)dx
+\right)$\\
+
+$= \dfrac{2}{\pi}\left(
+\dfrac{(-1)^{n+1}\pi^3}{n}
++ \dfrac{3}{n} \cdot \dfrac{2(-1)^n\pi}{n^2}
+\right)$\\
+
+$= \dfrac{2(-1)^{n+1}\pi^2}{n}
++ \dfrac{12(-1)^n}{n^3}
+= \dfrac{-2(-1)^n\pi^2}{n}
++ \dfrac{12(-1)^n}{n^3}
+= \dfrac{2(-1)^n(6 - n^2\pi^2)}{n^3}$\\
+
+Fourierreeks:\\
+
+$f(x) = \dfrac{a_0}{2} + \displaystyle\sum_{n=1}^{\infty}\bigl(a_n\cos(nx)+b_n\sin(nx)\bigr)$\\
+
+$f(x) = -\dfrac{\pi^2}{3}
++ \displaystyle\sum_{n=1}^{\infty}\left(
+\dfrac{4(-1)^{n+1}}{n^2}\cos(nx)
++\dfrac{2(-1)^n(6-n^2\pi^2)}{n^3}\sin(nx)
+\right)$
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

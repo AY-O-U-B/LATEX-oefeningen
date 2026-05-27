@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 1.11\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle\dint_{-\infty}^{1} \dfrac{dx}{x^3}$\\
+
+Eerst vinden we de onbepaalde integraal\\
+
+$\displaystyle\int \dfrac{dx}{x^3} = -\dfrac{1}{2x^2} + C$\\
+
+Neem de limiet\\
+
+$I = \lim\limits_{b\rightarrow 0-}\left[-\dfrac{1}{2x^2}\right]_{-\infty}^{b} + \lim\limits_{b\rightarrow 0+}\left[-\dfrac{1}{2x^2}\right]_{b}^{1}$\\
+
+Eerst linker limiet:\\
+
+$I_1 = \lim\limits_{b\rightarrow 0-}\left[-\dfrac{1}{2x^2}\right]_{-\infty}^{b} = \lim\limits_{b\rightarrow 0-}\left(-\dfrac{1}{2b^2} + 0\right) = -\infty$\\
+
+Nu rechter limiet:\\
+
+$I_2 = \lim\limits_{b\rightarrow 0+}\left[-\dfrac{1}{2x^2}\right]_{b}^{1} = \lim\limits_{b\rightarrow 0+}\left(-\dfrac{1}{2} + \dfrac{1}{2b^2}\right) = +\infty$\\
+
+$\Rightarrow$ divergeert\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

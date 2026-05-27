@@ -1,0 +1,64 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 5.4\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle\dint_{0}^{1} \ln xdx$\\
+
+Eerst vinden we de onbepaalde integraal\\
+
+$\displaystyle\int \ln xdx$\\
+
+$\left\{
+    \begin{array}{l}
+        u =  \ln x \\
+        dv = dx
+    \end{array}
+\right .
+\Rightarrow
+\left\{
+    \begin{array}{l}
+        du = \dfrac{1}{x}dx \\
+        v = x
+    \end{array}
+\right .$\\
+
+$\displaystyle\int \ln xdx = x\ln x - \displaystyle\int\dfrac{x}{x}dx= x\ln x - x$\\
+
+Neem de limiet\\
+
+$I = \lim\limits_{a\rightarrow 0+}\left[x\ln x - x\right]_{a}^{1}$\\
+
+$= \lim\limits_{a\rightarrow 0+}\left(- 1 - a\ln a + a\right)$\\
+
+Laten we kijken naar $a\ln a$:\\
+
+Herschrijf het naar $\dfrac{\ln a}{\dfrac{1}{a}}$\\
+
+$= \lim\limits_{a\rightarrow 0+}\dfrac{\ln a}{\dfrac{1}{a}}$\\
+
+Met l'hopital:\\
+
+$= \lim\limits_{a\rightarrow 0+}\dfrac{\dfrac{1}{a}}{-\dfrac{1}{a^2}} = \lim\limits_{a\rightarrow 0+}-a = 0$\\
+
+$I = -1$\\
+
+$\Rightarrow$ convergeert\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

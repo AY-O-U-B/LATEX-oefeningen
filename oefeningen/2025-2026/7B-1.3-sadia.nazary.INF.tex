@@ -1,0 +1,107 @@
+\documentclass[a4paper]{article}     
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7B nr. 1.3\\
+
+\medskip
+
+\normalsize
+
+Gegeven:\\
+
+$w=\sin xyz$\\
+
+$x=t$\\
+
+$y=t^2$\\
+
+$z=t^3$\\
+
+Gevraagd:\\
+
+$\dfrac{dw}{dt}$\\
+
+Volgens de kettingregel geldt:\\
+
+$\dfrac{dw}{dt}
+=
+\dfrac{\partial w}{\partial x}\dfrac{dx}{dt}
++
+\dfrac{\partial w}{\partial y}\dfrac{dy}{dt}
++
+\dfrac{\partial w}{\partial z}\dfrac{dz}{dt}$\\
+
+We berekenen eerst de partiele afgeleiden:\\
+
+$\dfrac{\partial w}{\partial x}
+=
+yz\cos xyz$\\
+
+$\dfrac{\partial w}{\partial y}
+=
+xz\cos xyz$\\
+
+$\dfrac{\partial w}{\partial z}
+=
+xy\cos xyz$\\
+
+Ook geldt:\\
+
+$\dfrac{dx}{dt}=1$\\
+
+$\dfrac{dy}{dt}=2t$\\
+
+$\dfrac{dz}{dt}=3t^2$\\
+
+Dus:\\
+
+$\dfrac{dw}{dt}
+=
+yz\cos xyz
++
+2txz\cos xyz
++
+3t^2xy\cos xyz$\\
+
+$=
+\left(yz+2txz+3t^2xy\right)\cos xyz$\\
+
+Nu vullen we $x=t$, $y=t^2$ en $z=t^3$ in:\\
+
+$yz=t^2t^3=t^5$\\
+
+$2txz=2t\cdot t\cdot t^3=2t^5$\\
+
+$3t^2xy=3t^2\cdot t\cdot t^2=3t^5$\\
+
+$xyz=t\cdot t^2\cdot t^3=t^6$\\
+
+Bijgevolg:\\
+
+$\dfrac{dw}{dt}
+=
+\left(t^5+2t^5+3t^5\right)\cos t^6$\\
+
+$=
+6t^5\cos t^6$\\
+
+$\boxed{\dfrac{dw}{dt}=6t^5\cos t^6}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}
