@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Tiffany Kegels \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 5.4\\
+
+\medskip
+
+\normalsize
+
+$ \displaystyle\int\limits_0^1 \ln(x)dx=\lim\limits_{a\to0+}\displaystyle\int\limits_a^1 \ln(x)dx $\\
+
+$ =\lim\limits_{a\to0+}\left[x\ln(x)\right]_a^1-\lim\limits_{a\to0+}\displaystyle\int\limits_a^1 1dx $\\
+
+$ =\lim\limits_{a\to0+}(1\ln1-a\ln a)-\lim\limits_{a\to0+}[x]_a^1 $\\
+
+$ =\left(0-\lim\limits_{a\to0+}a\ln a\right)-(1-0) $\\
+
+\text{(onbepaalde vorm $0\cdot\infty$, we herschrijven en passen L'Hôpital toe)}\\
+
+$ =-\lim\limits_{a\to0+}\dfrac{\ln a}{\dfrac{1}{a}}-1\left(\dfrac{-\infty}{+\infty}\right)$\\\\
+
+
+$ =-\lim\limits_{a\to0+}\dfrac{\dfrac{1}{a}}{-\dfrac{1}{a^2}}-1 $\\\\
+
+
+
+$ =-\lim\limits_{a\to0+}(-a)-1 $\\
+
+$ =0-1 $\\
+
+$ =-1 $
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+
+\end{thebibliography}
+\end{document}

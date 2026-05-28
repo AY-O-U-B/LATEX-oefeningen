@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+\newcommand{\dint}{\displaystyle\int}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+
+\begin{document}
+  
+\noindent \large Auteur: Michael Livchits \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 1.6\\
+
+\medskip
+
+\normalsize
+
+$I = \displaystyle\dint_{1}^{+\infty} \dfrac{\ln x}{x^2}dx$\\
+
+Eerst vinden we de onbepaalde integraal\\
+
+$\displaystyle\int \dfrac{\ln x}{x^2}dx$\\
+
+Partiele integratie:\\
+
+$\left\{
+    \begin{array}{l}
+        u =  \ln x \\
+        dv = \dfrac{1}{x^2}dx
+    \end{array}
+\right .
+\Rightarrow
+\left\{
+    \begin{array}{l}
+        du = \dfrac{1}{x}dx \\
+        v = -\dfrac{1}{x}
+    \end{array}
+\right .$\\
+
+$\displaystyle\int \dfrac{\ln x}{x^2}dx = -\dfrac{\ln x}{x} + \displaystyle\int\dfrac{dx}{x^2} = -\dfrac{\ln x}{x} - \dfrac{1}{x}$\\
+
+Neem de limiet\\
+
+$I = \lim\limits_{b\rightarrow +\infty}\left[-\dfrac{\ln x}{x} - \dfrac{1}{x}\right]_{1}^{b}$\\
+
+$= \lim\limits_{b\rightarrow +\infty}\left(-\dfrac{\ln b}{b} - \dfrac{1}{b} + 1\right)$\\
+
+$= \lim\limits_{b\rightarrow +\infty}-\dfrac{\ln b}{b} +  \lim\limits_{b\rightarrow +\infty}\left(- \dfrac{1}{b} + 1\right)$\\
+
+l'hopital toepassen op eerste limiet:\\
+
+$= \lim\limits_{b\rightarrow +\infty}-\dfrac{1}{b} +  \lim\limits_{b\rightarrow +\infty}\left(- \dfrac{1}{b} + 1\right) = 1$\\
+
+$\Rightarrow$ convergeert\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

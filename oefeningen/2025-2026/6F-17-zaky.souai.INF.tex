@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgsin}{\operatorname{Bgsin}}
+
+\begin{document}
+  
+\noindent \large Auteur: Zaky Souai \\
+\noindent \large Studierichting:  Informatica\\
+\noindent \large Oefeningenreeks 6F nr. 17\\
+
+\bigskip
+
+\normalsize
+
+$ f_n : \mathbb{R} \rightarrow \mathbb{R} : x \rightarrow 
+\left\{\begin{array}{ll}
+\dfrac{\sqrt{n^2-x^2}}{n} & $als$ |x| \leq n\\
+0 & $elders$
+\end{array}\right.$\\
+
+$ \lim\limits_{n \rightarrow \infty}\dfrac{\sqrt{n^2-x^2}}{n} = \lim\limits_{n \rightarrow \infty}\sqrt{1-\dfrac{x^2}{n^2}} = 1 $\\
+
+$ f : \mathbb{R} \rightarrow \mathbb{R} : x \rightarrow 1 $en$ f_n \stackrel{p}{\rightarrow} f $\\
+
+$ \left|\left|f_n - f\right|\right|_{\infty} = \sup\limits_{x \in \mathbb{R}}\left|f_n(x)-1\right| = \sup\limits_{|x|>n}|0-1| = 1 \neq 0 $\\
+
+$ \Rightarrow f_n \stackrel{u}{\not\rightarrow} f $\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}
