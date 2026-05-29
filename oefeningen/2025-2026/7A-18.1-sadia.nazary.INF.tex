@@ -1,0 +1,141 @@
+\documentclass[a4paper]{article}     
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+
+\begin{document}
+
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 18.1\\
+
+\medskip
+
+\normalsize
+
+$f:\R^3\longrightarrow\R:(x,y,z)\mapsto f(x,y,z)=
+\left\{
+\begin{array}{lll}
+\dfrac{xy+yz+zx}{x^2+y^2+z^2} & \text{als} & (x,y,z)\neq(0,0,0)\\
+0 & \text{als} & (x,y,z)=(0,0,0)
+\end{array}
+\right .$\\
+
+We onderzoeken de functie in $O=(0,0,0)$.\\
+
+\medskip
+
+Continuiteit in $O$:\\
+
+Neem de rechte $x=y=z=t$.\\
+
+Dan geldt voor $t\neq0$:\\
+
+$f(t,t,t)
+=
+\dfrac{t^2+t^2+t^2}{t^2+t^2+t^2}$\\
+
+$=
+\dfrac{3t^2}{3t^2}$\\
+
+$=
+1$\\
+
+Dus:\\
+
+$\llim_{t\rightarrow0}f(t,t,t)=1$\\
+
+Maar:\\
+
+$f(0,0,0)=0$\\
+
+Bijgevolg is $f$ niet continu in $O$.\\
+
+\medskip
+
+Partiele afgeleiden in $O$:\\
+
+$\dfrac{\partial f}{\partial x}(0,0,0)
+=
+\llim_{h\rightarrow0}
+\dfrac{f(h,0,0)-f(0,0,0)}{h}$\\
+
+$=
+\llim_{h\rightarrow0}
+\dfrac{0-0}{h}$\\
+
+$=
+0$\\
+
+Op dezelfde manier geldt:\\
+
+$\dfrac{\partial f}{\partial y}(0,0,0)=0$\\
+
+$\dfrac{\partial f}{\partial z}(0,0,0)=0$\\
+
+Dus $f$ is partieel afleidbaar in $O$.\\
+
+Omdat $f$ niet continu is in $O$, is $f$ niet continu partieel afleidbaar in $O$.\\
+
+\medskip
+
+Afleidbaarheid ten opzichte van een willekeurige richting:\\
+
+Neem een willekeurige richting $(a,b,c)\neq(0,0,0)$.\\
+
+Dan geldt voor $t\neq0$:\\
+
+$f(ta,tb,tc)
+=
+\dfrac{t^2ab+t^2bc+t^2ca}{t^2a^2+t^2b^2+t^2c^2}$\\
+
+$=
+\dfrac{ab+bc+ca}{a^2+b^2+c^2}$\\
+
+Dus:\\
+
+$\llim_{t\rightarrow0}
+\dfrac{f(ta,tb,tc)-f(0,0,0)}{t}$\\
+
+$=
+\llim_{t\rightarrow0}
+\dfrac{1}{t}
+\dfrac{ab+bc+ca}{a^2+b^2+c^2}$\\
+
+Deze limiet bestaat in het algemeen niet.\\
+
+Dus $f$ is niet afleidbaar ten opzichte van een willekeurige richting in $O$.\\
+
+\medskip
+
+Differentieerbaarheid in $O$:\\
+
+Elke differentieerbare functie is continu.\\
+
+Omdat $f$ niet continu is in $O$, is $f$ niet differentieerbaar in $O$.\\
+
+\medskip
+
+Besluit:\\
+
+$f$ is niet continu in $O$.\\
+
+$f$ is partieel afleidbaar in $O$.\\
+
+$f$ is niet continu partieel afleidbaar in $O$.\\
+
+$f$ is niet afleidbaar ten opzichte van een willekeurige richting in $O$.\\
+
+$f$ is niet differentieerbaar in $O$.\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

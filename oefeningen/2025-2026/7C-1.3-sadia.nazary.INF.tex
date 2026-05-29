@@ -1,0 +1,138 @@
+\documentclass[a4paper]{article}     
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Bgtan}{\operatorname{Bgtan}}
+\newcommand{\Bgcot}{\operatorname{Bgcot}}
+
+\begin{document}
+
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7C nr. 1.3\\
+
+\medskip
+
+\normalsize
+
+Gegeven:\\
+
+$f:\R^2\longrightarrow\R:(x,y)\mapsto f(x,y)=\Bgtan(xy)+\Bgcot(xy)$\\
+
+Gevraagd: de tweede afgeleide, als die bestaat.\\
+
+We berekenen eerst de eerste partiele afgeleiden.\\
+
+$\dfrac{\partial f}{\partial x}
+=
+\dfrac{y}{1+x^2y^2}
+-
+\dfrac{y}{1+x^2y^2}$\\
+
+$=
+0$\\
+
+$\dfrac{\partial f}{\partial y}
+=
+\dfrac{x}{1+x^2y^2}
+-
+\dfrac{x}{1+x^2y^2}$\\
+
+$=
+0$\\
+
+Dus de eerste afgeleide is:\\
+
+$Df(x,y)=
+\left(
+\begin{array}{cc}
+0 & 0
+\end{array}
+\right)$\\
+
+We berekenen nu de tweede partiele afgeleiden.\\
+
+$\dfrac{\partial^2 f}{\partial x^2}
+=
+\dfrac{\partial}{\partial x}
+\left(
+\dfrac{\partial f}{\partial x}
+\right)$\\
+
+$=
+\dfrac{\partial}{\partial x}(0)$\\
+
+$=
+0$\\
+
+$\dfrac{\partial^2 f}{\partial x\partial y}
+=
+\dfrac{\partial}{\partial y}
+\left(
+\dfrac{\partial f}{\partial x}
+\right)$\\
+
+$=
+\dfrac{\partial}{\partial y}(0)$\\
+
+$=
+0$\\
+
+$\dfrac{\partial^2 f}{\partial y\partial x}
+=
+\dfrac{\partial}{\partial x}
+\left(
+\dfrac{\partial f}{\partial y}
+\right)$\\
+
+$=
+\dfrac{\partial}{\partial x}(0)$\\
+
+$=
+0$\\
+
+$\dfrac{\partial^2 f}{\partial y^2}
+=
+\dfrac{\partial}{\partial y}
+\left(
+\dfrac{\partial f}{\partial y}
+\right)$\\
+
+$=
+\dfrac{\partial}{\partial y}(0)$\\
+
+$=
+0$\\
+
+Bijgevolg is de tweede afgeleide:\\
+
+$D^2f(x,y)
+=
+\left(
+\begin{array}{cc}
+0 & 0\\
+0 & 0
+\end{array}
+\right)$\\
+
+$\boxed{
+D^2f(x,y)
+=
+\left(
+\begin{array}{cc}
+0 & 0\\
+0 & 0
+\end{array}
+\right)
+}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

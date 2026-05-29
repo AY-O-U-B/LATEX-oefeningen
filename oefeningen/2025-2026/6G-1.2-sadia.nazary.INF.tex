@@ -1,0 +1,76 @@
+\documentclass[a4paper]{article}     
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6G nr. 1.2\\
+
+\medskip
+
+\normalsize
+
+$\left(f_n\right)_{n\in\mathbb{N}_0}
+=
+\left(
+f_n=n\cdot\mathbf{1}_{]0,1/n]}
+\right)_{n\in\mathbb{N}_0}$\\
+
+We bewijzen eerst puntsgewijze convergentie.\\
+
+Zij $x\in\mathbb{R}$ vast.\\
+
+Als $x\leq0$, dan geldt voor alle $n$:\\
+
+$f_n(x)=0$\\
+
+Als $x>0$, dan bestaat er een $N\in\mathbb{N}_0$ zodat voor alle $n\geq N$ geldt:\\
+
+$x>1/n$\\
+
+Dus ook dan geldt voor alle $n\geq N$:\\
+
+$f_n(x)=0$\\
+
+Bijgevolg:\\
+
+$\displaystyle \lim\limits_{n\rightarrow+\infty}f_n(x)=0$\\
+
+Dus $\left(f_n\right)_n$ convergeert puntsgewijs naar de nulfunctie.\\
+
+We onderzoeken nu kwadratisch gemiddelde convergentie.\\
+
+$\displaystyle\int_{\mathbb{R}}\left|f_n(x)-0\right|^2\,dx
+=
+\displaystyle\int_0^{1/n}n^2\,dx$\\
+
+$=
+n^2\left[x\right]_0^{1/n}$\\
+
+$=
+n^2\left(1/n-0\right)$\\
+
+$=
+n$\\
+
+Dus:\\
+
+$\displaystyle \lim\limits_{n\rightarrow+\infty}
+\displaystyle\int_{\mathbb{R}}\left|f_n(x)-0\right|^2\,dx
+=
++\infty$\\
+
+De rij convergeert dus niet in kwadratisch gemiddelde naar de nulfunctie.\\
+
+$\boxed{\text{Puntsgewijs convergent naar de nulfunctie, maar niet in kwadratisch gemiddelde.}}$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

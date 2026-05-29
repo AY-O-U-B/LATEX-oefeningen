@@ -1,0 +1,88 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Odia Kibor \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 5.4
+\\
+
+\medskip
+
+\normalsize
+
+
+$\displaystyle\int_{0}^{1} \ln x dx $\\
+
+$\ln 0$ bestaat niet\\
+
+$\Rightarrow  \lim\limits_{a \rightarrow 0+} \displaystyle\int_{a}^{1} \ln x dx $\\
+
+$\left\{
+\begin{array}{l}
+	u = \ln x \\ 
+	dv = dx
+\end{array}\right.
+\Rightarrow 
+\left\{
+\begin{array}{l}
+	du = \dfrac{1}{x} dx\\
+ 	v = x 
+\end{array}
+\right.$\\
+
+$\Rightarrow  \lim\limits_{a \rightarrow 0+} \left (\left[x \ln (x)\right]_{a}^{1} - \displaystyle\int_{a}^{1} x \cdot \dfrac{1}{x} dx\right )$\\
+
+$= \lim\limits_{a \rightarrow 0+} \left[x \ln (x) - x \right]_{a}^{1} $\\
+
+$= \lim\limits_{a \rightarrow 0+} ((\ln (1) - 1) - (a\ln (a) - a))$\\
+
+$= \lim\limits_{a \rightarrow 0+} (- 1 - a\ln (a) + a)$\\
+
+$a\ln(a)$ is onbepaald want $a \rightarrow 0+$ en $\ln(a) \rightarrow -\infty$\\
+
+$a\ln(a) = \dfrac{\ln(a)}{\dfrac{1}{a}}$\\
+
+$\lim\limits_{a \rightarrow 0+} \dfrac{\ln(a)}{\dfrac{1}{a}}$\\
+
+$= \lim\limits_{a \rightarrow 0+} \dfrac{\dfrac{1}{a}}{-\dfrac{1}{a^2}}$\\
+
+$= \lim\limits_{a \rightarrow 0+} -a$\\
+
+$= 0$\\
+
+$\Rightarrow \lim\limits_{a \rightarrow 0+} (- 1 - a\ln (a) + a)$\\
+
+$= -1 - 0 + 0$\\
+
+$= -1$\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

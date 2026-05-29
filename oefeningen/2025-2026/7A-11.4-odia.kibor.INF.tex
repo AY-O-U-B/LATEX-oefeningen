@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{cancel}
+
+\begin{document}
+  
+\noindent \large Auteur: Odia Kibor \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr. 11.4
+\\
+
+\medskip
+
+\normalsize
+
+
+$f:\Omega \subseteq \mathbb{R}^3 \rightarrow \mathbb{R}^3 : (x,y,z) \rightarrow \left((xy)^z, x^{yz},x^{y^z}\right)$\\
+
+$(a^b = e^{b\ln a})$\\
+
+$\Rightarrow$ Voor $x$:\\
+
+$\dfrac{\partial f_1}{\partial x} =  e^{z\ln(xy)} \cdot z \cdot \dfrac{1}{x} = \dfrac{z(xy)^z}{x}$\\
+
+$\dfrac{\partial f_2}{\partial x} = e^{yz \ln x} \cdot yz \cdot \dfrac{1}{x} = \dfrac{x^{yz}yz}{x}$\\
+
+$\dfrac{\partial f_3}{\partial x} = e^{y^z\ln x} \cdot y^z \cdot \dfrac{1}{x} = \dfrac{x^{y^z}y^z}{x}$\\
+
+$\Rightarrow$ Voor $y$:\\
+
+$\dfrac{\partial f_1}{\partial y} = e^{z\ln(xy)} \cdot z \cdot \dfrac{1}{y} = \dfrac{z(xy)^z}{y}$\\
+
+$\dfrac{\partial f_2}{\partial y} = e^{yz \ln x} \cdot z\ln x = x^{yz}z\ln x$\\
+
+$\dfrac{\partial f_3}{\partial y} = e^{y^z\ln x} \cdot zy^{z-1} \ln x = x^{y^z} zy^{z-1} \ln x$\\
+
+$\Rightarrow$ Voor $z$:\\
+
+$\dfrac{\partial f_1}{\partial z} = e^{z\ln(xy)} \cdot \ln (xy) = (xy)^z \ln (xy)$\\
+
+$\dfrac{\partial f_2}{\partial z} = e^{yz \ln x} \cdot y\ln x = x^{yz}y\ln x$\\
+
+$\dfrac{\partial f_3}{\partial z} = e^{y^z\ln x} \cdot y^z \ln y \ln x = x^{y^z} \cdot y^z \ln y \ln x$\\
+
+
+$Df(x,y,z)= \left(\begin{array}{ccc}
+\dfrac{z(xy)^z}{x} & \dfrac{z(xy)^z}{y} & (xy)^z \ln (xy)\\
+\dfrac{x^{yz}yz}{x} & x^{yz}z\ln x & x^{yz}y\ln x\\
+\dfrac{x^{y^z}y^z}{x} & x^{y^z} zy^{z-1} \ln x & x^{y^z}y^z \ln y \ln x\\
+\end{array} \right)$\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
+
+

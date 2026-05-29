@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}     
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Sadia Nazary \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6F nr. 17\\
+
+\medskip
+
+\normalsize
+
+$f_n:\mathbb{R}\longrightarrow\mathbb{R}:x\mapsto
+\left\{
+\begin{array}{ll}
+\dfrac{\sqrt{n^2-x^2}}{n} & \text{als } |x|\leq n\\
+0 & \text{elders}
+\end{array}
+\right.$\\
+
+Zij $x\in\mathbb{R}$ vast.\\
+
+Voor $n$ groot genoeg geldt $|x|\leq n$.\\
+
+Dus:\\
+
+$f_n(x)=\dfrac{\sqrt{n^2-x^2}}{n}$\\
+
+$=\sqrt{1-\dfrac{x^2}{n^2}}$\\
+
+$\lim\limits_{n\rightarrow+\infty}f_n(x)
+=
+\lim\limits_{n\rightarrow+\infty}
+\sqrt{1-\dfrac{x^2}{n^2}}$\\
+
+$=1$\\
+
+Dus de puntsgewijze limiet is:\\
+
+$f:\mathbb{R}\longrightarrow\mathbb{R}:x\mapsto 1$\\
+
+Onderzoek uniforme convergentie:\\
+
+Voor $|x|>n$ geldt $f_n(x)=0$.\\
+
+Dan geldt:\\
+
+$|f_n(x)-f(x)|=|0-1|=1$\\
+
+Dus:\\
+
+$\sup\limits_{x\in\mathbb{R}}|f_n(x)-f(x)|=1$\\
+
+Hieruit volgt:\\
+
+$\lim\limits_{n\rightarrow+\infty}
+\sup\limits_{x\in\mathbb{R}}|f_n(x)-f(x)|=1\neq0$\\
+
+De convergentie is dus niet uniform.\\
+
+$\boxed{\text{Puntsgewijs convergent naar } f(x)=1 \text{, niet uniform convergent}}$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+
+\end{document}

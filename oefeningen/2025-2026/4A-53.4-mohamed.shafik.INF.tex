@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+\noindent \large Auteur: Mohamed Shafik \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks: 4A nr 53.4\\
+
+\medskip
+
+\normalsize
+
+Bereken $\displaystyle\int \sin x \cos^{-3} x\, dx$\\
+
+Substitutie: $t = \cos x$, $dt = -\sin x\, dx$, $\sin x\, dx = -dt$\\
+
+\begin{eqnarray*}
+\displaystyle\int \sin x \cos^{-3} x\, dx &=& \displaystyle\int \dfrac{\sin x}{\cos^3 x}\, dx\\
+&=& \displaystyle\int \dfrac{-dt}{t^3}\\
+&=& -\displaystyle\int t^{-3}\, dt\\
+&=& -\dfrac{t^{-2}}{-2} + c\\
+&=& \dfrac{1}{2t^2} + c\\
+\end{eqnarray*}
+
+Terugsubstitueren: $t = \cos x$\\
+
+\begin{eqnarray*}
+&=& \dfrac{1}{2\cos^2 x} + c\\
+\end{eqnarray*}
+
+\begin{thebibliography}{9}
+\end{thebibliography}
+\end{document}

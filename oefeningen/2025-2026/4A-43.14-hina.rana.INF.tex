@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}     
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\llim}{\lim\limits}
+\newcommand{\dint}{\displaystyle\int}
+
+\begin{document}
+
+\noindent \large Auteur: Hina Rana \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 43.14\\
+
+\medskip
+
+\normalsize
+
+$ \dint \dfrac{8x^2}{x^4+2x^3-2x-1}$\\
+
+$  = \dint \dfrac{8x^2}{(x-1)(x+1)^3}$\\
+
+$ \dfrac{A}{x-1} + \dfrac{B}{x+1} + \dfrac{C}{(x+1)^2} + \dfrac{D}{(x+1)^3}$ \\
+
+$ A = \dfrac{8x^2}{(x+1)^3} = \dfrac{8}{8} = 1 $ voor $x=1$ \\
+
+$ D = \dfrac{8x^2}{x-1} = \dfrac{8}{-2} = -4$ voor $x = -1$ \\
+
+$ C = \dfrac{8x^2}{(x+1)^3(x-1)} - \dfrac{D}{(x+1)^3} = \dfrac{8x^2}{(x+1)^3(x-1)} + \dfrac{4}{(x+1)^3}$ \\
+
+$  = \dfrac{8x^2 + 4x - 4}{(x+1)^3(x-1)} = \dfrac{8x-4}{(x+1)^2(x-1)}$ \\
+
+$ C = \dfrac{8x-4}{(x-1)} = \dfrac{12}{2} = 6 $ voor $x= -1$ \\
+
+$ B = \dfrac{8x-4}{(x+1)^2(x-1)} - \dfrac{C}{(x+1)^2}$ \\
+
+$ = \dfrac{8x-4}{(x+1)^2 (x-1)} - \dfrac{6}{(x+1)^2}$ \\
+
+$ = \dfrac{8x-4-6x+6}{(x+1)^2(x-1)} = \dfrac{2}{x-1}$ \\
+
+$ B = \dfrac{2}{x-1} = -1$ voor $x = -1$ \\
+
+$ \dfrac{1}{x-1} + \left(\dfrac{-1}{x+1}\right) + \dfrac{6}{(x+1)^2} + \left(\dfrac{-4}{(x+1)^3}\right)$ \\
+
+$ \dint\dfrac{1}{x-1}dx -\dint\dfrac{1}{x+1}dx + 6 \dint\dfrac{1}{(x+1)^2}dx - 4\dint\dfrac{1}{(x+1)^3}$ \\
+
+$ = \ln|x-1| - \ln|x+1| + 6 \cdot \left(-\dfrac{1}{x+1}\right) - 4 \cdot \left(-\dfrac{1}{2(x+1)^2}\right)$\\
+
+$ = \ln|x-1| - \ln|x+1| - \dfrac{6}{x+1} + \dfrac{2}{(x+1)^2} + C $ \\
+
+\begin{thebibliography}{999}
+\end{thebibliography}
+\end{document} 
