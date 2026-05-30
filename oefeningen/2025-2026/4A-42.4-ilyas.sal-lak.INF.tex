@@ -1,0 +1,27 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\dint}{\displaystyle\int}
+\begin{document}
+\noindent \large Auteur: Ilyas Sal-lak \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 42.4\\
+\medskip
+\normalsize
+
+$\dint \dfrac{2x+1}{x^2-1} \, dx$ \\
+
+$x^2 - 1 = (x-1)(x+1)$ \\
+
+$\dfrac{2x+1}{(x-1)(x+1)} = \dfrac{A}{x-1} + \dfrac{B}{x+1}$ \\
+
+$A = \left.\dfrac{2x+1}{x+1}\right|_{x=1} = \dfrac{3}{2}$ \quad $B = \left.\dfrac{2x+1}{x-1}\right|_{x=-1} = \dfrac{1}{2}$ \\
+
+$\Rightarrow \dint \dfrac{2x+1}{x^2-1} \, dx = \dfrac{3}{2}\ln|x-1| + \dfrac{1}{2}\ln|x+1| + c$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

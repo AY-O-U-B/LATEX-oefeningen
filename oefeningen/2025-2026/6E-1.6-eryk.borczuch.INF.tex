@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Eryk Borczuch \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 1.6\\
+
+\medskip
+
+\normalsize
+
+$T_4 \left( f , \dfrac{\pi}{2} \right)(x)$ voor $f(x) = \sin{x}$ \\
+
+$T_n(f , a)(x) = \displaystyle \sum_{k = 0}^{n} \dfrac{f^{(k)}(a)}{k!}(x - a)^k$ \\
+
+$T_4 \left( f , \dfrac{\pi}{2} \right)(x) = \displaystyle \sum_{k = 0}^{4} \dfrac{f^{(k)} \left( \dfrac{\pi}{2} \right)}{k!} \left( x - \dfrac{\pi}{2} \right)^k$ \\
+
+De 4 afgeleiden vinden:\\
+
+$f(x) = \sin x \rightarrow f \left( \dfrac{\pi}{2} \right) = 1$ \\
+
+$f'(x) = \cos x \rightarrow f' \left( \dfrac{\pi}{2} \right) = 0$ \\
+
+$f''(x) = - \sin x \rightarrow f'' \left( \dfrac{\pi}{2} \right) = -1$ \\
+
+$f'''(x) = - \cos x \rightarrow f''' \left( \dfrac{\pi}{2} \right) = 0$ \\
+
+$f^{iv}(x) = \sin x \rightarrow f^{iv} \left( \dfrac{\pi}{2} \right) = 1$ \\
+
+$T_4 \left( f , \dfrac{\pi}{2} \right)(x) = \dfrac{f^{(0)} \left( \dfrac{\pi}{2} \right)}{0!} \left( x - \dfrac{\pi}{2} \right)^0 + \dfrac{f^{(1)} \left( \dfrac{\pi}{2} \right)}{1!} \left( x - \dfrac{\pi}{2} \right)^1 + \dfrac{f^{(2)} \left( \dfrac{\pi}{2} \right)}{2!} \left( x - \dfrac{\pi}{2} \right)^2 + \dfrac{f^{(3)} \left( \dfrac{\pi}{2} \right)}{3!} \left( x - \dfrac{\pi}{2} \right)^3 + \dfrac{f^{(4)} \left( \dfrac{\pi}{2} \right)}{4!} \left( x - \dfrac{\pi}{2} \right)^4$ \\
+ 
+$= \dfrac{1}{0!} \left( x - \dfrac{\pi}{2} \right)^0 + \dfrac{0}{1!} \left( x - \dfrac{\pi}{2} \right)^1 + \dfrac{-1}{2!} \left( x - \dfrac{\pi}{2} \right)^2 + \dfrac{0}{3!} \left( x - \dfrac{\pi}{2} \right)^3 + \dfrac{1}{4!} \left( x - \dfrac{\pi}{2} \right)^4$ \\
+ 
+$= 1 + 0 - \dfrac{1}{2} \left( x - \dfrac{\pi}{2} \right)^2 + 0 + \dfrac{1}{24} \left( x - \dfrac{\pi}{2} \right)^4$ \\
+ 
+$= 1 - \dfrac{1}{2} \left( x - \dfrac{\pi}{2} \right)^2 + \dfrac{1}{24} \left( x - \dfrac{\pi}{2} \right)^4$ \\
+
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\dint}{\displaystyle\int}
+\begin{document}
+\noindent \large Auteur: Ilyas Sal-lak \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 42.3\\
+\medskip
+\normalsize
+
+$\dint \dfrac{dx}{x^2 + 3x + 2}$ \\
+
+$x^2 + 3x + 2 = (x+1)(x+2)$ \\
+
+$\dfrac{1}{(x+1)(x+2)} = \dfrac{A}{x+1} + \dfrac{B}{x+2}$ \\
+
+$A = \left.\dfrac{1}{x+2}\right|_{x=-1} = 1$ \quad $B = \left.\dfrac{1}{x+1}\right|_{x=-2} = -1$ \\
+
+$\Rightarrow \dint \dfrac{dx}{x^2+3x+2} = \ln|x+1| - \ln|x+2| + c = \ln\left|\dfrac{x+1}{x+2}\right| + c$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\dint}{\displaystyle\int}
+\begin{document}
+\noindent \large Auteur: Ilyas Sal-lak \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 15.3\\
+\medskip
+\normalsize
+
+$\dint x^2 e^{3x} dx$ \\
+
+$\left\{
+\begin{array}{l}
+u = x^2 \\
+dv = e^{3x} dx
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = 2x \, dx \\
+v = \dfrac{e^{3x}}{3}
+\end{array}
+\right.$ \\
+
+$\Rightarrow \dint x^2 e^{3x} dx = \dfrac{x^2 e^{3x}}{3} - \dfrac{2}{3} \dint x e^{3x} dx$ \\
+
+$\left\{
+\begin{array}{l}
+u = x \\
+dv = e^{3x} dx
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = dx \\
+v = \dfrac{e^{3x}}{3}
+\end{array}
+\right.$ \\
+
+$\Rightarrow \dint x e^{3x} dx = \dfrac{x e^{3x}}{3} - \dfrac{e^{3x}}{9} + c$ \\
+
+$\Rightarrow \dint x^2 e^{3x} dx = \dfrac{x^2 e^{3x}}{3} - \dfrac{2}{3}\left(\dfrac{x e^{3x}}{3} - \dfrac{e^{3x}}{9}\right) + c$ \\
+
+$= \dfrac{e^{3x}}{27}(9x^2 - 6x + 2) + c$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

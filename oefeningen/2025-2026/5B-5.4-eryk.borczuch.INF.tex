@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Eryk Borczuch \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 5B nr. 5.4\\
+
+\medskip
+
+\normalsize
+
+$\displaystyle \int_{0}^1 \ln(x)dx$\\
+
+$\displaystyle = \lim\limits_{a \rightarrow 0^+} \int_{a}^1 \ln(x)dx$\\
+
+$ = \lim\limits_{a \rightarrow 0^+} \left[x\ln(x) - x\right]_a^1$\\
+
+$\displaystyle = \lim_{a \rightarrow 0^+} \left(-1 - a\ln(a) + a\right)$\\
+
+
+$ \lim \limits_{a \rightarrow 0^+} a\ln(a) 
+= \lim\limits_{a \rightarrow 0^+} \dfrac{\ln(a)}{\dfrac{1}{a}} 
+\stackrel{H}{=} \lim\limits_{a \rightarrow 0^+} \dfrac{\dfrac{1}{a}}{-\dfrac{1}{a^2}} 
+= \lim\limits_{a \rightarrow 0^+} (-a) = 0$\\
+
+$\displaystyle = -1 - 0 + 0 = -1$\\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

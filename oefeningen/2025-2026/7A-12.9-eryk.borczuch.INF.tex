@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Eryk Borczuch \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 7A nr.12.9\\
+
+\medskip
+
+\normalsize
+
+$f(x,y,z) = \sqrt{xyz}$ in $\mathbf{a}(2,-1,-2)$, richting $\mathbf{h}(1,2,-2)$ \\
+ 
+$\dfrac{\partial f}{\partial x} = \dfrac{yz}{2 \sqrt{xyz}}$ \\
+ 
+$\dfrac{\partial f}{\partial y} = \dfrac{xz}{2 \sqrt{xyz}}$ \\
+ 
+$\dfrac{\partial f}{\partial z} = \dfrac{xy}{2 \sqrt{xyz}}$ \\
+ 
+In $\mathbf{a}$: $\sqrt{(2)(-1)(-2)} = \sqrt{4} = 2$, dus: \\
+ 
+$\dfrac{\partial f}{\partial x}(2,-1,-2) = \dfrac{(-1)(-2)}{2 \cdot 2} = \dfrac{2}{4} = \dfrac{1}{2}$ \\
+ 
+$\dfrac{\partial f}{\partial y}(2,-1,-2) = \dfrac{(2)(-2)}{2 \cdot 2} = \dfrac{-4}{4} = -1$ \\
+ 
+$\dfrac{\partial f}{\partial z}(2,-1,-2) = \dfrac{(2)(-1)}{2 \cdot 2} = \dfrac{-2}{4} = - \dfrac{1}{2}$ \\
+ 
+$Df(\mathbf{a}) = \begin{pmatrix} \dfrac{1}{2} & -1 & - \dfrac{1}{2} \end{pmatrix}$ \\
+ 
+$Df(\mathbf{a},\mathbf{h}) = Df(\mathbf{a}) \cdot \mathbf{h} = \begin{pmatrix} \dfrac{1}{2} & -1 & - \dfrac{1}{2} \end{pmatrix} \cdot \begin{pmatrix} 1 \\ 2 \\ -2 \end{pmatrix} = \dfrac{1}{2} - 2 + 1 = - \dfrac{1}{2}$ \\
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 

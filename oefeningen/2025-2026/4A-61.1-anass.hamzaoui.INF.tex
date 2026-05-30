@@ -1,0 +1,50 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+
+\noindent \large Auteur: Anass Hamzaoui \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 4A nr. 61.1 \\
+\medskip
+\normalsize
+
+$\displaystyle\int \dfrac{dx}{\sqrt[3]{x^4} - \sqrt[3]{x^2}}$ \\
+
+$\left|\begin{array}{ll}
+    & x = t^3 \\
+    
+    & dx = 3t^2 dt \\
+    
+\end{array}\right.$ \\
+
+$\begin{array}{ll}
+&= 3\displaystyle\int \dfrac{t^2}{t^4 - t^2} dt = 3\displaystyle\int \dfrac{dt}{t^2 - 1} \\
+
+\dfrac{1}{t^2-1} &= \dfrac{A}{t-1} + \dfrac{B}{t+1} \\
+
+\end{array}$ \\
+
+$\left\{\begin{array}{l}
+
+    A = \dfrac{1}{t+1}\bigg|_{t=1} = \dfrac{1}{2} \\
+    
+    B = \dfrac{1}{t-1}\bigg|_{t=-1} = \dfrac{-1}{2} \\
+    
+\end{array}\right.$ \\
+
+$\begin{array}{ll}
+&= \dfrac{3}{2}\displaystyle\int \dfrac{dt}{t-1} - \dfrac{3}{2}\displaystyle\int \dfrac{dt}{t+1}\\
+
+&= \dfrac{3}{2}\ln|t-1| - \dfrac{3}{2}\ln|t+1| + c \\
+
+&= \dfrac{3}{2}\ln|\sqrt[3]{x}-1| - \dfrac{3}{2}\ln|\sqrt[3]{x}+1| + c \\
+
+\end{array}$
+
+\begin{thebibliography}{999}
+    %\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

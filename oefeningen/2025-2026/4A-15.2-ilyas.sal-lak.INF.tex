@@ -1,0 +1,71 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\dint}{\displaystyle\int}
+\begin{document}
+\noindent \large Auteur: Ilyas Sal-lak \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 15.2\\
+\medskip
+\normalsize
+
+$\dint x^3 e^x dx$ \\
+
+$\left\{
+\begin{array}{l}
+u = x^3 \\
+dv = e^x dx
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = 3x^2 dx \\
+v = e^x
+\end{array}
+\right.$ \\
+
+$\Rightarrow \dint x^3 e^x dx = x^3 e^x - 3 \dint x^2 e^x dx$ \\
+
+$\left\{
+\begin{array}{l}
+u = x^2 \\
+dv = e^x dx
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = 2x \, dx \\
+v = e^x
+\end{array}
+\right.$ \\
+
+$\Rightarrow \dint x^2 e^x dx = x^2 e^x - 2 \dint x e^x dx$ \\
+
+$\left\{
+\begin{array}{l}
+u = x \\
+dv = e^x dx
+\end{array}
+\right.
+\Rightarrow
+\left\{
+\begin{array}{l}
+du = dx \\
+v = e^x
+\end{array}
+\right.$ \\
+
+$\Rightarrow \dint x e^x dx = x e^x - e^x + c$ \\
+
+$\Rightarrow \dint x^3 e^x dx = x^3 e^x - 3\bigl(x^2 e^x - 2(x e^x - e^x)\bigr) + c$ \\
+
+$= e^x(x^3 - 3x^2 + 6x - 6) + c$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

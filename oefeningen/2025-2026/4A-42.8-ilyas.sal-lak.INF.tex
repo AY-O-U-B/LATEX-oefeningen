@@ -1,0 +1,31 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\dint}{\displaystyle\int}
+\begin{document}
+\noindent \large Auteur: Ilyas Sal-lak \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 4A nr. 42.8\\
+\medskip
+\normalsize
+
+$\dint \dfrac{dx}{x^3 - 7x + 6}$ \\
+
+$x^3 - 7x + 6 = (x-1)(x-2)(x+3)$ \\
+
+$\dfrac{1}{(x-1)(x-2)(x+3)} = \dfrac{A}{x-1} + \dfrac{B}{x-2} + \dfrac{C}{x+3}$ \\
+
+$A = \left.\dfrac{1}{(x-2)(x+3)}\right|_{x=1} = \dfrac{1}{(-1)(4)} = -\dfrac{1}{4}$ \\
+
+$B = \left.\dfrac{1}{(x-1)(x+3)}\right|_{x=2} = \dfrac{1}{(1)(5)} = \dfrac{1}{5}$ \\
+
+$C = \left.\dfrac{1}{(x-1)(x-2)}\right|_{x=-3} = \dfrac{1}{(-4)(-5)} = \dfrac{1}{20}$ \\
+
+$\Rightarrow \dint \dfrac{dx}{x^3-7x+6} = -\dfrac{1}{4}\ln|x-1| + \dfrac{1}{5}\ln|x-2| + \dfrac{1}{20}\ln|x+3| + c$
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

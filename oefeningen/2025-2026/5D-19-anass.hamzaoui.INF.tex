@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+
+\noindent \large Auteur: Anass Hamzaoui \\
+\noindent \large Studierichting: Informatica \\
+\noindent \large Oefeningenreeks 5F nr. 19 \\
+\medskip
+\normalsize
+
+$\left|\begin{array}{ll}
+    & a(t) = -20 \text{ m/s}^2 \\
+    
+    & \Delta s = 160 \text{ m} \\
+    
+    & v_{\text{eind}} = 0 \text{ m/s} \\
+\end{array}\right.$ \\
+
+$\begin{array}{ll}
+v(t) &= \displaystyle\int -20    dt = -20t + v_0 \\
+
+s(t) &= \displaystyle\int (-20t + v_0)    dt = -10t^2 + v_0 t \\
+
+v(t_{\text{stop}}) = 0 &\Rightarrow t_{\text{stop}} = \dfrac{v_0}{20} \\
+
+160 &= -10\left(\dfrac{v_0}{20}\right)^2 + v_0\left(\dfrac{v_0}{20}\right) \\
+
+&= -\dfrac{v_0^2}{40} + \dfrac{2v_0^2}{40} = \dfrac{v_0^2}{40} \\
+
+v_0^2 &= 6400 \\
+
+v_0 &= 80 \text{ m/s} \\
+\end{array}$ \\
+
+Grafiek: \\
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{5D-19-anass.hamzaoui.INF.png}
+\end{figure}
+
+\begin{thebibliography}{999}
+    %\bibitem{a} Referentie
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Tiffany Kegels \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 1.2\\
+
+\medskip
+
+\normalsize
+
+$f(x)=\tan x$\\
+
+We berekenen de afgeleiden in $x=0$.\\
+
+$f'(x)=\sec^2x$\\
+
+$f'(0)=1$\\
+
+$f''(x)=2\sec^2x\tan x$\\
+
+$f''(0)=0$\\
+
+$f^{(3)}(x)=2\sec^2x(\sec^2x+2\tan^2x)$\\
+
+$f^{(3)}(0)=2$\\
+
+$f^{(4)}(0)=0$\\
+
+$f^{(5)}(0)=16$\\
+
+$f^{(6)}(0)=0$\\
+
+$f^{(7)}(0)=272$\\
+
+Taylorformule:\\
+
+$T_7(f,0)(x)=f(0)+\dfrac{f'(0)}{1!}x+\dfrac{f''(0)}{2!}x^2+\dfrac{f^{(3)}(0)}{3!}x^3+\dfrac{f^{(4)}(0)}{4!}x^4+\dfrac{f^{(5)}(0)}{5!}x^5+\dfrac{f^{(6)}(0)}{6!}x^6+\dfrac{f^{(7)}(0)}{7!}x^7$\\\\
+
+$=0+\dfrac11x+\dfrac02x^2+\dfrac26x^3+\dfrac0{24}x^4+\dfrac{16}{120}x^5+\dfrac0{720}x^6+\dfrac{272}{5040}x^7$\\
+
+$=x+\dfrac13x^3+\dfrac2{15}x^5+\dfrac{17}{315}x^7$
+
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+
+\end{thebibliography}
+\end{document} 

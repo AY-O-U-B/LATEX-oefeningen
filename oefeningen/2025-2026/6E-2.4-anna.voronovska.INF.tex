@@ -1,0 +1,75 @@
+\documentclass[a4paper]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}     
+
+\begin{document}
+  
+\noindent \large Auteur: Anna Voronovska \\
+\noindent \large Studierichting: Informatica\\
+\noindent \large Oefeningenreeks 6E nr. 2.4\\
+
+\medskip
+
+\normalsize
+
+
+Taylorpolynoom bepalen via afgeleiden in $x_0 = 0$:\\
+
+$f(x) = \sinh x \Rightarrow f(0) = 0$\\
+
+$f'(x) = \cosh x \Rightarrow f'(0) = 1$\\
+
+$f''(x) = \sinh x \Rightarrow f''(0) = 0$\\
+
+$f'''(x) = \cosh x \Rightarrow f'''(0) = 1$\\
+
+Alle even afgeleiden zijn $\sinh x$, dus $0$ in $x_0=0$.\\
+
+Alle oneven afgeleiden zijn $\cosh x$, dus $1$ in $x_0=0$.\\
+
+Dan de Taylorontwikkeling met restterm:\\
+
+$\sinh x = \displaystyle\sum_{k=0}^{n} \dfrac{x^{2k+1}}{(2k+1)!} + R_{2n+1}(x) = x + \dfrac{x^3}{3!} + \dfrac{x^5}{5!} + ... + \dfrac{x^{2n+1}}{(2n+1)!} + R_{2n+1}(x)$\\
+
+Nu bewijzen wij dat $\forall x \in \mathbb{R} : \lim\limits_{n \to \infty} R_n(x) = 0$\\
+
+Volgens de restterm van Lagrange bestaat er een $c$ tussen $0$ en $x$ zodat:\\
+
+$R_{2n+1}(x) = \dfrac{x^{2n+2}}{(2n+2)!} f^{(2n+2)}(c)$\\
+
+De afgeleiden van $\sinh x$ zijn afwisselend $\cosh x$ en $\sinh x$, dus:\\
+
+$\left|f^{(2n+2)}(c)\right| = |\sinh c| \leq \sinh|x| =: M_x < +\infty$ voor $x \in \mathbb{R}$. \\
+
+Dus:\\
+
+$\left|R_{2n+1}(x)\right| \leq M_x \cdot \dfrac{|x|^{2n+2}}{(2n+2)!}$\\
+
+We beschouwen de reeks $\displaystyle\sum_{n=0}^{\infty} \dfrac{|x|^{n}}{n!}$\\
+
+Volgens het criterium van d'Alembert geldt:\\
+
+$\lim\limits_{n \to +\infty} \dfrac{\dfrac{|x|^{n+1}}{(n+1)!}}{\dfrac{|x|^{n}}{n!}}= \lim\limits_{n \to +\infty} \dfrac{|x|}{n+1} = 0 < 1$\\
+
+Dus convergeert deze reeks, en volgens de stelling over de limiet van de algemene term van een convergente reeks geldt:\\
+
+$\lim\limits_{n \to +\infty} \dfrac{|x|^{n}}{n!} = 0$\\
+
+$n$ vervangen door $2n+2$:\\
+
+$\lim\limits_{n \to +\infty} \dfrac{|x|^{2n+2}}{(2n+2)!} = 0$\\
+
+Dus:\\
+
+$\lim\limits_{n \to +\infty} R_{2n+1}(x) = 0$\\
+
+Dit geldt voor alle $x \in \mathbb{R}$:\\
+
+$\sinh x = \displaystyle\sum_{k=0}^{\infty} \dfrac{x^{2k+1}}{(2k+1)!} = x + \dfrac{x^3}{3!} + \dfrac{x^5}{5!} + ...$\\
+
+\begin{thebibliography}{999}
+%\bibitem{a} Referentie
+\end{thebibliography}
+\end{document} 
